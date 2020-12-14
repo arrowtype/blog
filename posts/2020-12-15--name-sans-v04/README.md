@@ -1,5 +1,5 @@
 ---
-title: What changed in Name Sans v0.4? Everything. Nothing much.
+title: What changed in Name Sans v0.4? Everything – and nothing much.
 description: A look a how Name Sans has evolved from v0.1 to v0.4
 date: 2020-12-15
 tags:
@@ -9,7 +9,9 @@ layout: layouts/post.njk
 
 
 
-The update between Name Sans Version 0.3 & 0.4 was a leap, not a step. Ultimately, all decisions were made in pursuit of the core goal of this family: to bring the beauty and charm of the NYC Subway mosaic name tablets into a useful, extensive, modern type system. But, in type, even big changes – which make a major difference in the visual impact & reading experience for viewers – are ultimately details. Because they are details, they can be hard for the outside observer to track. And so, I wanted to take a moment to document what changed, and why. 
+The update between Name Sans Versions 0.3 & 0.4 was a leap, not a step. Ultimately, all decisions were made in pursuit of the core goal of this family: to bring the beauty and charm of the NYC Subway mosaic name tablets into a useful, extensive, modern type system.
+
+Of course, in type, even relatively big changes – which make a major difference in the visual impact & reading experience for viewers – are ultimately details. Because they are details, they can be hard for the outside observer to track. I wanted to take a moment to document what changed, and why. 
 
 ## Initial development and evolution since
 
