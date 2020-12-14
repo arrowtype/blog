@@ -7,6 +7,7 @@ tags:
   - font engineering
   - tools
 layout: layouts/post.njk
+permalink: posts/intro-to-fonttools/index.html
 ---
 
 This tutorial was moved to its own repo at [github.com/arrowtype/fonttools-intro](https://github.com/arrowtype/fonttools-intro)

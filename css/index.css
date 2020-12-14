@@ -275,7 +275,7 @@ a[href].direct-link:focus:visited,
 
 @media (min-width: 1000px) {
   .tmpl-post h1,
-  .content p:first-child {
+  .content>p:first-child {
     padding: 0 5vw;
   }
   .content>p:first-child {
@@ -304,3 +304,11 @@ a[href].direct-link:focus:visited,
   font-size: 2.5em;
 }
 
+.content ol,
+.content ul {
+  padding-left: 1.25rem;
+}
+
+.content li {
+  margin-bottom: 1em;
+}

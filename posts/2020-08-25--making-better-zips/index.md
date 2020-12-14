@@ -7,6 +7,7 @@ tags:
   - font engineering
   - tools
 layout: layouts/post.njk
+permalink: posts/better-zips/index.html
 ---
 
 
