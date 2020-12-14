@@ -5,6 +5,7 @@ date: 2020-12-15
 tags:
   - name sans
 layout: layouts/post.njk
+permalink: posts/name-sans-v04/index.html
 ---
 
 
@@ -13,7 +14,7 @@ The update between Name Sans Versions 0.3 & 0.4 was a leap, not a step. Ultimate
 
 Of course, in type, even relatively big changes – which make a major difference in the visual impact & reading experience for viewers – are ultimately details. Because they are details, they can be hard for the outside observer to track. I wanted to take a moment to document what changed, and why. 
 
-## Initial development and evolution since
+## Development & evolution
 
 A lot of the best type families are the product of many years of development, experimentation, testing, and revision. Certainly, this is how I see Name Sans. It started as sketches in my notebooks as a daily commuter in NYC. And, as I get further into making it a full type family, I keep seeing it more clearly. I am essentially discovering what the family ought to be, and doing this process mostly in the open.
 
@@ -73,13 +74,13 @@ And so, I began to experiment.
 - Signs versus v0.4
 
 
-## Making a more-cohesive system
+## Making a more cohesive system
 
 - Explanation of family structure
 
 ## What do the Optical Sizes do?
 
-- In the days of hand-cut metal type, fonts inherently had size-specific designs. 
+- In the days of hand-cut metal type, fonts inherently had size-specific designs.
 - Obvious changes: thin parts of serif designs were made proportionally thicker
 - Less obvious changes: at small sizes letter spacing was increased to keep letters from appearing overly-squished. At large sizes, spacing was tightened to keep words bonded together.
 

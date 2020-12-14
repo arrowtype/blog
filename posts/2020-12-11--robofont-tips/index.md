@@ -6,11 +6,12 @@ tags:
   - robofont
   - tools
 layout: layouts/post.njk
+permalink: posts/robofont-tips/index.html
 ---
 
-Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. 
+Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is RoboFont.
 
-The font editor I use most is RoboFont, for reasons mentioned in my earlier post, [Getting Started in Type](../2020-05-01--getting-started-in-type). This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!
+I covered some of the reasons I like RoboFont in my earlier post, [Getting Started in Type](../getting-started). This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!
 
 ## Extensions I couldn’t live without
 

@@ -7,6 +7,7 @@ tags:
   - drawbot
   - tools
 layout: layouts/post.njk
+permalink: posts/drawbot-vscode/index.html
 ---
 
 This tutorial was moved to its own repo at [github.com/arrowtype/drawbot-vscode](https://github.com/arrowtype/drawbot-vscode)

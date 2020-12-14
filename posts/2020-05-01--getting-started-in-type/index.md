@@ -6,6 +6,7 @@ tags:
   - tips
   - tools
 layout: layouts/post.njk
+permalink: posts/getting-started/index.html
 ---
 
 So, you’re interested in type design, but you are still figuring out how & where to start or get to the next step. This post is a non-exhaustive attempt to share an overview of how you might learn some basics, how you can get started with font editing software, and where you might consider growing your skills after that. 
