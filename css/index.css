@@ -11,8 +11,10 @@
   --gray: #C0C0C0;
   --darkgray: #333;
   --navy: #17050F;
+  --purple: #461363;
   --blue: #082840;
   --white: #fff;
+  --text: #000;
 }
 * {
   box-sizing: border-box;
@@ -41,7 +43,7 @@ a[href] {
   color: var(--blue);
 }
 a[href]:visited {
-  color: var(--navy);
+  color: var(--purple);
 }
 main {
   padding: 1rem;
@@ -153,55 +155,74 @@ pre {
 /* Posts list */
 .postlist {
   list-style: none;
-  padding: 0;
+  padding: 4rem 0;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 .postlist-item {
   counter-increment: start-from -1;
+  margin-bottom: 4rem;
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
+
+.postlist-metadata {
+  display: flex;
+  align-content: center;
+  text-transform: uppercase;
 }
+
 .postlist-date,
 .postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
+  
   color: var(--darkgray);
 }
 .postlist-date {
-  word-spacing: -0.5px;
+  font-size: 1.25rem;
+  font-feature-settings: "tnum";
 }
 .postlist-link {
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  padding-top: 1rem;
+  text-decoration: none;
+  color: var(--text);
 }
+a[href].postlist-link:visited {
+  color: var(--text);
+}
+
+a.postlist-link:visited:hover,
+.postlist-link:hover {
+  color: var(--red);
+  transition: 0.25s;
+}
+
+
+
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
+  font-size: 4rem;
   font-weight: 700;
 }
 
 
 /* Tags */
 .post-tag {
-  display: inline-block;
-  vertical-align: text-top;
   text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
-  padding: 2px 4px;
+  font-size: 0.75em; /* 10px /16 */
+  letter-spacing: 0.03em;
+  padding: 0.28em 0.5em;
   margin-left: 0.8em; /* 8px /10 */
-  background-color: var(--red);
-  color: var(--white);
+  border: var(--gray) solid 1px;
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
+  display: flex;
+  align-content: center;
 }
 a[href].post-tag,
 a[href].post-tag:visited {
-  color: #fff;
+  font-weight: 650;
+  /* color: var(--darkgray); */
 }
 
 /* Warning */
@@ -242,7 +263,7 @@ a[href].direct-link:focus:visited,
 
 .tmpl-post h1 {
   font-size: 8vw;
-  font-weight: 850;
+  font-weight: 700;
   line-height: 1.125;
   margin: 1em 0 0.5em;
 }
@@ -277,5 +298,9 @@ a[href].direct-link:focus:visited,
   max-width: 40rem;
   margin-left: auto;
   margin-right: auto;
+}
+
+.content h2 {
+  font-size: 2.5em;
 }
 
