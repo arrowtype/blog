@@ -3,7 +3,7 @@ title: What changed in Name Sans v0.4? Everything – and nothing much.
 description: A look a how Name Sans has evolved from v0.1 to v0.4
 date: 2020-12-15
 tags:
-  - name-sans
+  - name sans
 layout: layouts/post.njk
 ---
 

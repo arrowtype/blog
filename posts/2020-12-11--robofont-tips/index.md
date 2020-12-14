@@ -1,9 +1,10 @@
 ---
 title: Getting the most out of RoboFont
 description: Extensions & Tips for RoboFont
-date: 2020-12-15
+date: 2020-12-11
 tags:
-  - name-sans
+  - robofont
+  - tools
 layout: layouts/post.njk
 ---
 
