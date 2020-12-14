@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'NameSans';
+  font-weight: 1 1000;
+  src: url("./fonts/name_sans-variable.woff2");
+}
+
 :root {
   --red: #C5004A;
   --darkred: #7F0036;
@@ -15,7 +21,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  font-family: 'NameSans',system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
 }
@@ -61,7 +67,7 @@ table th {
 
 pre,
 code {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: 'Recursive', Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 pre {
@@ -224,3 +230,52 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link:visited {
   color: #aaa;
 }
+
+/* ------------------------------------------------- */
+/* new styles for arrowtype blog */
+
+.tmpl-post {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tmpl-post h1 {
+  font-size: 8vw;
+  font-weight: 850;
+  line-height: 1.125;
+  margin: 1em 0 0.5em;
+}
+
+.content>p:first-child {
+  font-size: 200%;
+  font-weight: 250;
+}
+
+@media (min-width: 1000px) {
+  .tmpl-post h1,
+  .content p:first-child {
+    padding: 0 5vw;
+  }
+  .content>p:first-child {
+    max-width: 100%;
+    font-size: 3vw;
+  }
+}
+
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6,
+.content ul,
+.content ol,
+.content code,
+.content pre,
+.content p:not(:first-child),
+.content li p {
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
