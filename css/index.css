@@ -13,6 +13,7 @@
   --navy: #17050F;
   --purple: #461363;
   --blue: #082840;
+  --offwhite: #f8f8f8;
   --white: #fff;
   --text: #000;
 }
@@ -30,11 +31,7 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
-p,
-.tmpl-post li,
-img {
-  max-width: 37.5em; /* 600px /16 */
-}
+
 p,
 .tmpl-post li {
   line-height: 1.45;
@@ -46,19 +43,23 @@ a[href]:visited {
   color: var(--purple);
 }
 main {
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 main :first-child {
   margin-top: 0;
 }
 header {
-  border-bottom: 1px dashed var(--lightgray);
+  border-bottom: 1px solid var(--lightgray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
-header:after {
-  content: "";
-  display: table;
-  clear: both;
+
+header a {
+  text-decoration: none;
 }
+
 table {
   margin: 1em 0;
 }
@@ -89,7 +90,8 @@ pre {
   hyphens: none;
   padding: 1em;
   margin: .5em 0;
-  background-color: #f6f6f6;
+  background-color: var(--offwhite);
+  border-radius: 0.25rem;
 }
 .highlight-line {
   display: block;
@@ -124,9 +126,7 @@ pre {
 
 /* Header */
 .home {
-  padding: 0 1rem;
-  float: left;
-  margin: 1rem 0; /* 16px /16 */
+  margin: 0;
   font-size: 1em; /* 16px /16 */
 }
 .home :link:not(:hover) {
@@ -294,8 +294,9 @@ a[href].direct-link:focus:visited,
 .content code,
 .content pre,
 .content p:not(:first-child),
-.content li p {
-  max-width: 40rem;
+.content li p,
+.content img {
+  max-width: 48rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -312,3 +313,18 @@ a[href].direct-link:focus:visited,
 .content li {
   margin-bottom: 1em;
 }
+
+/* pagination */
+
+#pagination {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  list-style: none;
+  background: var(--offwhite);
+  margin: 0;
+  margin-top: 5vw;
+  padding: 5vw 1rem 10vw;
+}
+
+
