@@ -6,12 +6,12 @@ tags:
   - open source
   - tools
 layout: layouts/post.njk
-permalink: posts/font-design-on-a-chromebook/index.html
+permalink: posts/font-design-on-a-chromebook/
 ---
 
 You might think you have to spend a lot of money on a power Mac computer & software like Glyphs or RoboFont to get started in type design. While these things are very nice, it’s not actually a requirement. You can instead get a Chromebook for about $150 to $250, then use open-source software like FontForge.
 
-![A screenshot of FontForge running on ChromeOS](./assets/fontforge-chrome_os.png)
+![A screenshot of FontForge running on ChromeOS](./fontforge-chrome_os.png)
 
 ## Set up Linux (beta)
 

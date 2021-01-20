@@ -16,4 +16,4 @@ For a long time, I didn’t get it. Then, I started to understand it, but felt l
 
 → Web demo of [NLI in variable TTFs](https://arrowtype.github.io/NLI-test/)
 
-![NLI](web-demo.gif)
+![NLI](./web-demo.gif)
