@@ -44,12 +44,18 @@ The function below will make a clean zip if you call if with a path, like `zipit
 
 ```bash
 function zipit {
-  zip $1.zip -r $1 -x '*/.DS_Store'
-  echo "zip made of " $1
+  currentDir=$(pwd)                             # get current dir so you can return later
+  cd $(dirname $1)                              # change to target’s dir (works better for zip)
+  target=$(basename $1)                         # get target’s name
+  zip -r $target.zip $target -x '*/.DS_Store'   # make a zip of the target, excluding macOS metadata
+  echo "zip made of " $1                        # announce completion
+  cd $currentDir                                # return to where you were
 }
 ```
 
-Of course, you have to make sure the terminal has this function in memory for it to work, so you should store this in your `.bash_profile` file (or `.bashrc`, [depending on your approach](https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/)). Then, you can call it from any terminal session.
+It may seem a little bit complicated, but due to the way `zip` works, it is best to change to a target’s folder before zipping it.
+
+Of course, it is worth making sure the terminal has this function in memory for it to work, so you should store this in your `.bash_profile` file (or `.bashrc`, [depending on your approach](https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/)). Then, you can call it from any terminal session.
 
 ## The Result
 
