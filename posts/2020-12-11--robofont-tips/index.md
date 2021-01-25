@@ -13,33 +13,33 @@ Type designers are lucky to have a variety of extremely-capable tools for creati
 
 I covered some of the reasons I like RoboFont in my earlier post, [Getting Started in Type](../getting-started). This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!
 
-## Extensions I couldn’t live without
+## Extensions I love
 
 Most RoboFont extensions can be found at https://robofontmechanic.com/. I have added specific links where tools are better or only available in specific repos.
 
 Some of the free extensions I couldn’t work without:
-- Mechanic, to handle extensions (pretty essential)
-- Add Overlap, to add corner overlaps to selected points. I like [Okay Type’s fork of this](https://github.com/okay-type/AddOverlap), which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.
-- Add Segment Guideline, a very simple but useful way to add a guideline to a selected segment
-- Batch, to help you build fonts from RoboFont
-- [CornerTools](https://github.com/roboDocs/CornerTools) – really nice tools to modify corners (read the readme on there for instructions)
-- Glyph Browser, to make it easy to add specific glyphs with correct unicodes & naming
-- DesignSpace Edit, to help set up designspace documents that you can build with FontMake
-- EditThatNextMaster, to help working with multiple related fonts
-- Eyeliner, to make it easy to set when a point is on a guide or metric line
-- GlyphMirror, an extension to draw mirrored versions of your drawing in a background visual, which makes it fast and easy to achieve symmetry. (This one is not yet available on Mechanic; get it from [its GitHub repo](https://github.com/RafalBuchner/glyphMirror)
-- Properties, to display distances in selected points, etc
-- Overlay UFOs, to display glyphs from the same or other open UFOs while you draw
-- Outliner, if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.
-- Ramsay St, to show related glyphs in the glyph view (though, I use the Space Center quite a bit more for this)
-- ScalingEditTool, a super-necessary tool to move points in a way that is less disruptive to attached curves
-- [ScaleFast](https://github.com/roboDocs/ScaleFast), extremely awesome for scaling glyphs to speed up the process of making things like superiors & inferiors, small caps, legal symbols, and more
-- Shape Tool, to draw circles & rectangles
-- SpeedPunk, as one way to consider the smoothness of curves
-- Theme Editor, to make it easy to control your drawing theme
-- word-o-mat, to create strings to judge type in the Space Center
+- **[Mechanic](https://robofontmechanic.com/)**, to handle extensions. It’s pretty essential, and allows you to easily find and install most of the other extensions listed here. Extensions mentioned but not available via Mechanic are linked to.
+- **Add Overlap**, to add corner overlaps to selected points. I like [Okay Type’s fork of this](https://github.com/okay-type/AddOverlap), which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.
+- **Add Segment Guideline**, a very simple but useful way to add a guideline to a selected segment
+- **Batch**, to help you build fonts from RoboFont
+- **[CornerTools](https://github.com/roboDocs/CornerTools)** – really nice tools to modify corners (read the readme on there for instructions)
+- **Glyph Browser**, to make it easy to add specific glyphs with correct unicodes & naming
+- **DesignSpace Edit**, to help set up designspace documents that you can build with FontMake
+- **EditThatNextMaster**, to help working with multiple related fonts
+- **Eyeliner**, to make it easy to set when a point is on a guide or metric line
+- **GlyphMirror**, an extension to draw mirrored versions of your drawing in a background visual, which makes it fast and easy to achieve symmetry. (This one is not yet available on Mechanic; get it from [its GitHub repo](https://github.com/RafalBuchner/glyphMirror)
+- **Properties**, to display distances in selected points, etc
+- **Overlay UFOs**, to display glyphs from the same or other open UFOs while you draw
+- **Outliner**, if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.
+- **Ramsay St**, to show related glyphs in the glyph view (though, I use the Space Center quite a bit more for this)
+- **ScalingEditTool**, a super-necessary tool to move points in a way that is less disruptive to attached curves
+- **[ScaleFast](https://github.com/roboDocs/ScaleFast)**, extremely awesome for scaling glyphs to speed up the process of making things like superiors & inferiors, small caps, legal symbols, and more
+- **Shape Tool**, to draw circles & rectangles
+- **SpeedPunk**, as one way to consider the smoothness of curves
+- **Theme Editor**, to make it easy to control your drawing theme
+- **word-o-mat**, to create strings to judge type in the Space Center
 
-**Paid extensions**
+### Paid extensions
 
 - MetricsMachine is extremely worthwhile, to help with kerning. If you get this, MM2SpaceCenter is a nice (free) add-on extension to give more context in the Space Center as you work on kerning.
 - Prepolator is very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process *a lot* more. It is amazingly helpful for an otherwise annoying task.
