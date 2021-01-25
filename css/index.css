@@ -161,6 +161,7 @@ a:hover {
 .postlist-item {
   counter-increment: start-from -1;
   margin-bottom: 4rem;
+  display: grid;
 }
 
 .postlist-metadata {
@@ -175,14 +176,21 @@ a:hover {
 }
 .postlist-date {
   font-size: 1rem;
+  font-weight: 550;
   font-feature-settings: "tnum", "ss01";
 }
 .postlist-link {
   display: inline-block;
+  /* display: block; */
+  width: 100%;
   padding-top: 1rem;
   text-decoration: none;
   color: var(--text);
+  padding: 1rem;
+  transition: 0.25s;
+  border-radius: 1.5rem;
 }
+
 a[href].postlist-link:visited {
   color: var(--text);
 }
@@ -190,35 +198,39 @@ a[href].postlist-link:visited {
 a.postlist-link:visited:hover,
 .postlist-link:hover {
   color: var(--accent);
-  transition: 0.25s;
+  box-shadow: 0rem 0.25rem 3rem hsla(210, 50%, 0%, .25);
+}
+
+@media (prefers-color-scheme: dark) {
+  a.postlist-link:visited:hover,
+  .postlist-link:hover {
+    box-shadow: 0rem 0.25rem 1.5rem hsla(209, 25%, 76%, 0.25);
+  }
 }
 
 .postlist {
   padding: 0;
 }
 
-.postlist-item-active .postlist-link {
-  font-weight: bold;
-}
-.tmpl-home .postlist-link {
+.tmpl-home .postlist-link .post-title {
   font-size: 2rem;
-  font-weight: 700;
+  font-weight: 1000;
   transition: 0.25s;
 }
 
 @media screen and (min-width: 320px) {
-  .tmpl-home .postlist-link {
+  .tmpl-home .postlist-link .post-title {
     font-size: calc(32px + 64 * ((100vw - 320px) / 1500));
   }
 }
 @media screen and (min-width: 1820px) {
-  .tmpl-home .postlist-link {
+  .tmpl-home .postlist-link .post-title {
     font-size: 96px;
   }
 }
 
-.tmpl-home .postlist-link {
-  /* background: -webkit-linear-gradient(-15deg, var(--text)0%, var(--text)50%, #ffa745 60%, #ef7ac8 70%, #a083ed 80%, #43aeff 90%); */
+.tmpl-home .postlist-link .post-title {
+  display: block;
   background: -webkit-linear-gradient(-15deg, #ffa745 0%, #ef7ac8 10%, #a083ed 20%, #43aeff 40%, var(--text)50%, var(--text)100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -227,10 +239,9 @@ a.postlist-link:visited:hover,
   background-size: 250% auto;
   background-position: 100%;
   transition: .5s ease;
-  /* -webkit-animation: textShine 0.25s reverse linear; */
 }
 
-.tmpl-home .postlist-link:hover{
+.tmpl-home .postlist-link:hover .post-title {
   background-position: 0%;
   -webkit-animation: hue 3s alternate infinite;
 }
@@ -246,6 +257,20 @@ a.postlist-link:visited:hover,
   100% {
     -webkit-filter: hue-rotate(0deg);
   }
+}
+
+.tmpl-home .postlist-link:before {
+  content: "→";
+  font-size: 3em;
+  position: absolute;
+  opacity: 0.99;
+  z-index: -1;
+  /* color: var(--text); */
+  border: 1px solid red;
+  -webkit-background-clip: none;
+  background-clip: none;
+  -webkit-text-fill-color: var(--offwhite);
+  text-fill-color: var(--offwhite);
 }
 
 
