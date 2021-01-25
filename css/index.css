@@ -12,7 +12,8 @@
   --navy: #17050F;
   --purple: #461363;
   --blue: #0033ff;
-  --offwhite: #f8f8f8;
+  --offwhite: hsl(0, 0%, 97%);
+  --offwhite2: hsl(0, 0%, 94%);
   --white: #fff;
   --text: #000;
 
@@ -31,6 +32,7 @@
     --purple: #461363;
     --blue: hsl(210, 100%, 76%);
     --offwhite: hsl(210, 8%, 5%);
+    --offwhite2: hsl(210, 8%, 10%);
     --white: #000;
     --text: hsl(210, 5%, 84%);
   }
@@ -258,7 +260,7 @@ a[href].post-tag {
   padding: 0.28em 0.5em;
   margin-left: 0.8em;
   color: var(--gray);
-  background: var(--offwhite);
+  background: var(--offwhite2);
   border-radius: 0.25em;
   text-decoration: none;
   display: flex;
@@ -309,7 +311,7 @@ a[href].direct-link:focus:visited,
 }
 
 .tmpl-post h1 {
-  margin: 1em auto 0.5em;
+  margin: 0 auto 0.5em;
   font-size: 3rem;
   line-height: 1.125;
   width: 100%;
@@ -365,6 +367,13 @@ a[href].direct-link:focus:visited,
 
 .content li {
   margin-bottom: 1em;
+}
+
+code {
+  background-color: var(--offwhite2);
+}
+pre code {
+  background-color: transparent;
 }
 
 .content pre,
@@ -496,4 +505,5 @@ footer a[href]:hover {
 #info-page h1 {
   font-size: 2rem;
   max-width: var(--maincolumn);
+  margin: auto;
 }
