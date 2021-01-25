@@ -45,7 +45,7 @@ Some of the free extensions I couldn’t work without:
 - Prepolator is very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process *a lot* more. It is amazingly helpful for an otherwise annoying task.
 - Skateboard is extremely helpful for planning & designing variable fonts.
 
-You can get more-detailed documentation about RoboFont extensions at https://robofont.com/documentation/extensions/.
+You can get more-detailed documentation about RoboFont extensions at [robofont.com/documentation/extensions/](https://robofont.com/documentation/extensions/).
 
 ## Additional macOS tools I couldn’t live without
 
