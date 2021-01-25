@@ -9,10 +9,6 @@ tags:
 layout: layouts/post.njk
 permalink: posts/better-zips/index.html
 ---
-
-
-# Making better zip files for Windows by excluding unnecessary .DS_Store & MACOSX files
-
 ## The Problem
 
 Something unexpected that I learned recently: if you are on a Mac and make a zip of a folder in a regular way (e.g. by right-clicking a folder, then selecting ‘compress’, or with a basic usage of the `zip` command-line utility), it includes obnoxious, unnecessary files for folks that decompress those zips on Windows computers.
