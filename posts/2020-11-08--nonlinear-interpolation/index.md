@@ -1,5 +1,5 @@
 ---
-title: Exploring Higher-Order Interpolation (HOI)
+title: Exploring Higher-Order Interpolation
 description: Testing a new concept in font design
 date: 2020-11-08
 tags:
