@@ -7,8 +7,8 @@
 :root {
   --accent: hsl(260deg, 100%, 58%);
   --accent2: hsl(28deg, 100%, 57%);
-  --accent-faded: hsla(260deg, 100%, 58%, 0.6);
-  --accent2-faded: hsla(28deg, 100%, 57%, 0.6);
+  --accent-faded: hsl(277deg, 100%, 50%, 74%);
+  --accent2-faded: hsl(28deg, 100%, 50%, 60%);
   --lightgray: #e0e0e0;
   --gray: hsl(0,0%,50%);
   --navy: #17050F;
@@ -158,6 +158,7 @@ code {
 /* https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline */
 a {
   color: var(--text);
+  font-weight: 500;
   transition: 0.15s;
   text-decoration: none;
   position: relative;
@@ -188,6 +189,10 @@ header a,
 a[href].direct-link,
 footer a {
   background-image: none;
+}
+
+strong a {
+  font-weight: 700;
 }
 
 /* Posts list */
@@ -414,7 +419,7 @@ a[href].direct-link:hover {
 
 .content>p:first-child {
   font-size: 150%;
-  font-weight: 300;
+  font-weight: 350;
   max-width: var(--maincolumn);
   margin-left: auto;
   margin-right: auto;
