@@ -5,8 +5,8 @@
 }
 
 :root {
-  --accent: #0033ff;
-  --accent2: #c800ff;
+  --accent: hsl(260deg 100% 58%);
+  --accent2: hsl(28deg 100% 57%);
   --lightgray: #e0e0e0;
   --gray: hsl(0,0%,40%);
   --navy: #17050F;
@@ -148,14 +148,15 @@ a {
   transition: 0.25s;
 }
 
-/* a:hover {
+a:hover {
   color: var(--accent);
-  background: -webkit-linear-gradient(-15deg, #ef7ac8 0%, #a083ed 40%, #43aeff 100%);
+  background: -webkit-linear-gradient(-80deg, var(--accent2) 0%, var(--accent) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
-} */
+  animation: hue 3s alternate infinite;
+}
 
 /* Posts list */
 .postlist {
@@ -180,9 +181,12 @@ a {
   color: var(--gray);
 }
 .postlist-date {
+  color: var(--gray);
   font-size: 1rem;
   font-weight: 550;
   font-feature-settings: "tnum", "ss01";
+  -webkit-text-fill-color: var(--gray);
+  text-fill-color: var(--gray);
 }
 .postlist-link {
 
@@ -211,8 +215,8 @@ a[href].postlist-link:visited {
   a.postlist-link:visited:hover,
   .postlist-link:hover {
     box-shadow: 0rem 0.25rem 3rem hsla(209, 25%, 76%, 0.25);
-  } */
-}
+  } 
+} */
 
 .postlist {
   padding: 0;
@@ -269,6 +273,8 @@ a[href].postlist-link:visited {
   }
 }
 
+/* post arrow animation */
+
 .tmpl-home .postlist-link:before {
   content: "→";
   font-size: 20vw;
@@ -282,6 +288,8 @@ a[href].postlist-link:visited {
   font-weight: 1;
   transition-duration: 0.25s;
   transition-delay: 0s;
+  -webkit-text-fill-color: var(--offwhite2);
+  text-fill-color: var(--offwhite2);
 }
 
 
