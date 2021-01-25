@@ -226,6 +226,7 @@ a.postlist-link:visited:hover,
   text-fill-color: transparent;
   background-size: 250% auto;
   background-position: 100%;
+  transition: .5s ease;
   /* -webkit-animation: textShine 0.25s reverse linear; */
 }
 
