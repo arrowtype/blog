@@ -367,6 +367,11 @@ a[href].direct-link:focus:visited,
   line-height: 1.125;
   width: 100%;
   max-width: var(--maincolumn);
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  font-feature-settings: "ss01";
+  line-height: 0.9;
 }
 
 .content>p:first-child {
@@ -380,7 +385,8 @@ a[href].direct-link:focus:visited,
 @media (min-width: 72rem) {
   .tmpl-post h1{
     font-size: 6rem;
-    max-width: 64rem;
+    /* max-width: 64rem; */
+    max-width: 72rem;
     margin-left: auto;
     margin-right: auto;
   }
