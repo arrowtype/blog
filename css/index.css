@@ -40,7 +40,7 @@
 }
 
 
-* {
+*, *:before, *:after {
   box-sizing: border-box;
 }
 
@@ -146,6 +146,21 @@ code {
 a {
   color: var(--text);
   transition: 0.25s;
+  text-decoration: none;
+  position: relative;
+}
+
+a:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.005em;
+  width: 100%;
+  background: var(--accent2);
+  opacity: 0.75;
+  width: 100%;
+  height: 0.15em;
+  transition: 0.15s;
 }
 
 a:hover {
@@ -156,6 +171,17 @@ a:hover {
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   animation: hue 3s alternate infinite;
+}
+
+a:hover:before {
+  background: currentColor;
+  opacity: 0.25;
+}
+
+header a:before,
+.postlist a:before,
+footer a:before {
+  background: transparent;
 }
 
 /* Posts list */
@@ -189,16 +215,16 @@ a:hover {
   text-fill-color: var(--gray);
 }
 .postlist-link {
-
   display: grid;
   align-items: center;
   width: 100%;
   padding-top: 1rem;
   text-decoration: none;
   color: var(--text);
-  padding: 2rem;
+  padding: 2rem 0;
   transition: 0.25s;
   border-radius: 1.5rem;
+  position: relative;
 }
 
 a[href].postlist-link:visited {
@@ -278,10 +304,10 @@ a[href].postlist-link:visited {
 .tmpl-home .postlist-link:before {
   content: "→";
   font-size: 20vw;
-  line-height: 0;
-  justify-self: end;
-  position: relative;
-  transform: translate(-0.25em,3rem);
+  line-height: 10rem;
+  text-align: right;
+  top: 0;
+  transform: translate(-0.25em,0);
   opacity: 0;
   z-index: 1;
   color: var(--offwhite2);
@@ -296,7 +322,7 @@ a[href].postlist-link:visited {
 .tmpl-home .postlist-link:hover:before {
   opacity: 1;
   font-weight: 700;
-  transform: translate(-0em,3rem);
+  transform: translate(-0em,0);
   transition-duration: 0.25s;
   transition-delay: 0.15s;
 }
@@ -371,7 +397,7 @@ a[href].direct-link:focus:visited,
   text-align: center;
   text-transform: uppercase;
   font-feature-settings: "ss01";
-  line-height: 0.9;
+  line-height: 1;
 }
 
 .content>p:first-child {
