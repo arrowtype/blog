@@ -148,9 +148,14 @@ a {
   transition: 0.25s;
 }
 
-a:hover {
+/* a:hover {
   color: var(--accent);
-}
+  background: -webkit-linear-gradient(-15deg, #ef7ac8 0%, #a083ed 40%, #43aeff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+} */
 
 /* Posts list */
 .postlist {
@@ -180,13 +185,14 @@ a:hover {
   font-feature-settings: "tnum", "ss01";
 }
 .postlist-link {
-  display: inline-block;
-  /* display: block; */
+
+  display: grid;
+  align-items: center;
   width: 100%;
   padding-top: 1rem;
   text-decoration: none;
   color: var(--text);
-  padding: 1rem;
+  padding: 2rem;
   transition: 0.25s;
   border-radius: 1.5rem;
 }
@@ -195,7 +201,7 @@ a[href].postlist-link:visited {
   color: var(--text);
 }
 
-a.postlist-link:visited:hover,
+/* a.postlist-link:visited:hover,
 .postlist-link:hover {
   color: var(--accent);
   box-shadow: 0rem 0.25rem 3rem hsla(210, 50%, 0%, .25);
@@ -204,8 +210,8 @@ a.postlist-link:visited:hover,
 @media (prefers-color-scheme: dark) {
   a.postlist-link:visited:hover,
   .postlist-link:hover {
-    box-shadow: 0rem 0.25rem 1.5rem hsla(209, 25%, 76%, 0.25);
-  }
+    box-shadow: 0rem 0.25rem 3rem hsla(209, 25%, 76%, 0.25);
+  } */
 }
 
 .postlist {
@@ -215,7 +221,9 @@ a.postlist-link:visited:hover,
 .tmpl-home .postlist-link .post-title {
   font-size: 2rem;
   font-weight: 1000;
+  line-height: 1;
   transition: 0.25s;
+  padding: 0.25em 0;
 }
 
 @media screen and (min-width: 320px) {
@@ -239,6 +247,8 @@ a.postlist-link:visited:hover,
   background-size: 250% auto;
   background-position: 100%;
   transition: .5s ease;
+  position: relative;
+  z-index: 2;
 }
 
 .tmpl-home .postlist-link:hover .post-title {
@@ -261,16 +271,26 @@ a.postlist-link:visited:hover,
 
 .tmpl-home .postlist-link:before {
   content: "→";
-  font-size: 3em;
-  position: absolute;
-  opacity: 0.99;
-  z-index: -1;
-  /* color: var(--text); */
-  border: 1px solid red;
-  -webkit-background-clip: none;
-  background-clip: none;
-  -webkit-text-fill-color: var(--offwhite);
-  text-fill-color: var(--offwhite);
+  font-size: 20vw;
+  line-height: 0;
+  justify-self: end;
+  position: relative;
+  transform: translate(-0.25em,3rem);
+  opacity: 0;
+  z-index: 1;
+  color: var(--offwhite2);
+  font-weight: 1;
+  transition-duration: 0.25s;
+  transition-delay: 0s;
+}
+
+
+.tmpl-home .postlist-link:hover:before {
+  opacity: 1;
+  font-weight: 700;
+  transform: translate(-0em,3rem);
+  transition-duration: 0.25s;
+  transition-delay: 0.15s;
 }
 
 
