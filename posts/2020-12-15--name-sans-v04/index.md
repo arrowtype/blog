@@ -1,5 +1,5 @@
 ---
-title: What changed in Name Sans v0.4? Everything – and nothing much.
+title: What changed in Name Sans v0.4? Basically everything – but also nothing much.
 description: A look a how Name Sans has evolved from v0.1 to v0.4
 date: 2020-12-15
 tags:
