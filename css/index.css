@@ -14,8 +14,8 @@
   --navy: #17050F;
   --purple: #461363;
   --blue: #0033ff;
-  --offwhite: hsl(0, 0%, 97%);
-  --offwhite2: hsl(0, 0%, 94%);
+  --offwhite: hsl(0, 0%, 94%);
+  --offwhite2: hsl(0, 0%, 90%);
   --white: #fff;
   --text: #000;
   --maincolumn: 40rem;
@@ -35,8 +35,8 @@
     --navy: #17050F;
     --purple: #461363;
     --blue: hsl(210, 100%, 76%);
-    --offwhite: hsl(210, 15%, 7%);
-    --offwhite2: hsl(210, 8%, 10%);
+    --offwhite: hsl(210, 15%, 10%);
+    --offwhite2: hsl(210, 8%, 15%);
     --white: #000;
     --text: hsl(210, 5%, 84%);
     --text-wght: 400;
@@ -109,8 +109,10 @@ header {
   height: var(--header);
 }
 
-header a {
+header a,
+footer a {
   text-decoration: none;
+  font-weight: 600;
 }
 
 table {
