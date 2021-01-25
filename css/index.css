@@ -218,17 +218,20 @@ a.postlist-link:visited:hover,
 }
 
 .tmpl-home .postlist-link {
-  background: -webkit-linear-gradient(-15deg, var(--text)0%, var(--text)50%, #ffa745 60%, #ef7ac8 70%, #a083ed 80%, #43aeff 90%);
+  /* background: -webkit-linear-gradient(-15deg, var(--text)0%, var(--text)50%, #ffa745 60%, #ef7ac8 70%, #a083ed 80%, #43aeff 90%); */
+  background: -webkit-linear-gradient(-15deg, #ffa745 0%, #ef7ac8 10%, #a083ed 20%, #43aeff 40%, var(--text)50%, var(--text)100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   text-fill-color: transparent;
   background-size: 250% auto;
+  background-position: 100%;
   /* -webkit-animation: textShine 0.25s reverse linear; */
 }
 
 .tmpl-home .postlist-link:hover{
-  -webkit-animation: textShine 0.5s forwards ease, hue 3s alternate infinite;
+  background-position: 0%;
+  -webkit-animation: hue 3s alternate infinite;
 }
 
 
@@ -241,12 +244,6 @@ a.postlist-link:visited:hover,
   }
   100% {
     -webkit-filter: hue-rotate(0deg);
-  }
-}
-
-@-webkit-keyframes textShine {
-  to {
-    background-position: 100%;
   }
 }
 
