@@ -189,7 +189,7 @@ footer a {
 }
 .postlist-item {
   counter-increment: start-from -1;
-  margin-bottom: 4rem;
+  margin-bottom: 5vw;
   display: grid;
 }
 
