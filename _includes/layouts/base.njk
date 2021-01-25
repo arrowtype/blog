@@ -21,7 +21,7 @@
         <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
       {%- endfor %}
       </ul> #}
-      <a href="https://arrowtype.com">Info</a>
+      <a href="/info">Info</a>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
@@ -32,9 +32,10 @@
 
     <footer>
       <div>
-        <p class"small-text">
+        <span class"small-text">
           By <a href="https://arrowtype.com">Arrow Type</a>
-        </p>
+        </span>
+        <a href="https://github.com/arrowtype/blog">github.com/arrowtype/blog</a>
       </div>
     </footer>
 

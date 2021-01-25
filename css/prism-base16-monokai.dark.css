@@ -1,6 +1,4 @@
 code[class*="language-"], pre[class*="language-"] {
-	font-size: 14px;
-	line-height: 1.375;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -13,13 +11,8 @@ code[class*="language-"], pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
-	background: #272822;
+	background: var(--offwhite);
 	color: #f8f8f2;
-}
-pre[class*="language-"] {
-	padding: 1.5em 0;
-	margin: .5em 0;
-	overflow: auto;
 }
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
