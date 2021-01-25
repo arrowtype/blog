@@ -9,7 +9,7 @@ layout: layouts/post.njk
 permalink: posts/robofont-tips/index.html
 ---
 
-Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is RoboFont.
+Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is the font editor RoboFont, along with its ecosystem.
 
 I covered some of the reasons I like RoboFont in my earlier post, [Getting Started in Type](../getting-started). This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!
 
@@ -57,8 +57,8 @@ You can get more-detailed documentation about RoboFont extensions at [robofont.c
 
 Sometimes, it’s nice to work in the evening without blasting your eyes with a ton of bright light. Luckily, RoboFont settings allow you to get a pretty serviceable dark mode in two steps:
 
-1. You can use [this script](https://gist.github.com/arrowtype/268bb9db71231ca4fc39143760e94947) as a "Start Up Script" (see script for instructions) to automatically set a light/dark mode each time you start RoboFont, based on your macOS preferences. If you change the macOS preference and want to update light/dark mode, you can also run the script without restarting RoboFont.
-2. If you also want a dark mode for the Glyph View (if you want dark mode, you will want this too), you can also install the Theme Editor extension, then use my ["Dark Connor" theme](https://gist.github.com/arrowtype/f450d2c7cfbcea61ab7ad6c43af14932) or make your own.
+1. You can use [this script](https://gist.github.com/arrowtype/268bb9db71231ca4fc39143760e94947) as a “Start Up Script” (see script for instructions) to automatically set a light/dark mode each time you start RoboFont, based on your macOS preferences. If you change the macOS preference and want to update light/dark mode, you can also run the script without restarting RoboFont.
+2. If you also want a dark mode for the Glyph View (if you want dark mode, you will want this too), you can also install the Theme Editor extension, then use my [“Dark Connor” theme](https://gist.github.com/arrowtype/f450d2c7cfbcea61ab7ad6c43af14932) or make your own.
 
 ## Drawing Tips
 
@@ -72,11 +72,11 @@ If you get stuck on a problem, chances are, someone will be happy to help you ou
 
 Generally, if you run into an unexpected issue, open the Output Window (Python > Output Window, or Option+Command+o) and check for error messages.
 
+- [The RoboFont Forum](http://forum.robofont.com/)
 - Google it (if you have an error message, try pasting in the relevant part – usually the last line or two)
-- The RoboFont Forum
 - GitHub Issues (try to find the relevant repo for a particular tool)
 - Twitter (you can mention me, @ArrowType, and I will either try to chip in or mention someone who might know more)
-- Type Crit Crew (helpful for a lot beyond troubleshooting, too!)
+- [Type Crit Crew](https://medium.com/typecritcrew/type-crit-crew-fdd180b881c) (helpful for a lot beyond troubleshooting, too!)
 
 ## Happy RoboFonting!
 

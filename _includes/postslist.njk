@@ -4,6 +4,7 @@
     <a href="{{ post.url | url }}" class="postlist-link">
       <div class="postlist-metadata">
         <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
+        {# these tag below break the templating of the overall post link #}
         {# {% for tag in post.data.tags %}
           {%- if collections.tagList.indexOf(tag) != -1 -%}
           {% set tagUrl %}/tags/{{ tag }}/{% endset %}
@@ -17,6 +18,7 @@
         <code>{{ post.url }}</code>
       {% endif %}
     </a>
+    
   </li>
 {% endfor %}
 </ol>
