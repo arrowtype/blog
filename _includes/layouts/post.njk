@@ -18,7 +18,7 @@ templateClass: tmpl-post
   {% endif %}
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}
-    <li>
+    <li class="next">
       <span class="small-text">Next →</span>
       <br>
       <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
