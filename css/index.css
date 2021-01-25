@@ -25,16 +25,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --accent: hsl(260deg, 100%, 58%);
+    --accent: hsl(260, 100%, 66%);
     --accent2: hsl(28deg, 100%, 57%);
-    --accent-faded: hsla(260deg, 100%, 58%, 0.6);
+    --accent-faded: hsla(260deg, 100%, 75%, 0.75);
     --accent2-faded: hsla(28deg, 100%, 57%, 0.6);
     --lightgray: hsl(210, 5%, 40%);
     --gray: hsl(210, 5%, 50%);
     --navy: #17050F;
     --purple: #461363;
     --blue: hsl(210, 100%, 76%);
-    --offwhite: hsl(210, 8%, 5%);
+    --offwhite: hsl(210, 15%, 7%);
     --offwhite2: hsl(210, 8%, 10%);
     --white: #000;
     --text: hsl(210, 5%, 84%);
@@ -394,7 +394,7 @@ a[href].direct-link:hover {
   width: 100%;
   max-width: var(--maincolumn);
   font-weight: 800;
-  text-align: center;
+  
   text-transform: uppercase;
   font-feature-settings: "ss01";
   line-height: 1;
@@ -411,6 +411,7 @@ a[href].direct-link:hover {
 @media (min-width: 72rem) {
   .tmpl-post h1{
     font-size: 6rem;
+    text-align: center;
     /* max-width: 64rem; */
     max-width: 72rem;
     margin-left: auto;
