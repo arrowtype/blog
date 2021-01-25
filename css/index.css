@@ -224,8 +224,7 @@ footer a {
   text-decoration: none;
   color: var(--text);
   padding: 0.5rem 0;
-  transition: 0.25s;
-  /* border-radius: 1.5rem; */
+  /* transition: 0.25s; */
   position: relative;
   background-image: none;
 }
@@ -278,7 +277,6 @@ a[href].postlist-link:visited {
 
 .tmpl-home .postlist-link .post-title {
   display: block;
-  
   background: -webkit-linear-gradient(-15deg, #ffa745 0%, #ef7ac8 10%, #a083ed 20%, #43aeff 40%, var(--text)50%, var(--text)100%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -286,7 +284,7 @@ a[href].postlist-link:visited {
   text-fill-color: transparent;
   background-size: 250% 100%;
   background-position: 100% 100%;
-  transition: .5s ease;
+  transition: background-position .5s ease;
   position: relative;
   z-index: 2;
 }
@@ -405,7 +403,6 @@ a[href].direct-link:hover {
   width: 100%;
   max-width: var(--maincolumn);
   font-weight: 800;
-  
   text-transform: uppercase;
   font-feature-settings: "ss01";
   line-height: 1;
