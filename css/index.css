@@ -10,7 +10,7 @@
   --accent-faded: hsla(260deg, 100%, 58%, 0.6);
   --accent2-faded: hsla(28deg, 100%, 57%, 0.6);
   --lightgray: #e0e0e0;
-  --gray: hsl(0,0%,40%);
+  --gray: hsl(0,0%,50%);
   --navy: #17050F;
   --purple: #461363;
   --blue: #0033ff;
@@ -377,10 +377,11 @@ a[href].post-tag:hover {
   text-decoration: none;
   font-style: normal;
   margin-left: .1em;
+  font-weight: 300;
 }
 a[href].direct-link,
 a[href].direct-link:visited {
-  color: var(--lightgray);
+  color: var(--gray);
 }
 
 a[href].direct-link:focus,
@@ -401,7 +402,7 @@ a[href].direct-link:hover {
 
 .tmpl-post h1 {
   margin: 0 auto 0.5em;
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 1.125;
   width: 100%;
   max-width: var(--maincolumn);
@@ -417,6 +418,17 @@ a[href].direct-link:hover {
   max-width: var(--maincolumn);
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 500px) {
+  .tmpl-post h1 {
+    font-weight: 900;
+  }
+  .content>p:first-child {
+    font-size: 125%;
+    font-weight: 350;
+    line-height: 1.25;
+  }
 }
 
 @media (min-width: 72rem) {
@@ -452,6 +464,17 @@ a[href].direct-link:hover {
 .content h3,
 .content h4 {
   margin-top: 1em;
+}
+
+.content h2:before,
+.content h3:before,
+.content h4:before  { 
+  display: block; 
+  content: " "; 
+  margin-top: -3rem; 
+  height: 3rem; 
+  visibility: hidden; 
+  pointer-events: none;
 }
 
 @media screen and (min-width: 1000px) {
@@ -575,10 +598,11 @@ pre code {
 footer {
   width: 100%;
   min-height: var(--footer);
-  padding: 3rem 1rem 4rem;
+  padding: 2rem 1rem 4rem;
   background-color: var(--offwhite);
-
 }
+
+
 
 footer div {
   max-width: var(--maincolumn);
