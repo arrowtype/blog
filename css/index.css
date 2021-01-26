@@ -301,11 +301,11 @@ a[href].postlist-link:visited {
 
 .tmpl-home .postlist-link:hover .post-title {
   background-position: 0% 100%;
-  -webkit-animation: hue 3s alternate infinite;
+  animation: hue 3s alternate infinite;
 }
 
 
-@-webkit-keyframes hue {
+@keyframes hue {
   33.33% {
     -webkit-filter: hue-rotate(-40deg);
   }
@@ -389,14 +389,28 @@ a[href].post-tag:hover {
 a[href].direct-link,
 a[href].direct-link:visited {
   color: var(--gray);
+  font-size: 0.85em;
+  opacity: 0.625;
+  transition: 0.25s;
 }
 
 a[href].direct-link:focus,
 a[href].direct-link:hover {
   background-image: none;
   -webkit-text-fill-color: var(--accent);
+  opacity: 1;
+  display: inline-block;
+  animation: rotate 0.75s forwards;
 }
 
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 /* ------------------------------------------------- */
 /* new styles for arrowtype blog */
