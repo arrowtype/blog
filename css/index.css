@@ -1,8 +1,8 @@
 @font-face {
-  font-family: 'NameSans';
+  font-family: 'Name Sans';
   font-weight: 1 1000;
   /* src: url("./fonts/name_sans-variable.woff2"); */
-  src: url("https://arrowtype.s3-us-west-2.amazonaws.com/name_sans-variable.woff2");
+  src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
 }
 
 :root {
@@ -69,7 +69,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'NameSans',system-ui, sans-serif;
+  font-family: 'Name Sans',system-ui, sans-serif;
   font-weight: var(--text-wght);
   color: var(--text);
   background-color: var(--white);
@@ -269,6 +269,7 @@ a[href].postlist-link:visited {
 
 .tmpl-home .postlist-link .post-title {
   font-size: 2rem;
+  font-weight: bold;
   font-weight: 1000;
   line-height: 1;
   transition: 0.25s;
