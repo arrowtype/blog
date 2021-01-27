@@ -482,6 +482,22 @@ a[href].direct-link:hover {
   margin-right: auto;
 }
 
+img {
+  width: 100%;
+}
+
+/* --maincolumn plus 2 rem */
+@media (max-width: 42rem) {
+  main {
+    overflow-x: hidden;
+  }
+
+  .content img {
+    width: calc(100% + 2rem);
+    transform: translateX(-1rem);
+  }
+}
+
 .content h2,
 .content h3,
 .content h4 {
@@ -594,7 +610,7 @@ pre code {
 /* pagination */
 
 #pagination {
-  
+  display: grid;
   list-style: none;
   border-top: 5px solid var(--offwhite);
   margin: 0 auto;
@@ -602,6 +618,12 @@ pre code {
   padding: 2rem 0;
   width: 100%;
   max-width: var(--maincolumn);
+  font-size: 1.5rem;
+}
+
+.newer {
+  order: -1;
+  padding-bottom: 1rem;
 }
 
 @media screen and (min-width: 700px) {
@@ -610,7 +632,8 @@ pre code {
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
   }
-  .next {
+  .newer {
+    order: 1;
     text-align: right;
   }
 }
