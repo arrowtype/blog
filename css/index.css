@@ -11,7 +11,7 @@
   --accent2-faded: hsl(28deg, 100%, 50%, 60%);
   --lightgray: #e0e0e0;
   --gray: hsl(0,0%,50%);
-  --navy: #17050F;
+  --navy: hsl(210, 30%, 15%);
   --purple: #461363;
   --blue: #0033ff;
   --offwhite: hsl(0, 0%, 94%);
@@ -542,7 +542,21 @@ pre code {
   max-width: calc(var(--maincolumn) + 2rem);
   background-color: var(--offwhite);
   overflow: auto;
+  border-radius: 0.25rem;
 }
+
+@media (prefers-color-scheme: light) { 
+  .content pre,
+  .content pre[class*="language-"] {
+    background-color: var(--navy);
+    color: var(--white); 
+  }
+
+  code[class*="language-"] {
+    background-color: transparent;
+  }
+}
+
 .highlight-line {
   display: block;
   padding: 0.125em 1em;
