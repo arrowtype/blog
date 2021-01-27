@@ -1,7 +1,8 @@
 @font-face {
   font-family: 'NameSans';
   font-weight: 1 1000;
-  src: url("./fonts/name_sans-variable.woff2");
+  /* src: url("./fonts/name_sans-variable.woff2"); */
+  src: url("https://arrowtype.s3-us-west-2.amazonaws.com/name_sans-variable.woff2");
 }
 
 :root {
