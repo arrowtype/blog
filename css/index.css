@@ -454,6 +454,7 @@ a[href].direct-link:hover {
 
 @media (min-width: 72rem) {
   .tmpl-post h1{
+    padding: 0 1rem;
     font-size: 6rem;
     text-align: center;
     max-width: 72rem;
