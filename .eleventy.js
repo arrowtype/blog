@@ -6,6 +6,7 @@ const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
+const markdownItResponsive = require('@gerhobbelt/markdown-it-responsive');
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
@@ -87,6 +88,32 @@ module.exports = function(eleventyConfig) {
     permalinkSymbol: "🔗"
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+  // from https://github.com/jamesdoc/jamesdoc.com/blob/3b03ce38e596d324ea9b78009d1e72081ee45e9e/.eleventy.js
+  // TODO: update sizes
+  const rwdOptions = {
+    responsive: {
+      'srcset': {
+        '*': [ {
+          width: 320,
+          rename: {
+            suffix: '-320'
+          }
+        }, {
+          width: 550,
+          rename: {
+            suffix: '-550'
+          }
+        } ]
+      },
+      'sizes': {
+        '*': '(max-width: 550px) calc(100vw - 120px), 550px'
+      }
+    }
+  };
+
+  // added markdownLibrary to use()
+  eleventyConfig.setLibrary("md", markdownIt(options).use(markdownItResponsive, rwdOptions, markdownLibrary));
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

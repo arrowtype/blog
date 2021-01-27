@@ -32,5 +32,8 @@
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5"
+  },
+  "dependencies": {
+    "@gerhobbelt/markdown-it-responsive": "^0.1.1-3"
   }
 }
