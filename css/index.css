@@ -42,7 +42,6 @@
     --text: hsl(210, 5%, 84%);
     --text-wght: 400;
   }
-  
 }
 
 
@@ -252,18 +251,15 @@ a[href].postlist-link:visited {
   color: var(--text);
 }
 
-/* a.postlist-link:visited:hover,
-.postlist-link:hover {
-  color: var(--accent);
-  box-shadow: 0rem 0.25rem 3rem hsla(210, 50%, 0%, .25);
+a[href].postlist-link:focus {
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  background-image: linear-gradient(80deg,var(--accent2-faded), var(--accent-faded));
+  background-size: 100% 0.5em;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
-
-@media (prefers-color-scheme: dark) {
-  a.postlist-link:visited:hover,
-  .postlist-link:hover {
-    box-shadow: 0rem 0.25rem 3rem hsla(209, 25%, 76%, 0.25);
-  } 
-} */
 
 .postlist {
   padding: 0;
@@ -343,7 +339,8 @@ a[href].postlist-link:visited {
 }
 
 
-.tmpl-home .postlist-link:hover:before {
+.tmpl-home .postlist-link:hover:before,
+a[href].postlist-link:focus:before {
   opacity: 1;
   font-weight: 700;
   transform: translate(-0em,0);
@@ -499,7 +496,19 @@ a[href].direct-link:hover {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
+}
+
+@media (prefers-color-scheme: dark) {
+  .content img,
+  .content video {
+    opacity: 0.75;
+    transition: opacity 0.25s;
+  }
+  .content img:hover,
+  .content video:hover {
+    opacity: 1;
+  }
 }
 
 /* --maincolumn plus 2 rem */
