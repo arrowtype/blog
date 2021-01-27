@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Name Sans';
+  font-family: 'NameSans';
   font-weight: 1 1000;
   /* src: url("./fonts/name_sans-variable.woff2"); */
   src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
@@ -55,12 +55,12 @@ html {
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc(16px + 6 * ((100vw - 320px) / 1500));
+    font-size: calc(16px + 5 * ((100vw - 320px) / 1500));
   }
 }
 @media screen and (min-width: 1820px) {
   html {
-    font-size: 22px;
+    font-size: 21px;
   }
 }
 
@@ -68,10 +68,10 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Name Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: 'NameSans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-weight: var(--text-wght);
   color: var(--text);
-  background-color: var(--white);
+  /* background-color: var(--white); */
 }
 
 main {
