@@ -322,6 +322,7 @@ a[href].postlist-link:focus {
 
 .tmpl-home .postlist-link:before {
   content: "→";
+  pointer-events: none;
   font-size: 20vw;
   line-height: 6rem;
   height: 0;
@@ -560,6 +561,11 @@ img {
 code {
   background-color: var(--offwhite2);
   padding: 0 0.125em;
+}
+
+code.no-background {
+  background-color: transparent;
+  padding: 0;
 }
 pre code {
   background-color: transparent;
