@@ -9,24 +9,28 @@ tags:
 layout: layouts/post.njk
 permalink: posts/better-zips/index.html
 ---
+
+Making zip files from folders is a very common and very handy thing to do – so often, sending someone one file beats sending a whole collection of files! But, if you’re only ever making zips on a Mac, you may not realize that you’re also zipping up a few metadata files, and that these might confuse (or at least annoy) folks on other operating systems.
 ## The Problem
 
-Something unexpected that I learned recently: if you are on a Mac and make a zip of a folder in a regular way (e.g. by right-clicking a folder, then selecting ‘compress’, or with a basic usage of the `zip` command-line utility), it includes obnoxious, unnecessary files for folks that decompress those zips on Windows computers.
+I only learned this recently: if you are on a Mac and make a zip of a folder in a regular way (e.g. by right-clicking a folder, then selecting ‘compress’, or with a basic usage of the `zip` command-line utility), it includes obnoxious, unnecessary files for folks that decompress those zips on Windows computers.
 
-1. The top level will have an empty `MACOSX` folder
-2. Every other level will have an unnecessary `.DS_Store` file
+1. The top level will have an empty `_MACOSX` folder
+2. Every other level will have a `.DS_Store` file
 
 ![top level with empty 'MACOSX' folder](./2020-08-25-17-16-16.png)
 
 ![Main folder with '.DS_Store' file](./2020-08-25-17-16-31.png)
 
-My vague understanding of these files is that they somehow help macOS deal will making backups. However, these aren’t helpful in zipped folders, and if you send these zips to Windows users, they are especially unhelpful.
+The `_MACOSX` folder is often empty, and multiple sources point to it being a [resource fork](https://en.wikipedia.org/wiki/Resource_fork), without really saying why it ends up in zips. (If someone knowledgable would like to explain this to me, feel free!) For the purposes of this post, it is also unnecessary to say what it is or why it ends up in zips, other than that it does, but that it doesn’t need to be there.
+
+The [.DS_Store](https://en.wikipedia.org/wiki/.DS_Store) saves your preferences for file viewing in Finder, such as the placement of files in the “icon” view or the sorting in the “list” view. However, these generally aren’t very helpful in zipped folders, and if you send these zips to Windows users, they are especially unhelpful.
 
 ## A command-line solution
 
 To avoid this, you can compress a folder on the command line. Use `cd` to navigate to its parent directory, then use this command (replacing arrowtype-name_sans-v03 with the appropriate folder name):
 
-```
+```bash
 zip arrowtype-name_sans-v03.zip -r 'arrowtype-name_sans-v03' -x '*/.DS_Store'
 ```
 
