@@ -1,25 +1,10 @@
-code[class*="language-"], pre[class*="language-"] {
-	direction: ltr;
-	text-align: left;
-	white-space: pre;
-	word-spacing: normal;
-	word-break: normal;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
-	tab-size: 2;
-	-webkit-hyphens: none;
-	-moz-hyphens: none;
-	-ms-hyphens: none;
-	hyphens: none;
-	background: var(--offwhite);
-	color: #f8f8f2;
-}
 :not(pre) > code[class*="language-"] {
 	padding: .1em;
 	border-radius: .3em;
 }
 .token.comment, .token.prolog, .token.doctype, .token.cdata {
-	color: #75715e;
+	color: #989bb1;
+	font-style: italic;
 }
 .token.punctuation {
 	color: #f8f8f2;
