@@ -16,9 +16,9 @@ Something unexpected that I learned recently: if you are on a Mac and make a zip
 1. The top level will have an empty `MACOSX` folder
 2. Every other level will have an unnecessary `.DS_Store` file
 
-![top level with empty 'MACOSX' folder](assets/2020-08-25-17-16-16.png)
+![top level with empty 'MACOSX' folder](./2020-08-25-17-16-16.png)
 
-![Main folder with '.DS_Store' file](assets/2020-08-25-17-16-31.png)
+![Main folder with '.DS_Store' file](./2020-08-25-17-16-31.png)
 
 My vague understanding of these files is that they somehow help macOS deal will making backups. However, these aren’t helpful in zipped folders, and if you send these zips to Windows users, they are especially unhelpful.
 
@@ -57,7 +57,7 @@ Of course, it is worth making sure the terminal has this function in memory for 
 
 When you exclude the `.DS_Store` files, it avoids both problems, and the result is much cleaner:
 
-![Folder without the '.DS_Store' file](assets/2020-08-25-17-17-17.png)
+![Folder without the '.DS_Store' file](./2020-08-25-17-17-17.png)
 
 ## An easier solution
 
