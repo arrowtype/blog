@@ -517,9 +517,11 @@ a[href].direct-link:hover {
 
 code {
   background-color: var(--offwhite2);
+  padding: 0 0.125em;
 }
 pre code {
   background-color: transparent;
+  padding: 0;
 }
 
 .content pre,
