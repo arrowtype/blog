@@ -224,6 +224,8 @@ strong a {
   color: var(--gray);
   font-size: 1rem;
   font-weight: 550;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
   font-feature-settings: "tnum", "ss01";
   -webkit-text-fill-color: var(--gray);
   text-fill-color: var(--gray);
@@ -416,12 +418,18 @@ a[href].direct-link:hover {
 }
 
 /* ------------------------------------------------- */
-/* new styles for arrowtype blog */
+/* post page */
 
 .tmpl-post {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.tmpl-post .postlist-date {
+  margin: 0 auto 1.5em;
+  width: 100%;
+  max-width: var(--maincolumn);
 }
 
 .tmpl-post h1 {
@@ -431,6 +439,7 @@ a[href].direct-link:hover {
   width: 100%;
   max-width: var(--maincolumn);
   font-weight: 800;
+  letter-spacing: 0.0325em;
   text-transform: uppercase;
   font-feature-settings: "ss01";
   line-height: 1;
@@ -456,6 +465,10 @@ a[href].direct-link:hover {
 }
 
 @media (min-width: 72rem) {
+  .tmpl-post .postlist-date {
+    text-align: center;
+    margin-bottom: 0.75em;
+  }
   .tmpl-post h1{
     padding: 0 1rem;
     font-size: 6rem;
