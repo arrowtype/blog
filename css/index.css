@@ -109,6 +109,9 @@ header {
   align-items: center;
   padding: 1rem;
   height: var(--header);
+  z-index: 100;
+  position: relative;
+  background: var(--white);
 }
 
 header a,
@@ -163,7 +166,6 @@ code {
 a {
   color: var(--text);
   font-weight: 500;
-  transition: 0.15s;
   text-decoration: none;
   position: relative;
   background-image: linear-gradient(80deg,var(--accent2-faded), var(--accent-faded));
