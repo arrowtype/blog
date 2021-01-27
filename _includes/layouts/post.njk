@@ -10,14 +10,14 @@ templateClass: tmpl-post
 <ul id="pagination">
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}
-    <li>
+    <li class="older">
       <span class="small-text">← Older</span><br>
       <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
     </li>
   {% endif %}
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}
-    <li class="next">
+    <li class="newer">
       <span class="small-text">Newer →</span><br>
       <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
     </li>
