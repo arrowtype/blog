@@ -13,7 +13,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(pluginNavigation);
   eleventyConfig.addPlugin(pageAssetsPlugin, {
       mode: "directory",
-      postsMatching: "src/posts/*/*.md",
+      postsMatching: "posts/*/*.md",
+      assetsMatching: "*.jpg|*.png|*.gif|*.mp4|*.webp|*.webm"
   });
 
   eleventyConfig.setDataDeepMerge(true);
