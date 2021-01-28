@@ -5,6 +5,7 @@
   /* src: url("name_sans-variable.woff2");  */
   /* deploy */
   src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
+  font-display: swap;
 }
 
 :root {
