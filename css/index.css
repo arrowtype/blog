@@ -617,7 +617,7 @@ pre code {
   max-width: calc(var(--main-col) + 2rem);
   background-color: var(--offwhite);
   overflow: auto;
-  border-radius: 0.25rem;
+  /* border-radius: 0.25rem; */
 }
 
 @media (prefers-color-scheme: light) { 
