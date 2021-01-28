@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<time class="postlist-date" datetime="{{ date | htmlDateString }}">{{ date | readableDate }}</time>
+<span class="postlist-date title-date">Published on <time  datetime="{{ date | htmlDateString }}">{{ date | longDate }}</time></span>
 <h1>{{ title }}</h1>
 <div class="content">
   {{ content | safe }}
@@ -13,14 +13,14 @@ templateClass: tmpl-post
   {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
   {%- if previousPost %}
     <li class="older">
-      <span class="small-text">← Older</span><br>
+      <span class="small-text">← Older ⤙</span><br>
       <a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a>
     </li>
   {% endif %}
   {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
   {%- if nextPost %}
     <li class="newer">
-      <span class="small-text">Newer →</span><br>
+      <span class="small-text">⤚ Newer →</span><br>
       <a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a>
     </li>
   {% endif %}

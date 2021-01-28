@@ -254,6 +254,11 @@ li ul {
   -webkit-text-fill-color: var(--gray);
   text-fill-color: var(--gray);
 }
+
+.postlist-date.title-date {
+  font-feature-settings: "ss08";
+}
+
 .postlist-link {
   display: grid;
   align-items: center;
@@ -682,6 +687,8 @@ pre code {
   padding-bottom: 1rem;
 }
 
+
+
 @media screen and (min-width: 700px) {
   #pagination {
     display: grid;
@@ -696,6 +703,13 @@ pre code {
 
 #pagination li {
   margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 699px) {
+  #pagination li {
+    text-align: center;
+    font-feature-settings: "ss09";
+  }
 }
 
 #pagination a {
