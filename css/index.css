@@ -230,7 +230,7 @@ li ul {
 }
 .postlist-item {
   counter-increment: start-from -1;
-  margin-bottom: 5vw;
+  margin-bottom: 2rem;
   display: grid;
 }
 
