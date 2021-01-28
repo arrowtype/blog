@@ -1,5 +1,5 @@
 ---
-title: Hosting fonts on AWS S3
+title: Hosting licensed fonts on AWS S3 for open-source websites
 description: How to use Amazon Web Services to host a font
 date: 2021-01-27
 tags:
@@ -11,7 +11,9 @@ permalink: host-webfont-on-aws/
 
 In some situations, you may need to use a font on the web, but may not be able to host it alongside your web code. In this case, you can host the font on AWS and call it in as a URL in your `@font-face` CSS!
 
-For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. Provided your font license allows it (this will vary between typefaces & licenses – read your license or email the type foundry if you aren’t sure!), this is relatively easy & inexpensive to do using the S3 Buckets feature of Amazon Web Services (AWS). You can (and should) configure it to only work on specific domain URLs, so you don’t break your licensing) or end up paying for other people to use your font hosting!). Here’s how.
+For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. **If your font license allows it**, this can be a nice solution to an otherwise tricky problem. Note: licensing will vary between typefaces and type foundries – read your license or email the type foundry if you aren’t sure!
+
+With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively easy & very inexpensive – unless you are making a hugely-popular website, perhaps. You can (and should) configure it to only work on specific domain URLs, so you don’t break your licensing) or end up paying for other people to use your font hosting!). Here’s how.
 
 ## Make your S3 Bucket
 
@@ -20,11 +22,11 @@ For example, you may wish to use a web-licensed font with a project that is open
 3. Give the bucket a name (e.g. `arrowtype`) and select a region that you think is closest to you / most of your users
 4. Uncheck **Block all public access** and check the box for “I acknowledge that the current settings might result in this bucket and the objects within becoming public.”
 5. Maybe enable versioning
-6. Scroll to the bottom and click “Create bucket”
+6. Scroll to the bottom and click **Create bucket**
 
 ## Upload your font
 
-1. Go into your new bucket, and click “Upload” then “Add files”, then select and upload your woff2 font file.
+1. Go into your new bucket, and click **Upload** then **Add files**, then select and upload your woff2 font file.
 2. Click on the file within the bucket, then find **Object actions > Make Public**, so you can access this from your CSS later (don’t worry; the next step will prevent other sites from using it)
 
 ## Edit CORS on the bucket
@@ -84,7 +86,7 @@ Additionally, the font is (relatively) safe from being directly used on any site
 
 If you need to update the font version on S3 in the future, you can simply repeat the process of uploading a file. 
 
-Just remember to also follow the “Make Public” steps, or things will break!
+Just remember to also follow the **Make Public** steps, or things will break!
 
 ## But what if fonts were already in a public Git repo?
 
