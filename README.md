@@ -1,78 +1,53 @@
-# eleventy-base-blog
+# The Arrow Type Blog
 
-A starter repository showing how to build a blog with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
+[blog.arrowtype.com](https://blog.arrowtype.com)
 
-[![Build Status](https://travis-ci.org/11ty/eleventy-base-blog.svg?branch=master)](https://travis-ci.org/11ty/eleventy-base-blog)
+A blog about type design & development.
 
-## Demos
+Built with the [Eleventy](https://github.com/11ty/eleventy) static site generator.
 
-* [Netlify](https://eleventy-base-blog.netlify.com/)
-* [GitHub Pages](https://11ty.github.io/eleventy-base-blog/)
-* [Remix on Glitch](https://glitch.com/~11ty-eleventy-base-blog)
+## License
 
-## Deploy this to your own site
+**Functional code** (e.g. Eleventy configuration, HTML, CSS, JS, etc) is licensed under the MIT License. In summary, you may reuse this, with attribution. Do not copy the whole site outright, but feel free to learn from the code and remix it to make new things. See license for full details.
 
-These builders are amazing—try them out to get your own Eleventy site in a few clicks!
+**Written content & images** are copyright Arrow Type and may not be reused or republished without written permission. Content may be quoted and referenced in other works; but please don’t plagiarize it or republish on another platform without prior written permission from Arrow Type.
 
-* [Get your own Eleventy web site on Netlify](https://app.netlify.com/start/deploy?repository=https://github.com/11ty/eleventy-base-blog)
-* [Get your own Eleventy web site on Vercel](https://vercel.com/import/project?template=11ty%2Feleventy-base-blog)
+**Typefaces** used have their own licensing details.
 
-## Getting Started
+If you have any questions over licensing (or type, design, development, etc), feel free to reach out to info@arrowtype.com!
 
-### 1. Clone this Repository
+<details>
+<summary><b><!-------->MIT License for functional code<!--------></b> (Click to expand)</summary>
 
+MIT License
+
+Copyright (c) 2021 Arrow Type @ArrowType
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+</details>
+
+### Build
+
+To build locally, git clone the repo, then:
+
+```bash
+npm install # if you haven’t already installed dependencies
+npm start
 ```
-git clone https://github.com/11ty/eleventy-base-blog.git my-blog-name
-```
-
-
-### 2. Navigate to the directory
-
-```
-cd my-blog-name
-```
-
-Specifically have a look at `.eleventy.js` to see if you want to configure any Eleventy options differently.
-
-### 3. Install dependencies
-
-```
-npm install
-```
-
-### 4. Edit _data/metadata.json
-
-### 5. Run Eleventy
-
-```
-npx eleventy
-```
-
-Or build and host locally for local development
-```
-npx eleventy --serve
-```
-
-Or build automatically when a template changes:
-```
-npx eleventy --watch
-```
-
-Or in debug mode:
-```
-DEBUG=* npx eleventy
-```
-
-### Implementation Notes
-
-* `about/index.md` shows how to add a content page.
-* `posts/` has the blog posts but really they can live in any directory. They need only the `post` tag to be added to this collection.
-* Add the `nav` tag to add a template to the top level site navigation. For example, this is in use on `index.njk` and `about/index.md`.
-* Content can be any template format (blog posts needn’t be markdown, for example). Configure your supported templates in `.eleventy.js` -> `templateFormats`.
-	* Because `css` and `png` are listed in `templateFormats` but are not supported template types, any files with these extensions will be copied without modification to the output (while keeping the same directory structure).
-* The blog post feed template is in `feed/feed.njk`. This is also a good example of using a global data files in that it uses `_data/metadata.json`.
-* This example uses three layouts:
-  * `_includes/layouts/base.njk`: the top level HTML structure
-  * `_includes/layouts/home.njk`: the home page template (wrapped into `base.njk`)
-  * `_includes/layouts/post.njk`: the blog post template (wrapped into `base.njk`)
-* `_includes/postlist.njk` is a Nunjucks include and is a reusable component used to display a list of all the posts. `index.njk` has an example of how to use it.
