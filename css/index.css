@@ -21,7 +21,8 @@
   --offwhite2: hsl(0, 0%, 90%);
   --white: #fff;
   --text: #000;
-  --maincolumn: 36rem;
+  --main-col: 36rem;
+  --wide-col: 72rem;
   --header: 3rem;
   --footer: 12rem;
   --text-wght: 425;
@@ -109,14 +110,20 @@ em {
 
 header {
   border-bottom: 1px solid var(--lightgray);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  
   padding: 1rem;
   height: var(--header);
   z-index: 100;
   position: relative;
   background: var(--white);
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header a,
@@ -208,6 +215,11 @@ strong a {
 
 li ul {
   margin-top: 1rem;
+}
+
+.wide-col {
+  max-width: var(--wide-col);
+  
 }
 
 /* Posts list */
@@ -440,7 +452,7 @@ a[href].direct-link:hover {
 .tmpl-post .postlist-date {
   margin: 0 auto 1.5em;
   width: 100%;
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
 }
 
 .tmpl-post h1 {
@@ -448,7 +460,7 @@ a[href].direct-link:hover {
   font-size: 2.25rem;
   line-height: 1.125;
   width: 100%;
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   font-weight: 800;
   letter-spacing: 0.0325em;
   text-transform: uppercase;
@@ -459,7 +471,7 @@ a[href].direct-link:hover {
 .content>p:first-child {
   font-size: 150%;
   font-weight: 350;
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   margin-left: auto;
   margin-right: auto;
 }
@@ -504,7 +516,7 @@ a[href].direct-link:hover {
 .content p:not(:first-child),
 .content li p,
 .content img {
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   margin-left: auto;
   margin-right: auto;
 }
@@ -525,7 +537,7 @@ img {
   }
 }
 
-/* --maincolumn plus 2 rem */
+/* --main-col plus 2 rem */
 @media (max-width: 42rem) {
   main {
     overflow-x: hidden;
@@ -602,7 +614,7 @@ pre code {
   -ms-hyphens: none;
   hyphens: none;
   padding: 1rem 1rem;
-  max-width: calc(var(--maincolumn) + 2rem);
+  max-width: calc(var(--main-col) + 2rem);
   background-color: var(--offwhite);
   overflow: auto;
   border-radius: 0.25rem;
@@ -661,7 +673,7 @@ pre code {
   margin-top: 4rem;
   padding: 2rem 0;
   width: 100%;
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   font-size: 1.5rem;
 }
 
@@ -710,7 +722,7 @@ footer {
 
 
 footer div {
-  max-width: var(--maincolumn);
+  max-width: var(--wide-col);
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -735,7 +747,7 @@ footer a[href]:hover {
 
 #info-page h1 {
   font-size: 2rem;
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   margin: auto;
 }
 
@@ -743,7 +755,7 @@ footer a[href]:hover {
 
 #mc_signup {
   border-top: 5px solid var(--offwhite2);
-  max-width: var(--maincolumn);
+  max-width: var(--main-col);
   margin: 3rem auto;
 }
 
