@@ -25,6 +25,7 @@
   --header: 3rem;
   --footer: 12rem;
   --text-wght: 425;
+  --sans: 'NameSansVF', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 @media (prefers-color-scheme: dark) {
@@ -70,7 +71,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'NameSansVF', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: var(--sans);
   font-weight: var(--text-wght);
   color: var(--text);
   background-color: var(--white);
@@ -732,4 +733,132 @@ footer a[href]:hover {
   font-size: 2rem;
   max-width: var(--maincolumn);
   margin: auto;
+}
+
+/* newsletter signup */
+
+#mc_signup {
+  border-top: 5px solid var(--offwhite2);
+  max-width: var(--maincolumn);
+  margin: 3rem auto;
+}
+
+#mc_ember_signup form {
+  display: flex;
+}
+
+#mc_embed_signup_scroll {
+  display: grid;
+  grid-template-columns: 3fr auto 1fr;
+  grid-gap: 0.25rem;
+}
+
+.mc-field-group {
+  display: grid;
+
+}
+.mc-field-group input {
+  --mono: 1;
+  box-sizing: border-box;
+  border: 2px solid transparent;
+  background: var(--offwhite2);
+  height: 2rem;
+  padding: 0 0.5rem;
+  font-family: "Recursive", monospace;
+  font-size: 1rem;
+  width: 100%;
+  color: var(--white);
+  outline: none;
+}
+
+.mc-field-group input:focus {
+  border: var(--text) solid 2px;
+}
+
+@media (min-width: 900px) {
+  .mc-field-group input {
+    color: var(--text);
+  }
+}
+
+input.button {
+  -webkit-appearance: none; /* avoid default styles from iOS safari */
+  background: var(--offwhite);
+  color: var(--textHover);
+  font-weight: 600;
+  font-family: var(--sans);
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0 1rem;
+  border: none;
+  background: -webkit-linear-gradient(-15deg, #ffa745 0%, #ef7ac8 10%, #a083ed 20%, #43aeff 40%, var(--offwhite)50%, var(--offwhite)100%);
+  background-size: 250% 100%;
+  background-position: 99% 100%;
+  transition: background-position .25s ease;
+  position: relative;
+}
+
+@media (hover: hover) {
+  input.button:hover {
+    cursor: pointer;
+    background-position: 0% 100%;
+    animation: hue 3s alternate infinite;
+  }
+}
+
+#mc_embed_signup div.mce_inline_error {
+  font-size: 0.875rem;
+}
+
+input.button:focus {
+  border: 2px solid var(--text);
+  outline: none;
+  background: black;
+}
+
+@media (min-width: 900px) {
+  input.button:focus {
+    background: var(--textHover);
+  }
+}
+
+#field--names {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0.25rem;
+  margin-top: 0.5rem;
+}
+#field--names p {
+  grid-column: 1 / -1;
+  margin: 0;
+  margin-top: 0.25rem;
+}
+.mc-field-group label,
+#field--names p {
+  color: var(--signupText);
+  /* opacity: 0.625; */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  padding-left: 0.65rem;
+  font-weight: 700;
+  font-variation-settings: "opsz" 96;
+  font-feature-settings: "ss01";
+}
+
+@media (prefers-color-scheme: light) {
+  aside {
+    --signupText: black;
+  }
+
+  input.button:focus {
+    background: var(--textHover);
+  }
+  .mc-field-group input {
+    background: var(--offwhite);
+  }
+}
+
+#field--names label {
+  display: none;
 }
