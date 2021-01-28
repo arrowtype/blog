@@ -213,7 +213,7 @@ li ul {
 /* Posts list */
 .postlist {
   list-style: none;
-  max-width: calc(var(--maincolumn) * 1.5);
+  max-width: 72rem;
   margin: 0 auto;
 }
 .postlist-item {
