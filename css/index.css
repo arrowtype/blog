@@ -102,6 +102,10 @@ a[href] {
   color: var(--text);
 }
 
+em {
+  font-weight: 600;
+}
+
 header {
   border-bottom: 1px solid var(--lightgray);
   display: flex;

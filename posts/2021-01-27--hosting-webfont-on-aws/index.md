@@ -1,15 +1,17 @@
 ---
-title: How to host a webfont on AWS S3
+title: Hosting fonts on AWS S3
 description: How to use Amazon Web Services to host a font
 date: 2021-01-27
 tags:
   - web dev
   - webfonts
 layout: layouts/post.njk
-permalink: posts/host-webfont-on-aws/
+permalink: host-webfont-on-aws/
 ---
 
-In some situations, you may need to use a font on the web, but may not be able to host it alongside your web code. For instance, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. Provided your font license allows it (this will vary between typefaces & licenses – read your license or email the type foundry if you aren’t sure!), this is relatively easy & inexpensive to do using the S3 Buckets feature of Amazon Web Services (AWS). You can (and should) configure it to only work on specific domain URLs, so you don’t break your licensing) or end up paying for other people to use your font hosting!). Here’s how.
+In some situations, you may need to use a font on the web, but may not be able to host it alongside your web code. In this case, you can host the font on AWS and call it in as a URL in your `@font-face` CSS!
+
+For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. Provided your font license allows it (this will vary between typefaces & licenses – read your license or email the type foundry if you aren’t sure!), this is relatively easy & inexpensive to do using the S3 Buckets feature of Amazon Web Services (AWS). You can (and should) configure it to only work on specific domain URLs, so you don’t break your licensing) or end up paying for other people to use your font hosting!). Here’s how.
 
 ## Make your S3 Bucket
 
@@ -55,7 +57,7 @@ In some situations, you may need to use a font on the web, but may not be able t
 1. Go back into the bucket’s “Objects” tab, and click on the file name of your font.
 2. Find and copy the “Object URL,” which will look something like `https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2`. 
 
-Note: because of the CORS configuration for this URL, you can’t use it on other websites, though you could use it in local development if you really wanted to ... but honestly, please just [buy your own license](https://name.arrowtype.com) if you want to use it, or use another font – there are many great type options in the world!
+Note: because of the CORS configuration for this URL, you can’t use it on other websites, though you could use it in local development if you really wanted to ... but honestly, please just [buy your own license](https://name.arrowtype.com) if you want to use it – while it’s still in early access, it’s available at a steep discount! Or, use another font – there are many great type options in the world, both free and paid!
 
 ## Set your CSS so local fonts don’t interfere with your development
 
@@ -94,7 +96,7 @@ You can use a tool called BFG to remove them – even [GitHub recommends this to
 2. Download the latest release from [the BFG website](https://rtyley.github.io/bfg-repo-cleaner/). 
 3. Open a terminal, navigate to your project’s root, point to the downloaded BFG file, and use the `--delete-files` option to delete the font filename you’d like to keep private:
 
-```console
+```bash
 cd ~/code/blog-11ty # change to the root of your web project
 java -jar ~/Downloads/bfg-1.13.2.jar --delete-files name_sans-variable.woff2
 ```

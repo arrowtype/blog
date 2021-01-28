@@ -6,7 +6,7 @@ tags:
   - robofont
   - tools
 layout: layouts/post.njk
-permalink: posts/robofont-tips/index.html
+permalink: robofont-tips/index.html
 ---
 
 Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is the font editor RoboFont, along with its ecosystem.

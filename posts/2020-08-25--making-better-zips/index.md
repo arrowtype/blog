@@ -7,7 +7,7 @@ tags:
   - font engineering
   - tools
 layout: layouts/post.njk
-permalink: posts/better-zips/index.html
+permalink: better-zips/index.html
 ---
 
 Making zip files from folders is a very common and very handy thing to do – so often, sending someone one file beats sending a whole collection of files! But, if you’re only ever making zips on a Mac, you may not realize that you’re also zipping up a few metadata files, and that these might confuse (or at least annoy) folks on other operating systems.
