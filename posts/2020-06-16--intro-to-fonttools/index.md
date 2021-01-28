@@ -10,4 +10,8 @@ layout: layouts/post.njk
 permalink: intro-to-fonttools/index.html
 ---
 
-This tutorial was moved to its own repo at [github.com/arrowtype/fonttools-intro](https://github.com/arrowtype/fonttools-intro)
+This tutorial was made for a presentation at the 2020 Typographics TypeLab.
+
+It exists in its own repo at: 
+
+[github.com/arrowtype/fonttools-intro](https://github.com/arrowtype/fonttools-intro)

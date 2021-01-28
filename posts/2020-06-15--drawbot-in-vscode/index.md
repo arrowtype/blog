@@ -10,4 +10,8 @@ layout: layouts/post.njk
 permalink: drawbot-vscode/index.html
 ---
 
-This tutorial was moved to its own repo at [github.com/arrowtype/drawbot-vscode](https://github.com/arrowtype/drawbot-vscode)
+This tutorial was made for a presentation at the 2020 Typographics TypeLab.
+
+It exists in its own repo at:
+
+[github.com/arrowtype/drawbot-vscode](https://github.com/arrowtype/drawbot-vscode)
