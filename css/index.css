@@ -21,7 +21,7 @@
   --offwhite2: hsl(0, 0%, 90%);
   --white: #fff;
   --text: #000;
-  --maincolumn: 40rem;
+  --maincolumn: 36rem;
   --header: 3rem;
   --footer: 12rem;
   --text-wght: 425;
@@ -204,6 +204,10 @@ footer a {
 
 strong a {
   font-weight: 800;
+}
+
+li ul {
+  margin-top: 1rem;
 }
 
 /* Posts list */
