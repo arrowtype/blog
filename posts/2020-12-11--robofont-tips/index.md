@@ -15,7 +15,7 @@ I covered some of the reasons I like RoboFont in my earlier post, [Getting Start
 
 ## First things first
 
-Like most powerful software, it is extremely useful to get familiar with the [RoboFont Docs](https://robofont.com/documentation/) (even if you just skim parts of it at first). If you are new to RoboFont or just wondering what it’s all about, start with the [RoboFont Introduction](https://robofont.com/documentation/introduction/).
+Like most powerful software, RoboFont has a lot of functionality, and you will save time by doing a bit of reading before diving in. It is extremely useful to get familiar with the [RoboFont Docs](https://robofont.com/documentation/) (even if you just skim parts of it at first). If you are new to RoboFont or just wondering what it’s all about, start with the [RoboFont Introduction](https://robofont.com/documentation/introduction/).
 
 As a new user, you will probably want to define the default character set for new fonts. [Here’s how](https://robofont.com/documentation/how-tos/defining-character-sets/). Glyph Browser, an extension mentioned below, further extends this part of the process.
 
@@ -59,6 +59,8 @@ A few very good extensions are complex software in their own right, and these mu
 You can get more-detailed documentation about RoboFont extensions at [robofont.com/documentation/extensions/](https://robofont.com/documentation/extensions/).
 
 ## Additional macOS apps that are espcially useful with RoboFont
+
+[VS Code](https://code.visualstudio.com/) is an excellent code editor, file explorer, Git client, and terminal, all built into one elegant package. I nearly always have a project open in a VS Code workspace while I’m working in RoboFont. This is entirely optional, but if you’re doing a mix of scripting, font building, and Git versioning, it is so handy to one place to many all these technical bits.
 
 [Paste](https://pasteapp.io/) gives you access to your Clipboard History, which is helpful in *many* situations (email, code, interface design, etc etc), but also handy in RoboFont. You can copy a couple of contours, then (if you remember the order you copied things in) paste them as needed. Hard to explain, but very handy.
 
