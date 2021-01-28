@@ -83,7 +83,7 @@ main {
   min-height: calc(100vh - var(--header) - var(--footer));
   padding: 3rem 1rem 3rem;
 }
-main :first-child {
+main > :first-child {
   margin-top: 0;
 }
 
@@ -214,7 +214,8 @@ strong a {
   font-weight: 800;
 }
 
-li ul {
+li ul,
+li ol {
   margin-top: 1rem;
 }
 

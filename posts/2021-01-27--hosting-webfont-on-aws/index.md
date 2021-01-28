@@ -33,7 +33,10 @@ With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively eas
 
 1. Navigate back to the top level of your bucket
 2. Scroll to the “Cross-origin resource sharing (CORS)” section, then click **Edit**
-4. Set CORS permissions to allow your specified URL(s) to access the objects in the bucket, similar to the JSON shown below. You can use a wildcard (`*`) to allow subdomains, like `https://*.arrowtype.com`. Note that I also include `http://localhost:8080`, the URL which my local-development builds get served to. Replace this with the localhost port number(s) you need to support.
+4. Set CORS permissions to allow your specified URL(s) to access the objects in the bucket, similar to the JSON shown below. 
+   - You can use a wildcard (`*`) to allow subdomains, like `https://*.arrowtype.com`. 
+   - I also include `http://localhost:8080`, the URL which my local-development builds get served to. Replace this with the localhost port number(s) you need to support.
+   <!-- TODO: figure out how to get font cacheing working: Add a `MaxAgeSeconds` property to control how long the font will stay in the browser cache for visitors. This will improve site performance for them, and should reduce you (already pretty low) S3 usage even further. I am using `604800` seconds, which is equal to 7 days. If you don’t plan to update the font often, you could increase that number further (say, to 30 days, which is `2592000` seconds). -->
 
 ```json
 [
