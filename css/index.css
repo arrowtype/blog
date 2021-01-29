@@ -675,9 +675,8 @@ pre code {
 #pagination {
   display: grid;
   list-style: none;
-  border-top: 5px solid var(--offwhite);
   margin: 0 auto;
-  margin-top: 4rem;
+  margin-top: 6rem;
   padding: 2rem 0;
   width: 100%;
   max-width: var(--main-col);
@@ -716,6 +715,7 @@ pre code {
 
 #pagination a {
   text-decoration: none;
+  padding: 0.25rem 0;
 }
 
 .small-text {
@@ -772,7 +772,8 @@ footer a[href]:hover {
 #mc_signup {
   border-top: 5px solid var(--offwhite2);
   max-width: var(--main-col);
-  margin: 3rem auto;
+  margin: 6rem auto 0;
+  padding: 2rem 0;
 }
 
 #mc_ember_signup form {
@@ -835,11 +836,31 @@ input.button {
     cursor: pointer;
     background-position: 0% 100%;
     animation: hue 3s alternate infinite;
+    /* text-shadow: 0px 0px 5px #000; */
+    color: #000;
+  }
+  input.button:hover:before {
+    content: "nice";
+    display: inline;
   }
 }
 
+
+#mc_embed_signup input.mce_inline_error {
+  border: #940558 2px solid !important;
+}
 #mc_embed_signup div.mce_inline_error {
   font-size: 0.875rem;
+  background: -webkit-linear-gradient(-15deg, #940558 0%,  #e2953e 100%);
+  color: #fff !important;
+  letter-spacing: 0.025em;
+  animation: hue 9s alternate infinite;
+}
+
+#mc_embed_signup div.mce_inline_error:after {
+  letter-spacing: 0.05em;
+  font-family: sans-serif;
+  content: " ¯\\_(ツ)_/¯";
 }
 
 input.button:focus {
