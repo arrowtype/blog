@@ -837,12 +837,10 @@ input.button {
     cursor: pointer;
     background-position: 0% 100%;
     animation: hue 3s alternate infinite;
-    /* text-shadow: 0px 0px 5px #000; */
-    color: #000;
+    color: var(--navy);
   }
-  input.button:hover:before {
-    content: "nice";
-    display: inline;
+  input.button:focus:hover {
+    color: var(--blue);
   }
 }
 
@@ -851,6 +849,8 @@ input.button {
   border: #940558 2px solid !important;
 }
 #mc_embed_signup div.mce_inline_error {
+  font-family: var(--mono);
+  font-weight: 400 !important;
   font-size: 0.875rem;
   background: -webkit-linear-gradient(-15deg, #940558 0%,  #e2953e 100%);
   color: #fff !important;
