@@ -197,7 +197,6 @@ a:hover {
   text-fill-color: transparent;
   animation: hue 3s alternate infinite;
   background-position: 0 100%;
-  /* background-position: calc(20px * -1) 100%, 100% 100%, 0 100%; */
 }
 
 a:hover:before {
@@ -319,7 +318,8 @@ a[href].postlist-link:focus {
   }
 }
 
-.tmpl-home .postlist-link .post-title {
+.tmpl-home .postlist-link .post-title,
+#pagination a {
   display: block;
   background: -webkit-linear-gradient(-15deg, #ffa745 0%, #ef7ac8 10%, #a083ed 20%, #43aeff 40%, var(--text)50%, var(--text)100%);
   -webkit-background-clip: text;
@@ -333,7 +333,8 @@ a[href].postlist-link:focus {
   z-index: 2;
 }
 
-.tmpl-home .postlist-link:hover .post-title {
+.tmpl-home .postlist-link:hover .post-title,
+#pagination a:hover {
   background-position: 0% 100%;
   animation: hue 3s alternate infinite;
 }
@@ -684,6 +685,11 @@ pre code {
   font-size: 1.5rem;
 }
 
+#pagination a {
+  font-weight: 900;
+  line-height: 1.25;
+}
+
 .newer {
   order: -1;
   padding-bottom: 1rem;
@@ -862,6 +868,7 @@ input.button {
   letter-spacing: 0.05em;
   font-family: sans-serif;
   content: " ¯\\_(ツ)_/¯";
+  font-weight: 700;
 }
 
 input.button:focus {
