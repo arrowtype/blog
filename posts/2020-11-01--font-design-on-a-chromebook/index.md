@@ -52,6 +52,6 @@ Note: If you run without the `sudo`, you might get an error like this:
 
 ## Off to the races!
 
-For tips & resources on getting started in type design generally, check out my blog post [**Getting started in Type Design (and possible next steps)**](https://blog.arrowtype.com/posts/font-design-on-a-chromebook). This advice does skew towards Mac & RoboFont (my main setup), but it also includes some good information that is about type design & development not tied to any particular OS or software.
+For tips & resources on getting started in type design generally, check out my blog post [**Getting started in Type Design (and possible next steps)**](https://blog.arrowtype.com/getting-started/). This advice does skew towards Mac & RoboFont (my main setup), but it also includes some good information that is about type design & development not tied to any particular OS or software.
 
 For guidance specific to using FontForge, check out [fontforge.org/docs/tutorial.html](https://fontforge.org/docs/tutorial.html) and [Designing with FontForge](http://designwithfontforge.com/en-US/index.html).
