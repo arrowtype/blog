@@ -8,13 +8,11 @@ Built with the [Eleventy](https://github.com/11ty/eleventy) static site generato
 
 ## License
 
-**Functional code** (e.g. Eleventy configuration, HTML, CSS, JS, etc) is licensed under the MIT License. In summary, you may reuse this, with attribution. Do not copy the whole site outright, but feel free to learn from the code and remix it to make new things. See license for full details.
-
 **Written content & images** are copyright Arrow Type and may not be reused or republished without written permission. Content may be quoted and referenced in other works; but please don’t plagiarize it or republish on another platform without prior written permission from Arrow Type.
 
 **Typefaces** used have their own licensing details.
 
-If you have any questions over licensing (or type, design, development, etc), feel free to reach out to info@arrowtype.com!
+**Functional code** (e.g. Eleventy configuration, HTML, CSS, JS, etc) is licensed under the MIT License. In summary, you may reuse this, with attribution. Do not copy the whole site outright, but feel free to learn from the code and remix it to make new things. See license for full details:
 
 <details>
 <summary><b><!-------->MIT License for functional code<!--------></b> (Click to expand)</summary>
@@ -44,6 +42,8 @@ SOFTWARE.
 ```
 
 </details>
+
+If you have any questions over licensing (or type, design, development, etc), feel free to reach out to info@arrowtype.com!
 
 ### Build
 
