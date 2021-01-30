@@ -745,11 +745,12 @@ footer {
   min-height: var(--footer);
   padding: 2rem 1rem 4rem;
   background-color: var(--offwhite);
+
 }
 
 
 
-footer div {
+footer>div {
   max-width: var(--wide-col);
   margin: 0 auto;
   display: flex;
