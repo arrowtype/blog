@@ -13,7 +13,7 @@ In some situations, you may need to use a font on the web, but may not be able t
 
 For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. **If your font license allows it**, this can be a nice solution to an otherwise tricky problem. Note: licensing will vary between typefaces and type foundries – read your license or email the type foundry if you aren’t sure!
 
-With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively easy & very inexpensive – unless you are making a hugely-popular website, perhaps. You can (and should) configure it to only work on specific domain URLs, so you don’t break your licensing) or end up paying for other people to use your font hosting!). Here’s how.
+With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively easy & very inexpensive – unless you are making a hugely-popular website, perhaps. You can (and should) configure it to only work on specific web domains, so you don’t break your licensing or end up paying for other people to use your font hosting! Here’s how.
 
 ## Make your S3 Bucket
 
