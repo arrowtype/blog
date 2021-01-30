@@ -9,7 +9,7 @@ layout: layouts/post.njk
 permalink: font-design-on-a-chromebook/
 ---
 
-You might think you have to spend a lot of money on a power Mac computer & software like Glyphs or RoboFont to get started in type design. While these things are very nice, it’s not actually a requirement. You can instead get a Chromebook for about $150 to $250, then use open-source software like FontForge.
+You might think you have to spend a lot of money on a powerful Mac computer & software like Glyphs or RoboFont to get started in type design. While these things are very nice, it’s not a requirement. Instead, you can get a Chromebook for about $150 to $250, then use open-source software like FontForge.
 
 ![A screenshot of FontForge running on ChromeOS](./fontforge-chrome_os.png)
 
@@ -27,7 +27,7 @@ To quote the official [ChromeOS Linux instructions](https://support.google.com/c
 
 ## Install Flatpak
 
-Note: to copy on a Chromebook, use Control+C. To paste in the terminal, you must use Control+V, *then* right click on the terminal.
+Note: to copy on a Chromebook, use Control+C. To paste in the terminal, you must use Control+V, *then* right-click on the terminal.
 
 First, follow the instructions to [install Flatpak on ChromeOS](https://flatpak.org/setup/Chrome%20OS/).
 
@@ -52,6 +52,6 @@ Note: If you run without the `sudo`, you might get an error like this:
 
 ## Off to the races!
 
-For tips & resources on getting started in type design generally, check out my blog post [**Getting started in Type Design (and possible next steps)**](https://blog.arrowtype.com/getting-started/). This advice does skew towards Mac & RoboFont (my main setup), but it also includes some good information that is about type design & development not tied to any particular OS or software.
+For tips & resources on getting started in type design generally, check out my blog post [**Getting started in Type Design (and possible next steps)**](https://blog.arrowtype.com/getting-started/). This advice does skew towards Mac & RoboFont, but it also includes some useful information about type design & development in general.
 
 For guidance specific to using FontForge, check out [fontforge.org/docs/tutorial.html](https://fontforge.org/docs/tutorial.html) and [Designing with FontForge](http://designwithfontforge.com/en-US/index.html).
