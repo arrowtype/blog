@@ -695,6 +695,11 @@ pre code {
   padding-bottom: 1rem;
 }
 
+#pagination a .small-text {
+  background: var(--gray);
+  -webkit-background-clip: text;
+}
+
 
 
 @media screen and (min-width: 700px) {
