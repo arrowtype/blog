@@ -5,7 +5,7 @@
   "feed": {
     "subtitle": "Notes on type, tech, & design.",
     "filename": "feed.xml",
-    "path": "/rss/index.xml",
+    "path": "/rss.xml",
     "id": "https://blog.arrowtype.com/"
   },
   "jsonfeed": {
