@@ -5,12 +5,12 @@
   "feed": {
     "subtitle": "Notes on type, tech, & design.",
     "filename": "feed.xml",
-    "path": "/feed/feed.xml",
+    "path": "/rss",
     "id": "https://blog.arrowtype.com/"
   },
   "jsonfeed": {
-    "path": "/feed/feed.json",
-    "url": "https://blog.arrowtype.com/feed/feed.json"
+    "path": "/rss.json",
+    "url": "https://blog.arrowtype.com/rss.json"
   },
   "author": {
     "name": "Stephen Nixon",
