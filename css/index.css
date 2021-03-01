@@ -512,6 +512,11 @@ a[href].direct-link:hover {
 
 }
 
+.content {
+  max-width: var(--wide-col);
+  margin: 0 auto;
+}
+
 .content h2,
 .content h3,
 .content h4,
