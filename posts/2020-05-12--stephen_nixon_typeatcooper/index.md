@@ -13,7 +13,7 @@ permalink: lubalin-lecture/index.html
 
 The [Lubalin Lecture Series](https://vimeo.com/coopertype) from [Type@Cooper](https://www.coopertype.org/) has been one of my favorite parts of NYC ever since I first moved here in 2014. They include thoughtful lectures from many of my favorite designers, technologists, and historians in type design. They are free to attend, professionally recorded, and posted online for anyone to watch for free.
 
-I was really honored, then, when I had the chance to deliver a Lubalin Lecture of my own. One challenge: it was orginally scheduled for early 2020 (not the best time for in-person gatherings), then moved to May 2020, as the very first online-only Lubalin Lecture. 
+I was really honored, then, when I had the chance to deliver a Lubalin Lecture of my own. One challenge: it was originally scheduled for early 2020 (not the best time for in-person gatherings), then moved to May 2020 as the very first online-only Lubalin Lecture. 
 
 I spoke about the current state and future possibilities of variable fonts, my background as a designer, my current projects, and the design & development process behind [Recursive](https://github.com/arrowtype/recursive).
 
