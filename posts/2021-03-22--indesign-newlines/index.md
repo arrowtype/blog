@@ -1,19 +1,19 @@
 ---
-title: Using InDesign’s GREP to deal with forced line breaks in plain text
+title: Using InDesign’s GREP to fix line breaks in plain text
 description: How to use GREP to remove line breaks in plain text, in InDesign
 date: 2021-03-22
 tags:
   - graphic design
   - indesign
 layout: layouts/post.njk
-permalink: grep-is-cool/
+permalink: indesign-grep-for-newlines/
 ---
 
 I just figured this out for a friend, and since I had already written it in an email, I figured I might as well take a couple of minutes to publish it as a blog post. InDesign has a few quirks in its GREP syntax, so this approach would vary for GREP on the command line or regex in a code editor. But, it can be pretty handy to approach problems like this with the knowledge that such things are possible!
 
 ## The Problem
 
-If you want to layout a [a public-domain book from Project Gutenberg](https://www.gutenberg.org/ebooks/64317), you can start with the “Plain Text UTF-8” format. However, this will likely have many forced line breaks to maintain a reasonable column width in plain text (otherwise, each paragraph would appear as one, long line).
+If you want to layout a [a public-domain book from Project Gutenberg](https://www.gutenberg.org/ebooks/64317), you can start with the “Plain Text UTF-8” format. However, this will likely have many forced line breaks to maintain a reasonable column width in plain text (otherwise, each paragraph would appear as one long line).
 
 The helpful thing is that paragraphs are separated by *two* line breaks. We can use this pattern to easily format this text for a book layout, in InDesign.
 
