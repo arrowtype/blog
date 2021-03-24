@@ -9,11 +9,11 @@ layout: layouts/post.njk
 permalink: indesign-grep-for-newlines/
 ---
 
-I just figured this out for a friend, and since I had already written it in an email, I figured I might as well take a couple of minutes to publish it as a blog post. InDesign has a few quirks in its GREP syntax, so this approach would vary for GREP on the command line or regex in a code editor. But, it can be pretty handy to approach problems like this with the knowledge that such things are possible!
+Let’s say you want to take a public domain book and flow it into an InDesign document, in order to make a book. Part of this process is converting the plain-text formatting into something you can use in an InDesign workflow. There are various ways you could approach this, but one tool is the Find/Change function within InDesign itself – and in particular, GREP. I can’t cover all of the possibilities of GREP in this post, but I can introduce one aspect of it. If you can get this aspect, you might be able to extend that into a more “programatic” way of thinking about handling design documents, and that can be a very powerful (and fun) way to think about design!
 
 ## The Problem
 
-If you want to layout a [a public-domain book from Project Gutenberg](https://www.gutenberg.org/ebooks/64317), you can start with the “Plain Text UTF-8” format. However, this will likely have many forced line breaks to maintain a reasonable column width in plain text (otherwise, each paragraph would appear as one long line).
+Say you want to layout a [a public-domain book from Project Gutenberg](https://www.gutenberg.org/ebooks/64317). You can start with the “Plain Text UTF-8” format. However, this will likely have many forced line breaks to maintain a reasonable column width in plain text (otherwise, each paragraph would appear as one long line).
 
 The helpful thing is that paragraphs are separated by *two* line breaks. We can use this pattern to easily format this text for a book layout, in InDesign.
 
