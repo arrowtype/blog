@@ -599,7 +599,7 @@ img {
 
 code {
   background-color: var(--offwhite2);
-  padding: 0 0.125em;
+  padding: 0.0625em 0.125em 0.125em;
 }
 
 code.no-background {
