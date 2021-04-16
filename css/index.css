@@ -513,6 +513,7 @@ a[href].direct-link:hover {
 }
 
 .content {
+  width: 100%;
   max-width: var(--wide-col);
   margin: 0 auto;
 }
@@ -600,6 +601,12 @@ img {
 code {
   background-color: var(--offwhite2);
   padding: 0 0.125em;
+}
+
+@media (max-width: 600px) {
+  code {
+    word-break: break-all;
+  }
 }
 
 code.no-background {
