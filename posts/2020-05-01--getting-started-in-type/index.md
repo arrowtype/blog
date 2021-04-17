@@ -11,7 +11,7 @@ permalink: getting-started/index.html
 
 So, you’re interested in type design, but you are still figuring out how & where to start or get to the next step. This post is a non-exhaustive attempt to share an overview of how you might learn some basics, how you can get started with font editing software, and where you might consider growing your skills after that. 
 
-This post reflects my bias and (some of) my personal experience, and it completely skips important topics like formal education, calligraphy and sketching, bezier drawing tips, and more. This article started as an email listing my favorite RoboFont extensions, and then I thought that it would be worth sharing publicly, instead. It is something which will evolve over time.
+This post reflects my bias and (some of) my personal experience, and it completely skips important topics like formal education, calligraphy and **sketching**, bezier drawing tips, and more. This article started as an email listing my favorite RoboFont extensions, and then I thought that it would be worth sharing publicly, instead. It is something which will evolve over time.
 
 ## General learning
 
@@ -40,7 +40,7 @@ Generally, Glyphs is more approacheable and feels more “Mac-like” as an app:
 
 I got started in Glyphs, and I now use RoboFont more. I use RoboFont largely because I like the way it encourages me to think about my workflow and consider what a given type family should be like. RoboFont is somewhat nicer for scripting (partly because it uses Python3), and its format is nicer for Git versioning. I also really like its approach to spacing. 
 
-To be honest, my initial motivation to use RoboFont was that most of my heroes in type use it. A couple years in, however, I have become more fluent in drawing with it, and I like it for many reasons. But, there are also many professionals who use Glyphs to make amazing type. Some studios even use both, though this takes some scripting to handle well. 
+To be honest, my initial motivation to use RoboFont was that most of my heroes in type use it. A couple years in, however, I have become more fluent in drawing with it, and I like it for many reasons – [here’s more on my favorite extensions & tools to use with RoboFont](../robofont-tips). But, there are also many professionals who use Glyphs to make amazing type. Some studios even use both, though this takes some scripting to handle well. 
 
 I have a lot of love for both apps!
 
