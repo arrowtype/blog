@@ -78,6 +78,7 @@ body {
   font-weight: var(--text-wght);
   color: var(--text);
   background-color: var(--white);
+  font-feature-settings: "ss19","ss20";
 }
 
 main {
@@ -601,6 +602,7 @@ img {
 code {
   background-color: var(--offwhite2);
   padding: 0 0.125em;
+  font-size: 0.95em;
 }
 
 @media (max-width: 600px) {
