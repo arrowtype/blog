@@ -25,40 +25,115 @@ Extensions are a big part of the RoboFont experience. Most RoboFont extensions c
 
 ## My favorite RoboFont extensions
 
-There are a number of RoboFont extensions that I find extremely useful:
+You can get more-detailed documentation about RoboFont extensions at [robofont.com/documentation/extensions/](https://robofont.com/documentation/extensions/).
 
-- **[Mechanic](https://robofontmechanic.com/)**, to handle extensions. It’s pretty essential, and allows you to easily find and install most of the other extensions listed here. Extensions mentioned but not available via Mechanic are linked to.
-- **Add Overlap**, to add corner overlaps to selected points. I like [Okay Type’s fork of this](https://github.com/okay-type/AddOverlap), which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.
-- **Add Segment Guideline**, a very simple but useful way to add a guideline to a selected segment
-- **Batch**, to help you build fonts from RoboFont
-- **[CornerTools](https://github.com/roboDocs/CornerTools)** – really nice tools to modify corners (read the readme on there for instructions)
-- **Glyph Browser**, to make it easy to add specific glyphs with correct unicodes & naming
-- **DesignSpace Edit**, to help set up designspace documents that you can build with FontMake
-- **EditThatNextMaster**, to help working with multiple related fonts
-- **Eyeliner**, to make it easy to set when a point is on a guide or metric line
-- **GlyphMirror**, an extension to draw mirrored versions of your drawing in a background visual, which makes it fast and easy to achieve symmetry. (This one is not yet available on Mechanic; get it from [its GitHub repo](https://github.com/RafalBuchner/glyphMirror)
-- **Properties**, to display distances in selected points, etc
-- **Overlay UFOs**, to display glyphs from the same or other open UFOs while you draw
-- **Outliner**, if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.
-- **Ramsay St**, to show related glyphs in the glyph view (though, I use the Space Center quite a bit more for this)
-- **ScalingEditTool**, a super-necessary tool to move points in a way that is less disruptive to attached curves
-- **[ScaleFast](https://github.com/roboDocs/ScaleFast)**, extremely awesome for scaling glyphs to speed up the process of making things like superiors & inferiors, small caps, legal symbols, and more
-- **Shape Tool**, to draw circles & rectangles
-- **SpeedPunk**, as one way to consider the smoothness of curves
-- **Theme Editor**, to make it easy to control your drawing theme
-- **word-o-mat**, to create strings to judge type in the Space Center
+However, it can be overwhelming to know which extensions are available, and which ones you actually want to use. After working for about three years almost daily in RoboFont, here are the RoboFont extensions that I find most useful.
 
-### Paid extensions
+### [Mechanic](https://robofontmechanic.com/), by Frederik Berlaen and Antonio Cavedoni
+
+Mechanic is an easy way to manage (most) RoboFont extensions. It’s pretty essential, as it allows you to easily find and install most of the other extensions listed here. Extensions mentioned below but not available via Mechanic are linked to, but the ones not linked to are simplest to find & install via Mechanic.
+
+### Add Overlap, by Alexandre Saumier Demers
+
+Adds corner overlaps to selected points. I like [Okay Type’s fork of this](https://github.com/okay-type/AddOverlap), which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.
+
+### Add Segment Guideline, by Jan Šindler
+
+This is a very simple but useful way to add a guideline to a selected segment. I’ve set it to the shortcut **Command /**, and I use it constantly – especially when drawing glyphs with diagonal strokes.
+
+### Batch, by Frederik Berlaen
+
+This is a simple UI to help you build fonts from RoboFont. I do almost all of my font builds with [FontMake](https://github.com/googlefonts/fontmake), but this is a whole extra skill to learn, and probably not necessary for every font project.
+
+### [CornerTools](https://github.com/roboDocs/CornerTools), by Loïc Sander
+
+Want to add a bunch of rounded corners or inktraps to a font? This is a fast way to do it! This is a super nice tool to modify corners. Read the project readme for instructions.
+
+### DesignSpace Edit, by Erik van Blokland
+
+This will help set up and edit correctly-formatted DesignSpace documents that you can build with Batch or FontMake, for font projects involving interpolation to create static instances and/or variable fonts. I often start here to make a new DesignSpace, then use a code editor to make edits more efficiently.
+
+### EditThatNextMaster, by Erik van Blokland
+
+A common early complaint about RoboFont is that it’s a bit tricky to move between sources for a multiple-master font project. This solves that by assigning a hotkey to move between views of open UFOs.
+
+### Eyeliner, by Ryan Bugden
+
+Simple but essential: this makes it easy to see when a point is on a guide or metric line.
+
+### Glyph Browser, by Erik van Blokland
+
+This is an essential tool to make it easy to add specific glyphs with correct unicodes & naming. It allows you to either search by typing a glyph name (e.g. `paragraph` or by character (e.g. `¶`).
+
+### [GlyphMirror](https://github.com/RafalBuchner/glyphMirror), by Rafał Buchner
+
+This draws mirrored versions of your drawing in a background visual, and these can be flipped in different ways and moved around. This makes it fast and easy to achieve and check symmetry, when you want it.
+
+### Properties, by Jérémie Hornus
+
+This displays distances between selected points, lengths of selected segments, and more.
+
+### Overlay UFOs, by David Jonathan Ross
+
+This displays glyphs from the same or other open UFOs while you draw. Helpful to draw and check related shapes within a single font (e.g. `n` and `h`), to check related shapes between different sources of a big project, and to have a guide for shaping in less-familiar characters.
+
+### Outliner, by Frederik Berlaen
+
+THis is helpful if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.
+
+### [Popup Tools](https://github.com/typesupply/popuptools), by Tal Leming
+
+This is a little pop-up panel that allows the alignment & distribution of selected nodes & contours. It’s something I’ve wanted maaaany times, especially as someone who has spent a lot of time in design tools like Figma, Sketch, & Illustrator, where I used these functions constantly. But, I got so used to drawing without it, I am not yet sure whether it will be something I use a lot. 
+
+### Ramsay St, by Frederik Berlaen
+
+This will show related glyphs in the glyph view, on either side of the glyph you’re currently drawing. I used it a lot at first, but I hardly ever use it now – I’ve moved to using the Space Center quite a bit more for this purpose.
+
+### ScalingEditTool, by Timo Klaavo
+
+This is a super-necessary tool to move points in a way that is less disruptive to attached curves. You kind of have to try it to understand it, but when I draw, I constantly go between the default Edit Tool and the Scaling Edit Tool. (In fact, the ease of shifting between tools with number keys is one reason I enjoy drawing in RoboFont! It’s weird at first, but much more ergonomic once you get used to it.)
+
+### [ScaleFast](https://github.com/roboDocs/ScaleFast), by Loïc Sander
+
+This one is extremely awesome for scaling glyphs to speed up the process of making things like superiors & inferiors, small caps, legal symbols, and more.
+
+### Shape Tool, by Frederik Berlaen
+
+It’s sort of hilarious that this isn’t built into RoboFont, but it also says something about the thinking behind RoboFont as a tool. This extension lets you draw circles/ellipses & squares/rectangles. It’s not built into RoboFont because you might want to tweak the circle-drawing algorhythm yourself, e.g. to draw the slightly-boxy “circles” necessary to make a geometric font that actually *looks* circular (I haven’t done this, but I probably should try it sometime).
+
+### [Space Station](https://github.com/typesupply/spacestation), by Tal Leming
+
+I only just discovered this one, but it’s a godsend. It enables you to allow a systematic approach to spacing. A really useful aspect of it is that it allows you to import/export simple configuration files, which have a simple syntax which makes it easy to say which glyphs should match the sidebearings and/or widths of which other glyphs. Instead of approaching the problem in a way that is too automated, it encourages you to think systematically about spacing, and is easy to use either purely as a reference/quality-control tool, or as a way to quickly cascade spacing adjustments through a whole font.
+
+### Speed Punk, by Yanone
+
+This is one way to consider the smoothness of curves.
+
+### Theme Manager, by Connor Davenport and Andy Clymer
+
+This makes it easy to control your drawing theme. I use it to switch between light & dark drawing modes (more info below), to keep my eyes happy at night.
+
+### word-o-mat, by Nina Stössinger
+
+This allows you to create strings with desired characters in the Space Center, in order to judge your glyphs in context. Really, really handy.
+
+## Paid extensions
 
 A few very good extensions are complex software in their own right, and these must be purhcased separately. This allows the developers to provide support and to maintain these products, and because these are pretty critical pieces of my workflow, I find that to be a very good deal.
 
-- MetricsMachine is extremely worthwhile, to help with kerning. If you get this, MM2SpaceCenter is a nice (free) add-on extension to give more context in the Space Center as you work on kerning.
-- Prepolator is very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process *a lot* more. It is amazingly helpful for an otherwise annoying task.
-- Skateboard is extremely helpful for planning & designing variable fonts.
+### MetricsMachine
 
-You can get more-detailed documentation about RoboFont extensions at [robofont.com/documentation/extensions/](https://robofont.com/documentation/extensions/).
+Extremely worthwhile, to help with kerning. If you get this, MM2SpaceCenter is a nice (free) add-on extension to give more context in the Space Center as you work on kerning.
 
-## Additional macOS apps that are espcially useful with RoboFont
+### Prepolator 
+
+Very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process *a lot* more. It is amazingly helpful for an otherwise annoying task.
+
+### Skateboard 
+
+Extremely helpful for planning & designing variable fonts.
+
+## Additional macOS apps that are especially useful with RoboFont
 
 [VS Code](https://code.visualstudio.com/) is an excellent code editor, file explorer, Git client, and terminal, all built into one elegant package. I nearly always have a project open in a VS Code workspace while I’m working in RoboFont. This is entirely optional, but if you’re doing a mix of scripting, font building, and Git versioning, it is so handy to one place to many all these technical bits.
 
