@@ -167,6 +167,6 @@ Generally, if you run into an unexpected issue, open the Output Window (Python >
 - Twitter has it’s problems, but you can also learn a lot from the people there. You can mention me, [@ArrowType](https://twitter.com/ArrowType), and I will either try to chip in or mention someone who might know more.
 - [Type Crit Crew](https://medium.com/typecritcrew/type-crit-crew-fdd180b881c) is a collective of type designers (myself included) who have made free office hours bookable by folks who are seeking type critique or advice. Getting critique and talking with experts can be a bit daunting, but folks here are super kind, and you can learn so much in this way!
 
-## Happy RoboFonting.
+## Happy RoboFonting!
 
 There is *a lot* more that could be said about RoboFont, but hopefully this post is able to help you learn a few useful things you didn’t already know. Enjoy!

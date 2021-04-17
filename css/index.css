@@ -572,10 +572,15 @@ img {
 }
 
 .content h1 a,
-.content h2 a,
-.content h3 a,
-.content h4 a {
+.content h2 a {
   font-weight: bold;
+}
+
+.content h3,
+.content h3 a,
+.content h4,
+.content h4 a {
+  font-weight: 550;
 }
 
 .content h2:before,
