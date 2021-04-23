@@ -477,7 +477,7 @@ a[href].direct-link:hover {
   font-weight: 800;
   letter-spacing: 0.0325em;
   text-transform: uppercase;
-  font-feature-settings: "ss01";
+  font-feature-settings: "ss01", "case";
   line-height: 1;
 }
 
