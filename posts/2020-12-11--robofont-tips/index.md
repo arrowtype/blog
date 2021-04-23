@@ -2,6 +2,7 @@
 title: Getting the most out of RoboFont
 description: Extensions & Tips for RoboFont
 date: 2020-12-11
+updated: 2021-04-17
 tags:
   - robofont
   - tools
@@ -19,11 +20,9 @@ Like most powerful software, RoboFont has a lot of functionality, and you will s
 
 As a new user, you will probably want to define the default character set for new fonts. [Here’s how](https://robofont.com/documentation/how-tos/defining-character-sets/). Glyph Browser, an extension mentioned below, further extends this part of the process.
 
-A really handy feature of RoboFont (especially for early-stage drawing & exploration) is the [Test Install](https://robofont.com/documentation/how-tos/using-test-install/), which allows you to quickly install the font you are working on, then immediately use it in other apps to test it out, make proofs, etc.
-
-Extensions are a big part of the RoboFont experience. Most RoboFont extensions can be found at https://robofontmechanic.com/.
-
 ## My favorite RoboFont extensions
+
+Extensions are a big part of the RoboFont experience. Most RoboFont extensions can be found on [Mechanic](https://robofontmechanic.com/).
 
 You can get more-detailed documentation about RoboFont extensions at [robofont.com/documentation/extensions/](https://robofont.com/documentation/extensions/).
 
@@ -148,12 +147,13 @@ Sometimes, it’s nice to work in the evening without blasting your eyes with a 
 1. You can use [this script](https://gist.github.com/arrowtype/268bb9db71231ca4fc39143760e94947) as a “Start Up Script” (see script for instructions) to automatically set a light/dark mode each time you start RoboFont, based on your macOS preferences. If you change the macOS preference and want to update light/dark mode, you can also run the script without restarting RoboFont.
 2. If you also want a dark mode for the Glyph View (if you want dark mode, you will want this too), you can also install the Theme Editor extension, then use my [“Dark Connor” theme](https://gist.github.com/arrowtype/f450d2c7cfbcea61ab7ad6c43af14932) or make your own.
 
-## Two drawing tips
+## Three drawing tips
 
 So much can be (and is) written about drawing type, but here are two things that aren’t as obvious:
 
 1. Most of the time, it is helpful to work with the Glyph View and the Space Center side-by-side. Use Divvy (mentioned above) to set up 50% of your screen with a glyph, and the other 50% with the Space Center, then adjust the glyph while keeping an eye on the glyph in the context of spacing strings, at different scales, and/or more! I didn’t do this for a long time, but then I picked up the tip from James Edmonson (OHno Type Co) on Instagram, and it changed my life.
 2. Get familiar with using the Transform (T) tool, along with the modifier keys. This can be very unintuitive at fist, but becomes pretty powerful over time. I will try to make a video or say more about this at some point, because it can be easy to miss but seriously helpful.
+3. A really handy feature of RoboFont (especially for early-stage drawing & exploration) is the [Test Install](https://robofont.com/documentation/how-tos/using-test-install/), which allows you to quickly install the font you are working on, then immediately use it in other apps to test it out, make proofs, etc. Sometimes, this won’t work if you have special feature syntax in the “Features” tab. I often use minimal to no features here, then add them in a separate build process. But, this varies a lot from project to project.
 
 ## Ask for help!
 

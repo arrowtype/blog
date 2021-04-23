@@ -68,6 +68,10 @@ html {
   html {
     font-size: 21px;
   }
+}'
+
+html {
+  font-feature-settings: "ss19","ss20";
 }
 
 html,
@@ -78,7 +82,6 @@ body {
   font-weight: var(--text-wght);
   color: var(--text);
   background-color: var(--white);
-  font-feature-settings: "ss19","ss20";
 }
 
 main {

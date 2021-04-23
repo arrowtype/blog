@@ -3,7 +3,8 @@ layout: layouts/base.njk
 templateClass: tmpl-post
 ---
 
-<span class="postlist-date title-date">Published <time  datetime="{{ date | htmlDateString }}">{{ date | longDate }}</time></span>
+<span class="postlist-date title-date">Published <time  datetime="{{ date | htmlDateString }}">{{ date | longDate }}</time>{%- if updated %} — Updated <time  datetime="{{ date | htmlDateString }}">{{ updated | longDate }}</time>{% endif %}</span>
+
 <h1>{{ title }}</h1>
 <div class="content">
   {{ content | safe }}
