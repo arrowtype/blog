@@ -544,6 +544,24 @@ img {
   max-width: 100%;
 }
 
+@media (min-width: 1000px) {
+  .tmpl-post p img {
+    width: calc(100vw - 2rem);
+    margin-left: calc( -1 * (100vw - var(--main-col))/2 + 1rem);
+    max-width: calc(100vw - 2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tmpl-post p img {
+    width: 200%;
+    margin-left: -50%;
+    max-width: 1600px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .content img,
   .content video {
