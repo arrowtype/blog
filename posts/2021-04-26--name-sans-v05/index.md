@@ -45,6 +45,12 @@ Working from more than a single blueprint has also revealed possibilities beyond
 
 And thus, I have sought to make a typeface that captures the best energy and spirit of the Subway mosaics, but which is genuinely useful to designers working in digital systems and graphic design. I hope that Name Sans may also get used in wayfinding (and certain decisions have been made to enable this), but it is designed first and foremost for the place I encounter typography the most: the Web.
 
+## Optical Sizing
+
+To understand Name Sans, it is essential to first have an idea of what **optical sizing** is.
+
+- [ ] write this
+
 ## Formal design qualities
 
 ### Geometry, but with nuance
@@ -55,7 +61,7 @@ A striking, obvious trait of the mosaics is that the circular letters get to be 
 
 “Keeping things circular” may sound like an extremely easy task. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly-circular letters are never actually just circles. Generally, `O` have to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom. Further complicating things, letters like `C` and `G` can’t just copy the curvature of the `O`, or they will look comparatively wide. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may tend to think of as “purely geometric”.
 
-![Futura, rotated](futura-rotated.svg)
+![Futura, rotated](futura-circles.svg)
 
 <!-- ![Futura, rotated](geometry-is-not-geometry.png) -->
 
@@ -65,7 +71,7 @@ If you try to draw a font and don’t compensate for optical issues, it will loo
 
 ![example of a naive approach to a “geometric” font](example-of-naive-geometry.svg)
 
-Some fonts prioritize geometric shaping more strictly than others, and that can work. In fact, there are probably even some fonts which skip basically all compensation, and they probably work well for certain things – I’m not dogmatic about my approach to geometry. But, such typefaces are accepting a trade-off. If a font cares more about strict geometry than other goals of shaping, they will inevitably look more decorative than things we are more used to reading. 
+Some fonts prioritize strict geometric shaping more strictly than others, and that can work. But, such typefaces are accepting a trade-off. If a font cares more about strict geometry than other goals like optical consistency, they will inevitably take on a decorative aesthetic.
 
 One important decision that has to be made along these lines: whether letters like `b d p q` are drawn to be circular, or given a bit of optical compensation. I find that if the `b d p q` are drawn with bowls that are too circular, a typeface can look cool, but sacrifices versatility. It will always look a little too art-deco or disco to be used for serious communication. Even though I love typefaces like [Avant Garde](https://en.wikipedia.org/wiki/ITC_Avant_Garde) and and many of the projects inspired by it, it basically always communicates some blend of nostalgia and whimsy. This is fine, but not useful for every project.
 
@@ -77,31 +83,37 @@ Even though I want to capture the charm of the Subway mosaics, charm is not only
 
 ### Optical compensations both exagerated and (almost) ignored
 
-There is so much that could be included to when describing the personality of the Subway mosaics, and I suspect that any given type designer might pick up on something different.
+There is so much that could be included to when describing the personality of the Subway mosaics – and so many divergent examples that could be highlighted. I suspect that any given type designer might pick up on something different.
+
+![Equitable Building Mosaic Signage from Wall Street Station](equitable-building.jpg)
 
 For me, though, a core of the personality is the way the signage handles optical compensation, beyond just how circles look.
 
-In almost every widely-used typeface, optical compensations tends to follow a predictable pattern (at least once you know what to look for). Horizontal strokes are a little thinner than vertical strokes. Joins get narrow to avoid looking too thick. The bottom “halves” of certain letters are a little bigger than the tops. As mentioned above, “circles” are never really circles. There are these and many, many more tricks that you discover while drawing type.
+In almost every widely-used typeface, optical compensations tend to follow a predictable pattern (at least once you know what to look for). Horizontal strokes are a little thinner than vertical strokes. Joins get narrow to avoid looking too thick. The bottom “halves” of certain letters are a little bigger than the tops. As mentioned above, “circles” are never really circles. There are these and many, many more tricks that you discover while drawing type.
 
 Meanwhile, the mosaic letters often either completely exaggerate or completely disregard the rules of optical compensation. For one, the tiles don’t tend to modulate thickness between vertical and horizontal strokes, because they are (more or less) square. But also, the `S` tends to exaggerate its form by being much wider on the bottom than at the top, while the `B` will contrast this with two bowls that completely match in size. The `E` has a middle bar that is super-short, while the `5` forgoes a typical slanted top-left.
 
 These quirks are some of what make the mosaics so endearing to me. In the context of mosaics, the lettering can get away with a lot of liberties that would look bad elsewhere.
 
-![Equitable Building Mosaic Signage from Wall Street Station](equitable-building.jpg)
+![Mosaic name tablet at Bowery](./bowery.jpg)
 
 In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics to make sense in a digital typeface. But, I’ve kept a taper in the `S`, I’ve kept vertical and horizontal strokes as nearly-monolinear as they could be, I’ve kept the `B` nearly vertically-symmetrical, I’ve kept a short mid bar on the `E`, and I’ve kept an upright `5`. I’ve kept certain whitespaces, like that of the `n`, exactly symmetrical (except in the lightest styles, where this starts to look bad). For every quirk in Name Sans, there are mosaic letters that led me to make that decision.
 
-- [ ] add diagram of `n` with symmetrical counter, and probably also other examples
+
+
+![Name Sans optical tricks](name_sans-optics.svg)
 
 As an extra note, the Subway mosaics can get away flaunting optical compensation to such a degree in part because they are large, and because they never really have that much text. In making Name Sans, I have found that the larger optical sizes can come closer to matching that stubborn approach, while smaller optical sizes work best if they introduce progressively more optical compensation. So, for example, the contrast given to vertical vs horizontal strokes is reduced in Display styles, but increased in Text styles. The circular letters are wider and more circular in Display styles.
 
-- [ ] Show different O and S between Text, Heading, and Display – maybe overlapped? Or measured in UPM units?
+![Name Sans optical tricks](name_sans-optical_sizing.svg)
 
 
 
 ### Sharpness
 
-A subtlety I love about the Subway mosaics is that diagonal vertices don’t simply have a one-stroke width, as you might achieve if you were trying to make a purely “elemental” letterform. Instead, they almost always increase the sharpness of vertices to something closer to about 2/3 stroke thickness. This gives vertices more sharpness, visually suggesting that diagonal letters are made in a single motion, rather than from separate strokes.
+A subtlety I love about the Subway mosaics is that diagonal vertices often don’t simply have a one-stroke width, as you might achieve if you were trying to make a purely “elemental” letterform. Instead, they almost always add a bit of sharpness, making vertices to something closer to about 2/3 stroke thickness. This gives vertices more sharpness, visually suggesting that diagonal letters are made in a single motion, rather than from separate strokes.
+
+Most sans-serifs that easily come to mind take one extreme or the other on their treatment of vertices. Broadly speaking, they either take the *Futura* route with razor-sharp points, or else the *Helvetica* route of prioritizing evenness of strokes, proportions, and color and not really considering vertices as a thing to preserve. I like that the mosaics take a practical approach that is a little bit sharp, but in a subtle way that doesn’t call attention to itself, and I have sought to preserve this in all but the very thickest weights of Name Sans.
 
 ![Mosiac name tablet for Ft. Hamilton Parkway](./hamilton.jpg)
 
@@ -109,31 +121,38 @@ A subtlety I love about the Subway mosaics is that diagonal vertices don’t sim
 
 ![Name Sans diagonals](./name_sans-AMNWV.svg)
 
-- [ ] TODO: research architectural lettering and say something about it here
-
-Almost all of the sans-serifs that easily come to mind take one extreme or the other on their treatment of vertices. Broadly speaking, they either take the *Futura* route with razor-sharp points, or else the *Helvetica* route of prioritizing evenness of strokes, proportions, and color and not really considering vertices as a thing to preserve. I like that the mosaics take a practical approach that is a little bit sharp, but in a subtle way that doesn’t call attention to itself, and I have sought to preserve this in all but the very thickest weights of Name Sans.
-
 It comes from a slightly different logical basis – less stroke-based on more abstracted – but I have extended this quality of sharpness to the meeting points (AKA “crotches”) of lowercase letters like `n m b d g p q`. Rather than trying to suggest a single, monolinear vertical stem on these letters, I have borrow the idea of sharpness to give a little more whitespace to these corners, while also avoiding needed to overly pinch the strokes connecting bowls. Would the original architects have done it this way? It’s hard to say – possibly not. But, this move allows the typeface to work together in a way that maintains a sense of sharpness, while also remaining a cohesive sense of each letter being a self-contained little entity that works smoothly with its neighbors.
 
-[image of n m b d g p q, pointing out the sharpness]
-### Rigidity & Fluidity
+Like every aspect of Name Sans, this approach to sharpness is adapted across optical sizes to be ideal at large, medium, and small sizes. As the `opsz` decreases, the stem sharpness is dialed up to preserve this visual feature.
+
+![Name Sans, sharpened stems](name_sans-sharpness_1.svg)
+
+It’s hard to put into academic terms, but this slight sharpening of stems also gives me a certain **feeling** of the sharp edges and slight imperfections of the ceramic tiles used in mosaics – even when (or especially when) it’s used for text.
+
+![Name Sans, sharpened stems](name_sans-sharpness_opsz.svg)
+
+
+### A blend of engineering & art
 
 Often times, the most striking feature of the Subway mosaics is how they seem to defy the physics you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve sometimes seems like the makers were just showing off. (This is even more striking in the serif styles of lettering, but that is a topic for another project.)
 
-![Mosaic name tablet at Fulton St](./fulton-st.png)
-
-- [ ] TODO: [Spring street] 
-
-- [ ] TODO: [8 for 8th ave - or maybe just a series of close-ups?]
+![Mosaic name tablet at Spring street](spring_st.jpg)
 
 But also, there are plenty of moments where the grid of tiles is embraced and where the rectangularity of tiles is allowed to guide the stroke they create. Flat-sided round letters are an obvious example of this. In a broader sense, the strict use of uppercase-only letters is another example of this – uppercase letters eschew many of the complex curvature and details that lowercase letters require.
 
-Without direct examples, I have had to invent a lowercase for Name Sans. One way I have tried to capture the idea of mosaic lettering is to embrace flat portions of letters, juxtaposed against other moments of fluidity, geometry, sharpness. Where curves would otherwise be “shallow” or present as optical corrections, I have allowed these to become completely flat, in a way that I think might be natural in tiled mosaics.
+![Mosaic name tablet at Fulton St](./fulton-st.jpg)
 
-- [ ] TODO: [image of `t r g f l a`]
+Without direct examples, I have had to invent a lowercase for Name Sans. In part, I have done so by looking for examples of similar styles of letters in sources from a roughly similar time as early Subway stations. One particular source of inspiration is the 1923 catalogue of the American Type Founders. This includes a few gothic typefaces which – though they aren’t the same as the Subway mosaics – share some similarities. Aside similar overall letterforms, strict geometry, and low-contrast strokes, a theme I picked up on were the flat portions of letters. These flat portions are placed where curves would normally be “shallow” or present as optical corrections, like the top of the `f` and bottom of the `t` and `y`.
+
+![ATF Inland Gothic](inland_gothic.jpg)
+![ATF Times Gothic](times_gothic.jpg)
+
+These flat portions remind me of the flat-sided letters used in some of the Subway mosaics, and made me think of how one might realisticaly approach shallow curves in tile mosaics. In Name Sans, I have embraced flat portions of letters, and juxtaposed these against other moments of fluidity, geometry, and sharpness.
+
+
+![Flat portions give Name Sans a mechanical appearance](name_sans-flats.svg)
 
 To an extent, I must admit, the decision to incorporate flat segments was also influenced by some of the vinyl Helvetica station signage. I love the way the `S` has a flat segment in its spine, and the way the `t` sometimes ends in a horizontal tail rather than its more-typical little upturn. I can’t really deny that Name Sans has modern influences, and this is another reason it is an interpretation rather than a revival.
-
 ### Obviousness
 
 What is “simplicity”? It’s a much-debated question, but – at least when it comes to type – is somewhere between impossible and counterproductive. Is “simplicity” an absolute minimum of shaping detail? Partially yes – but if taken too far, that definition might lead to letterforms without necessary optical compensations, which looks terrible in practice. Is “simplicity” repeating what we are already used to seeing and reading? Partially yes – but if taken too far, that definition would conclude that we already have exactly the type we need and would forgo the possibility of ever making things better than what we already have. 

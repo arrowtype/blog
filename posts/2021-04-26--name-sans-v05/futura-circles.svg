@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1931" height="517" viewBox="0 0 1931 517">
+  <defs>
+    <rect id="futura-circles-a" width="303" height="405"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect width="1931" height="517" fill="#222"/>
+    <text fill="#FFF" stroke="#FFF" stroke-width=".15" font-family="Futura-Medium, Futura" font-size="473.894" font-weight="400" letter-spacing="29.6">
+      <tspan x="45.74" y="436">OGCoa</tspan>
+    </text>
+    <g stroke="#FFA600" stroke-width="2" transform="translate(62.8 62)">
+      <circle cx="194.5" cy="195.5" r="126" fill="#FFA600" fill-opacity=".15"/>
+      <circle cx="195" cy="195" r="195"/>
+    </g>
+    <g stroke="#FFA600" stroke-width="2" transform="translate(1303 194)">
+      <circle cx="128.669" cy="129.331" r="60.5" fill="#FFA600" fill-opacity=".15"/>
+      <circle cx="129" cy="129" r="129"/>
+    </g>
+    <g stroke="#FFA600" stroke-width="2" transform="translate(1614 194)">
+      <circle cx="128.669" cy="129.331" r="60.5" fill="#FFA600" fill-opacity=".15"/>
+      <circle cx="129" cy="129" r="129"/>
+    </g>
+    <g stroke="#FFA600" stroke-width="2" transform="translate(515.5 62)">
+      <circle cx="194.5" cy="195.5" r="126" fill="#FFA600" fill-opacity=".15"/>
+      <circle cx="195" cy="195" r="195"/>
+    </g>
+    <g transform="translate(931.8 55)">
+      <mask id="futura-circles-b" fill="#fff">
+        <use xlink:href="#futura-circles-a"/>
+      </mask>
+      <g stroke="#FFA600" stroke-width="2" mask="url(#futura-circles-b)">
+        <g transform="translate(13 7)">
+          <circle cx="194.5" cy="195.5" r="126" fill="#FFA600" fill-opacity=".15"/>
+          <circle cx="195" cy="195" r="195"/>
+        </g>
+      </g>
+    </g>
+    <text fill="#FFA600" font-family="NameSansText-Medium, Name Sans Text" font-size="13" font-weight="400">
+      <tspan x="1589.653" y="78">Futura Medium as pre-installed on macOS,</tspan> <tspan x="1633.008" y="97">compared against geometric circles </tspan>
+    </text>
+  </g>
+</svg>

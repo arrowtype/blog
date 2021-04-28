@@ -552,6 +552,11 @@ img {
     margin-top: 1rem;
     margin-bottom: 1rem;
   }
+
+  p img + p img {
+    margin-top: 0;
+    border: red 10px solid;
+  }
 }
 
 @media (min-width: 1600px) {
@@ -565,7 +570,7 @@ img {
 @media (prefers-color-scheme: dark) {
   .content img,
   .content video {
-    opacity: 0.75;
+    opacity: 0.875;
     transition: opacity 0.25s;
   }
   .content img:hover,
