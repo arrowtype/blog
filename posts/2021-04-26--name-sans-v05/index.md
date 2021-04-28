@@ -1,5 +1,5 @@
 ---
-title: What’s new in Name Sans v0.5
+title: Name Sans, So Far
 description: A reflection on where Name Sans has come so far, and where it’s headed.
 date: 2021-04-27
 tags:
@@ -53,19 +53,23 @@ A striking, obvious trait of the mosaics is that the circular letters get to be 
 
 ![cortland street](name_sans_inspo-cortland.jpg)
 
-“Keeping things circular” may sound like an extremely easy task. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly-circular letters are never actually just circles. This is true even in the brilliantly-named [Circular, by Laurenz Brunne and Lineto](https://lineto.com/typefaces/circular) and in the classics like Futura. Generally, `O` have to be just a little less wide than tall. Further complicating things, letters like `C` and `G` can’t just copy the curvature of the `O`, or they will look comparatively wide. You can start to see these differences if you start rotating fonts and looking at them sideways.
+“Keeping things circular” may sound like an extremely easy task. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly-circular letters are never actually just circles. Generally, `O` have to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom. Further complicating things, letters like `C` and `G` can’t just copy the curvature of the `O`, or they will look comparatively wide. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may tend to think of as “purely geometric”.
 
-![Futura, rotated](geometry-is-not-geometry.png)
+![Futura, rotated](futura-rotated.svg)
+
+<!-- ![Futura, rotated](geometry-is-not-geometry.png) -->
 
 Of course, geometric type is not meant to **be** geometric – it’s meant to **look** geometric, in context. The way that is achieved will vary from font to font, the eyes of the individual drawing it, and the intended size & context of the font. In drawing Name Sans, one thing I realized was that letters which look “circular” at a large scale, in short strings of text, look overly-wide in smaller, longer texts. It might be that our eyes are just used to reading certain fonts, and it may be an effect of our eyes rapidly moving horizontally. Either way, when you’re reading, anything close to an actual circle will look oblong, so Name Sans accounts for this. Display sizes attempt to look circular at a large scale, while Text sizes attempt to look geometric-but-not-distractingly-so at smaller scales. 
 
 If you try to draw a font and don’t compensate for optical issues, it will look bad. Circles will look diamond-shaped, horizontal strokes will appear to be too thick, and places where strokes merge will look overly-thick. Correcting for the issues caused by how our eyes perceive type is called *optical compensation*. It’s an area of type design that is not always intuitive at first, but something which is essential to learn and engage with when making type.
 
-![example of a naive approach to a “geometric” font](example-of-naive-geometry.png)
+![example of a naive approach to a “geometric” font](example-of-naive-geometry.svg)
 
-Some fonts prioritize geometric shaping more strictly than others, and that is okay. In fact, there are probably even some fonts which skip basically all compensation, and they probably work well for certain things. But, these typefaces are accepting a trade-off. If a font cares more about strict geometry than other goals of shaping, they will inevitably look more decorative than things we are more used to reading. 
+Some fonts prioritize geometric shaping more strictly than others, and that can work. In fact, there are probably even some fonts which skip basically all compensation, and they probably work well for certain things – I’m not dogmatic about my approach to geometry. But, such typefaces are accepting a trade-off. If a font cares more about strict geometry than other goals of shaping, they will inevitably look more decorative than things we are more used to reading. 
 
 One important decision that has to be made along these lines: whether letters like `b d p q` are drawn to be circular, or given a bit of optical compensation. I find that if the `b d p q` are drawn with bowls that are too circular, a typeface can look cool, but sacrifices versatility. It will always look a little too art-deco or disco to be used for serious communication. Even though I love typefaces like [Avant Garde](https://en.wikipedia.org/wiki/ITC_Avant_Garde) and and many of the projects inspired by it, it basically always communicates some blend of nostalgia and whimsy. This is fine, but not useful for every project.
+
+![Letters n b d p q o from Name Sans](name_sans-bdpqo.svg)
 
 Therefore, I have drawn letters like `b d p q` to match the visual average width of `n` and `o`, rather than to look circular. This, in turn, helps to establish a visual rhythm that doesn’t call too much attention to itself.
 
@@ -99,9 +103,11 @@ As an extra note, the Subway mosaics can get away flaunting optical compensation
 
 A subtlety I love about the Subway mosaics is that diagonal vertices don’t simply have a one-stroke width, as you might achieve if you were trying to make a purely “elemental” letterform. Instead, they almost always increase the sharpness of vertices to something closer to about 2/3 stroke thickness. This gives vertices more sharpness, visually suggesting that diagonal letters are made in a single motion, rather than from separate strokes.
 
-[A V N M W mosaics]
+![Mosiac name tablet for Ft. Hamilton Parkway](./hamilton.jpg)
 
-[A V N M W from Name Sans]
+![H&M Tunnels to New Jersey](hm-tunnels.jpg)
+
+![Name Sans diagonals](./name_sans-AMNWV.svg)
 
 - [ ] TODO: research architectural lettering and say something about it here
 
@@ -113,6 +119,8 @@ It comes from a slightly different logical basis – less stroke-based on more a
 ### Rigidity & Fluidity
 
 Often times, the most striking feature of the Subway mosaics is how they seem to defy the physics you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve sometimes seems like the makers were just showing off. (This is even more striking in the serif styles of lettering, but that is a topic for another project.)
+
+![Mosaic name tablet at Fulton St](./fulton-st.png)
 
 - [ ] TODO: [Spring street] 
 
