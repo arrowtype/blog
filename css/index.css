@@ -84,6 +84,10 @@ body {
   background-color: var(--white);
 }
 
+svg text {
+  font-family: var(--sans);
+}
+
 main {
   min-height: calc(100vh - var(--header) - var(--footer));
   padding: 3rem 1rem 3rem;

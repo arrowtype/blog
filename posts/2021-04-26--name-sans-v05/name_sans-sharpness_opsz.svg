@@ -10,13 +10,13 @@
     <text fill="#FFF" font-family="NameSansText-Bold, Name Sans Text" font-size="23.707" font-weight="bold">
       <tspan x="74.207" y="466.441">Mosaics have a certain sense of sharpness </tspan>
     </text>
-    <text fill="#FFA600" font-family="NameSansText-Medium, Name Sans Text" font-size="15.84" font-weight="400" letter-spacing="1.493">
+    <text fill="#FFA600" font-size="15.84" font-weight="400" letter-spacing="1.493">
       <tspan x="74.466" y="83.905">NAME SANS DISPLAY BOLD</tspan>
     </text>
-    <text fill="#FFA600" font-family="NameSansText-Medium, Name Sans Text" font-size="15.84" font-weight="400" letter-spacing="1.493">
+    <text fill="#FFA600" font-size="15.84" font-weight="400" letter-spacing="1.493">
       <tspan x="74.466" y="268.109">NAME SANS STANDARD BOLD</tspan>
     </text>
-    <text fill="#FFA600" font-family="NameSansText-Medium, Name Sans Text" font-size="15.84" font-weight="400" letter-spacing="1.493">
+    <text fill="#FFA600" font-size="15.84" font-weight="400" letter-spacing="1.493">
       <tspan x="74.466" y="417.969">NAME SANS TEXT BOLD</tspan>
     </text>
   </g>
