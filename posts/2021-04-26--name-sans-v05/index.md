@@ -102,7 +102,7 @@ Like every aspect of Name Sans, this approach to sharpness is adapted across opt
 
 It’s hard to put into academic terms, but this slight sharpening of stems also gives me a certain **feeling** of the sharp edges and slight imperfections of the ceramic tiles used in mosaics – even when (or especially when) it’s used for text.
 
-![Name Sans, sharpened stems](name_sans-sharpness_opsz.svg)
+![Name Sans, sharpness at various optical sizes](name_sans-sharpness_opsz.svg)
 
 ## Optical compensations both exagerated and (almost) ignored
 

@@ -1,9 +1,6 @@
 @font-face {
   font-family: 'NameSansVF';
   font-weight: 1 1000;
-  /* for local development */
-  /* src: url("name_sans-variable.woff2");  */
-  /* deploy */
   src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
   font-display: swap;
 }
