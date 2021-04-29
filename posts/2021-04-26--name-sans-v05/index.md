@@ -19,9 +19,11 @@ It isn’t always (if ever?) obvious what a project should be from the outset. R
 
 So what is Name Sans?
 
-Well, one simple answer is that it’s the font you’re reading right now – but it’s also much more than that.
+Well, one simple answer is that it’s the font you’re reading right now – but it’s also much more than that. Another simple answer is that it’s a 36-style font family with variable axes for Weight and Optical Sizing. But it’s also more than **that.**
 
-As the tag line says, Name Sans is *a modern interpretation of the mosaic name tablets of the NYC Subway.*
+![Font styles of Name Sans](./name-instances.svg)
+
+As the tag line says, Name Sans is *a modern interpretation of the mosaic name tablets of the NYC Subway.* It’s a project I have been imagining and sketching since moving to NYC in 2014 and becoming a daily commuter on the NYC Subway – though I was only really been able to dive into it around the end of 2019.
 
 ![various name tablets in the NYC Subway system](./name_sans_v05-mosaics.png)
 
@@ -32,8 +34,6 @@ When I first had the idea for this project as a new commuter in NYC about 5 year
 At one point, early on, I mentioned to an experienced type designer that I was thinking of making a typeface that would be a revival of the Subway mosaics. “Impossible!” they said, “what would you even revive?” At first I was taken aback and thought I could prove them wrong, but with time, I have understood what they meant.
 
 Name Sans is not a *revival*, and it couldn’t be. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by [several separate companies over many decades](https://en.wikipedia.org/wiki/New_York_City_Subway#History), with projects led by several different architects and carried out by different construction crews. Type revivals are recreations of fonts that were previously made with a different technology, like when a digital font is made to recreate the shape of letters original cast in lead for letterpress printing. The subway mosaics are a loose system of architectural lettering – not a singular typeface which one could “revive.”
-
-(Sidenote: if any transit archivists are reading this and know of specific blueprints or specifications that I might be interested in seeing, I’d be super appreciative to learn more or to be proven wrong! The [online archives](https://nytm.pastperfectonline.com/) are great, but understandably don’t contain images for every possible item. A [2019 exhibit](https://www.nytransitmuseum.org/program/changing-signs-changing-times-a-history-of-wayfinding-in-transit/eakhu-fxuaigwz_/) did include a few wonderful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19, but I would very much like to see more!)
 
 ![Equitable Building Mosaic Signage from Wall Street Station](equitable-building.jpg)
 
@@ -47,11 +47,19 @@ Working from more than a single blueprint has also revealed possibilities beyond
 
 And thus, I have sought to make a typeface that captures the best energy and spirit of the Subway mosaics, but which is genuinely useful to designers working in digital systems and graphic design. I hope that Name Sans may also get used in wayfinding (and certain decisions have been made to enable this), but it is designed first and foremost for the place I encounter typography the most: the Web.
 
+(Sidenote: if any transit archivists or superfans are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more or to be proven wrong! The [online archives](https://nytm.pastperfectonline.com/) are great, but understandably don’t contain images for every possible item. A [2019 exhibit](https://www.nytransitmuseum.org/program/changing-signs-changing-times-a-history-of-wayfinding-in-transit/eakhu-fxuaigwz_/) did include a few wonderful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more!)
+
 ## Optical Sizing
 
 To understand Name Sans, it is essential to first have an idea of what **optical sizing** is.
 
 - [ ] write this
+
+- [ ] Standard has proportions and letter spacing similar to other common sans-serif fonts, so if you don’t want to mess with optical sizes, you can just use this one
+
+- [ ] Display calls back to super tight-fitting helvetica, as used ... when? It has stricter geometry and more monolinear strokes to look dramatic at large sizes.
+
+- [ ] Text has more-generous letter spacing, more-compact proportions, and exagerated details in order to optimize rhythm and readability at smaller sizes, while keeping the personality of the family intact.
 ## Geometry, but with nuance
 
 A striking, obvious trait of the mosaics is that the circular letters get to be *circles.* In type, a circle never really looks like a circle, but I’ve iterated a lot to get as close as possible to a circular basis for letters like `O C G Q o c` – and keep things looking circular, in the context of type.
