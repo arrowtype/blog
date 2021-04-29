@@ -113,11 +113,11 @@ a[href] {
 
 em {
   font-weight: 700;
+  font-style: normal;
 }
 
 header {
   border-bottom: 1px solid var(--lightgray);
-  
   padding: 1rem;
   height: var(--header);
   z-index: 100;

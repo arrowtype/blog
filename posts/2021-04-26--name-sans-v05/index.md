@@ -251,14 +251,14 @@ The number `5` has a totally-vertical top-left part in many mosaics, so this is 
 
 Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I am finding the right way to balance things into a varied but cohesive type family.
 
-## There’s so much more I could say
+## There’s so much more, but
 
 Like Name Sans itself, this blog post is really only a partially-complete draft. There is so much more I could say about the typeface, the ideas I have tried and abandoned, and the things it can do. Some of these are better outlined in the PDF Specimen and in the slides on Future Fons. But also, I am still in the midst of discovering what Name Sans is! To me, that’s the fun of it.
 
-There are a few things I am pretty certain of: I will be adding Italics along with a more typographic goodies, and I will be making continued refinements to shaping, spacing, and kerning.
+There are a lot of things I know at this point: I am working on Italics along with a few more typographic features, and I will continue to refine shaping, spacing, and kerning across the project.
 
-I hope to finish and fully release a `1.0` in the coming months. When I do, I plan to also have a more-refined versions of this essay. So, if you have any questions for me, please me know!
+I hope to finish and fully release a `1.0` in the coming months. When I do, I plan to also have a more-refined versions of this essay. So, if you managed to actually read this post and have any questions for me, please me know!
 
 If you’ve already picked up a license for Name Sans, I really appreciate you coming along for the journey! If you haven’t, it’s still at a greatly-reduced price while it’s in pre-release (if you do the math, it’s currently about $4 per style). By [purchasing a license through Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans), you will be securing future updates for free, for life.
 
-I hope you consider picking up a license, and I hope you reach out to me when you put it to use! I love to see when people have put my fonts to work – it really makes this whole, occasionally-ridiculous effort feel worthwhile.
+I hope you consider picking up a license, and I hope you reach out to me when you put it to use! I love to see when people have put my fonts to work – it really makes this whole effort feel worthwhile.
