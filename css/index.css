@@ -545,8 +545,18 @@ img {
   max-width: 100%;
 }
 
+img.main-col {
+  display: block;
+  width: 100%;
+  max-width: var(--main-col);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 @media (min-width: 1000px) {
-  .tmpl-post p img {
+  .tmpl-post p img:not(.main-col) {
     width: calc(100vw - 2rem);
     margin-left: calc( -1 * (100vw - var(--main-col))/2 + 1rem);
     max-width: calc(100vw - 2rem);
