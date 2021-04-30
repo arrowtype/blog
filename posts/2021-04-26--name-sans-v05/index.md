@@ -53,6 +53,16 @@ And thus, I have sought to make a typeface that captures the best energy and spi
 
 ## A wide range of Weights & Optical Sizing
 
+### Weight
+
+It’s fairly self-evident what it means for a typeface to offer a range of weights. If a font has just one weight, it is fairly limited in how it can be used, and will almost always need to be supported with others fonts. But, if a typeface offers even just two weights, it dramatically opens up what you can use it for. These benefits increase with further granularity.
+
+![](name_sans-wght_a.svg)
+
+Most designers would reasonably probably point out that there is a point of diminishing returns. Once you have styles that are light enough and bold enough, with a few in-between, you don’t really need more. Additionally, there may be a paradox of choice: if a typeface has too many options, it might become hard to pick the ones you want. These are valid views. From a creator’s perspective, too, it is important to draw lines of scope so you can provide adequate focus to the work that falls within that scope.
+
+For Name Sans, I *have* of course drawn lines of my project scoping – but I have also made a concerted effort to push those lines beyond what a typical project may impose. In my experience as a designer, there are always times when I wish a typeface would go *just a little bit bolder,* or just a little bit lighter. A goal of Name Sans is to provide the most utility and versatility to as many designers as possible. So, just as a designer may select a computer with plenty of “head room” in its RAM and storage – even if they may not use those full limits most of the time – there is value if a typeface can do more than most people need, on average.
+
 <!-- SVG to allow css variable -->
 <svg class="main-col" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1839 1761">
   <g fill="none" fill-rule="evenodd" transform="translate(35.177 .155)">
@@ -63,16 +73,29 @@ And thus, I have sought to make a typeface that captures the best energy and spi
   </g>
 </svg>
 
+A technical explaination of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure modern digital fonts). These numbers are open to interpretation on individual type designers, but for Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. drawn with stems of just 2 units on this grid – just barely enough to allow similar thicknesses in the straight, diagonal, and curves strokes that make the typeface. Meanwhile, the **Display Ultra** is drawn to be as thick as possible, while still preserving my subjective understanding of essense of the Name Sans design.
 
-To understand Name Sans, it is essential to first have an idea of what **optical sizing** is.
+- [ ] TODO: add animation of arrows or numbers
 
-- [ ] write this
+The Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type effects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This is especially useful in characters which maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
 
-- [ ] Standard has proportions and letter spacing similar to other common sans-serif fonts, so if you don’t want to mess with optical sizes, you can just use this one
+### Optical Sizing
 
-- [ ] Display calls back to super tight-fitting helvetica, as used ... when? It has stricter geometry and more monolinear strokes to look dramatic at large sizes.
+To understand Name Sans, it is essential to first have an idea of what **optical sizing** is. The optical sizes of a typeface are made to preserve its design intent at different sizes.
 
-- [ ] Text has more-generous letter spacing, more-compact proportions, and exagerated details in order to optimize rhythm and readability at smaller sizes, while keeping the personality of the family intact.
+![Name Sans Optical Sizes](name_sans-opsz_a.svg)
+
+This is fairly similar to font weight, which are made to preserve the design of a typeface at different relative levels of thickness or density. And, like font weight, there is no single answer to how every typeface should be designed for different sizes. Generally, though, there are some common strategies:
+
+- Spacing usually needs to be more generous for smaller sizes, or letters will look uncomfortably close. Conversely, spacing usually needs to be tighter at larger sizes, or letters may appear to be drifting apart. In fonts with optical sizes, the designer using the font must manually apply set tracking ideal for a given size. In fonts with optical size (especially variable fonts with an `opsz` axis, like Name Sans Variable) this is taken care of by the font itself.
+- Somewhat similar to spacing, kerning can be more “aggressive” in larger sizes, but this will cause problems in text. In Name Sans, the height of lowercase letters is subtly adjusted for larger styles to allow nice-n-tight kerning in words like “Tokyo” and “Type”.
+- Notable visual aspects of a typeface are often emphasized at larger sizes and moderated at smaller sizes. In a high-contrast serif design, this might mean that thin strokes get thinner for larger sizes and thicker to remain visible at smaller sizes. Similarly, in Name Sans, the ends of the weight range are less extreme for smaller sizes – the Text Hairline & Ultra will remain legible at smaller point sizes than their Display counterparts. More specifics are detailed below.
+- Certain details must be emphasized to hold up at smaller sizes. In a serif design, serifs typically need to be thickened to hold up in text. In Name Sans, the overall “sharpness” of the design is increased for small sizes, as is exemplified by notches in stems and flat portions of letters (more on this below, as well).
+
+Note: because smaller optical sizes require additional letter spacing and sometimes have larger lowercase letters, they often result in slightly wider line lengths than display sizes. This is **not** equivalent to a Width axis. If a given space is too small to fit with text set in a Text style, you are better off making the font size smaller than you would be by changing the optical size to a Standard or Display style.
+
+Extremes get a lot of focus in the discussion of optical sizing, because they help illustrate design features that might otherwise go unnoticed. However, what happens in the middle is just as important, if not more so. Name Sans **Standard**, then, seeks to roughly correspond to the sizing, spacing, and proportions of common sans-serif typefaces. If you don’t want to think about optical sizes and just want to do typography as usual, this “Standard” option is designed to work well for you. But, I hope you will consider branching out when projects allow for it – your typography will benefit from the added nuance!
+
 ## Geometry, but with nuance
 
 A striking, obvious trait of the mosaics is that the circular letters get to be *circles.* In type, a circle never really looks like a circle, but I’ve iterated a lot to get as close as possible to a circular basis for letters like `O C G Q o c` – and keep things looking circular, in the context of type.
