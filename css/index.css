@@ -8,6 +8,7 @@
 :root {
   --accent: hsl(260deg, 100%, 58%);
   --accent2: hsl(28deg, 100%, 57%);
+  --namesans-accent: #FF0000;
   --accent-faded: hsl(277deg, 100%, 50%, 74%);
   --accent2-faded: hsl(28deg, 100%, 50%, 60%);
   --lightgray: #e0e0e0;
@@ -32,6 +33,7 @@
   :root {
     --accent: hsl(260, 100%, 66%);
     --accent2: hsl(28deg, 100%, 57%);
+    --namesans-accent: #FBBC00;
     --accent-faded: hsla(260deg, 100%, 75%, 0.75);
     --accent2-faded: hsla(28deg, 100%, 57%, 0.6);
     --lightgray: hsl(210, 5%, 40%);
@@ -263,7 +265,7 @@ li ol {
 }
 
 .postlist-date.title-date {
-  font-feature-settings: "ss08";
+  font-feature-settings: "ss01","ss08";
 }
 
 .postlist-link {
@@ -545,7 +547,8 @@ img {
   max-width: 100%;
 }
 
-img.main-col {
+img.main-col,
+svg.main-col {
   display: block;
   width: 100%;
   max-width: var(--main-col);
@@ -556,8 +559,9 @@ img.main-col {
 }
 
 @media (min-width: 1000px) {
-  .tmpl-post p img:not(.main-col) {
+  .tmpl-post p img {
     width: calc(100vw - 2rem);
+    height: auto;
     margin-left: calc( -1 * (100vw - var(--main-col))/2 + 1rem);
     max-width: calc(100vw - 2rem);
     margin-top: 1rem;
