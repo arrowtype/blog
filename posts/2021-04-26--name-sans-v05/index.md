@@ -92,9 +92,17 @@ This is fairly similar to font weight, which are made to preserve the design of 
 - Notable visual aspects of a typeface are often emphasized at larger sizes and moderated at smaller sizes. In a high-contrast serif design, this might mean that thin strokes get thinner for larger sizes and thicker to remain visible at smaller sizes. Similarly, in Name Sans, the ends of the weight range are less extreme for smaller sizes – the Text Hairline & Ultra will remain legible at smaller point sizes than their Display counterparts. More specifics are detailed below.
 - Certain details must be emphasized to hold up at smaller sizes. In a serif design, serifs typically need to be thickened to hold up in text. In Name Sans, the overall “sharpness” of the design is increased for small sizes, as is exemplified by notches in stems and flat portions of letters (more on this below, as well).
 
-Note: because smaller optical sizes require additional letter spacing and sometimes have larger lowercase letters, they often result in slightly wider line lengths than display sizes. This is **not** equivalent to a Width axis. If a given space is too small to fit with text set in a Text style, you are better off making the font size smaller than you would be by changing the optical size to a Standard or Display style.
+You can start to gain an understanding of how a typeface handles optical sizing by placing different optical-size styles at the same scale. In Name Sans, this highlights the change of spacing, kerning, proportions, and shaping.
+
+![Optical Sizing Comparison](name_sans-triborough_opsz.svg)
+
+Of course, different optical sizs aren’t really meant to be compared at the same font sizes, or even really with the exact same words. It is generally much more acccurate to look at different optical sizes in their comparative sizes. For Name Sans, Display is designed for 96pt, Standard is designed for 24pt, and Text is designed for 12pt. Type is a little less exact than that, however, because there are many factors beyond the control of the font size (e.g. the distance of the viewer will change [the perceived font size](https://sizecalc.com/), and the physical size of fonts isn’t yet standardized across operating systems & apps). So, at the end of the day, even though optical sizing can automatically help designers to achieve more nuanced typography, some amount of contextual judgement will often be important.
+
+<img class="main-col" src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison, at different sizes">
 
 Extremes get a lot of focus in the discussion of optical sizing, because they help illustrate design features that might otherwise go unnoticed. However, what happens in the middle is just as important, if not more so. Name Sans **Standard**, then, seeks to roughly correspond to the sizing, spacing, and proportions of common sans-serif typefaces. If you don’t want to think about optical sizes and just want to do typography as usual, this “Standard” option is designed to work well for you. But, I hope you will consider branching out when projects allow for it – your typography will benefit from the added nuance!
+
+**An added note:** because smaller optical sizes require additional letter spacing and sometimes have larger lowercase letters, they often result in slightly wider line lengths than display sizes. This is **not** equivalent to a Width axis. If a given space is too small to fit with text set in a Text style, you are better off making the font size smaller than you would be by changing the optical size to a Standard or Display style.
 
 ## Geometry, but with nuance
 
@@ -118,9 +126,19 @@ Some fonts prioritize strict geometric shaping more strictly than others, and th
 
 One important decision that has to be made along these lines: whether letters like `b d p q` are drawn to be circular, or given a bit of optical compensation. I find that if the `b d p q` are drawn with bowls that are too circular, a typeface can look cool, but sacrifices versatility. It will always look a little too art-deco or disco to be used for serious communication. Even though I love typefaces like [Avant Garde](https://en.wikipedia.org/wiki/ITC_Avant_Garde) and and many of the projects inspired by it, it basically always communicates some blend of nostalgia and whimsy. This is fine, but not useful for every project.
 
-![Letters n b d p q o from Name Sans](name_sans-sharpness_1_outlined.svg)
+<!-- ![Letters n b d p q o from Name Sans](name_sans-nbdpqo.svg) -->
+
+
 
 Therefore, I have drawn letters like `b d p q` to match the visual average width of `n` and `o`, rather than to look circular. This, in turn, helps to establish a visual rhythm that doesn’t call too much attention to itself.
+
+![Comparative proportions of n, d, o in Name Sans Display](name_sans-second_av-display.svg)
+
+In the Display sizes, the `o` can be very circular, but in Text, the `o` must be made much more similar to the width of `n` to avoid an excessively-wide appearance in running text.
+
+![Comparative proportions of n, d, o in Name Sans Text](name_sans-second_av-text.svg)
+
+<!-- ![Letters n b d p q o from Name Sans](name_sans-nbdpqo-light.svg) -->
 
 Even though I want to capture the charm of the Subway mosaics, charm is not only achieved through decoration. Instead, I seek to create something which balances geometry and nuance. I want to create something that can offer genuine utility in a wide range of applications. So, in Name Sans, the not-quite-circularity is just as critical as the circularity.
 
@@ -169,9 +187,7 @@ These quirks are some of what make the mosaics so endearing to me. In the contex
 
 In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics to make sense in a digital typeface. But, I’ve kept a taper in the `S`, I’ve kept vertical and horizontal strokes as nearly-monolinear as they could be, I’ve kept the `B` nearly vertically-symmetrical, I’ve kept a short mid bar on the `E`, and I’ve kept an upright `5`. I’ve kept certain whitespaces, like that of the `n`, exactly symmetrical (except in the lightest styles, where this starts to look bad). For every quirk in Name Sans, there are mosaic letters that led me to make that decision.
 
-
-
-![Name Sans optical tricks](name_sans-optics.svg)
+![Name Sans optical tricks](name_sans-optical_quirks.svg)
 
 As an extra note, the Subway mosaics can get away flaunting optical compensation to such a degree in part because they are large, and because they never really have that much text. In making Name Sans, I have found that the larger optical sizes can come closer to matching that stubborn approach, while smaller optical sizes work best if they introduce progressively more optical compensation. 
 
@@ -179,7 +195,7 @@ Letters which look circular at a large scale look overly-wide in smaller, longer
 
 Similarly, many of the optical conventions bucked by Name Sans Display are normalized a little bit in smaller optical sizes: the `S` and `B` become a bit more traditionally balanced, strokes gain a little bit more contrast, the `5` gets a bit of a slant, and so on. This makes Text sizes a little more familiar to read, while still keeping things lively.
 
-![Name Sans optical tricks](name_sans-optical_sizing.svg)
+<!-- ![Name Sans optical tricks](name_sans-optical_sizing.svg) -->
 
 ## Blending Rigidity & Fluidity
 
