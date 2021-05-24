@@ -548,6 +548,7 @@ img {
 }
 
 img.main-col,
+figure.main-col,
 svg.main-col,
 video.main-col {
   display: block;
@@ -557,6 +558,14 @@ video.main-col {
   margin-right: auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+figure img, figure video {
+  margin-bottom: 1rem;
+}
+
+video {
+  max-width: 100%;
 }
 
 @media (min-width: 1000px) {
@@ -641,6 +650,26 @@ video.main-col {
   .content h3,
   .content h4 {
     margin-top: 2em;
+  }
+}
+
+/* lazy image captions */
+.content img + br + em,
+.content figcaption {
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--gray);
+  display: inline-block;
+  /* padding-bottom: 2rem; */
+  transform: translateY(-0.5rem);
+  max-width: 50ch;
+  letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 1000px) {
+  .content img + br + em,
+  .content figcaption {
+    transform: none;;
   }
 }
 
