@@ -548,7 +548,8 @@ img {
 }
 
 img.main-col,
-svg.main-col {
+svg.main-col,
+video.main-col {
   display: block;
   width: 100%;
   max-width: var(--main-col);

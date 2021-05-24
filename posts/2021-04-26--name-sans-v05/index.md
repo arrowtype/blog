@@ -75,7 +75,75 @@ For Name Sans, I *have* of course drawn lines of my project scoping – but I ha
 
 A technical explaination of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure modern digital fonts). These numbers are open to interpretation on individual type designers, but for Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. drawn with stems of just 2 units on this grid – just barely enough to allow similar thicknesses in the straight, diagonal, and curves strokes that make the typeface. Meanwhile, the **Display Ultra** is drawn to be as thick as possible, while still preserving my subjective understanding of essense of the Name Sans design.
 
-- [ ] TODO: add animation of arrows or numbers
+<div>
+<style>
+#namesans-v05-countdown {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  align-items: center;
+  justify-content: center;
+  background: var(--offwhite2);
+  position: relative;
+  padding-top: 1.5vmin;
+  margin: 2rem auto;
+}
+#namesans-v05-countdown:before {
+  color: var(--text);
+  display: block;
+  font-size: 60vmin;
+  content: "9";
+  font-weight: 700;
+  font-feature-settings: "tnum", "rvrn" 0 ;
+  line-height: 1.125;
+}
+#namesans-v05-countdown:hover:before {
+  animation: namesansCountdown 10s linear infinite reverse;
+}
+#namesans-v05-countdown:after{
+  content: "Hover or tap for animation";
+  font-size: 1rem;
+  background: rgba(0,0,0,0.75);
+  color: var(--namesans-accent);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mouse-events: none;
+  transition: opacity 0.15s;
+}
+#namesans-v05-countdown:hover:after {
+  opacity: 0;
+}
+@keyframes namesansCountdown {
+  0%  {content: "9"; font-weight: 400;}
+  5%  {font-weight: 1;}
+  10% {content: "0"; font-weight: 400;}
+  15%  {font-weight: 1;}
+  20% {content: "1"; font-weight: 400;}
+  25%  {font-weight: 1;}
+  30% {content: "2"; font-weight: 400;}
+  35%  {font-weight: 1;}
+  40% {content: "3"; font-weight: 400;}
+  45%  {font-weight: 1;}
+  50% {content: "4"; font-weight: 400;}
+  55%  {font-weight: 1;}
+  60% {content: "5"; font-weight: 400;}
+  65%  {font-weight: 1;}
+  70% {content: "6"; font-weight: 400;}
+  75%  {font-weight: 1;}
+  80% {content: "7"; font-weight: 400;}
+  85%  {font-weight: 1;}
+  90% {content: "8"; font-weight: 400;}
+  95%  {font-weight: 1;}
+  100% {content: "9"; font-weight: 400;}
+}
+</style>
+
+<p id="namesans-v05-countdown"></p>
+</div>
 
 The Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type effects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This is especially useful in characters which maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
 
