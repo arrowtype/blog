@@ -75,6 +75,11 @@ For Name Sans, I *have* of course drawn lines of my project scoping – but I ha
 
 A technical explaination of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure modern digital fonts). These numbers are open to interpretation on individual type designers, but for Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. drawn with stems of just 2 units on this grid – just barely enough to allow similar thicknesses in the straight, diagonal, and curves strokes that make the typeface. Meanwhile, the **Display Ultra** is drawn to be as thick as possible, while still preserving my subjective understanding of essense of the Name Sans design.
 
+<video autoplay loop playsinline muted controls class="main-col">
+  <source src="./namesans-countdown.mp4"
+            type="video/mp4">
+</video>
+
 <div>
 <style>
 #namesans-v05-countdown {
@@ -143,6 +148,13 @@ A technical explaination of my approach for Name Sans: this typeface uses the fu
 </style>
 
 <p id="namesans-v05-countdown"></p>
+
+<script>
+const countdown = document.querySelector("#namesans-v05-countdown");
+
+countdown.textContent="8"
+</script>
+
 </div>
 
 The Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type effects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This is especially useful in characters which maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
