@@ -76,7 +76,7 @@ For Name Sans, I *have* of course drawn lines of my project scoping – but I ha
 A technical explaination of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure modern digital fonts). These numbers are open to interpretation on individual type designers, but for Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. drawn with stems of just 2 units on this grid – just barely enough to allow similar thicknesses in the straight, diagonal, and curves strokes that make the typeface. Meanwhile, the **Display Ultra** is drawn to be as thick as possible, while still preserving my subjective understanding of essense of the Name Sans design.
 
 <video autoplay loop playsinline muted controls class="main-col">
-  <source src="./namesans-countdown.mp4"
+  <source src="./namesans-countdown-vid.mp4"
             type="video/mp4">
 </video>
 
