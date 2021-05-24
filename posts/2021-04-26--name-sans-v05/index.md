@@ -1,7 +1,7 @@
 ---
 title: Name Sans, So Far
 description: A reflection on where Name Sans has come so far, and where it’s headed.
-date: 2021-04-27
+date: 2021-05-25
 tags:
   - name sans
   - type design
@@ -126,17 +126,17 @@ Some fonts prioritize strict geometric shaping more strictly than others, and th
 
 One important decision that has to be made along these lines: whether letters like `b d p q` are drawn to be circular, or given a bit of optical compensation. I find that if the `b d p q` are drawn with bowls that are too circular, a typeface can look cool, but sacrifices versatility. It will always look a little too art-deco or disco to be used for serious communication. Even though I love typefaces like [Avant Garde](https://en.wikipedia.org/wiki/ITC_Avant_Garde) and and many of the projects inspired by it, it basically always communicates some blend of nostalgia and whimsy. This is fine, but not useful for every project.
 
-<!-- ![Letters n b d p q o from Name Sans](name_sans-nbdpqo.svg) -->
-
-
-
 Therefore, I have drawn letters like `b d p q` to match the visual average width of `n` and `o`, rather than to look circular. This, in turn, helps to establish a visual rhythm that doesn’t call too much attention to itself.
 
-![Comparative proportions of n, d, o in Name Sans Display](name_sans-second_av-display.svg)
+![Comparative proportions of round shapes in Name Sans Display](name_sans-second_av-display.svg)
 
 In the Display sizes, the `o` can be very circular, but in Text, the `o` must be made much more similar to the width of `n` to avoid an excessively-wide appearance in running text.
 
-![Comparative proportions of n, d, o in Name Sans Text](name_sans-second_av-text.svg)
+![Comparative proportions of round shapes in Name Sans Text](name_sans-second_av-text.svg)
+
+If you overlay the `o`, `n`, & `b`, you can see quite clearly that while `o` is quite circular, the `n` stays closer to more traditional proportions, and the `b` falls in between.
+
+<img class="main-col" src="name_sans-bon-display.svg" alt="Comparative proportions of n, d, o in Name Sans Display">
 
 <!-- ![Letters n b d p q o from Name Sans](name_sans-nbdpqo-light.svg) -->
 
@@ -218,7 +218,7 @@ These flat portions remind me of the flat-sided letters used in some of the Subw
 ![Flat portions give Name Sans a mechanical appearance](name_sans-flats.svg)
 
 To an extent, I must admit, the decision to incorporate flat segments was also influenced by some of the vinyl Helvetica station signage. I love the way the `S` has a flat segment in its spine, and the way the `t` sometimes ends in a horizontal tail rather than its more-typical little upturn. I can’t really deny that Name Sans has modern influences, and this is another reason it is an interpretation rather than a revival.
-## Obviousness
+## “Obviousness”
 
 What is “simplicity”? It’s a much-debated question, but – at least when it comes to type – is somewhere between impossible and counterproductive. Is “simplicity” an absolute minimum of shaping detail? Partially yes – but if taken too far, that definition might lead to letterforms without necessary optical compensations, which looks terrible in practice. Is “simplicity” repeating what we are already used to seeing and reading? Partially yes – but if taken too far, that definition would conclude that we already have exactly the type we need and would forgo the possibility of ever making things better than what we already have. 
 
@@ -261,7 +261,7 @@ This theory isn’t really based on unique insights of my own. In reality, the t
 
 All that is to say: Name Sans might have a smoothly-joined lowercase because Helvetica is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans *also* has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit. Either way, this is the “obvious” choice!
 
-## A varied but harmonious collection of styles
+## A varied but harmonious set of possibilities
 
 The thing that made this project “impossible” is something I have worked to bring into the project through both its range of styles, its nature as a variable font, and its OpenType features.
 
@@ -273,8 +273,9 @@ In the case of Name Sans, I would see it as a major missed opportunity to disreg
 
 I would also see it as a missed opportunity to bring in my favorite `R` from stations like Spring Street and Bowery. But, I have had to face the fact that an `R` with a curly leg doesn’t always work, and probably doesn’t work most of the time – it’s just too much more interesting than the letters around it. So, the default `R` is a simple shape with a straight leg, but the cooler “grotesque” form can be activated with Stylistic Set 2.
 
-And then, I would also find it a shame to choose just one form of `g` for both very large sizes (which should usually be a single-story `g`) and for text sizes (which should usually be a double-story `g`). So, again, this gets a stylistic set.
+And on top of all that, there are a set of stylistic sets that are just nice to have in any geometric sans. Of course, there is a single-story `a` and double-story `g`, plus simplified versions of `t`, `j`, `y`, and an alternate German etzett (borrowing an “blackletter” letter construction from Berlin street signage).
 
+- [ ] TODO: make image / table of several or all stylistic sets
 - [ ] TODO: check stylistic set numbers 
 
 ### Size-specific letterforms
@@ -289,21 +290,24 @@ Why the change? For one, having stylistic sets to turn off behavior got very con
 
 At the same time, as a type-minded designer, I really *like* having a font that changes shape for different sizes. It’s *useful* if small or running text has a more-recognizable `g`, and it’s pretty cool if a headline has a wonky `R`. So, for folks who want to use Name Sans in this kind of “expert” mode, Stylistic Sets 20 & 19 will turn on these size-specific substitutions. If you’re defining your text styles in CSS or in a high-level Paragraph style, this is simple enough to do, but it’s also nice to have a more-predictable font for everyday use.
 
-And on top of all that, there are a set of stylistic sets that are just nice to have in any geometric sans. Of course, there is a single-story `a`, but there are also simplified versions of `t`, `j`, `y`, and an alternate German etzett (borrowing an “blackletter” letter construction from Berlin street signage).
+
+- [] TODO: image of sizes w/ size-specific styles, w/ phrase like "Island Ridge"
 
 ## Extra quirks
 
-For whatever reason, the `Z` has a little angle at the bottom right, even though this isn’t found in any other uppercase letter. But, it really does happen in multiple places, so I’ve kept this. To carry this nuance into the system a little further, I’ve matched this slight calligraphic touch at the top of the `t`.
+In the mosaics, the `Z` often has a little angle at the bottom right, even though this calligraphic touch isn’t found in any other uppercase letter. But, it really does happen in multiple places, so I’ve kept this in Name Sans. To carry this trait into the system a little further, I’ve matched this slight calligraphic touch at the top of the `t`.
 
 In the `ss01` Rectangular Caps, the `U` has a bottom which is more square than the bottoms of letters like `O` that you’d think might match. Again, this comes from repeated examples from mosaics.
 
-The number `5` has a totally-vertical top-left part in many mosaics, so this is preserved in the Display styles of Name Sans (though it is angled in Text styles, and in-between in Standard styles).
+In the bolder Display styles, the `y` has a smooth connection between from its left side down to the descender. This is straight off of Helvetica – even though it’s a bit tricky to incorporate into the family, it looks too nice to leave out.
 
-Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I am finding the right way to balance things into a varied but cohesive type family.
+Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.
 
-## There’s so much more, but
+- [ ] TODO: image of these quirks, or remove this section
 
-Like Name Sans itself, this blog post is really only a partially-complete draft. There is so much more I could say about the typeface, the ideas I have tried and abandoned, and the things it can do. Some of these are better outlined in the PDF Specimen and in the slides on Future Fons. But also, I am still in the midst of discovering what Name Sans is! To me, that’s the fun of it.
+## There’s so much more, but...
+
+Like Name Sans itself, this blog post is only a partially-complete draft. There is so much more I could say about the typeface, the ideas I have tried and abandoned, and the things it can do. Some of these are better outlined in the PDF Specimen and in the slides on Future Fons. But also, I am still in the midst of discovering what Name Sans is! To me, that’s the fun of it.
 
 There are a lot of things I know at this point: I am working on Italics along with a few more typographic features, and I will continue to refine shaping, spacing, and kerning across the project.
 
