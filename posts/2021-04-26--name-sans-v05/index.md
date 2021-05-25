@@ -309,11 +309,16 @@ However, I do have a theory of *why* these smooth-joined forms have won out in s
 ![Name Sans Text, v0.3 vs v0.5](name_sans-v03_v05-text.svg)
 *Earlier versions of Name Sans Text included sharp joints on many characters. These were ultimately smoothed out to better match the aesthetics of Name Sans Display at smaller sizes and to maintain high-quality outlines in intermediate styles.*
 
-This theory isn’t really based on unique insights of my own. In reality, the theory is really just my perspective on [Gerrit Noordzij’s theory of The Stroke](https://hyphenpress.co.uk/products/books/978-0-907259-30-5) – that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include *expansion* (in which the stroke’s width modulates according to pressure, as explified by a pointed-nib pen) and *translation* (in which the stroke’s wide modulates according to direction, as exemplified by writing with a flat-nibbed pen). In *expansion* writing – the basis for typefaces in the [Didone](https://en.wikipedia.org/wiki/Didone_(typography)) genre – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In *translation* writing – the basis for styles from text-focused [Old-style](https://en.wikipedia.org/wiki/Serif#Old-style) serifs to angular [Blackletter](https://en.wikipedia.org/wiki/Blackletter) script – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (As with any model, the reality of writing systems is more complex, and fascinating concepts like single-stroke signpainting are ignored entirely. Still, it provides one useful perspective by which to consider the design of letters.)
+This theory isn’t really based on unique insights of my own. In reality, the theory is really just my perspective on [Gerrit Noordzij’s theory of The Stroke](https://hyphenpress.co.uk/products/books/978-0-907259-30-5) – that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include *expansion* (in which the stroke’s width modulates according to pressure, as explified by a pointed-nib pen) and *translation* (in which the stroke’s wide modulates according to direction, as exemplified by writing with a flat-nibbed pen). In *expansion* writing – the structural basis for typefaces from Didot to Helvetica – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In *translation* writing – the structural basis for typefaces from Plantin to Verdana – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (As with any model, this is a simplification. The reality of writing systems is much more complex, and fascinating concepts like single-stroke signpainting and brush calligraphy are mostly left out. Still, it provides one useful perspective by which to consider the design of letters.)
 
-- [ ] add a diagram of writing with expansion vs translation
+<figure class="main-col">
+  <img src="name_sans-model.svg" alt="Expansion vs Translation in versions of Name Sans Text">
+  <figcaption>
+  Translation vs Expansion models of type, as shown by Name Sans Text in versions 0.3 vs 0.5
+  </figcaption>
+</figure>
 
-All that is to say: Name Sans might have a smoothly-joined lowercase because Helvetica is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans *also* has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit. Either way, this is the “obvious” choice!
+All that is to say: Name Sans might have a smoothly-joined lowercase because this style is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans *also* has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit. Either way, this is the obvious choice – at least for this project.
 
 ## A varied but harmonious set of possibilities
 
@@ -329,14 +334,19 @@ I would also see it as a missed opportunity to bring in my favorite `R` from sta
 
 And on top of all that, there are a set of stylistic sets that are just nice to have in any geometric sans. Of course, there is a single-story `a` and double-story `g`, plus simplified versions of `t`, `j`, `y`, and an alternate German etzett (borrowing an “blackletter” letter construction from Berlin street signage).
 
-- [ ] TODO: make image / table of several or all stylistic sets
-- [ ] TODO: check stylistic set numbers 
+<figure class="main-col">
+  <video autoplay loop playsinline muted controls>
+    <source src="./name_sans-tester.webm"
+              type="video/webm">
+    <source src="./name_sans-tester.mp4"
+              type="video/mp4">
+  </video>
+  <figcaption>A type tester is available at <a href="https://name.arrowtype.com">name.arrowtype.com</a> to help preview some of the typographic features of the family.</figcaption>
+</figure>
 
 ### Size-specific letterforms
 
-In earlier versions of Name Sans, the Optical Size axis automatically switched between forms of characters `R I g l`, opting for the forms that I felt worked best in Display vs Text scenarios. This was partly a nod to old grotesque typefaces that switched between very different letterforms at different widths and sizes.
-
-- [ ] TODO: add link?
+In earlier versions of Name Sans, the Optical Size axis automatically switched between forms of characters `R I g l`, opting for the forms that I felt worked best in Display vs Text scenarios. This was partly a nod to old grotesque typefaces that included between very different letterforms in different “cuts” – literally, different styles of wood or metal cut for different widths and sizes.
 
 In previous versions of Name Sans, there were stylistic sets to turn off this size-specific swapping behavior. In v0.5, however, I have opted to keep a single set of defaults across all sizes – with stylistic sets to turn *on* the automatic swaps.
 
@@ -344,8 +354,8 @@ Why the change? For one, having stylistic sets to turn off behavior got very con
 
 At the same time, as a type-minded designer, I really *like* having a font that changes shape for different sizes. It’s *useful* if small or running text has a more-recognizable `g`, and it’s pretty cool if a headline has a wonky `R`. So, for folks who want to use Name Sans in this kind of “expert” mode, Stylistic Sets 20 & 19 will turn on these size-specific substitutions. If you’re defining your text styles in CSS or in a high-level Paragraph style, this is simple enough to do, but it’s also nice to have a more-predictable font for everyday use.
 
-
-- [] TODO: image of sizes w/ size-specific styles, w/ phrase like "Island Ridge"
+![Optional size-specific forms](name_sans-text_display_options.svg)
+*Optional size-specific forms are available in Stylistic Sets 19 & 20 – and automatically activated by Optical Size in Name Sans Variable.*
 
 ## Extra quirks
 
@@ -357,7 +367,8 @@ In the bolder Display styles, the `y` has a smooth connection between from its l
 
 Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.
 
-- [ ] TODO: image of these quirks, or remove this section
+![A few extra quirks](name_sans-extra.svg)
+*Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the `Z` and a flat-bottomed `U` in Stylistic Set 1.*
 
 ## There’s so much more, but...
 
@@ -365,8 +376,10 @@ Like Name Sans itself, this blog post is only a partially-complete draft. There 
 
 There are a lot of things I know at this point: I am working on Italics along with a few more typographic features, and I will continue to refine shaping, spacing, and kerning across the project.
 
-I hope to finish and fully release a `1.0` in the coming months. When I do, I plan to also have a more-refined versions of this essay. So, if you managed to actually read this post and have any questions for me, please me know!
+I hope to finish and fully release a `1.0` in the coming months. When I do, I plan to also release a more-refined version of this essay. 
+
+So, if you managed to actually read (or even skim!) this post and have any questions for me, please me know.
 
 If you’ve already picked up a license for Name Sans, I really appreciate you coming along for the journey! If you haven’t, it’s still at a greatly-reduced price while it’s in pre-release (if you do the math, it’s currently about $4.03 per style). By [purchasing a license through Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans), you will be securing future updates for free, for life.
 
-I hope you consider picking up a license, and I hope you reach out to me when you put it to use! I love to see when people have put my fonts to work – it really makes this whole effort feel worthwhile.
+Finally, I hope you reach out to me if you put Name Sans to use! I love to see when people get value out of my type – it really makes this whole, slightly-ridiculous effort feel worthwhile.
