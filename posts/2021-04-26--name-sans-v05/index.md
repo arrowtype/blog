@@ -11,11 +11,13 @@ permalink: name-sans-v05/
 
 [Name Sans](https://name.arrowtype.com) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans). 
 
-Name Sans is now in its fifth pre-release version – `0.5` – so I wanted to take a moment to reflect on what the family is, how it has evolved since v0.1, and where it’s headed in the future. My favorite typefaces are always released along with an introductory article. In a way, you can think of this as the “v0.5” blog post introducing Name Sans, its process, and its design.
+Name Sans is now in its fifth pre-release version – `0.5` – so I wanted to take a moment to reflect on what the family is, how it has evolved since earlier versions, and where it’s headed in the future. My favorite typefaces are always released along with an introductory article. In a way, you can think of this as the “v0.5” blog post introducing Name Sans, its process, and its design.
 
 ## What is Name Sans, anyway?
 
-It isn’t always (if ever?) obvious what a project should be from the outset. Releasing Name Sans progressively through Future Fonts has helped me to search for what it really should be as a typeface. Certainly, my understanding of it has evolved since the earliest versions, and seeing it in use by other designers has helped push my thinking forward.
+From an outsider’s perspective, it can also be confusing to see “yet another geometric sans.” At a quick glance, it might look like Name Sans isn’t different from [insert popular font name here]. This post is here to point out some of the thinking behind Name Sans, along with some of the details that make it unique.
+
+From my own perspective as a type designer, it isn’t always (if ever?) obvious what a project should be from the outset. Releasing Name Sans progressively through Future Fonts has helped me find what it really needs to be as a typeface. Certainly, my understanding of it has evolved since the earliest versions. Spending time with it myself – and especially seeing it in use by other designers – has helped push my thinking forward.
 
 So what is Name Sans?
 
@@ -42,33 +44,34 @@ Name Sans is not a *revival*, and it isn’t intended to be. There was no single
 
 So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade.
 
-In many ways, not having a single point of reference is exactly what has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. While there are clearly repeated lettering styles for different lines and different eras, something I love about the Subway is that there is *not* a perfectly-repeated system for the name tablets. If it was all just Helvetica and stations had a perfectly-repeated aesthetic, the Subway would be boring. (More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify stops by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–colored walls, you would end up missing stops a lot more often.)
 
-Name Sans picks up on my favorite aspects of the Subway wayfinding system and brings them together into an extended Latin character set with wide range of weights and optical sizes. If I had gotten stuck on finding just *one* thing to revive, I wouldn’t have had the flexibility to really explore what is useful in a geometric-grotesque sans – and what is newly possible with type technology today.
+In many ways, not having a single point of reference has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. There are clearly repeated lettering styles for different train lines and different eras. But also, something I love about the Subway is that there is not a perfectly repeated system for the name tablets. If all of the wayfinding was purely set in Helvetica and stations had a completely uniform aesthetic, the Subway would be boring. More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify stops by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–colored walls, you would end up missing stops a lot more often.
+
+Name Sans picks up on my favorite aspects of the Subway wayfinding system and brings them together into an extended Latin character set with a wide range of weights and optical sizes. If I had gotten stuck on finding just one thing to revive, I wouldn’t have had the flexibility to really explore what is useful in a geometric-grotesque sans – and what is newly possible with type technology today.
 
 ![Equitable Building Mosaic Signage from Wall Street Station](equitable-building.jpg)
-*One of my favorite signs in all of NYC. Note the circularity, unusual proportions, and the sharp spur of the G.*
+*The “Equitable Building” mosaic at Wall St is one of my favorite signs in all of NYC. Note the circularity, unusual proportions, and the sharp spur of the G. Even though I love specific mosaics, there are too many divergent styles to represent in a single typeface – so Name Sans brings in the best features from signs across the NYC Subway system.*
 
-For starters, the mosaics only contain the basic English uppercase alphabet, plus numbers and a few extra symbols like arrows and ampersands. I was always going to have to invent the lowercase, extended Latin alphabet, accents, and symbol set. But beyond that, the mosaics only have a narrow range of weights – roughly “Regular” to “SemiBold” – and only have a sign-specific range of sizes – large to huge, though typically seen from a distance. In my mind, any truly-useful modern typeface should offer a wider typographic palette to its users. Additionally, type is most versatile if it’s designed for the scales and contexts we tend to engage with type at on screens and in print, most often in longer strings than single Subway station names.
+Even if I had found blueprints, this project would have required creativity and adaptation. For one thing, the mosaics only contain the basic English uppercase alphabet, plus numbers and a few extra symbols like arrows and ampersands. I was always going to have to invent the lowercase, extended Latin alphabet, accents, and symbol set. But beyond that, the mosaics only have a narrow range of weights – roughly “Regular” to “SemiBold” – and only have a sign-specific range of sizes – large to huge, meant to be seen from a distance. A typeface must offer a broader typographic palette unless if it is only intended for very specific usage. This suggested the need for an extended weight range. Type must be made for particular scales and contexts to work well. For Name Sans, that meant designing to target the small-to-large settings common to modern print & digital needs – often in longer strings than single Subway station names. I wanted Name Sans to deliver the punch of the mosaics effectively across font sizes, which suggested the need for a range of Optical Sizes (more on this below).
 
-Working from more than a single blueprint has also revealed possibilities beyond size & weight ranges. Rather than picking only the most common style of a uppercase, I have made two – a default set that looks pretty much how you’d expect a geometric sans to look, plus a stylistic set (`ss01`) that takes on the flat-sided, rectangular shaping of the mosaics used in many of the stations outside of Manhattan. A difficult part has been deciding which `R` to borrow from the system – the more common, basic construction with a straight leg, or the intrinsically-mosaic approach to a grotesque `R` with a leg “kick”? Well, it’s a modern typeface, so I could include both! And then, it’s a modern typeface, so why not add a few other things fit for modern expectations, like a single-story `a`?
+Working from more than a single specimen has also revealed possibilities beyond size & weight ranges. A challenging aspect of the project has been deciding which forms of letters to borrow from the system, where the are multiple possibilities. For example, round uppercase letters can be found both in circular forms and with flat-sided forms, depending which station and sign you look at. Rather than drawing only the most common style of an uppercase, I have made two – a default set with the circular forms, plus a stylistic set (ss01) that takes on flat-sided, rectangular shaping.  Another question was which `R` to use – the more common, basic construction with a straight leg, or the uniquely mosaic approach to a grotesque R with a monolinear leg “kick”? Well, it’s a modern typeface, so again, I could include both using Stylistic Sets. And then, it’s a modern typeface, so why not add a few other things fit that users might want, like a single-story a?
 
-And thus, I have sought to make a typeface that captures the best energy and spirit of the Subway mosaics, but which is genuinely useful to designers working in digital systems and graphic design. I hope that Name Sans may also get used in wayfinding (and certain decisions have been made to enable this), but it is designed first and foremost for the place I encounter typography the most: the Web.
+And thus, I have sought to build a typeface that captures the best energy and spirit of the Subway mosaics but which is genuinely useful to designers working in digital systems and graphic design. I hope that Name Sans may also get used in wayfinding (and certain decisions have been made to enable this), but it is designed first and foremost for the place I encounter typography the most: the Web.
 
-(Sidenote: if any transit archivists or superfans are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more or to be proven wrong! The [online archives](https://nytm.pastperfectonline.com/) are great, but understandably don’t contain images for every possible item. A [2019 exhibit](https://www.nytransitmuseum.org/program/changing-signs-changing-times-a-history-of-wayfinding-in-transit/eakhu-fxuaigwz_/) did include a few wonderful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more!)
+(Side note: if any transit archivists or aficionados are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more! The online archives are great but (understandably) don’t contain images for every possible item. A 2019 exhibit did include a few beautiful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more!)
 
 ## A wide range of Weights & Optical Sizing
 
 ### Weight
 
-It’s fairly self-evident what it means for a typeface to offer a range of weights. If a font has just one weight, it is fairly limited in how it can be used, and will almost always need to be supported with others fonts. But, if a typeface offers even just two weights, it dramatically opens up what you can use it for. These benefits increase with further granularity.
+It’s relatively self-evident what it means for a typeface to offer a range of weights. If a font has just one weight, it will be limited in how it can be used and will almost always need to be supported with other fonts. But, if a typeface offers even just two or three weights, it dramatically opens up what you can use it for. These benefits continue to increase with further range and granularity.
 
 ![Weights of Name Sans](name_sans-wght_a.svg)
 *Name Sans has a weight range that is as wide as (reasonably) possible, offering both workhorse core weights and high-impact extremes in one easy-to-use system.*
 
-Most designers would reasonably probably point out that there is a point of diminishing returns. Once you have styles that are light enough and bold enough, with a few in-between, you don’t really need more. Additionally, there may be a paradox of choice: if a typeface has too many options, it might become hard to pick the ones you want. These are valid views. From a creator’s perspective, too, it is important to draw lines of scope so you can provide adequate focus to the work that falls within that scope.
+Many designers would reasonably probably contend that there is a point of diminishing returns. Once you have styles that are light enough and bold enough – with a few between – you don’t really need more. There may also be a paradox of choice: if a typeface has too many options, it might become hard to pick the ones you want. These are valid concerns. From a creator’s perspective, too, it is essential to draw lines of scope so you can provide adequate focus to the work that falls within that scope.
 
-For Name Sans, I *have* of course drawn lines of my project scoping – but I have also made a concerted effort to push those lines beyond what a typical project may impose. In my experience as a designer, there are always times when I wish a typeface would go *just a little bit bolder,* or just a little bit lighter. A goal of Name Sans is to provide the most utility and versatility to as many designers as possible. So, just as a designer may select a computer with plenty of “head room” in its RAM and storage – even if they may not use those full limits most of the time – there is value if a typeface can do more than most people need, on average.
+For Name Sans, I *have* of course drawn lines of my project scoping – but I have also made a concerted effort to push those lines beyond what a typical project may impose. In my experience as a designer, there are always times when I wish a typeface would go *just a little bit bolder* or *just a little bit lighter*. A goal of Name Sans is to provide the most utility and versatility to as many designers as possible. So, just as a designer may select a computer with plenty of “headroom” in its RAM and storage – even if they may not use those full limits most of the time – there is value if a typeface can do more than most people need, on average.
 
 <!-- SVG to allow css variable -->
 <svg class="main-col" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1839 1761">
@@ -80,7 +83,9 @@ For Name Sans, I *have* of course drawn lines of my project scoping – but I ha
   </g>
 </svg>
 
-A technical explaination of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure modern digital fonts). These numbers are open to interpretation on individual type designers, but for Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. drawn with stems of just 2 units on this grid – just barely enough to allow similar thicknesses in the straight, diagonal, and curves strokes that make the typeface. Meanwhile, the **Display Ultra** is drawn to be as thick as possible, while still preserving my subjective understanding of essense of the Name Sans design.
+A technical explanation of my approach for Name Sans: this typeface uses the full possible `1–1000` range for a variable Weight axis, as defined by the OpenType spec (the technical spec which defines the underlying structure of modern digital fonts). The exact densities these numbers should represent are open to interpretation on individual type designers. For Name Sans, I have interpreted `1–1000` to be “as thin and thick as reasonably possible.” 
+
+What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the `UPM` of the font). The **Display Hairline** style is meant to be a representation of the very core of the characters. It is drawn with stems of just 2 units on this grid – barely enough to allow similar thicknesses in straight, diagonal, and curved strokes. Meanwhile, the **Display Ultra** is drawn to be as thick as possible while still preserving my subjective understanding of the essence of the Name Sans design.
 
 <figure class="main-col">
   <video autoplay loop playsinline muted controls>
@@ -90,7 +95,7 @@ A technical explaination of my approach for Name Sans: this typeface uses the fu
   <figcaption>The Hairline styles offer a near-invisible endpoint for appearing & disappearing animations.</figcaption>
 </figure>
 
-The Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type effects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This is especially useful in characters which maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
+A warning: the Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type affects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This can be especially useful in characters that maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
 
 ### Optical Sizing
 
@@ -175,12 +180,12 @@ Even though I want to capture the charm of the Subway mosaics, charm is not only
 
 ## Sharpness
 
-A subtlety I love about the Subway mosaics is that diagonal vertices often don’t simply have a one-stroke width, as you might achieve if you were trying to make a purely “elemental” letterform. Instead, they almost always add a bit of sharpness, making vertices to something closer to about 2/3 stroke thickness. This gives vertices more sharpness, visually suggesting that diagonal letters are made in a single motion, rather than from separate strokes.
+A subtlety I love about the Subway mosaics is that diagonal vertices often don’t simply have a one-stroke width, as you might achieve if you were trying to make a purely “elemental” letterform. Instead, they almost always add a bit of sharpness, making vertices to something closer to about two-thirds stroke thickness. This gives vertices more sharpness, visually suggesting that diagonal letters are made in a single motion, rather than from separate strokes.
 
 Most sans-serifs that easily come to mind take one extreme or the other on their treatment of vertices. Broadly speaking, they either take the *Futura* route with razor-sharp points, or else the *Helvetica* route of prioritizing evenness of strokes, proportions, and color and not really considering vertices as a thing to preserve. I like that the mosaics take a practical approach that is a little bit sharp, but in a subtle way that doesn’t call attention to itself, and I have sought to preserve this in all but the very thickest weights of Name Sans.
 
 ![Mosiac name tablet for Ft. Hamilton Parkway](./hamilton.jpg)
-*The sharpness of diagonal letters varies between eras of Subway signage, but the “endcaps” of vertices tend to be around 2/3 of the main stroke thickness.*
+*The sharpness of diagonal letters varies between eras of Subway signage, but the “endcaps” of vertices tend to be around two-thirds of the main stroke thickness.*
 
 ![H&M Tunnels to New Jersey](hm-tunnels.jpg)
 *Even smaller-scale mosaic signs were made with care. Most of these include partially-sharp vertices on diagonal letters that closely match the larger-scale signage.*
@@ -226,7 +231,7 @@ These quirks are some of what make the mosaics so endearing to me. In the contex
 In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics to make sense in a digital typeface. But, I’ve kept a taper in the `S`, I’ve kept vertical and horizontal strokes as nearly-monolinear as they could be, I’ve kept the `B` nearly vertically-symmetrical, I’ve kept a short mid bar on the `E`, and I’ve kept an upright `5`. I’ve kept certain whitespaces, like that of the `n`, exactly symmetrical (except in the lightest styles, where this starts to look bad). For every quirk in Name Sans, there are mosaic letters that led me to make that decision.
 
 ![Name Sans optical tricks](name_sans-optical_quirks.svg)
-*Larger sizes emphasize visual quirks in proportion, symmetry, and rigidity of the Subway mosaics, while smaller sizes adapt many of these mannerisms into more-familiar shaping.*
+*Name Sans plays with symmetry and asymmetry in proportions and counter spaces. Larger sizes emphasize visual quirks in proportion, symmetry, and rigidity of the Subway mosaics, while smaller sizes adapt many of these mannerisms into more-familiar shaping.*
 
 As an extra note, the Subway mosaics can get away flaunting optical compensation to such a degree in part because they are large, and because they never really have that much text. In making Name Sans, I have found that the larger optical sizes can come closer to matching that stubborn approach, while smaller optical sizes work best if they introduce progressively more optical compensation. 
 
@@ -365,10 +370,10 @@ In the `ss01` Rectangular Caps, the `U` has a bottom which is more square than t
 
 In the bolder Display styles, the `y` has a smooth connection between from its left side down to the descender. This is straight off of Helvetica – even though it’s a bit tricky to incorporate into the family, it looks too nice to leave out.
 
-Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.
-
 ![A few extra quirks](name_sans-extra.svg)
-*Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the `Z` and a flat-bottomed `U` in Stylistic Set 1.*
+*Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the `Z` (echoed by the `t`) and a flat-bottomed `U` in Stylistic Set 1. An alternate `ß`, in an “fz” form borrowed from Berlin street signs, is also available in Stylistic Set 10.*
+
+Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. There are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more and more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.
 
 ## There’s so much more, but...
 
@@ -376,7 +381,9 @@ Like Name Sans itself, this blog post is only a partially-complete draft. There 
 
 There are a lot of things I know at this point: I am working on Italics along with a few more typographic features, and I will continue to refine shaping, spacing, and kerning across the project.
 
-I hope to finish and fully release a `1.0` in the coming months. When I do, I plan to also release a more-refined version of this essay. 
+Spoiler alert: the italics will be pretty boring. They *may* have a single-story `a` on by default, but will otherwise be a sloped (and optically corrected) version of the uprights. I am working to keep these as geometric as possible, so they can work seamlessly with the intent of the family as a whole.
+
+I plan to finish and fully release a `1.0` in the coming months. When I do, I plan to also release a more-refined version of this essay. 
 
 So, if you managed to actually read (or even skim!) this post and have any questions for me, please me know.
 
