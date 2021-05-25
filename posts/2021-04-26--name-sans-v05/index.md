@@ -19,28 +19,28 @@ It isn’t always (if ever?) obvious what a project should be from the outset. R
 
 So what is Name Sans?
 
-Well, one simple answer is that it’s the font you’re reading right now – but it’s also much more than that. Another simple answer is that it’s a 36-style font family with variable axes for Weight and Optical Sizing. But it’s also more than **that.**
+Well, one answer is that it’s the font you’re reading right now – but it’s also much more than that. Another simple answer is that it’s a 36-style font family with variable axes for Weight and Optical Sizing. But it’s also more than **that.**
 
 <figure class="main-col">
   <img src="name-instances.svg" alt="Font styles of Name Sans v0.5">
   <figcaption>Styles of Name Sans v0.5</figcaption>
 </figure>
 
-As the tag line says, Name Sans is *a modern interpretation of the mosaic name tablets of the NYC Subway.* It’s a project I have been imagining and sketching since moving to NYC in 2014 and becoming a daily commuter on the NYC Subway – though I was only really been able to dive into it around the end of 2019.
+As the tag line says, Name Sans is *a modern interpretation of the mosaic name tablets of the NYC Subway.* It’s a project I have been imagining and sketching since moving to NYC in 2014 and becoming a daily commuter on the Subway. (Though, I have only actively developing Name Sans as a font since the end of 2019.)
 
 ![various name tablets in the NYC Subway system](./name_sans_v05-mosaics.png)
 *Name Sans seeks to capture my favorite aspects of the varied mosaic signage of the NYC Subway system.*
 
-When I first had the idea for this project as a new commuter in NYC about 5 years ago, I expected that I could dig up some kind of perfect blueprint for the signage, and work from that to make a revival. I have since seen a few tantalizing examples that are *close* to what I’d hope for, but finding a direct plan is much less simple than I initially thought it might be. So, instead, the drawings for Name Sans are not a direct copy of scans from a dusty old type specimen, but rather the product of me experiencing and appreciating the Subway mosaics over time, taking countless photos and sketching ideas based on them while riding the train.
+When I first had the idea for this project, I expected that I could dig up some kind of perfect blueprint for the signage and work from that to make a revival. I have since seen a few tantalizing examples of historical documents that are *close* to what I’d like – but direct architectural plans have so far eluded me. So, the drawings for Name Sans are not a direct copy of scans from a dusty old type specimen. Instead, they are the product of me experiencing and appreciating the Subway mosaics over time, taking countless photos, and sketching ideas based on them while riding the train.
 
 ![various sketches of mosaic letters from the NYC Subway](name_sans_sketches.png)
-*As an NYC commuter, I almost have a sketch book in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.*
+*As an NYC commuter, I almost have a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.*
 
-At one point, early on, I mentioned to an experienced type designer that I was thinking of making a typeface that would be a revival of the Subway mosaics. “Impossible!” they said, “what would you even revive?” At first I was taken aback and thought I could prove them wrong, but with time, I have understood what they meant.
+At one point, early on, I mentioned to an experienced type designer that I was thinking of making a typeface that would be a revival of the Subway mosaics. “Impossible!” they said, “what would you even revive?” At first, I was taken aback and thought I could prove them wrong, but I now understand what they meant.
 
-Name Sans is not a *revival*, and it isn’t intended to be. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by [several separate companies over many decades](https://en.wikipedia.org/wiki/New_York_City_Subway#History), with projects led by several different architects and carried out by different construction crews. Type revivals are recreations of fonts that were previously made with a different technology, like when a digital font is made to recreate the shape of letters originally cast in lead for letterpress printing. The subway mosaics are a loose system of architectural lettering – not a singular typeface which one could “revive.”
+Name Sans is not a *revival*, and it isn’t intended to be. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by [several separate companies over many decades](https://en.wikipedia.org/wiki/New_York_City_Subway#History), with projects led by different architects over time. Type revivals are recreations of fonts previously made with obsolescent technology, like when a digital font is made to recreate letters originally cast in metal for letterpress printing. The subway mosaics are a loose system of architectural lettering – not a singular typeface that one could “revive.”
 
-So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics, but also adapting this to what I think is useful and compelling for a typeface in the current decade (and hopefully beyond, but let’s not get too far ahead of ourselves).
+So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade.
 
 In many ways, not having a single point of reference is exactly what has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. While there are clearly repeated lettering styles for different lines and different eras, something I love about the Subway is that there is *not* a perfectly-repeated system for the name tablets. If it was all just Helvetica and stations had a perfectly-repeated aesthetic, the Subway would be boring. (More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify stops by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–colored walls, you would end up missing stops a lot more often.)
 
