@@ -254,8 +254,6 @@ The Subway mosaics can get away flaunting convention because they are large and 
 
 Meanwhile, many of the optical conventions bucked by Name Sans Display are normalized a little bit in smaller optical sizes: horizontal strokes get a bit thinner, the `S` and `B` become a bit more traditionally balanced, the `5` gets a bit of a slant, and so on. This makes Text styles a little more familiar to read, while still keeping things lively.
 
-<!-- ![Name Sans optical tricks](name_sans-optical_sizing.svg) -->
-
 ## A blend of rigidity & fluidity
 
 Often, the most striking feature of the Subway mosaics is how they seem to defy the physical limitations you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve shows that the mosaic letterers were occassionally just showing off. This is even more striking in the serif styles of lettering and in other signage sprinkled throughout the system, but that is a topic for another project.

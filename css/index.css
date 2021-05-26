@@ -649,7 +649,18 @@ video {
   .content h2,
   .content h3,
   .content h4 {
-    margin-top: 2em;
+    padding-top: 2em;
+  }
+  
+  .content h2, .content h3 {
+    display: flex; /* useful for direct link icons */
+  }
+
+  a[href].direct-link {
+    order: -1;
+    margin-left: -1.5em;
+    margin-right: 0.5rem;
+    transform-origin: 50% 40%;
   }
 }
 
