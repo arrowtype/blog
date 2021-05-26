@@ -1,6 +1,6 @@
 ---
 title: The Story of Name Sans, So Far
-description: A reflection on where Name Sans has come so far, and where it’s headed.
+description: A reflection on where Name Sans has come so far, and where it’s headed next.
 date: 2021-05-26
 tags:
   - name sans
