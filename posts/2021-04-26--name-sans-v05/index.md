@@ -401,10 +401,10 @@ There are a lot of things I know at this point: I am working on Italics along wi
 
 (Spoiler alert: the italics will be pretty boring. They *may* have a single-story `a` on by default, but will otherwise be a sloped (and optically corrected) version of the uprights. I am working to keep these as geometric as possible, so they can work seamlessly with the intent of the family as a whole.)
 
-I plan to finish and fully release a `1.0` in the coming months. When I do, I plan to also release a more-refined version of this essay. 
+I plan to finish and fully release a `1.0` in the coming months. When I do, I plan to also release a refined version of this essay. 
 
-So, if you managed to actually read (or even skim!) this post and have any questions for me, please me know.
+So, if you managed to actually read (or even skim!) this post and have any questions for me, please let me know.
 
-If you’ve already picked up a license for Name Sans, I really appreciate you coming along for the journey! If you haven’t, it’s still at a greatly-reduced price while it’s in pre-release (if you do the math, it’s currently about $4.03 per style). By [purchasing a license through Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans), you will be securing future updates for free, for life. If you do pick up a license, I hope you reach out to me if you put Name Sans to use! I love to see when people get value out of my type – it really makes this whole, slightly-ridiculous effort feel worthwhile.
+If you’ve already picked up a license for Name Sans, I really appreciate you coming along for the journey! If you haven’t, it’s still at a greatly reduced price while it’s in pre-release (if you do the math, it’s currently about $4.03 per style). By [purchasing a license through Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans), you will be securing future updates for free, for life. If you do pick up a license, I hope you reach out to me if you put Name Sans to use! I love to see when people get value out of my type – it makes this whole, slightly ridiculous effort feel worthwhile.
 
 Oh – and finally, please subscribe to my newsletter if you’d like to be alerted when Name Sans 1.0 is released. There just might be another 8,000-word treatise on geometry and historical fiction along with it.
