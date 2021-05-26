@@ -34,13 +34,21 @@ As the tag line says, Name Sans is *a modern interpretation of the mosaic name t
 
 Mosaic **name tablets** are by far my favorite feature of the Subway. These pieces of lettering built from ceramic tiles declare station names for Subway riders, while smaller versions provide wayfinding directions to commuters. Making this source of inspiration into a typeface is a project I have been imagining and sketching since moving to NYC in 2014, then more actively developing as a font family since the end of 2019.
 
-![various name tablets in the NYC Subway system](./name_sans_v05-mosaics.png)
-*Name Sans seeks to capture my favorite aspects of the varied mosaic signage of the NYC Subway system.*
+<figure>
+  <img src="name_sans_v05-mosaics.png" alt="Various name tablets in the NYC Subway system">
+  <figcaption>
+  Name Sans seeks to capture my favorite aspects of the varied mosaic signage of the NYC Subway system.
+  </figcaption>
+</figure>
 
 When I first had the idea for this project, I expected that I could dig up some kind of perfect blueprint for the mosaic signage from which to make a type revival. I have since seen a few tantalizing examples of historical documents that are *close* to what I’d like – but direct architectural plans have so far eluded me. So, the drawings for Name Sans are not a direct copy of scans from a dusty old type specimen. Rather, they are the product of me experiencing and appreciating the Subway mosaics over time, taking countless photos, and sketching ideas while riding the train.
 
-![various sketches of mosaic letters from the NYC Subway](name_sans_sketches.png)
-*As an NYC commuter, I almost have a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.*
+<figure>
+  <img src="name_sans_sketches.png" alt="Various sketches of mosaic letters from the NYC Subway">
+  <figcaption>
+  As an NYC commuter, I almost have a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.
+  </figcaption>
+</figure>
 
 At one point, several years ago, I mentioned to an experienced type designer that I was thinking of making a typeface that would be a revival of the Subway mosaics. “Impossible!” they said, “what would you even revive?” At first, I was taken aback. How dare they doubt me like that! I wanted to prove them wrong. With time, I have come to understand what they meant.
 
@@ -54,8 +62,12 @@ In many ways, *not* having a single point of reference has freed me to make this
 
 Name Sans picks up on my favorite aspects of the Subway wayfinding system and brings them together into an extended Latin character set with a wide range of weights and optical sizes. If I had gotten stuck on finding just one thing to revive, I wouldn’t have had the flexibility to really explore what is useful in a geometric-grotesque sans – and what is newly possible with type technology today.
 
-![Equitable Building Mosaic Signage from Wall Street Station](equitable-building.jpg)
-*The “Equitable Building” mosaic at Wall St is one of my favorite signs in all of NYC. Note the circularity, unusual proportions, and the sharp spur of the G. Even though I love specific mosaics, there are too many divergent styles to represent in a single typeface – so Name Sans brings in the best features from signs across the NYC Subway system.*
+<figure>
+  <img src="equitable-building.jpg" alt="Equitable Building Mosaic Signage from Wall Street Station">
+  <figcaption>
+    The “Equitable Building” mosaic at Wall St is one of my favorite signs in all of NYC. Note the circularity, unusual proportions, and the sharp spur of the G. Even though I love specific mosaics, there are too many divergent styles to represent in a single typeface – so Name Sans brings in the best features from signs across the NYC Subway system.
+  </figcaption>
+</figure>
 
 Even if I *had* found blueprints, this project would have required creativity and adaptation. For one thing, the mosaics only contain the basic English uppercase alphabet, plus numbers and a few extra symbols like arrows and ampersands. I was always going to have to invent the lowercase, extended Latin alphabet, accents, and symbol set.
 
@@ -79,8 +91,12 @@ Name Sans includes two axes of stylistic variation: Weight and Optical Size.
 
 It’s relatively self-evident what it means for a typeface to offer a range of weights. If a font has just one weight, it will be limited in how it can be used and will almost always need to be supported with other fonts. But, if a typeface offers even just two or three weights, it dramatically opens up what you can use it for. These benefits continue to increase with further range and granularity.
 
-![Weights of Name Sans](name_sans-wght_a.svg)
-*Name Sans has a weight range that is as wide as (reasonably) possible, offering both workhorse core weights and high-impact extremes in one easy-to-use system.*
+<figure>
+  <img src="name_sans-wght_a.svg" alt="Weights of Name Sans">
+  <figcaption>
+    Name Sans has a weight range that is as wide as (reasonably) possible, offering both workhorse core weights and high-impact extremes in one easy-to-use system.
+  </figcaption>
+</figure>
 
 Many designers would reasonably contend that there is a point of diminishing returns. Once you have styles that are light enough and bold enough, along with a few between, you don’t really need more. There may also be a paradox of choice for users: if a typeface has too many options, it might become hard to pick the ones you want. These are valid concerns. From a creator’s perspective, too, it is essential to draw lines of scope so you can provide adequate focus to the work that falls within that scope.
 
@@ -114,8 +130,12 @@ A warning: the Hairline is so thin, it disappears in some contexts. Just as desi
 
 To understand Name Sans, it is essential to first have an idea of what **optical sizing** is. The optical sizes of a typeface are made to preserve its design intent at different sizes. In this way, optical sizes are fairly similar to font weights, which are usually made to preserve the design of a typeface at different relative levels of thickness or density.
 
-![Name Sans Optical Sizes](name_sans-opsz_a.svg)
-*The x-height, contrast, and overall proportions are subtly adjusted along the Optical Size axis to look as good as possible at large sizes while also providing comfortable readability in Text.*
+<figure>
+  <img src="name_sans-opsz_a.svg" alt="Name Sans Optical Sizes">
+  <figcaption>
+    The x-height, contrast, and overall proportions are subtly adjusted along the Optical Size axis to look as good as possible at large sizes while also providing comfortable readability in Text.
+  </figcaption>
+</figure>
 
 Just as there is no single answer to how every typeface should be designed for different weights, there are many ways to design for different sizes. Generally, though, there are some common strategies:
 
@@ -126,12 +146,24 @@ Just as there is no single answer to how every typeface should be designed for d
 
 You can start to understand how a typeface handles optical sizing by placing different optical-size styles at the same scale. In Name Sans, this highlights the change of spacing, kerning, proportions, and shaping.
 
-![Optical Sizing Comparison](name_sans-triborough_opsz.svg)
-*Letter spacing & kerning is optimized along the Optical Size axis for ideal visual impact & reading ease across sizes.*
+<figure>
+  <img src="name_sans-triborough_opsz.svg" alt="Optical Sizing Comparison">
+  <figcaption>
+    Letter spacing & kerning is optimized along the Optical Size axis for ideal visual impact & reading ease across sizes.
+  </figcaption>
+</figure>
 
 Of course, different optical sizes aren’t really meant to be compared at the same scale – or even really with the exact same content. It is generally more accurate to look at different optical sizes in their intended sizes. For Name Sans, Display is designed for 96pt, Standard is designed for 24pt, and Text is designed for 12pt. In practice, type is a little less exact than that, because there are many factors beyond the control of the font size. For example, the distance of the viewer will change [the perceived font size](https://sizecalc.com/), and the exact physical size of fonts isn’t completely standardized across operating systems & apps. So, at the end of the day, even though optical sizing can automatically help designers to achieve more nuanced typography, some amount of contextual judgment will often be important.
 
-<img class="main-col" src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison, at different sizes">
+<img class="main-col" src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison at different sizes">
+
+
+<figure class="main-col">
+  <img src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison at different sizes">
+  <figcaption>
+    Optical Sizes – as their name suggests – are designed to be deliver the same visual intent at different scales. Typically, Display sizes are optimized for short names & phrases, medium sizes (like Name Sans Standard) are optimized for headlines, and Text sizes are optimized for running text.
+  </figcaption>
+</figure>
 
 Extremes get a lot of focus in the discussion of optical sizing, because they help illustrate design features that might otherwise go unnoticed. However, what happens in the middle is just as important, if not more so. Name Sans **Standard**, then, seeks to roughly correspond to the sizing, spacing, and proportions of common sans-serif typefaces. If you don’t want to think about optical sizes and just want to do typography as usual, this “Standard” option is designed to work well for you. But, I hope you will consider branching out when projects allow for it – your typography will benefit from the added nuance!
 
@@ -141,7 +173,7 @@ Extremes get a lot of focus in the discussion of optical sizing, because they he
 
 A striking, prominent trait of the mosaics is that the circular letters are *circles*. In type, a circle never really looks like a circle, but I’ve iterated a lot to get as close as possible to a circular basis for letters like `O`, `C`, `G`, `Q`, `o`, `c`, & `e` – while also keep things looking circular in the context of type.
 
-![cortland street](name_sans_inspo-cortland.jpg)
+![Mosaic name tablet at Cortlandt Street](name_sans_inspo-cortland.jpg)
 
 “Keeping things circular” may sound like a straightforward task – almost too basic for discussion. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly circular letters are never actually just geometric circles. Generally, the letter `O` has to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom – otherwise, it will look too wide when set in words.  Further complicating things, letters like `C` and `G` can’t just copy the curvature of the `O`, or they will look comparatively wider. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may think of as “purely geometric.”
 
@@ -173,15 +205,23 @@ One important decision in any geometric font is whether letters like `b`, `d`, `
 
 Therefore, in Name Sans, I have drawn letters like `b`, `d`, `p`, & `q` to match the visual average width of `n` & `o` rather than to look especially circular. This, in turn, helps to establish a visual rhythm that doesn’t call too much attention to itself.
 
-![Comparative proportions of round shapes in Name Sans Display](name_sans-second_av-display.svg)
-*In Name Sans Display, letters like `b` and `d` are drawn to match the visual average width of `n` and `o`, rather than to look perfectly circular.*
+<figure>
+  <img src="name_sans-second_av-display.svg" alt="Comparative proportions of round shapes in Name Sans Display">
+  <figcaption>
+    In Name Sans Display, letters like <code>b</code> and <code>d</code> are drawn to match the visual average width of <code>n</code> and <code>o</code>, rather than to look perfectly circular.
+  </figcaption>
+</figure>
 
 Such considerations are also important between different optical sizes. In the Display sizes, the `o` can be very circular, but in Text, the `o` must be made much more similar to the width of `n` to avoid an excessively-wide appearance in running text.
 
 It might be that our eyes are just used to reading certain fonts, and it may be an effect of our eyes rapidly moving horizontally when we read. Either way, anything close to an actual circle will look oblong in running text, so Name Sans accounts for this. Display styles emphasize geometry at a large scale, while Standard & Text styles attempt to look geometric-but-not-distractingly-so.
 
-![Comparative proportions of round shapes in Name Sans Text](name_sans-second_av-text.svg)
-*In Name Sans Text, the round letters are much closer to the width of `n`. If they were to keep the circularity of the Display styles, they would look like wide ellipses in running text.*
+<figure>
+  <img src="name_sans-second_av-text.svg" alt="Comparative proportions of round shapes in Name Sans Text">
+  <figcaption>
+    In Name Sans Text, the round letters are much closer to the width of <code>n</code>. If they were to keep the circularity of the Display styles, they would look like wide ellipses in running text.
+  </figcaption>
+</figure>
 
 If you overlay the `o`, `n`, & `b`, you can see quite clearly that while `o` is quite circular, the `n` stays closer to more traditional proportions, and the `b` falls in between.
 
@@ -200,42 +240,65 @@ A subtle thing I love about the Subway mosaics: the vertices of diagonal letters
 
 Most sans-serifs take one extreme or the other on their treatment of vertices. Broadly speaking, they either take the Futura route with pencil-sharp points or the Helvetica route of prioritizing evenness of strokes, proportions, and color without really considering vertices. I like that the mosaics take a practical, in-between approach: they have vertices that are slightly sharp and a little bit blunt. Naturally, I have sought to preserve this in Name Sans.
 
-![Mosiac name tablet for Ft. Hamilton Parkway](./hamilton.jpg)
-*The sharpness of diagonal letters varies between eras of Subway mosaics, but the “endcaps” of vertices tend to be around two-thirds of the main stroke thickness.*
+<figure>
+  <img alt="Mosaic name tablet for Ft. Hamilton Parkway" src="hamilton.jpg" />
+  <figcaption>
+    The sharpness of diagonal letters varies between eras of Subway mosaics, but the “endcaps” of vertices tend to be around two-thirds of the main stroke thickness.
+  </figcaption>
+</figure>
 
-![H&M Tunnels to New Jersey](hm-tunnels.jpg)
-*Even smaller-scale mosaic signs were made with care. Most of these include partially sharp vertices on diagonal letters that closely match the look of their larger-scale relatives.*
+<figure>
+  <img alt="H&M Tunnels to New Jersey" src="hm-tunnels.jpg" />
+  <figcaption>
+    Even smaller-scale mosaic signs were made with care. Most of these include partially sharp vertices on diagonal letters that closely match the look of their larger-scale relatives.
+  </figcaption>
+</figure>
 
-![Name Sans diagonals](./name_sans-AMNWV.svg)
-*These bluntly sharp vertices are carried into Name Sans.*
+<figure>
+  <img alt="Name Sans diagonals" src="name_sans-AMNWV.svg" />
+  <figcaption>
+    The bluntly sharp vertices from the Subway mosaics are carried into Name Sans.
+  </figcaption>
+</figure>
 
 Sharpened vertices come from a slightly different logical basis than many sans-serifs. Rather than suggesting diagonal letters are made from separate diagonal strokes and attempting to perfectly balance the volume of interior spaces – as a signpainter might create them – these paths are suggestive of the way a person with a pencil might write such characters in a single path. They prize repeated interior volumes a little less and show the letters as “single units” a little more.
 
-![Paths for Name Sans diagonals](./name_sans-AMNWV-paths.svg)
-*The sharp vertices give the impression of letters that are “written” in a single stroke, rather than constructed from multiple lines.*
+<figure>
+  <img alt="Paths for Name Sans diagonals" src="name_sans-AMNWV-paths.svg" />
+  <figcaption>
+    The sharp vertices give the impression of letters that are “written” in a single stroke, rather than constructed from multiple lines.
+  </figcaption>
+</figure>
 
 I have extended this quality of sharpness to the meeting points of lowercase letters like `a`, `g`, `n`, `m`, `b`, `d`, `p`, & `q`. Rather than trying to suggest a single, monolinear vertical stem on these letters, I have borrowed the idea of sharpness to give a little more whitespace to these corners while also avoiding the need to add to much contrast to the strokes connecting bowls. Would the original architects have done it this way? It’s hard to say – possibly not. But, this approach allows the typeface to work together in a way that maintains a sense of sharpness while also remaining a cohesive sense of each letter being a self-contained unit that works smoothly with its neighbors.
 
 Like every aspect of Name Sans, this approach to sharpness is adapted across optical sizes to be ideal at large, medium, and small sizes. As the `opsz` decreases, the stem sharpness is dialed up to preserve this visual feature.
 
-![Name Sans, sharpened stems](name_sans-sharp_stems_opsz.svg)
-*The lowercase letters borrow the sharp spur from <code>G</code> to carry a sense of sharpness across the typeface. Like most features of the family, this is adjusted between Optical Sizes.*
+<figure>
+  <img alt="Name Sans, sharpened stems" src="name_sans-sharp_stems_opsz.svg" />
+  <figcaption>The lowercase letters borrow the sharp spur from <code>G</code> to carry a sense of sharpness across the typeface. Like most features of the family, this is adjusted between Optical Sizes.</figcaption>
+</figure>
 
 It’s difficult to put into academic terms, but this slight sharpening of stems also gives me a certain **feeling** of the sharp edges and slight imperfections of the ceramic tiles used in mosaics – even when (or especially when) it’s used for running text.
 
-
-![Name Sans, sharpness at various optical sizes](name_sans-sharpness_opsz.svg)
-*The contstruction of Name Sans delivers a visual texture that captures the unique mixture of sharpness and warmth of mosaic tile signage.*
+<figure>
+<img alt="Name Sans, sharpness at various optical sizes" src="name_sans-sharpness_opsz.svg" />
+<figcaption>The contstruction of Name Sans delivers a visual texture that captures the unique mixture of sharpness and warmth of mosaic tile signage.</figcaption>
+</figure>
 
 ## Optical compensations both exaggerated and (almost) ignored
 
 There is so much that could be included when describing the personality of the Subway mosaics – and many divergent examples that could be highlighted. I suspect that any given type designer might pick up on something different.
 
-![Mosaic name tablet at Bowery](./bowery.jpg)
-*Mosaic name tablet 2nd Ave – note the vertically-symmetrical B, circular O, short-armed E, and prominent “kick” on the leg of the R*
+<figure>
+<img alt="Mosaic name tablet at Bowery" src="./bowery.jpg" />
+<figcaption>Mosaic name tablet 2nd Ave – note the vertically-symmetrical B, circular O, short-armed E, and prominent “kick” on the leg of the R</figcaption>
+</figure>
 
-![Mosaic name tablet at 96th St](./96th_st.jpg)
-*Mosaic name tablet at 96th St – note the circular, symmetrical counters in 9 & 6*
+<figure>
+<img alt="Mosaic name tablet at 96th St" src="./96th_st.jpg" />
+<figcaption>Mosaic name tablet at 96th St – note the circular, symmetrical counters in 9 & 6</figcaption>
+</figure>
 
 For me, though, a core aspect of the personality in the mosaic lettering is the way the optical compensations are handled – beyond just how circles look.
 
@@ -247,8 +310,12 @@ These quirks are some of what make the mosaics so endearing to me. In the contex
 
 In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics to make sense in a digital typeface. But, especially in the Display styles, I’ve preserved a lot of the unconventional traits. I’ve kept vertical and horizontal strokes as nearly-monolinear as they can be without looking “reversed.” I’ve kept a taper in the proportions of `S`. I’ve kept the `B` almost vertically-symmetrical. I’ve kept a short mid bar on the `E`. I’ve kept an upright `5`. I’ve kept certain whitespaces, like the counter of the `n`, perfectly symmetrical – except in the lightest styles, where this starts to look asymmetrical. For every visual quirk in Name Sans, there are mosaic letters that led me to make that decision.
 
-![Name Sans optical tricks](name_sans-optical_quirks.svg)
-*Name Sans plays with symmetry and asymmetry in proportions and counter spaces. Larger sizes emphasize visual quirks in proportion, symmetry, and rigidity of the Subway mosaics. Smaller sizes adapt many of these mannerisms into more typical shaping.*
+<figure>
+  <img alt="Name Sans optical tricks" src="name_sans-optical_quirks.svg" />
+  <figcaption>
+    Name Sans plays with symmetry and asymmetry in proportions and counter spaces. Larger sizes emphasize visual quirks in proportion, symmetry, and rigidity of the Subway mosaics. Smaller sizes adapt many of these mannerisms into more typical shaping.
+  </figcaption>
+</figure>
 
 The Subway mosaics can get away flaunting convention because they are large and seldom include very much content. In making Name Sans, I have found that the larger optical sizes can come close to matching that uncompromising approach.
 
@@ -258,33 +325,64 @@ Meanwhile, many of the optical conventions bucked by Name Sans Display are norma
 
 Often, the most striking feature of the Subway mosaics is how they seem to defy the physical limitations you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve shows that the mosaic letterers were occassionally just showing off. This is even more striking in the serif styles of lettering and in other signage sprinkled throughout the system, but that is a topic for another project.
 
-![NYC Subway mosaic sign for Church of the Redeemer](churchoftheredeemer.jpg)
-*A smaller directional sign at an exit from the Barclays Center station, for a church that unfortunately was [demolished in 2016](https://forgotten-ny.com/2016/06/rip-church-redeemer-downtown-brooklyn/). This sign isn’t really a part of my current project, but it is a pretty awesome example of what a skilled mosaic artist can do with letters and tiles.*
+<figure>
+  <img alt="NYC Subway mosaic sign for Church of the Redeemer" src="churchoftheredeemer.jpg" />
+  <figcaption>
+  A smaller directional sign at an exit from the Barclays Center station, for a church that unfortunately was <a href="https://forgotten-ny.com/2016/06/rip-church-redeemer-downtown-brooklyn/">demolished in 2016</a>. This sign isn’t really a part of my current project, but it is a pretty awesome example of what a skilled mosaic artist can do with letters and tiles.
+  </figcaption>
+</figure>
+
 
 But also, there are plenty of moments where the grid of tiles is embraced. The rectangularity of tiles influences the letters they form. As you can imagine, the dimensions of tiles often dictate the thickness of letters and the placement of cross-strokes. An even more-obvious obvious example of following the grid is found in flat-sided round letters. In a broader sense, though, the exclusive use of uppercase letters is also an example of the grid of tiles influencing the forms designed. Uppercase letters simply don’t require as many complex curves and details as lowercase letters.
 
-![Mosaic name tablet at Spring street](spring_st.jpg)
-*Bottom-heavy `S` shaping and a leg-kicking, grotesque `R` at Spring St.*
+<figure>
+  <img alt="Mosaic name tablet at Spring street" src="spring_st.jpg" />
+  <figcaption>
+  Bottom-heavy <code>S</code> shaping and a leg-kicking, grotesque <code>R</code> at Spring St.
+  </figcaption>
+</figure>
 
-![Mosaic name tablet at Fulton St](./fulton-st.jpg)
-*A compact, flat-sided `O` matched to otherwise (mostly) normal characters at Fulton St.*
+<figure>
+  <img alt="Mosaic name tablet at Fulton St" src="./fulton-st.jpg" />
+  <figcaption>
+  A compact, flat-sided <code>O</code> matched to otherwise (mostly) normal characters at Fulton St.
+  </figcaption>
+</figure>
 
 Without direct examples, I have had to invent a lowercase for Name Sans. In part, I have done so by looking for examples of similar styles of letters in sources from a roughly similar time as early Subway stations. One particular source of inspiration is the 1912 catalogue of the American Type Founders. This includes several “gothic” (AKA grotesque) typefaces which, although clearly not the model used for the Subway mosaics, do share some similar ideas. Aside from similar overall letterforms, strict geometry, and low-contrast strokes, some of these gothics include flat portions of letters. These flat portions are placed where curves would normally be “shallow” or used as optical corrections, like the top of the `f` & `r` and bottom of the `t` & `y`.
 
-![ATF Inland Gothic](inland_gothic.jpg)
-*Inland Gothic No. 8, from the American Type Founders 1912 Specimen Book of Type Styles. Includes flattened portions of `g`, `t`, `r`, `j`, and `y`.*
+<figure>
+  <img alt="ATF Inland Gothic" src="inland_gothic.jpg" />
+  <figcaption>
+  Inland Gothic No. 8, from the American Type Founders 1912 Specimen Book of Type Styles. Includes flattened portions of <code>g</code>, <code>t</code>, <code>r</code>, <code>j</code>, and <code>y</code>.
+  </figcaption>
+</figure>
 
-![ATF Times Gothic](times_gothic.jpg)
-*Times Gothic, from the American Type Founders 1912 Specimen Book of Type Styles. Includes smooth counter connections and pairs circular round characters with others with are more compact.*
+<figure>
+  <img alt="ATF Times Gothic" src="times_gothic.jpg" />
+  <figcaption>
+  Times Gothic, from the American Type Founders 1912 Specimen Book of Type Styles. Includes smooth counter connections and pairs circular round characters with others with are more compact.
+  </figcaption>
+</figure>
+
 These flat portions or lowercase gothic letters remind me of the flat-sided letters used in some of the Subway mosaics. Seeing them makes me think of how one might realisticaly approach shallow curves in tile mosaics. In Name Sans, I have embraced flat portions of letters, juxtaposing these against other moments of fluidity, geometry, and sharpness. I see this as following the example of the original mosaic lettering. Am I also influenced by ideas from the 100+ years since the first Subway mosaics? This is inevitable in any historical fiction. But, I also suspect that what I’m designing might be fairly unsurprising to a mosaic artist from a century ago.
 
-![Flat portions give Name Sans a mechanical appearance](name_sans-flats.svg)
-*Flat portions of Name Sans echo the rigid shaping of Inland Gothic No. 8, and suggest the grid-oriented physical construction of Subway mosaics.*
+<figure>
+<img alt="Flat portions give Name Sans a mechanical appearance" src="name_sans-flats.svg" />
+  <figcaption>
+  Flat portions of Name Sans echo the rigid shaping of Inland Gothic No. 8, and suggest the grid-oriented physical construction of Subway mosaics.
+  </figcaption>
+</figure>
 
 To an extent, I must admit, the decision to incorporate flat segments was also influenced by certain instances of vinyl Helvetica station signage. I find it endearing that the `S` has a flat segment in its spine, and that the `t` sometimes ends in a horizontal tail, rather than its more-typical little upturn. I can’t deny that Name Sans has modern influences – another reason it is an interpretation rather than a revival.
 
-![Name Sans Stylistic Set 1, Flat-sided Caps](name_sans-ss01.svg)
-*Stylistic Set 1 references the rigidity found in mosaics lettering with flat-sided caps.*
+<figure>
+  <img alt="Name Sans Stylistic Set 1, Flat-sided Caps" src="name_sans-ss01.svg" />
+  <figcaption>
+  Stylistic Set 1 references the rigidity found in mosaics lettering with flat-sided caps.
+  </figcaption>
+</figure>
+
 ## “Obviousness” and evolution
 
 What is “simplicity”? It’s a much-debated question, but – at least when it comes to type – is somewhere between impossible and counterproductive. Is “simplicity” an absolute minimum of shaping detail? Partially yes – but if taken too far, that definition might lead to letterforms without necessary optical compensations, which looks terrible in practice. Is “simplicity” repeating what we are already used to seeing and reading? Partially yes – but if taken too far, that definition would conclude that we already have exactly the type we need and would forgo the possibility of ever making things better than what we already have. 
@@ -313,11 +411,19 @@ The problem is, there are numbers in Subway mosaics that suggest both strategies
 
 Because these numbers existed as direct examples, I have chosen to follow both potential routes – Name Sans includes a `6` & `9` with circular counters, but bucks the typical geometric-grotesque approach, using a typically humanist form for `8`.
 
-![Mosaic sign at 8th Street](./to-8th.jpg)
-*While many numbers and letters in NYC Subway mosaics fall under shapes that would be categorized as “grotesque,” there are also examples like this `8` which follow more “humanist” tendencies.*
+<figure>
+  <img alt="Mosaic sign at 8th Street" src="./to-8th.jpg" />
+  <figcaption>
+    While many numbers and letters in NYC Subway mosaics fall under shapes that would be categorized as “grotesque,” there are also examples like this <code>8</code> which follow more “humanist” tendencies.
+  </figcaption>
+</figure>
 
-![Numbers from Name Sans v0.5](name_sans-numbers.svg)
-*In a nod to the subtle variety of lettering styles in NYC mosaics, the `6` and `9` of Name Sans have a “grotesque” structure with smooth counters, while the `8` has a more typically “humanist” construction, as if written in one smoothly-curving path.*
+<figure>
+<img alt="Numbers from Name Sans v0.5" src="name_sans-numbers.svg" />
+  <figcaption>
+    In a nod to the subtle variety of lettering styles in NYC mosaics, the <code>6</code> and <code>9</code> of Name Sans have a “grotesque” structure with smooth counters, while the <code>8</code> has a more typically “humanist” construction, as if written in one smoothly-curving path.
+  </figcaption>
+</figure>
 
 But again, the lowercase did not have precendents, and therefore, I simply had to choose what looked more obvious in text. I will freely admit that, because I spend hours of every day reading fonts like Helvetica and [Apple SF](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/), my eyes are biased. It could be that I chose to follow these examples because I found them visually familiar, and knew others would as well.
 
@@ -325,8 +431,12 @@ But again, the lowercase did not have precendents, and therefore, I simply had t
 
 I do have a theory of *why* smooth-joined lowercase forms have “won out” in so much of today’s typography: with smooth connections, letters feel like *self-contained units*. When it has a smooth connection between its steam and its bowl, a character like `n` is a **single shape** in and of itself, even though it has a complex shape. If, however, an `n` has a sharp connection, it presents itself as **two shapes** connected.
 
-![Name Sans Text, v0.3 vs v0.5](name_sans-v03_v05-text.svg)
-*Earlier versions of Name Sans Text included sharp joints on many characters. These were ultimately smoothed out to better match the aesthetics of Name Sans Display at smaller sizes and to maintain high-quality outlines in intermediate styles.*
+<figure>
+  <img alt="Name Sans Text, v0.3 vs v0.5" src="name_sans-v03_v05-text.svg" />
+  <figcaption>
+    Earlier versions of Name Sans Text included sharp joints on many characters. These were ultimately smoothed out to better match the aesthetics of Name Sans Display at smaller sizes and to maintain high-quality outlines in intermediate styles.
+  </figcaption>
+</figure>
 
 This theory isn’t really based on unique insights of my own. In reality, the theory is really just my extrapolation of Gerrit Noordzij’s theory of The Stroke. In The Stroke, Noordzij argues that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include *expansion* (in which the stroke’s width modulates according to pressure, as explified by a pointed-nib pen) and *translation* (in which the stroke’s width modulates according to a pen’s orientation, as exemplified by writing with a flat-nibbed pen). In expansion writing – the structural basis for typefaces from Didot to Helvetica – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In translation writing – the structural basis for typefaces from Palatino to Verdana – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (*Rotation* is another category mentioned. But, as with any model, Stroke Theory is a simplification. The reality of writing is much more complex, and fascinating concepts like single-stroke signpainting and brush calligraphy –  which mix expansion, translation, and rotation – are mostly left out. Still, it provides one useful perspective by which to consider the design of letters.)
 
@@ -375,8 +485,12 @@ Why the change? For one, having stylistic sets to turn off behavior got very con
 
 At the same time, as a type-minded designer, I really *like* having a font that changes shape for different sizes. It’s *useful* if small or running text has a more-recognizable `g`. It’s pretty cool if a headline has a wonky `R`. So, for folks who want to use Name Sans in this kind of “expert” mode, Stylistic Sets 19 & 20 will turn on these size-specific substitutions.
 
-![Optional size-specific forms](name_sans-text_display_options.svg)
-*Optional size-specific forms are available in Stylistic Sets 19 & 20 – and automatically activated by Optical Size in Name Sans Variable.*
+<figure>
+  <img alt="Optional size-specific forms" src="name_sans-text_display_options.svg" />
+  <figcaption>
+    Optional size-specific forms are available in Stylistic Sets 19 & 20 – and automatically activated by Optical Size in Name Sans Variable.
+  </figcaption>
+</figure>
 
 ## Extra quirks worth mentioning
 
@@ -386,8 +500,12 @@ In Stylistic Set 1, Rectangular Caps, the `U` has a bottom which is more square 
 
 In the bolder Display styles, the y has a smooth connection between from its left side down to the descender. This is straight off of Helvetica – even though it’s a bit tricky to incorporate into the family because it must swap to a sharp connection in lighter weights, it looks too nice to leave out.
 
-![A few extra quirks](name_sans-extra.svg)
-*Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the `Z` (echoed by the `t`) and a flat-bottomed `U` in Stylistic Set 1. An alternate `ß`, in an “fz” form borrowed from Berlin street signs, is also available in Stylistic Set 10.*
+<figure>
+<img alt="A few extra quirks" src="name_sans-extra.svg" />
+  <figcaption>
+    Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the <code>Z</code> (echoed by the <code>t</code>) and a flat-bottomed <code>U</code> in Stylistic Set 1. An alternate <code>ß</code>, in an “fz” form borrowed from Berlin street signs, is also available in Stylistic Set 10.
+  </figcaption>
+</figure>
 
 Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. I am still learning, and there are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.
 
