@@ -44,8 +44,7 @@ Name Sans is not a *revival*, and it isn’t intended to be. There was no single
 
 So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade.
 
-
-In many ways, not having a single point of reference has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. There are clearly repeated lettering styles for different train lines and different eras. But also, something I love about the Subway is that there is not a perfectly repeated system for the name tablets. If all of the wayfinding was purely set in Helvetica and stations had a completely uniform aesthetic, the Subway would be boring. More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify stops by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–colored walls, you would end up missing stops a lot more often.
+In many ways, *not* having a single point of reference has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. There are clearly repeated lettering styles for different train lines and different eras. But also, something I love about the Subway is that there is not a perfectly repeated system for the name tablets. If all of the wayfinding was purely set in Helvetica and stations had a completely uniform aesthetic, the Subway would be boring. More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify stops by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–colored walls, you would end up missing stops a lot more often.
 
 Name Sans picks up on my favorite aspects of the Subway wayfinding system and brings them together into an extended Latin character set with a wide range of weights and optical sizes. If I had gotten stuck on finding just one thing to revive, I wouldn’t have had the flexibility to really explore what is useful in a geometric-grotesque sans – and what is newly possible with type technology today.
 
@@ -60,7 +59,7 @@ And thus, I have sought to build a typeface that captures the best energy and sp
 
 (Side note: if any transit archivists or aficionados are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more! The online archives are great but (understandably) don’t contain images for every possible item. A 2019 exhibit did include a few beautiful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more!)
 
-## A wide range of Weights & Optical Sizing
+## A wide range of Weights & Optical Sizes
 
 ### Weight
 
@@ -97,7 +96,7 @@ What is reasonably possible, then? To get specific, I am drawing this typeface w
 
 A warning: the Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type affects its readability, a similar consideration must be given to the weight of type. But, that disappearing is a hidden feature: it allows Name Sans to be animated in and out from this core. This can be especially useful in characters that maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows.
 
-### Optical Sizing
+### Optical Size
 
 To understand Name Sans, it is essential to first have an idea of what **optical sizing** is. The optical sizes of a typeface are made to preserve its design intent at different sizes. Optical sizes are fairly similar to font weights, which are usually made to preserve the design of a typeface at different relative levels of thickness or density.
 
@@ -243,7 +242,7 @@ Meanwhile, many of the optical conventions bucked by Name Sans Display are norma
 
 <!-- ![Name Sans optical tricks](name_sans-optical_sizing.svg) -->
 
-## Blending Rigidity & Fluidity
+## A blend of rigidity & fluidity
 
 Often, the most striking feature of the Subway mosaics is how they seem to defy the physical limitations you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve shows that the mosaic letterers were occassionally just showing off. This is even more striking in the serif styles of lettering and in other signage sprinkled throughout the system, but that is a topic for another project.
 
@@ -274,7 +273,7 @@ To an extent, I must admit, the decision to incorporate flat segments was also i
 
 ![Name Sans Stylistic Set 1, Flat-sided Caps](name_sans-ss01.svg)
 *Stylistic Set 1 references the rigidity found in mosaics lettering with flat-sided caps.*
-## “Obviousness” and Evolution
+## “Obviousness” and evolution
 
 What is “simplicity”? It’s a much-debated question, but – at least when it comes to type – is somewhere between impossible and counterproductive. Is “simplicity” an absolute minimum of shaping detail? Partially yes – but if taken too far, that definition might lead to letterforms without necessary optical compensations, which looks terrible in practice. Is “simplicity” repeating what we are already used to seeing and reading? Partially yes – but if taken too far, that definition would conclude that we already have exactly the type we need and would forgo the possibility of ever making things better than what we already have. 
 
