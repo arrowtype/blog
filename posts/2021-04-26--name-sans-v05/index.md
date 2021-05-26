@@ -155,9 +155,6 @@ You can start to understand how a typeface handles optical sizing by placing dif
 
 Of course, different optical sizes aren’t really meant to be compared at the same scale – or even really with the exact same content. It is generally more accurate to look at different optical sizes in their intended sizes. For Name Sans, Display is designed for 96pt, Standard is designed for 24pt, and Text is designed for 12pt. In practice, type is a little less exact than that, because there are many factors beyond the control of the font size. For example, the distance of the viewer will change [the perceived font size](https://sizecalc.com/), and the exact physical size of fonts isn’t completely standardized across operating systems & apps. So, at the end of the day, even though optical sizing can automatically help designers to achieve more nuanced typography, some amount of contextual judgment will often be important.
 
-<img class="main-col" src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison at different sizes">
-
-
 <figure class="main-col">
   <img src="name_sans-triborough_opsz_context.svg" alt="Optical Sizing Comparison at different sizes">
   <figcaption>
