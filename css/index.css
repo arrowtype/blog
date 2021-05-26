@@ -473,7 +473,7 @@ a[href].direct-link:hover {
 
 .tmpl-post h1 {
   margin: 0 auto 0.5em;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.125;
   width: 100%;
   max-width: var(--main-col);
