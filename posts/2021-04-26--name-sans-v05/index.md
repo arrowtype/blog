@@ -11,7 +11,7 @@ permalink: name-sans-v05/
 
 [Name Sans](https://name.arrowtype.com) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
 
-From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in existing fonts – it’s ultimately just a slightly-different way of approaching the same old [Latin script](https://en.wikipedia.org/wiki/Latin_script) as so many other fonts.
+From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in existing fonts – it’s ultimately just a slightly-different way of approaching the same old [Latin script](https://en.wikipedia.org/wiki/Latin_script).
 
 But, just as it’s nice to have new music, new fashion, and new architecture in the world, new typefaces like Name Sans are about creative expression, pushing boundaries, engaging with history, and – to put it somewhat grandly – communicating something about the human experience. This article is here to point out some of the thinking and process behind Name Sans, what it can do that is different from other typefaces, and some of the details that make it unique.
 
