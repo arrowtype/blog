@@ -1,9 +1,6 @@
 @font-face {
   font-family: 'NameSansVF';
   font-weight: 1 1000;
-  /* for local development */
-  /* src: url("name_sans-variable.woff2");  */
-  /* deploy */
   src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
   font-display: swap;
 }
@@ -11,6 +8,7 @@
 :root {
   --accent: hsl(260deg, 100%, 58%);
   --accent2: hsl(28deg, 100%, 57%);
+  --namesans-accent: #FF0000;
   --accent-faded: hsl(277deg, 100%, 50%, 74%);
   --accent2-faded: hsl(28deg, 100%, 50%, 60%);
   --lightgray: #e0e0e0;
@@ -35,6 +33,7 @@
   :root {
     --accent: hsl(260, 100%, 66%);
     --accent2: hsl(28deg, 100%, 57%);
+    --namesans-accent: #FBBC00;
     --accent-faded: hsla(260deg, 100%, 75%, 0.75);
     --accent2-faded: hsla(28deg, 100%, 57%, 0.6);
     --lightgray: hsl(210, 5%, 40%);
@@ -84,6 +83,10 @@ body {
   background-color: var(--white);
 }
 
+svg text {
+  font-family: var(--sans);
+}
+
 main {
   min-height: calc(100vh - var(--header) - var(--footer));
   padding: 3rem 1rem 3rem;
@@ -111,12 +114,12 @@ a[href] {
 }
 
 em {
-  font-weight: 600;
+  font-weight: 700;
+  font-style: normal;
 }
 
 header {
   border-bottom: 1px solid var(--lightgray);
-  
   padding: 1rem;
   height: var(--header);
   z-index: 100;
@@ -262,7 +265,7 @@ li ol {
 }
 
 .postlist-date.title-date {
-  font-feature-settings: "ss08";
+  font-feature-settings: "ss01","ss08";
 }
 
 .postlist-link {
@@ -470,7 +473,7 @@ a[href].direct-link:hover {
 
 .tmpl-post h1 {
   margin: 0 auto 0.5em;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   line-height: 1.125;
   width: 100%;
   max-width: var(--main-col);
@@ -544,10 +547,55 @@ img {
   max-width: 100%;
 }
 
+img.main-col,
+figure.main-col,
+svg.main-col,
+video.main-col {
+  display: block;
+  width: 100%;
+  max-width: var(--main-col);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+figure img, figure video {
+  margin-bottom: 1rem;
+}
+
+video {
+  max-width: 100%;
+}
+
+@media (min-width: 1000px) {
+  .tmpl-post p img {
+    width: calc(100vw - 2rem);
+    height: auto;
+    margin-left: calc( -1 * (100vw - var(--main-col))/2 + 1rem);
+    max-width: calc(100vw - 2rem);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  p img + p img {
+    margin-top: 0;
+    border: red 10px solid;
+  }
+}
+
+@media (min-width: 1600px) {
+  .tmpl-post p img {
+    width: 200%;
+    margin-left: -50%;
+    max-width: 1600px;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .content img,
   .content video {
-    opacity: 0.75;
+    opacity: 0.875;
     transition: opacity 0.25s;
   }
   .content img:hover,
@@ -602,6 +650,27 @@ img {
   .content h3,
   .content h4 {
     margin-top: 2em;
+  }
+}
+
+/* lazy image captions */
+.content img + br + em,
+.content figcaption {
+  font-size: .75rem;
+  font-weight: 500;
+  color: var(--gray);
+  display: inline-block;
+  /* padding-bottom: 2rem; */
+  transform: translateY(-0.5rem);
+  max-width: 50ch;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+  .content img + br + em,
+  .content figcaption {
+    transform: none;;
   }
 }
 
