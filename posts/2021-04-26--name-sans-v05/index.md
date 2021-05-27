@@ -13,7 +13,7 @@ permalink: name-sans-v05/
 
 From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in existing fonts – it’s ultimately just a slightly-different way of approaching the same old [Latin script](https://en.wikipedia.org/wiki/Latin_script).
 
-But, just as it’s nice to have new music, new fashion, and new architecture in the world, new typefaces like Name Sans are about creative expression, pushing boundaries, engaging with history, and – to put it somewhat grandly – communicating something about the human experience. This article is here to point out some of the thinking and process behind Name Sans, what it can do that is different from other typefaces, and some of the details that make it unique.
+But, just as it’s nice to have new music, new fashion, and new architecture in the world, new typefaces like Name Sans are about creative expression, pushing boundaries, engaging with history, and – at risk of sounding poetic – communicating something about the human experience. This article is here to point out some of the thinking and process behind Name Sans, what it can do that is different from other typefaces, and some of the details that make it unique.
 
 ## What is Name Sans, anyway?
 
@@ -121,7 +121,7 @@ What is reasonably possible, then? To get specific, I am drawing this typeface w
     <source src="./namesans-countdown-vid.mp4"
               type="video/mp4">
   </video>
-  <figcaption>Weights `300` to `1` in Name Sans Display. The Hairline styles offer a near-invisible endpoint for disappearing & appearing animations.</figcaption>
+  <figcaption>Weights <code>300</code> to <code>1</code> in Name Sans Display. The Hairline styles offer a near-invisible endpoint for disappearing & appearing animations.</figcaption>
 </figure>
 
 A warning: the Hairline is so thin, it disappears in some contexts. Just as designers have to consider how the fill color of type affects its readability, a similar consideration must be given to the weight of type, and often it is better to use a slightly-thicker style, or even to add a bit of an outline stroke to these letters. But, that disappearingly-light weight is a hidden feature: it allows Name Sans to be animated in and out from this core. This can be especially useful in characters that maintain a common width between weights, like tabular numbers (activated with feature `tnum`) and arrows. If any wine label designers are out there, the Hairline characters would also look preeetty nice printed at a large size on a wine label. Just an idea...
@@ -388,7 +388,7 @@ What is “obviousness”? That is a more straightforward question. It assumes a
 
 A primary example: the terminal angles and aperture tightness of sans-serif letters have a big impact on the tone of a typeface. What is the most obvious way to handle this aspect of a design? What would be obvious within the mosaics?
 
-In early versions of Name Sans, the apertures of letters like `C`, `S`, & `a` were very “closed” in Display styles, and much more “open” in Text styles. The logic was that, with tighter spacing in the Display styles, tighter aperatures kept letters more self-contained. But, as I contended with coming up with an explanation rooted in actual examples from Subway mosaics, I had to admit that this solution was too much of an invention of my own. I was too closely following type trends of the last few years – these tight apertures were hardly something that would be obvious to the folks making signs many decades ago. 
+In early versions of Name Sans, the apertures of letters like `C`, `S`, & `a` were very “closed” in Display styles, and much more “open” in Text styles. The logic was that, with tighter spacing in the Display styles, tighter apertures kept letters more self-contained. But, as I contended with coming up with an explanation rooted in actual examples from Subway mosaics, I had to admit that this solution was too much of an invention of my own. I was too closely following type trends of the last few years – these tight apertures were hardly something that would be obvious to the folks making signs many decades ago. 
 
 So, I adjusted my terminals to be at a more obvious placement and angle. I prioritized what would make strokes appear to end with square terminals at a roughly 45° placement – using my eyeballs rather than an actual measurement. This small adjustment made the characters in Name Sans much more similar to the overall appearance of Subway mosaics.
 
@@ -428,6 +428,8 @@ But again, the lowercase did not have precendents, and therefore, I simply had t
 
 I do have a theory of *why* smooth-joined lowercase forms have “won out” in so much of today’s typography: with smooth connections, letters feel like *self-contained units*. When it has a smooth connection between its steam and its bowl, a character like `n` is a **single shape** in and of itself, even though it has a complex shape. If, however, an `n` has a sharp connection, it presents itself as **two shapes** connected.
 
+It’s not that I think smooth connections make letters “self-contained” at the *expense* of forming cohesive wordshapes for reading. I still hold the ideal that “A typeface is a beautiful collection of letters, not a collection of beautiful letters.” (Thanks, [Matthew Carter](ted.com/speakers/matthew_carter)!) I am also not disputing the value of a humanist construction for letters. Rather, this is my understanding of why smooth connections help give a font a stable, sturdy presence, while sharp connections tend to present more of an active, forward-moving tone. Both approaches have merits, and both strategies (if executed well) can lead to highly-readable type.
+
 <figure>
   <img alt="Name Sans Text, v0.3 vs v0.5" src="name_sans-v03_v05-text.svg" />
   <figcaption>
@@ -435,7 +437,7 @@ I do have a theory of *why* smooth-joined lowercase forms have “won out” in 
   </figcaption>
 </figure>
 
-This theory isn’t really based on unique insights of my own. In reality, the theory is really just my extrapolation of Gerrit Noordzij’s theory of The Stroke. In The Stroke, Noordzij argues that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include *expansion* (in which the stroke’s width modulates according to pressure, as explified by a pointed-nib pen) and *translation* (in which the stroke’s width modulates according to a pen’s orientation, as exemplified by writing with a flat-nibbed pen). In expansion writing – the structural basis for typefaces from Didot to Helvetica – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In translation writing – the structural basis for typefaces from Palatino to Verdana – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (*Rotation* is another category mentioned. But, as with any model, Stroke Theory is a simplification. The reality of writing is much more complex, and fascinating concepts like single-stroke signpainting and brush calligraphy –  which mix expansion, translation, and rotation – are mostly left out. Still, it provides one useful perspective by which to consider the design of letters.)
+The idea of considering letter construction as rooted in physical tools isn’t my own. In reality, the theory is really just my extrapolation of Gerrit Noordzij’s theory of The Stroke. In The Stroke, Noordzij argues that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include *expansion* (in which the stroke’s width modulates according to pressure, as explified by a pointed-nib pen) and *translation* (in which the stroke’s width modulates according to a pen’s orientation, as exemplified by writing with a flat-nibbed pen). In expansion writing – the structural basis for typefaces from Didot to Helvetica – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In translation writing – the structural basis for typefaces from Palatino to Verdana – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (*Rotation* is another category mentioned. But, as with any model, Stroke Theory is a simplification. The reality of writing is much more complex, and fascinating concepts like single-stroke signpainting and brush calligraphy –  which mix expansion, translation, and rotation – are mostly left out. Still, it provides one useful perspective by which to consider the design of letters.)
 
 <figure class="main-col">
   <img src="name_sans-model.svg" alt="Expansion vs Translation in versions of Name Sans Text">
@@ -444,7 +446,11 @@ This theory isn’t really based on unique insights of my own. In reality, the t
   </figcaption>
 </figure>
 
-All that is to say: Name Sans might have a smoothly-joined lowercase because this style is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans *also* has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit. Either way, this is the obvious choice – at least for this project.
+A much more basic explanation is possible, too: sharp connections add extra angles to letters, which add up to more visual complexity on the zoomed-out level of words and text. In the case of Name Sans, it feels best to avoid this type of visual complexity.
+
+(Just in case anyone is reading this and happens to be considering [font defaults for document-creation software](https://www.microsoft.com/en-us/microsoft-365/blog/2021/04/28/beyond-calibri-finding-microsofts-next-default-font/): In the case of a font intended for books or multi-page documents, I would instead lean towards a humanist model. Perhaps this is also because I am used to *that*, but perhaps also because its dynamic presence helps my eyes maintain forward momentum in text when there is truly a lot of it.)
+
+All that is to say: Name Sans might have a smoothly-joined lowercase because this style is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans also has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit, so that the typeface as a whole can have a stable, direct voice. Either way, this is the obvious choice – at least for this project.
 
 ## A varied but harmonious set of possibilities
 
