@@ -32,7 +32,7 @@ Well, one answer is that it’s the font you’re reading right now – but it�
 
 As the tag line says, Name Sans is *a modern interpretation of the mosaic name tablets of the NYC Subway.* 
 
-Mosaic **name tablets** are by far my favorite feature of the Subway. These pieces of lettering built from ceramic tiles declare station names for Subway riders, while smaller versions provide wayfinding directions to commuters. Making this source of inspiration into a typeface is a project I have been imagining and sketching since moving to NYC in 2014, then more actively developing as a font family since the end of 2019.
+Mosaic **name tablets** are by far my favorite feature of the Subway. These pieces of lettering built from ceramic tiles declare station names for Subway riders, while smaller versions provide extra wayfinding help within stations. Making this source of inspiration into a typeface is a project I have been imagining and sketching since moving to NYC in 2014, then more actively developing as a font family since the end of 2019.
 
 <figure>
   <img src="name_sans_v05-mosaics.png" alt="Various name tablets in the NYC Subway system">
@@ -46,7 +46,7 @@ When I first had the idea for this project, I expected that I could dig up some 
 <figure>
   <img src="name_sans_sketches.png" alt="Various sketches of mosaic letters from the NYC Subway">
   <figcaption>
-  As an NYC commuter, I almost have a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.
+  As an NYC commuter, I almost always keep a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.
   </figcaption>
 </figure>
 
