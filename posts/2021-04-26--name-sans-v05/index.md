@@ -506,7 +506,7 @@ In the bolder Display styles, the y has a smooth connection between from its lef
 <figure>
 <img alt="A few extra quirks" src="name_sans-extra.svg" />
   <figcaption>
-    Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the <code>Z</code> (echoed by the <code>t</code>) and a flat-bottomed <code>U</code> in Stylistic Set 1. An alternate <code>ß</code>, in an “fz” form borrowed from Berlin street signs, is also available in Stylistic Set 10.
+    Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the <code>Z</code> (echoed by the <code>t</code>) and a flat-bottomed <code>U</code> in Stylistic Set 1. An alternate <code>ß</code>, in an “tailed-z” form borrowed from Berlin street signs, is also available in Stylistic Set 10.
   </figcaption>
 </figure>
 
