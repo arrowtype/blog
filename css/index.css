@@ -1,6 +1,9 @@
 @font-face {
   font-family: 'NameSansVF';
   font-weight: 1 1000;
+  /* for local development – put font directly into git-ignored `_site/css` dir */
+  /* src: url("Name_Sans_Variable.woff2"); */
+  /* for publication */
   src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
   font-display: block;
 }
@@ -651,7 +654,7 @@ video {
 .content h3 a,
 .content h4,
 .content h4 a {
-  font-weight: 550;
+  font-weight: 700;
 }
 
 .content h2:before,
@@ -729,6 +732,7 @@ code {
 figcaption code {
   background-color: var(--offwhite);
   color: var(--text);
+  opacity: 0.8;
 }
 
 code.no-background {
