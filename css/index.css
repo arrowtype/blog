@@ -4,7 +4,7 @@
   /* for local development – put font directly into git-ignored `_site/css` dir */
   /* src: url("Name_Sans_Variable.woff2"); */
   /* for publication */
-  src: url("https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2");
+  src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Variable.woff2");
   font-display: block;
 }
 
