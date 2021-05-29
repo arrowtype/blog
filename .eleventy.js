@@ -5,6 +5,8 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginNavigation = require("@11ty/eleventy-navigation");
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require("markdown-it-anchor");
+const markdownItFootnote = require("markdown-it-footnote");
+const markdownItContainer = require("markdown-it-container");
 const pageAssetsPlugin = require('eleventy-plugin-page-assets');
 
 module.exports = function(eleventyConfig) {
@@ -91,8 +93,42 @@ module.exports = function(eleventyConfig) {
     permalinkClass: "direct-link",
     permalinkSymbol: "🔗",
     level: [2]
-  });
+  }).use(markdownItContainer, 'note', {
+    validate: function(params) {
+      return params.trim().match(/^note\s+(.*)$/);
+    },
+  
+    render: function (tokens, idx) {
+      var m = tokens[idx].info.trim().match(/^note\s+(.*)$/);
+  
+      if (tokens[idx].nesting === 1) {
+        // opening tag
+        return '<div class="note"><span>' + markdownLibrary.utils.escapeHtml(m[1])+ '</span><p>' + '</p>\n';
+  
+      } else {
+        // closing tag
+        return '</div>\n';
+      }
+    }
+  }).use(markdownItFootnote, {});
   eleventyConfig.setLibrary("md", markdownLibrary);
+
+
+  markdownLibrary.renderer.rules.footnote_caption = (tokens, idx) => {
+    let n = Number(tokens[idx].meta.id + 1).toString();
+
+    if (tokens[idx].meta.subId > 0) {
+      n += ":" + tokens[idx].meta.subId;
+    }
+
+    return n;
+  };
+
+  markdownLibrary.renderer.rules.footnote_block_open = () => (
+    '<h2 class="mt-3">Footnotes</h2>\n' +
+    '<section class="footnotes">\n' +
+    '<ol class="footnotes-list">\n'
+  );
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({

@@ -11,10 +11,9 @@ permalink: name-sans-v05/
 
 [Name Sans](https://name.arrowtype.com) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
 
-From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in existing fonts – it’s ultimately just a slightly-different way of approaching the same old [Latin script](https://en.wikipedia.org/wiki/Latin_script).
+From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in other, previously-available fonts – it’s ultimately just a slightly different way of approaching the same old Latin script.^[The [Latin Script](https://en.wikipedia.org/wiki/Latin_script) is the writing system familiar to anyone who writes English, Spanish, German, French, or any other language using a similar A–Z alphabet. And actually, Name Sans does go beyond the character set of many fonts, with a total of 728 glyphs which support over 200 languages used through Europe and the Americans, plus Vietnamese.]
 
 But, just as it’s nice to have new music, new fashion, and new architecture in the world, new typefaces like Name Sans are about creative expression, pushing boundaries, engaging with history, and – at risk of sounding poetic – communicating something about the human experience. This article is here to point out some of the thinking and process behind Name Sans, what it can do that is different from other typefaces, and some of the details that make it unique.
-
 ## What is Name Sans, anyway?
 
 My favorite fonts are usually released along with an introductory article. Name Sans is still an active work-in-progress, now in its fifth pre-release version. In a way, you can think of this as the “v0.5” blog post introducing Name Sans, its process, and its design – I plan to revise this post when I can finally release version `1.0`.
@@ -54,9 +53,9 @@ At one point, several years ago, I mentioned to an experienced type designer tha
 
 Name Sans isn’t a *revival*, and it couldn’t be a revival.
 
-Type revivals are recreations of specific fonts previously made with obsolescent technology, as when a digital font is made to recreate letters originally cast in metal for letterpress printing. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by [several separate companies over many decades](https://en.wikipedia.org/wiki/New_York_City_Subway#History), with projects led by different architects over time. The subway mosaics are a loose system of architectural lettering – not a singular typeface that one could “revive.”
+Type revivals are recreations of specific fonts previously made with obsolescent technology, as when a digital font is made to recreate letters originally cast in metal for letterpress printing. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by several separate companies over many decades^[[Wikipedia: NYC Subway History](https://en.wikipedia.org/wiki/New_York_City_Subway#History)], with projects led by different architects over time. The subway mosaics are a loose system of architectural lettering – not a singular typeface that one could “revive.”
 
-So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade. Partly, though, I am making the typeface that I imagine could have been there the whole time, if perhaps [Heins & LaFarge](https://en.wikipedia.org/wiki/Heins_%26_LaFarge) had commissioned a custom typeface for NYC’s first Subway from a type designer who time-traveled back a century.
+So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade. Partly, though, I am making the typeface that I imagine could have been there the whole time, if perhaps Heins & LaFarge^[[Wikipedia: Heins & LaFarge](https://en.wikipedia.org/wiki/Heins_%26_LaFarge)] had commissioned a custom typeface for NYC’s first Subway from a type designer who time-traveled back a century.
 
 In many ways, *not* having a single point of reference has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. There are clearly repeated lettering styles for different train lines and different eras. But also, something I love about the Subway is that there is not a perfectly repeated system for the name tablets. If all of the wayfinding was purely set in Helvetica and stations had a completely uniform aesthetic, the Subway would be painfully boring. More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify your stop by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–gray walls, you would end up missing stops a lot more often.
 
@@ -79,9 +78,11 @@ Working from more than a single specimen has also revealed possibilities beyond 
 
 And thus, I have sought to build a typeface that captures the best energy and spirit of the Subway mosaics but which is genuinely useful to designers working in digital systems, wayfinding, and graphic design.
 
-**Side note:** if any transit archivists or aficionados are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more! The online archives are great but (understandably) don’t contain images for every possible item. A 2019 exhibit did include a few beautiful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more! You can reach me at `info@arrowtype.com` if you want to chat.
-
 The following will go into more detail to describe the formal qualities that exist in the Name Sans design.
+
+::: note By the way...
+If any transit archivists or aficionados are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more! The online archives are great but (understandably) don’t contain images for every possible item. A 2019 exhibit did include a few beautiful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more! You can reach me at `info@arrowtype.com` if you want to chat.
+:::
 
 ## A wide range of Weights & Optical Sizes
 
@@ -164,7 +165,9 @@ Of course, different optical sizes aren’t really meant to be compared at the s
 
 Extremes get a lot of focus in the discussion of optical sizing, because they help illustrate design features that might otherwise go unnoticed. However, what happens in the middle is just as important, if not more so. Name Sans **Standard**, then, seeks to roughly correspond to the sizing, spacing, and proportions of common sans-serif typefaces. If you don’t want to think about optical sizes and just want to do typography as usual, this “Standard” option is designed to work well for you. But, I hope you will consider branching out when projects allow for it – your typography will benefit from the added nuance!
 
-**An added note:** because smaller optical sizes require additional letter spacing and have slightly larger lowercase letters, they often result in slightly wider line lengths than display sizes. This is **not** equivalent to a Width axis. If a given space is too small to fit with content set in a Text style (e.g. a long address on a business card template), you are better off making the font size smaller than you would be by changing the optical size to a Standard or Display style.
+::: note Usage Note
+Smaller optical sizes usually have slightly wider line lengths than display sizes. This is because smaller sizes have additional letter spacing and have slightly larger lowercase letters. However, this is **not** equivalent to a Width axis. If a given space is too small to fit with content in a Text style (e.g. a long address on a business card template), change the font size or the layout – not the optical size.
+:::
 
 ## Geometry, but with nuance
 

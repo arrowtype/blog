@@ -24,13 +24,15 @@
   },
   "homepage": "https://blog.arrowtype.com",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
+    "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-navigation": "^0.1.6",
     "@11ty/eleventy-plugin-rss": "^1.0.9",
     "@11ty/eleventy-plugin-syntaxhighlight": "^3.0.1",
     "eleventy-plugin-page-assets": "github:arrowtype/eleventy-plugin-page-assets",
     "luxon": "^1.21.3",
     "markdown-it": "^8.4.2",
-    "markdown-it-anchor": "^5.2.5"
+    "markdown-it-anchor": "^5.2.5",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-footnote": "^3.0.3"
   }
 }

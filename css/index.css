@@ -540,7 +540,8 @@ a[href].direct-link:hover {
 .content pre[class*="language-"],
 .content p:not(:first-child),
 .content li p,
-.content img {
+.content img,
+.content .note p {
   max-width: var(--main-col);
   margin-left: auto;
   margin-right: auto;
@@ -717,6 +718,10 @@ video {
   margin-bottom: 1em;
 }
 
+.content ul {
+  list-style-type: "→ ";
+}
+
 code {
   background-color: var(--offwhite2);
   padding: 0 0.125em;
@@ -808,6 +813,49 @@ pre code {
 }
 .highlight-line-remove {
   background-color: #902f2f;
+}
+
+/* custom note container */
+
+.note {
+  /* background: var(--offwhite); */
+  padding: 1rem;
+  max-width: var(--main-col);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  border: 2px solid var(--gray);
+}
+
+.note span {
+  content: 'Note';
+  text-transform: uppercase;
+  font-feature-settings: 'ss01';
+  font-weight: 600;
+  color: var(--white);
+  background: var(--gray);
+  width: calc(100% + 2rem);
+  display: block;
+  margin: -1rem -1rem 0 -1rem;
+  padding: 0.325rem 1rem 0.25rem;
+  letter-spacing: 0.05em;
+}
+
+/* footnotes */
+
+.footnote-ref a {
+  color: var(--accent);
+  text-decoration: none;
+  background: none;
+  letter-spacing: 0.05em;
+  font-feature-settings: "tnum";
+}
+
+.footnote-ref a:hover {
+  color: var(--accent);
+  -webkit-text-fill-color: var(--accent);
+  text-fill-color: var(--accent);
 }
 
 /* pagination */
