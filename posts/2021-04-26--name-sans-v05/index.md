@@ -172,7 +172,7 @@ A striking, prominent trait of the mosaics is that the circular letters are *cir
 
 ![Mosaic name tablet at Cortlandt Street](name_sans_inspo-cortland.jpg)
 
-“Keeping things circular” may sound like a straightforward task – almost too basic for discussion. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly circular letters are never actually just geometric circles. Generally, the letter `O` has to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom – otherwise, it will look too wide when set in words.  Further complicating things, letters like `C` and `G` can’t just copy the curvature of the `O`, or they will look comparatively wider. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may think of as “purely geometric.”
+“Keeping things circular” may sound like a straightforward task – almost too basic for discussion. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly circular letters are never actually just geometric circles. Generally, the letter `O` has to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom – otherwise, it will look too wide when set in words.  Further complicating things, letters like `C` & `G` can’t just copy the curvature of the `O`, or they will look comparatively wider. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may think of as “purely geometric.”
 
 <figure class="main-col">
   <img src="futura-vs-circles.svg" alt="Futura Medium, compared to circles">
@@ -205,7 +205,7 @@ Therefore, in Name Sans, I have drawn letters like `b`, `d`, `p`, & `q` to match
 <figure>
   <img src="name_sans-second_av-display.svg" alt="Comparative proportions of round shapes in Name Sans Display">
   <figcaption>
-    In Name Sans Display, letters like <code>b</code> and <code>d</code> are drawn to match the visual average width of <code>n</code> and <code>o</code>, rather than to look perfectly circular.
+    In Name Sans Display, letters like <code>b</code> & <code>d</code> are drawn to match the visual average width of <code>n</code> & <code>o</code>, rather than to look perfectly circular.
   </figcaption>
 </figure>
 
@@ -316,7 +316,7 @@ In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics t
 
 The Subway mosaics can get away flaunting convention because they are large and seldom include very much content. In making Name Sans, I have found that the larger optical sizes can come close to matching that uncompromising approach.
 
-Meanwhile, many of the optical conventions bucked by Name Sans Display are normalized a little bit in smaller optical sizes: horizontal strokes get a bit thinner, the `S` and `B` become a bit more traditionally balanced, the `5` gets a bit of a slant, and so on. This makes Text styles a little more familiar to read, while still keeping things lively.
+Meanwhile, many of the optical conventions bucked by Name Sans Display are normalized a little bit in smaller optical sizes: horizontal strokes get a bit thinner, the `S` & `B` become a bit more traditionally balanced, the `5` gets a bit of a slant, and so on. This makes Text styles a little more familiar to read, while still keeping things lively.
 
 ## A blend of rigidity & fluidity
 
@@ -351,7 +351,7 @@ Without direct examples, I have had to invent a lowercase for Name Sans. In part
 <figure>
   <img alt="ATF Inland Gothic" src="inland_gothic.jpg" />
   <figcaption>
-  Inland Gothic No. 8, from the American Type Founders 1912 Specimen Book of Type Styles. Includes flattened portions of <code>g</code>, <code>t</code>, <code>r</code>, <code>j</code>, and <code>y</code>.
+  Inland Gothic No. 8, from the American Type Founders 1912 Specimen Book of Type Styles. Includes flattened portions of <code>g</code>, <code>t</code>, <code>r</code>, <code>j</code>, & <code>y</code>.
   </figcaption>
 </figure>
 
@@ -395,7 +395,7 @@ So, I adjusted my terminals to be at a more obvious placement and angle. I prior
 ![Name Sans Display, v0.3 vs v0.5](name_sans-v03_v05-display.svg)
 *In earlier versions of Name Sans, opening shapes of many characters were tight, in response to other popular & historical grotesque typefaces. They have since been widened to more closely reflect observed lettering of the NYC mosaics.*
 
-There are a few exceptions to the open apertures. The Black & Ultra weights, which are pretty unabashedly of my own invention, exagerate the system into purely-display territory. Here, the apertures do close off to avoid overly-large whitespaces in text. Likewise, some tabular figures are fairly wide across all weights, so numbers like `2` and `3` have more-horizontal terminals in their tabular versions.
+There are a few exceptions to the open apertures. The Black & Ultra weights, which are pretty unabashedly of my own invention, exagerate the system into purely-display territory. Here, the apertures do close off to avoid overly-large whitespaces in text. Likewise, some tabular figures are fairly wide across all weights, so numbers like `2` & `3` have more-horizontal terminals in their tabular versions.
 
 ![Name Sans Ultra, v0.3 vs v0.5](name_sans-v03_v05-display_ultra.svg)
 *Apertures were opened up – but only a bit – in Ultra weights. Counters were adjusted from circular to elliptical shaping to present of more-serious tone.*
@@ -418,7 +418,7 @@ Because these numbers existed as direct examples, I have chosen to follow both p
 <figure>
 <img alt="Numbers from Name Sans v0.5" src="name_sans-numbers.svg" />
   <figcaption>
-    In a nod to the subtle variety of lettering styles in NYC mosaics, the <code>6</code> and <code>9</code> of Name Sans have a “grotesque” structure with smooth counters, while the <code>8</code> has a more typically “humanist” construction, as if written in one smoothly-curving path.
+    In a nod to the subtle variety of lettering styles in NYC mosaics, the <code>6</code> & <code>9</code> of Name Sans have a “grotesque” structure with smooth counters, while the <code>8</code> has a more typically “humanist” construction, as if written in one smoothly-curving path.
   </figcaption>
 </figure>
 
@@ -466,7 +466,7 @@ In the case of Name Sans, I would see it as a major missed opportunity to disreg
 
 I would also see it as a missed opportunity to not bring in my favorite leg-kicking `R` from stations like Spring Street and Bowery. But, I have had to face the fact that an R with a curly leg doesn’t always work, and probably doesn’t work most of the time. It’s often just *too interesting*, to a fault. So, the default `R` of Name Sans has a simple shape with a straight leg, while the cooler “grotesque” form can be activated with Stylistic Set 2.
 
-On top of all that, there are several stylistic sets that are just nice to have in any geometric sans. There is a single-story `a` and a double-story `g`, plus simplified versions of `t`, `j`, and `y`.
+On top of all that, there are several stylistic sets that are just nice to have in any geometric sans. There is a single-story `a` and a double-story `g`, plus simplified versions of `t`, `j`, & `y`.
 
 <figure class="main-col">
   <video autoplay loop playsinline muted controls>
