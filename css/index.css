@@ -21,6 +21,7 @@
   --blue: #0033ff;
   --offwhite: hsl(0, 0%, 94%);
   --offwhite2: hsl(0, 0%, 90%);
+  --offwhiteAccent2: hsl(28deg, 100%, 90%);
   --white: #fff;
   --text: #000;
   --main-col: 36rem;
@@ -46,6 +47,7 @@
     --blue: hsl(210, 100%, 76%);
     --offwhite: hsl(210, 15%, 10%);
     --offwhite2: hsl(210, 8%, 15%);
+    --offwhiteAccent2: hsl(28deg, 100%, 15%);
     --white: #000;
     --text: hsl(210, 5%, 84%);
     --text-wght: 400;
@@ -723,7 +725,7 @@ video {
 }
 
 code {
-  background-color: var(--offwhite2);
+  background-color: var(--offwhiteAccent2);
   padding: 0 0.125em;
   font-size: 0.95em;
 }
