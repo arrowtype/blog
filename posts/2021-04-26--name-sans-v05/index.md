@@ -283,7 +283,7 @@ It’s difficult to put into academic terms, but this slight sharpening of stems
 
 <figure>
 <img alt="Name Sans, sharpness at various optical sizes" src="name_sans-sharpness_opsz.svg" />
-<figcaption>The contstruction of Name Sans delivers a visual texture that captures the unique mixture of sharpness and warmth of mosaic tile signage.</figcaption>
+<figcaption>The construction of Name Sans delivers a visual texture that captures the unique mixture of sharpness and warmth of mosaic tile signage.</figcaption>
 </figure>
 
 ## Optical compensations both exaggerated and (almost) ignored
