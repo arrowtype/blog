@@ -47,7 +47,7 @@
     --blue: hsl(210, 100%, 76%);
     --offwhite: hsl(210, 15%, 10%);
     --offwhite2: hsl(210, 8%, 15%);
-    --offwhiteAccent2: hsl(28deg, 100%, 15%);
+    --offwhiteAccent2: hsl(28deg, 0%, 20%);
     --white: #000;
     --text: hsl(210, 5%, 84%);
     --text-wght: 400;
