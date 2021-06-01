@@ -24,7 +24,7 @@
     {# <!--  Essential META Tags --> #}
     <meta property="og:title" content="{{ title or metadata.title }}">
     <meta property="og:description" content="{{ description or metadata.description }}">
-    <meta property="og:image" content="{{ thumbnail or https://blog.arrowtype.com{{ page.url }}/metadata.thumbnail }}">
+    <meta property="og:image" content="https://blog.arrowtype.com/{{ thumbnail or metadata.thumbnail }}">
     <meta property="og:url" content="https://blog.arrowtype.com{{ page.url }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
