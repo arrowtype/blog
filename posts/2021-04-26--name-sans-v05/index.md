@@ -7,6 +7,7 @@ tags:
   - type design
 layout: layouts/post.njk
 permalink: name-sans-v05/
+thumbnail: thumbnail.png
 ---
 
 [Name Sans](https://name.arrowtype.com) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
