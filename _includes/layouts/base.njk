@@ -22,16 +22,16 @@
     <meta name="theme-color" content="#ffffff">
 
     {# <!--  Essential META Tags --> #}
-    <meta property="og:title" content="The Arrow Type Blog">
-    <meta property="og:description" content="Notes on type design & development">
+    <meta property="og:title" content="{{ title or metadata.title }}">
+    <meta property="og:description" content="{{ description or metadata.description }}">
     <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
-    <meta property="og:url" content="https://blog.arrowtype.com">
+    <meta property="og:url" content="https://blog.arrowtype.com{{ page.url }}">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 
     {# <!--  Non-Essential, But Recommended --> #}
     <meta property="og:site_name" content="The Arrow Type Blog">
-    <meta name="twitter:image:alt" content="Socail thumbnail for The Arrow Type Blog.">
+    <meta name="twitter:image:alt" content="Social thumbnail for The Arrow Type Blog.">
   </head>
   <body>
     <header>
