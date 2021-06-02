@@ -374,7 +374,12 @@ These flat portions or lowercase gothic letters remind me of the flat-sided lett
 <figure>
 <img alt="Flat portions give Name Sans a mechanical appearance" src="name_sans-flats.svg" />
   <figcaption>
-  Flat portions of Name Sans echo the rigid shaping of Inland Gothic No. 8, and suggest the grid-oriented physical construction of Subway mosaics.
+    <p>
+      Flat portions of Name Sans echo the rigid shaping of Inland Gothic No. 8, while also echoing the grid-oriented physical construction of Subway mosaics.
+    </p>
+    <p>
+      Text styles moderate certain flat segments – like the bottom of the lowercase <code>g</code> – where a bit of added normality improves readability in long-form text.
+    </p>
   </figcaption>
 </figure>
 
