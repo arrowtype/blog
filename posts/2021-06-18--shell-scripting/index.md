@@ -8,6 +8,7 @@ tags:
   - shell
 layout: layouts/post.njk
 permalink: shell-scripting-for-font-builds/
+thumbnail: shell-scripting-for-font-builds/thumbnail.png
 ---
 
 Shell scripting is a method you  can use to set up font build workflows that are approachable, scalable, and repeatable. I presented a tutorial on shell scripting in a presentation at the 2021 Typographics TypeLab.
