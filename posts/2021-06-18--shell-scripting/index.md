@@ -15,6 +15,6 @@ Shell scripting is a method you  can use to set up font build workflows that are
 
 The tutorial exists in a project repo at: [github.com/arrowtype/typelab-2021](https://github.com/arrowtype/typelab-2021)
 
-There is also [a recorded version of the presentation on YouTube](https://www.youtube.com/watch?v=yj_YznWx3SQ&t=375s&ab_channel=ArrowType).
+There is also [a recorded version of the presentation on YouTube](https://www.youtube.com/watch?v=yj_YznWx3SQ).
 
 Happy scripting!
