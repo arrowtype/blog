@@ -11,21 +11,23 @@ permalink: getting-started/index.html
 
 So, you’re interested in type design, but you are still figuring out how & where to start or get to the next step. This post is a non-exhaustive attempt to share an overview of how you might learn some basics, how you can get started with font editing software, and where you might consider growing your skills after that. 
 
-This post reflects my bias and (some of) my personal experience, and it completely skips important topics like formal education, calligraphy and **sketching**, bezier drawing tips, and more. This article started as an email listing my favorite RoboFont extensions, and then I thought that it would be worth sharing publicly, instead. It is something which will evolve over time.
-
+This post reflects my bias and (some of) my personal experience, and it completely skips important topics like formal education, calligraphy, sketching, bezier drawing tips, and more. But, I have a lot of thoughts to share on beginner (and intermediate) resources, so this post will serve as an evolving collection of those thoughts.
 ## General learning
 
 ### Useful Internet resources
 
-- The format of this post is somewhat informed by James Edmonson’s (OHno Type) blog post [Getting Started in Type Design](https://ohnotype.co/blog/getting-started). It includes some useful topics I haven’t included in this post. Also, The next two resources in this list are borrowed directly from it.
-- [Type Basics, by Underware](http://www.typeworkshop.com/index.php?id1=type-basics). Not a flashy layout, but a serious of extremely helpful drawings with important lessons for type design.
+- The format of this post is somewhat informed by James Edmonson’s (Ohno Type) blog post [Getting Started in Type Design](https://ohnotype.co/blog/getting-started). It includes some useful topics I haven’t included in this post. Also, The next two resources in this list are borrowed directly from it.
+  - [Spacing](https://ohnotype.co/blog/spacing) & [Proofing](https://ohnotype.co/blog/proof-it), also by OHno Type, are two excellent, practical posts for subjects beyond drawing that are super significant to good type design.
+  - More recently, The Ohno Blog added the excellent [Ohno Type School](https://ohnotype.co/blog/ohno-type-school-a) series. I don’t fully agree with 100% of the opinions offered within it, but Ohno is brilliant, and this series is crammed full of entertaining jokes and useful insights.
+- [Type Basics, by Underware](http://www.typeworkshop.com/index.php?id1=type-basics). This doesn’t have a flashy layout, but it is a series of extremely helpful drawings with important lessons for type design.
 - [Type Mechanics, by Tobias Frere-Jones](https://frerejones.com/blog?tag=Education%20Mechanics). More useful explanations of some visual things that are important to know, but not always obvious.
-- [Spacing](https://ohnotype.co/blog/spacing) & [Proofing](https://ohnotype.co/blog/proof-it), also by OHno Type, are two excellent, practical posts for subjects beyond drawing that are super significant to good type design.
-  - I have collected a few useful spacing tests at https://github.com/arrowtype/spacing
+- I have collected a few useful spacing tests at https://github.com/arrowtype/spacing
+- There is a ton of practical advice for technical aspects of type design available in the documentation & tutorials provided by various font editing apps. More on this below.
 
 ### Useful books
 
-- For the very basics of letter-shaping, the first book I read in type design was really helpful: [Designing Type, by Karen Cheng](https://yalebooks.yale.edu/book/9780300111507/designing-type). It goes through each letter, showing their general forms via classic typefaces. Not necessarily useful if you have been designing for awhile, but it helped me gain an overall awareness of what is “general practice” that I found really helpful as a beginner.
+- For the very basics of letter-shaping, the first book I read in type design was really helpful: [Designing Type, by Karen Cheng](https://yalebooks.yale.edu/book/9780300111507/designing-type). It goes through each letter, showing their general forms via measurements of different pieces of glyphs from classic typefaces. This measurement-based is not necessarily useful if you have been designing type for a while – type design is more about testing what you make and trusting your own eyes than it is about following formulas from the work of others. Even so, this book helped me gain an overall awareness of what is “general practice” that I found really helpful as a beginner. And sometimes, even today, when I don’t know a convention offhand (e.g. a question like "How big, exactly, should the quote marks be for a display serif?"), I will take a look at a few relevant fonts to understand precedent.
+- For more practical information around how to actually draw, space, and kern a typeface, take a look at [How to Create Typefaces, from Sketch to Screen](https://www.type-together.com/how-to-create-typefaces.-from-sketch-to-screen).
 - For deeper (but still approacheable) reflections on theory, [The Theory of Type Design, by Gerard Unger](https://www.amazon.com/Theory-Type-Design-Gerard-Unger/dp/9462084408) is a great book with a beautiful set of visual examples and references.
 - For one useful theory of approaching type design in a systematic way, [The Stroke, by Gerrit Noordzij](https://www.typotheque.com/books/the_stroke) is a classic.
 
