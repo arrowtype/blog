@@ -32,7 +32,8 @@ With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively eas
 ## Edit CORS on the bucket
 
 1. Navigate back to the top level of your bucket
-2. Scroll to the “Cross-origin resource sharing (CORS)” section, then click **Edit**
+2. Click the “Permissions” tab.
+3. Scroll to the “Cross-origin resource sharing (CORS)” section, then click **Edit**.
 4. Set CORS permissions to allow your specified URL(s) to access the objects in the bucket, similar to the JSON shown below. 
    - You can use a wildcard (`*`) to allow subdomains, like `https://*.arrowtype.com`. 
    - I also include `http://localhost:8080`, the URL which my local-development builds get served to. Replace this with the localhost port number(s) you need to support.
