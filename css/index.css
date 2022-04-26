@@ -7,6 +7,16 @@
   src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Variable.woff2");
   font-display: block;
 }
+@font-face {
+  font-family: 'NameSansVF';
+  font-style: italic;
+  font-weight: 1 1000;
+  /* for local development – put font directly into git-ignored `_site/css` dir */
+  /* src: url("Name_Sans_Variable.woff2"); */
+  /* for publication */
+  src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Italic_Variable.woff2");
+  font-display: block;
+}
 
 :root {
   --accent: hsl(260deg, 100%, 58%);
@@ -119,8 +129,7 @@ a[href] {
 }
 
 em {
-  font-weight: 700;
-  font-style: normal;
+  font-style: italic;
 }
 
 header {
