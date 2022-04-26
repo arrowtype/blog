@@ -10,11 +10,21 @@
 @font-face {
   font-family: 'NameSansVF';
   font-style: italic;
-  font-weight: 1 1000;
+  font-weight: 400;
   /* for local development – put font directly into git-ignored `_site/css` dir */
   /* src: url("Name_Sans_Variable.woff2"); */
   /* for publication */
-  src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Italic_Variable.woff2");
+  src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Text-Regular_Italic.woff2");
+  font-display: block;
+}
+@font-face {
+  font-family: 'NameSansVF';
+  font-style: italic;
+  font-weight: 700;
+  /* for local development – put font directly into git-ignored `_site/css` dir */
+  /* src: url("Name_Sans_Variable.woff2"); */
+  /* for publication */
+  src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Text-Bold_Italic.woff2");
   font-display: block;
 }
 
