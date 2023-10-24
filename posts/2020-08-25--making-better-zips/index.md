@@ -30,7 +30,7 @@ The [.DS_Store](https://en.wikipedia.org/wiki/.DS_Store) saves your preferences 
 
 To avoid this, you can compress a folder on the command line. Use `cd` to navigate to its parent directory, then use this command (replacing arrowtype-name_sans-v03 with the appropriate folder name):
 
-```bash
+```sh
 zip arrowtype-name_sans-v03.zip -r 'arrowtype-name_sans-v03' -x '*/.DS_Store'
 ```
 
@@ -42,7 +42,7 @@ One good way to avoid remembering this or worrying about syntax is by automating
 
 The function below will make a clean zip if you call if with a path, like `zipit path/to/folder`.
 
-```bash
+```sh
 function zipit {
   currentDir=$(pwd)                             # get current dir so you can return later
   cd $(dirname $1)                              # change to target’s dir (works better for zip)
