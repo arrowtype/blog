@@ -6,7 +6,7 @@ tags:
   - open source
   - type
   - variable fonts
-  - arrow type
+  - ArrowType
 layout: layouts/post.njk
 permalink: lubalin-lecture/index.html
 ---

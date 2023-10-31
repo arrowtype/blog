@@ -10,7 +10,9 @@ permalink: name-sans-v05/
 thumbnail: name-sans-v05/thumbnail.png
 ---
 
-[Name Sans](https://name.arrowtype.com) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
+Update: this article was original written in 2021, for Name Sans v0.5. More recently, [Name Sans v1.0](https://www.arrowtype.com/name-sans) was been released, along with [a newer article describing Name Sans and its design process](https://www.arrowtype.com/articles/name-sans-process).
+
+[Name Sans](https://www.arrowtype.com/name-sans) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
 
 From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just *[insert your favorite sans-serif font name here]*. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in other, previously-available fonts – it’s ultimately just a slightly different way of approaching the same old Latin script.^[The [Latin Script](https://en.wikipedia.org/wiki/Latin_script) is the writing system familiar to anyone who writes English, Spanish, German, French, or any other language using a similar A–Z alphabet. And actually, Name Sans does go beyond the character set of many fonts, with a total of 728 glyphs which support over 200 languages used through Europe and the Americans, plus Vietnamese.]
 
