@@ -10,7 +10,7 @@ permalink: name-sans-v05/
 thumbnail: name-sans-v05/thumbnail.png
 ---
 
-Update: this article was original written in 2021, for Name Sans v0.5. Recently, [Name Sans v1.0](https://www.arrowtype.com/name-sans) has been released, along with [a newer article describing Name Sans and its design process](https://www.arrowtype.com/articles/name-sans-process).
+Update: this article was original written in 2021, for Name Sans v0.5. More recently, [Name Sans v1.0](https://www.arrowtype.com/name-sans) was been released, along with [a newer article describing Name Sans and its design process](https://www.arrowtype.com/articles/name-sans-process).
 
 [Name Sans](https://www.arrowtype.com/name-sans) is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing [via Future Fonts](https://www.futurefonts.xyz/arrowtype/name-sans).
 
