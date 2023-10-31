@@ -27,6 +27,27 @@
   src: url("https://arrowtype2.s3.amazonaws.com/Name_Sans_Text-Bold_Italic.woff2");
   font-display: block;
 }
+@font-face {
+  font-family: 'NameMonoVF';
+  font-weight: 400 800;
+  /* for local development – put font directly into git-ignored `_site/css` dir */
+  /* src: url("Name_Sans_Variable.woff2"); */
+  /* for publication */
+  src: url("https://arrowtype2.s3.amazonaws.com/AT-NameMono-Variable.woff2");
+  font-display: block;
+}
+@font-face {
+  font-family: 'NameMonoVF';
+  font-weight: 400 800;
+  font-style: italic;
+  /* for local development – put font directly into git-ignored `_site/css` dir */
+  /* src: url("Name_Sans_Variable.woff2"); */
+  /* for publication */
+  src: url("https://arrowtype2.s3.amazonaws.com/AT-NameMonoItalic-Variable.woff2");
+  font-display: block;
+}
+
+
 
 :root {
   --accent: hsl(260deg, 100%, 58%);
@@ -50,7 +71,7 @@
   --footer: 12rem;
   --text-wght: 425;
   --sans: 'NameSansVF', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --mono: 'Recursive', monospace;
+  --mono: 'NameMonoVF', monospace;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -175,7 +196,7 @@ table th {
 
 pre,
 code {
-  font-family: 'Recursive', Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-family: 'NameMonoVF', Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   line-height: 1.5;
 }
 
@@ -283,13 +304,13 @@ li ol {
   font-weight: 550;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-feature-settings: "tnum", "ss01";
+  font-feature-settings: "tnum", "ss02";
   -webkit-text-fill-color: var(--gray);
   text-fill-color: var(--gray);
 }
 
 .postlist-date.title-date {
-  font-feature-settings: "ss01","ss08";
+  font-feature-settings: "ss02","ss08";
 }
 
 .postlist-link {
@@ -504,7 +525,7 @@ a[href].direct-link:hover {
   font-weight: 800;
   letter-spacing: 0.0325em;
   text-transform: uppercase;
-  font-feature-settings: "ss01", "case";
+  font-feature-settings: "ss02", "case";
   line-height: 1;
 }
 
@@ -853,7 +874,7 @@ pre code {
 .note span {
   content: 'Note';
   text-transform: uppercase;
-  font-feature-settings: 'ss01';
+  font-feature-settings: 'ss02';
   font-weight: 600;
   color: var(--white);
   background: var(--gray);
@@ -1024,7 +1045,7 @@ footer a[href]:hover {
   height: 2.5rem;
   border-radius: 0;
   padding: 0 0.5rem;
-  font-family: "Recursive", monospace;
+  font-family: 'NameMonoVF', monospace;
   font-size: 1rem;
   width: 100%;
   color: var(--text);
