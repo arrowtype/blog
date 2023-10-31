@@ -1,4 +1,4 @@
-# The Arrow Type Blog
+# The ArrowType Blog
 
 [blog.arrowtype.com](https://blog.arrowtype.com)
 
@@ -8,7 +8,7 @@ Built with the [Eleventy](https://github.com/11ty/eleventy) static site generato
 
 ## License
 
-**Written content & images** are copyright Arrow Type and may not be reused or republished without written permission. Content may be quoted and referenced in other works; but please don’t plagiarize it or republish on another platform without prior written permission from Arrow Type.
+**Written content & images** are copyright ArrowType and may not be reused or republished without written permission. Content may be quoted and referenced in other works; but please don’t plagiarize it or republish on another platform without prior written permission from ArrowType.
 
 **Typefaces** used have their own licensing details.
 
@@ -20,7 +20,7 @@ Built with the [Eleventy](https://github.com/11ty/eleventy) static site generato
 ```
 MIT License
 
-Copyright (c) 2021 Arrow Type @ArrowType
+Copyright (c) 2021 ArrowType @ArrowType
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
