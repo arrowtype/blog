@@ -20,7 +20,7 @@
 @font-face {
   font-family: 'NameSansVF';
   font-style: italic;
-  font-weight: 700;
+  font-weight: 701;
   /* for local development – put font directly into git-ignored `_site/css` dir */
   /* src: url("Name_Sans_Variable.woff2"); */
   /* for publication */
@@ -163,6 +163,10 @@ em {
   font-style: italic;
 }
 
+strong {
+  font-weight: 701;
+}
+
 header {
   border-bottom: 1px solid var(--lightgray);
   padding: 1rem;
@@ -224,7 +228,7 @@ code {
   text-decoration: none;
 }
 .nav-item-active {
-  font-weight: 700;
+  font-weight: 701;
   text-decoration: underline;
 }
 
@@ -698,7 +702,7 @@ video {
 .content h3 a,
 .content h4,
 .content h4 a {
-  font-weight: 700;
+  font-weight: 701;
 }
 
 .content h2:before,
@@ -1012,6 +1016,7 @@ footer a[href]:hover {
   font-size: 2rem;
   max-width: var(--main-col);
   margin: auto;
+  font-weight: 701;
 }
 
 /* newsletter signup */
@@ -1109,7 +1114,7 @@ input.button {
   letter-spacing: 0.05em;
   font-family: sans-serif;
   content: " ¯\\_(ツ)_/¯";
-  font-weight: 700;
+  font-weight: 701;
 }
 
 input.button:focus {
