@@ -130,7 +130,7 @@ No matter what you’re making and which tools you use, all the best in your cre
 
 ## Update 1
 
-Soon after posting this, a friend reached out to mention how RoboFont and Glyphs handle layers differently. I can’t believe I forgot to mention this! A few notes on this:
+Soon after I published this, a friend reached out to mention how RoboFont and Glyphs handle layers differently. I can’t believe I forgot to mention this! A few notes on this:
 - The Glyphs *Background* layer is a quick **Command+B** keystroke away, and I use it constantly. RoboFont allows you to shift between layers with **Option+Command+Up/Down**, but the layers have some limitations.
 - Glyphs allows you to put a component into a background layer: so, for instance, if you are drawing an /ohorn, you can place a live-updating /o component in the background, for a visual confirmation that your main shape is similar.
 - Glyphs also makes [Intermediate layers](https://glyphsapp.com/learn/intermediate-layers) and [Alternate layers](https://glyphsapp.com/learn/switching-shapes) simpler to add and generally simpler to handle than RoboFont. (In UFOs, you can still use intermediate layers, within a UFO or in a separate UFO, and reference that layer from your Designspace.) This advantage somewhat ends if you try to use *both* Intermediate and Alternate layers, as I mention above. But, hopefully this limitation will be resolved in time.
