@@ -194,6 +194,16 @@ footer a {
   font-weight: 600;
 }
 
+blockquote {
+  font-style: italic;
+  border-left: 0.125em solid var(--accent);
+  padding-left: 1em;
+  margin: 1em 0;
+  max-width: var(--main-col);
+  margin-left: auto;
+  margin-right: auto;
+}
+
 table {
   margin: 1em 0;
 }
