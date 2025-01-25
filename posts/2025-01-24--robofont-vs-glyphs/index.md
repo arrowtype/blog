@@ -28,9 +28,9 @@ The email:
 > Best Regards,
 > Person
 
-Clearly, this person never specifically asked for “RoboFont vs Glyphs” as a head-to-head comparison, and I do try to address their question at the end. But, I think they may have the deeper question of “What app should I invest my time into?” which is a valid question.
+Clearly, this person never specifically asked for “RoboFont vs Glyphs” as a head-to-head comparison, and I do try to address their question at the end. But, I think they may have the deeper question of “What app should I invest my time into?” This is a valid question, and worth exploring.
 
-I sent them a quick reply, and I’ve cleaned it up a bit for this blog post.
+I sent them a quick reply, and I’ve expanded upon it for this blog post.
 
 ## My context
 
