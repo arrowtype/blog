@@ -65,8 +65,12 @@ There are still more apps for creating and editing fonts, but a complete survey 
 Like most things, it depends.
 
 My high-level take is: 
-- If you are self-teaching, Glyphs is easier to learn and be productive in. If you are following a formal course (such as the OHno Type course or a school program like TypeMedia or Type@Cooper), it’s best to use whatever software your instructor uses. That way, you can learn from them without a layer of software translation getting in the way.
-- Like any art form, the vital thing to learn is seeing and making the art, much more than learning to use the equipment. In this sense, type design is similar to graphic design, photography, painting, writing, playing guitar, skateboarding, or a million other pursuits ... equipment is only a means to an end. Your choice of gear may make specific tasks more straightforward or efficient, but gear is seldom the limiting factor. A pro can do good work on almost anything, whereas a beginner can’t buy their way to knowledge. You could make a great typeface using any font editor that allows you to draw, space, and kern glyphs, then output these into a standard font format.
+- Both apps are really good, and each has their own strengths and weaknesses.
+- If you are self-teaching, Glyphs is easier to learn and be productive in.
+- If you want to learn about fonts and type design at a deeper level, RoboFont is arguably the better choice. If you are specifically interested in learning to code in Python, RoboFont gives a smoother on-ramp for this (in fact it will somewhat *force* you to write or at least use code in order to be productive). Even if you don’t write code, you will arguably gain a more well-rounded understanding of fonts and type design by working in RoboFont.
+- If you are following a formal course (such as the OHno Type course or a school program like TypeMedia or Type@Cooper), it’s best to use whatever software your instructor uses. That way, you can learn from them without a layer of software translation getting in the way.
+
+Like any art form, the vital thing to learn is seeing and making the art, much more than learning to use the equipment. In this sense, type design is similar to graphic design, photography, painting, writing, playing guitar, skateboarding, or a million other pursuits ... equipment is only a means to an end. Your choice of gear may make specific tasks more straightforward or efficient, but gear is seldom the limiting factor. A pro can do good work on almost anything, whereas a beginner can’t buy their way to knowledge. You could make a great typeface using any font editor that allows you to draw, space, and kern glyphs, then output these into a standard font format.
 
 ## The best parts of either app
 
