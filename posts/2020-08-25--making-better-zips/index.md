@@ -69,6 +69,6 @@ I mentioned this article in a [Twitter thread](https://twitter.com/ArrowType/sta
 
 A notable easy solution is [Keka](https://apps.apple.com/us/app/keka/id470158793?mt=12), which is a native Mac app which can make clean zips, password-protected zips, and more. So, if you have $2.99 and you want a solution available via right-click or drag-and-drop, this is probably worth it.
 
-Of course, if you are already using a shell script to set up a build, the function may be the simplest & most efficient way to do this. Or, if you are using a Python-based build flow, that also [got a reply](https://twitter.com/mass_driver_tm/status/1298377561869819905?s=20) in the thread.
+Of course, if you are already using a shell script to set up a build, the function may be the simplest & most efficient way to do this. ~Or, if you are using a Python-based build flow, that also [got a reply](https://twitter.com/mass_driver_tm/status/1298377561869819905?s=20) in the thread.~ This comment was later deleted, after Twitter was ruined by a certain shithead billionaire. If you are looking for a Python approach, here’s a [GitHub Gist](https://gist.github.com/arrowtype/ab5f62a37d2f3fb749152c11a972aa64) with a quick attempt (feedback is welcome!).
 
 Happy zipping!
