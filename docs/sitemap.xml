@@ -2,192 +2,192 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.arrowtype.com/getting-started/</loc>
+    <loc>https://blog.arrowtype.com/blog/getting-started/</loc>
     <lastmod>2020-05-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/lubalin-lecture/</loc>
+    <loc>https://blog.arrowtype.com/blog/lubalin-lecture/</loc>
     <lastmod>2020-05-12</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/drawbot-vscode/</loc>
+    <loc>https://blog.arrowtype.com/blog/drawbot-vscode/</loc>
     <lastmod>2020-06-15</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/intro-to-fonttools/</loc>
+    <loc>https://blog.arrowtype.com/blog/intro-to-fonttools/</loc>
     <lastmod>2020-06-16</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/gf-vf-css-tricks/</loc>
+    <loc>https://blog.arrowtype.com/blog/gf-vf-css-tricks/</loc>
     <lastmod>2020-08-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/better-zips/</loc>
+    <loc>https://blog.arrowtype.com/blog/better-zips/</loc>
     <lastmod>2020-08-25</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/font-design-on-a-chromebook/</loc>
+    <loc>https://blog.arrowtype.com/blog/font-design-on-a-chromebook/</loc>
     <lastmod>2020-11-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/exploring-HOI/</loc>
+    <loc>https://blog.arrowtype.com/blog/exploring-HOI/</loc>
     <lastmod>2020-11-08</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/robofont-tips/</loc>
+    <loc>https://blog.arrowtype.com/blog/robofont-tips/</loc>
     <lastmod>2020-12-11</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/host-webfont-on-aws/</loc>
+    <loc>https://blog.arrowtype.com/blog/host-webfont-on-aws/</loc>
     <lastmod>2021-01-27</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/name-sans-v05/</loc>
+    <loc>https://blog.arrowtype.com/blog/name-sans-v05/</loc>
     <lastmod>2021-05-26</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/shell-scripting-for-font-builds/</loc>
+    <loc>https://blog.arrowtype.com/blog/shell-scripting-for-font-builds/</loc>
     <lastmod>2021-06-18</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/name-sans-v1/</loc>
+    <loc>https://blog.arrowtype.com/blog/name-sans-v1/</loc>
     <lastmod>2023-10-10</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/</loc>
+    <loc>https://blog.arrowtype.com/blog/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/page-list/</loc>
+    <loc>https://blog.arrowtype.com/blog/page-list/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/web%20dev/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/variable%20fonts/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/CSS/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/command%20line/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/open%20source/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/font%20engineering/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/type/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/tools/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/variable%20fonts/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/web%20dev/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/ArrowType/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/CSS/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/drawbot/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/open%20source/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/tools/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/robofont/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/font%20engineering/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/drawbot/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/tips/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/webfonts/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/type%20dev/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/type%20dev/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/code/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/code/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/shell/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/shell/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/command%20line/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/type/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/robofont/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/ArrowType/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/name%20sans/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/tips/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/type%20design/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/type%20design/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/webfonts/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/software/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/tags/software/</loc>
+    <loc>https://blog.arrowtype.com/blog/tags/name%20sans/</loc>
     <lastmod>2023-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/info/</loc>
+    <loc>https://blog.arrowtype.com/blog/info/</loc>
     <lastmod>2023-11-01</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/robofont-vs-glyphs/</loc>
+    <loc>https://blog.arrowtype.com/blog/robofont-vs-glyphs/</loc>
     <lastmod>2025-01-24</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.arrowtype.com/illustrator-to-glyphs/</loc>
+    <loc>https://blog.arrowtype.com/blog/illustrator-to-glyphs/</loc>
     <lastmod>2025-02-14</lastmod>
   </url>
 </urlset>
