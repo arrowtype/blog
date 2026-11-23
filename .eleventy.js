@@ -80,6 +80,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy({"img/favicon/*": "/"});
   eleventyConfig.addPassthroughCopy("css");
+  eleventyConfig.addPassthroughCopy("CNAME");
   
   // eleventyConfig.addPassthroughCopy("posts/*/assets/*");
 
@@ -163,7 +164,7 @@ module.exports = function(eleventyConfig) {
     // Best paired with the `url` filter: https://www.11ty.dev/docs/filters/url/
 
     // You can also pass this in on the command line using `--pathprefix`
-    pathPrefix: "/blog/",
+    pathPrefix: "/",
 
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "njk",
