@@ -1,0 +1,998 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>The ArrowType Blog</title>
+	<subtitle>Notes on type, tech, &amp; design.</subtitle>
+	
+	<link href="https://blog.arrowtype.com/rss.xml" rel="self"/>
+	<link href="https://blog.arrowtype.com/"/>
+	<updated>2025-02-14T00:00:00Z</updated>
+	<id>https://blog.arrowtype.com/</id>
+	<author>
+		<name>Stephen Nixon</name>
+		<email>stephen@arrowtype.com</email>
+	</author>
+	
+	<entry>
+		<title>How to make a font in Glyphs, starting from Illustrator</title>
+		<link href="https://blog.arrowtype.com/illustrator-to-glyphs/"/>
+		<updated>2025-02-14T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/illustrator-to-glyphs/</id>
+		<content type="html">&lt;p&gt;A fairly common question is: “I’ve drawn a font in Adobe Illustrator. How do I make it into a font?”&lt;/p&gt;
+&lt;p&gt;Back when I made my own first font (about 13 years ago, already!), I remember being surprised that Adobe didn’t just offer a font-making application as part of the Adobe Creative Cloud. They make fonts and they make creative tools, right? Well, more accurately, Adobe makes &lt;em&gt;money.&lt;/em&gt; Type design is too niche a market for them to focus on providing full software for it. (To be fair, Adobe has made great contributions to the underlying tech of fonts, and Adobe Fonts is pretty well-regarded in the type community!)&lt;/p&gt;
+&lt;p&gt;The upshot is: font editing apps are made by a few very small, very cool companies. As you can see from my other blog posts, I am partial to RoboFont and Glyphs.&lt;/p&gt;
+&lt;p&gt;If you are just starting out, I suggest giving Glyphs a try! If you have &lt;em&gt;already&lt;/em&gt; started drawing a font in Illustrator, this article may be helpful to you.&lt;/p&gt;
+&lt;p&gt;Two things to note up-front:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If you’ve already drawn a character set in Illustrator, you &lt;em&gt;can&lt;/em&gt; alternatively use a product called &lt;a href=&quot;https://www.fontself.com/&quot;&gt;FontSelf&lt;/a&gt;, which will allow you to make a font right from Illustrator. I haven’t tried FontSelf, so I can’t comment on how fully featured it may or may not be. If you’re looking for the fastest solution, though, this might be it!&lt;/li&gt;
+&lt;li&gt;If you haven’t yet drawn a bunch of glyphs in Illustrator, I &lt;em&gt;highly&lt;/em&gt; recommend learning to draw directly in Glyphs, instead. The &lt;a href=&quot;https://glyphsapp.com/learn/video-drawing-paths&quot;&gt;drawing tools in Glyphs&lt;/a&gt; are about a million times better than those of Illustrator, when it comes to creating letters. Glyphs gives you much more control and (with a bit of practice)is much more efficient and less frustrating for drawing letters.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;In either case, &lt;a href=&quot;https://ohnotype.co/blog/spacing&quot;&gt;&lt;em&gt;spacing&lt;/em&gt;&lt;/a&gt; is arguably the most important part of making a font. So, if you’re making a font, it’s a great idea to start working within a proper font editor as early as you can.&lt;/p&gt;
+&lt;h2 id=&quot;how-to-start-your-font-in-glyphs&quot;&gt;How to start your font in Glyphs &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/#how-to-start-your-font-in-glyphs&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;First, make a new font in Glyphs. Go to “File &amp;gt; New from Glyph Sets…” then select “Latin” as the option for a script. Toggle on “Yes” to prepare glyphs for, and start with Basic. You can easily add more glyphs later.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/20250214124539.png&quot; alt=&quot;Glyph Set setup window&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Next, decide on your font’s cap-height. Glyphs gives &lt;code&gt;700&lt;/code&gt; as a default, and it’s a reasonable default.&lt;/p&gt;
+&lt;p&gt;In Glyphs, go to “File &amp;gt; Font Info” (&lt;strong&gt;Command+i&lt;/strong&gt;, or click the ‘i’ icon). Then, go to the Masters tab, and check the cap-height.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/glyphs-font-info.png&quot; alt=&quot;GlyphsApp Font Info&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;A bit more detail on font metrics&lt;/h3&gt;
+&lt;p&gt;The cap-height uses units that are part of the &lt;em&gt;Units per Em&lt;/em&gt;, or “UPM” of the font. The UPM is the measure of the coordinate grid you will be drawing your font within. You can think of it like graph paper. How precise do you want your grid to be? You can go beyond the bounds of the UPM. A UPM of &lt;code&gt;1000&lt;/code&gt; is a good default.&lt;/p&gt;
+&lt;p&gt;If you want, you can also find the cap-height of a most fonts by opening them up in Glyphs. Some fonts have a UPM that is different from 1000, which will change the relative cap-height. 1000 is generally good to stick with, though. If a font you are looking at has a UPM of 2048 and a cap-height of 1432, you can find its cap-height out of 1000 UPM by calculating &lt;code&gt;capheight / upm * 1000&lt;/code&gt;, or &lt;code&gt;1432 ÷ 20248 × 1000 = 699.21875&lt;/code&gt; (about 700).&lt;/p&gt;
+&lt;p&gt;(Also worth noting: the licensing of many fonts will prohibit you from inspecting them like this. So, uh... don’t post about your elite font hacking to social media.)&lt;/p&gt;
+&lt;p&gt;For what it’s worth, Helvetica Neue has a UPM of 1000, a cap-height of 714, and x-height of 517, so it’s pretty typical to be somewhat close to that. Don’t ask me how I know this. ;)&lt;/p&gt;
+&lt;p&gt;Script fonts tend to have taller cap-height and lower x-height, but it all depends on the design of a given font. Also, you can scale the font later if needed.&lt;/p&gt;
+&lt;h2 id=&quot;copying-glyphs-from-illustrator-into-glyphs&quot;&gt;Copying glyphs from Illustrator into Glyphs &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/#copying-glyphs-from-illustrator-into-glyphs&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In Illustrator, scale all your drawings so that the overall font matches the cap-height you have chosen. Make sure to scale everything to that size, including round glyphs that may have “overshoot” and lowercase glyphs that won’t go up to the same full height. Scaling glyphs perfectly in Illustrator is a bit of a pain, but the closer you get to perfect here, the easier the next step will be.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/scaling-in-illustrator.png&quot; alt=&quot;Scaling letters in Illustrator&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;One at a time, copy the glyph outline from Illustrator (just select the whole letter, then use &lt;strong&gt;Command+C&lt;/strong&gt;), and paste it into GlyphsApp: open up that glyph’s Edit View, then double-click into it, and use &lt;strong&gt;Command+V&lt;/strong&gt;. Select “Correct Bounds” if given the option.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/pasting-into-glyph.png&quot; alt=&quot;Pasting shapes into Glyphs&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;With the standard arrow tool (Shortcut: &lt;strong&gt;V&lt;/strong&gt;), drag a box around that outline to select it, or use &lt;strong&gt;Command+A&lt;/strong&gt; to select all outlines in the current glyph. Slide that outline into place, and adjust the side bearings in the Glyph Info box below (you can turn this on with themenu item “View &amp;gt; Show Info”).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/moving-glyph-into-place.png&quot; alt=&quot;Moving a glyph into place&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;If you need to scale glyph outlines further, you can use the bounding box handles (“View &amp;gt; Show Bounding Box”), or move points.&lt;/p&gt;
+&lt;p&gt;If the glyph doesn’t look how you expect it to – maybe the interior counter space isn’t showing up as negative space – try using “Path &amp;gt; Correct Path Direction” (&lt;strong&gt;Shift+Command+R&lt;/strong&gt;) while you’re editing the glyph.&lt;/p&gt;
+&lt;p&gt;If you have flat edges at the top/bottom of letters, it’s worth lining these up exactly on the metrics. Glyphs will show a little diamond shape when a node sits perfectly on a metric line.&lt;/p&gt;
+&lt;p&gt;When you paste in other letters, you will want to scale your other metrics to fit the x-height, ascenders, and descenders. Helpful to know: you can literally open the Font Info window next to an open lowercase glyph and watch the metric moving as you adjust the number.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/scaling-x-height.png&quot; alt=&quot;Adjusting font metrics&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;what%E2%80%99s-next%3F&quot;&gt;What’s next? &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/illustrator-to-glyphs/#what%E2%80%99s-next%3F&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Next up (even before you’ve added more than the first few glyphs!) is to learn how to &lt;a href=&quot;https://glyphsapp.com/learn/spacing&quot;&gt;adjust spacing&lt;/a&gt; so your glyphs have decent and consistent sidebearings. Pro tip: learn and use the keyboard shortcuts for this!&lt;/p&gt;
+&lt;p&gt;As you get further along, you can &lt;a href=&quot;https://glyphsapp.com/learn/adding-glyphs-to-your-font&quot;&gt;add more characters to your font from the sidebar&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Also, if you have new glyphs to draw, it’s worth drawing them directly in Glyphs, rather than going through Illustrator. Here’s &lt;a href=&quot;https://glyphsapp.com/learn/video-drawing-paths&quot;&gt;a handy video on how to draw paths in Glyphs&lt;/a&gt;. This video also offers a bunch of perfect examples of why it’s so powerful to draw letters in a dedicated font editor!&lt;/p&gt;
+&lt;p&gt;If you want to engage in more passive learning, you can also &lt;a href=&quot;https://www.youtube.com/arrowtype&quot;&gt;check out my YouTube channel&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy drawing!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>RoboFont vs Glyphs, and why I use both</title>
+		<link href="https://blog.arrowtype.com/robofont-vs-glyphs/"/>
+		<updated>2025-01-24T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/robofont-vs-glyphs/</id>
+		<content type="html">&lt;p&gt;Wow, it’s been a long time since I last made a blog post. I’ve spent a lot more time &lt;a href=&quot;https://youtube.com/c/arrowtype&quot;&gt;making YouTube videos&lt;/a&gt; recently, but I just got a question via email, and it’s on a topic I’ve wanted to write about for years but never found the time for.&lt;/p&gt;
+&lt;p&gt;I apologize up front for any half-baked thoughts here. I have incomplete knowledge and biases from my specific projects and opportunities. Still, this is a topic that deserves attention, so it seems better to write about and share than to keep to myself.&lt;/p&gt;
+&lt;p&gt;The email:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Hi Stephen,&lt;/p&gt;
+&lt;p&gt;I hope you don’t mind me reaching out! I’ve been following your YouTube channel for the past few years, and I just wanted to say how much I enjoy your content. It’s been fascinating to get a behind-the-scenes look at the typefaces you’re working on, and I’ve found your advice incredibly helpful—it’s made a big difference for me, so thank you!&lt;/p&gt;
+&lt;p&gt;I’ve noticed in your videos that you often switch between Glyphs and RoboFont, and I was curious if you could share a bit about your typical workflow when creating a typeface with both apps. I completed the &lt;a href=&quot;https://ohnotypeschool.teachable.com/&quot;&gt;OHno Type Beginner’s Course&lt;/a&gt; and tried the 30-day trial of Robofont. While I found it really intriguing, I didn’t get much time to dive deeply into it.&lt;/p&gt;
+&lt;p&gt;Thanks so much in advance for any insights you’re able to share, and keep up the amazing work—it’s always inspiring!&lt;/p&gt;
+&lt;p&gt;Best Regards,&lt;br /&gt;
+Person&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Clearly, this person never specifically asked for “RoboFont vs Glyphs” as a head-to-head comparison, and I do try to address their question at the end. But, I think they may have the deeper question of “What app should I invest my time into?” This is a valid question, and worth exploring.&lt;/p&gt;
+&lt;p&gt;I sent them a quick reply, and I’ve expanded upon it for this blog post.&lt;/p&gt;
+&lt;h2 id=&quot;my-context&quot;&gt;My context &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#my-context&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I work in both apps quite often due to a quirk of my primary job: I help other people make and finish fonts. This involves building font “binaries” like OTFs and TTFs, using tools like &lt;a href=&quot;https://github.com/googlefonts/fontmake&quot;&gt;FontMake&lt;/a&gt;, checking those outputs with tools like &lt;a href=&quot;https://github.com/fonttools/fontbakery&quot;&gt;Font Bakery&lt;/a&gt;, and fixing problems that exist. Fixing problems often involves using either RoboFont or Glyphs (or some combination of the two) to adjust font info or design data. Sometimes, it means manipulating source files or font binaries with Python-based tools such as &lt;a href=&quot;https://github.com/fonttools/ufoLib2&quot;&gt;ufoLib2&lt;/a&gt;, &lt;a href=&quot;https://github.com/googlefonts/glyphsLib&quot;&gt;glyphsLib&lt;/a&gt;, and &lt;a href=&quot;https://fonttools.readthedocs.io/en/latest/ttLib/ttFont.html&quot;&gt;TTfont&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s take a step back from all the technical stuff, though...&lt;/p&gt;
+&lt;h3&gt;My work background&lt;/h3&gt;
+&lt;p&gt;I drew my first font in about 2012, in &lt;a href=&quot;https://en.wikipedia.org/wiki/Fontographer&quot;&gt;Fontographer&lt;/a&gt;, which was mostly a terrible choice. This software was first made in the ’80s and seemingly hadn’t changed much by 2012. This consistency is great for those who like to draw in Fontographer but not as intuitive for someone new to drawing type. &lt;a href=&quot;https://glyphsapp.com/&quot;&gt;Glyphs&lt;/a&gt; was already around, and it would have been the much better choice in most ways. I moved to Glyphs for fonts I drew in 2013–2014 for my undergrad Senior thesis, and I found it so empowering and fun to use. (On the other hand, there is a lot of educational value and long-term power in simpler tools that don’t gloss over what you are doing with too much automation. In a sense, this push-and-pull between control-vs-speed is at the heart of the RoboFont-vs-Glyphs question! This isn’t to say that RoboFont is slow, or that Glyphs doesn’t give control... it’s more that, out-of-the-box, each app prioritizes one side or the other of that tradeoff.)&lt;/p&gt;
+&lt;p&gt;I later got a Masters degree in type design at &lt;a href=&quot;http://2018.typemedia.org/&quot;&gt;KABK TypeMedia in the class of 2018&lt;/a&gt;. There, I transitioned to &lt;a href=&quot;https://robofont.com/&quot;&gt;Robofont&lt;/a&gt;, as most of my teachers and classmates used it. (After all, RoboFont started as a TypeMedia project, and a few of the instructors are actively involved in the creation and development of the UFO and Designspace formats.)&lt;/p&gt;
+&lt;p&gt;After TypeMedia, I worked as a freelancer for Google Fonts, building fonts made by others and preparing them for publication on Google Fonts. These fonts were mainly in the Glyphs format, but some were built with UFOs and a Designspace (i.e., created in RoboFont). I was also hired by Google Fonts to finish my TypeMedia thesis project, &lt;a href=&quot;https://www.recursive.design/&quot;&gt;Recursive&lt;/a&gt;, and publish it as an &lt;a href=&quot;https://openfontlicense.org/&quot;&gt;OFL&lt;/a&gt; project. Recursive was a UFO+designspace project from start to publication.&lt;/p&gt;
+&lt;p&gt;These days, &lt;a href=&quot;https://www.arrowtype.com/&quot;&gt;in my personal and commissioned font projects&lt;/a&gt;, I spend most of my time working in Glyphs.&lt;/p&gt;
+&lt;p&gt;I also currently work part-time as a font engineer at &lt;a href=&quot;https://thetypefounders.com/&quot;&gt;The Type Founders&lt;/a&gt;, where I once again take fonts designed by others and build/prepare these for publication.&lt;/p&gt;
+&lt;p&gt;Along the way, I’ve also freelanced for indie foundries, helping them set up build &amp;amp; QA processes and finish their fonts built in either RoboFont or Glyphs.&lt;/p&gt;
+&lt;h3&gt;All font editors are beautiful&lt;/h3&gt;
+&lt;p&gt;I love both RoboFont and Glyphs, and I am so grateful and impressed by their creators, teams, documentation, and support forums. I’ve met and conversed with the people who have built and supported both apps; they are all lovely people.&lt;/p&gt;
+&lt;p&gt;I should also acknowledge that I’m leaving a notable app out of this discussion: &lt;a href=&quot;https://www.fontlab.com/&quot;&gt;FontLab&lt;/a&gt;. I simply don’t have much personal experience with it. If you’re primarily a Windows user, it seems to be the main option. It is the primary tool of one of my favorite type designers, &lt;a href=&quot;https://www.herzbergdesign.com/&quot;&gt;Matthijs Herzberg&lt;/a&gt;. Even on Mac, where Glyphs and RoboFont get most of the attention, FontLab is a powerful option. However, it’s not as popular with the designers and companies I have worked for so far, so my main experience with it is converting FontLab sources to UFOs and then building fonts from there.&lt;/p&gt;
+&lt;p&gt;There are still more apps for creating and editing fonts, but a complete survey of tools isn’t the point of this article.&lt;/p&gt;
+&lt;h2 id=&quot;which-app-is-better%3F&quot;&gt;Which app is better? &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#which-app-is-better%3F&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Like most things, it depends.&lt;/p&gt;
+&lt;p&gt;My high-level take is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Both apps are really good, and each has their own strengths and weaknesses.&lt;/li&gt;
+&lt;li&gt;If you are self-teaching, Glyphs is easier to learn and be productive in.&lt;/li&gt;
+&lt;li&gt;If you want to learn about fonts and type design at a deeper level, RoboFont is arguably the better choice. If you are specifically interested in learning to code in Python, RoboFont gives a smoother on-ramp for this (in fact it will somewhat &lt;em&gt;force&lt;/em&gt; you to write or at least use code in order to be productive). Even if you don’t write code, you will arguably gain a more well-rounded understanding of fonts and type design by working in RoboFont.&lt;/li&gt;
+&lt;li&gt;If you are following a formal course (such as the OHno Type course or a school program like TypeMedia or Type@Cooper), it’s best to use whatever software your instructor uses. That way, you can learn from them without a layer of software translation getting in the way.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Like any art form, the vital thing to learn is seeing and making the art, much more than learning to use the equipment. In this sense, type design is similar to graphic design, photography, painting, writing, playing guitar, skateboarding, or a million other pursuits ... equipment is only a means to an end. Your choice of gear may make specific tasks more straightforward or efficient, but gear is seldom the limiting factor. A pro can do good work on almost anything, whereas a beginner can’t buy their way to knowledge. You could make a great typeface using any font editor that allows you to draw, space, and kern glyphs, then output these into a standard font format.&lt;/p&gt;
+&lt;h2 id=&quot;the-best-parts-of-either-app&quot;&gt;The best parts of either app &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#the-best-parts-of-either-app&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The best parts of RoboFont:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Space Center emphasizes and organizes the spacing side of design, which is easy to overlook but arguably the most important aspect of type design.&lt;/li&gt;
+&lt;li&gt;MetricsMachine makes kerning a very direct, controllable process. (Kerning in Glyphs feels somewhat chaotic by comparison. Part of this is that it leaves the workflow more up to the user, and kerning in Glyphs becomes much better once you use the right sample text. Finding or making the right sample text is a bit harder, though.)&lt;/li&gt;
+&lt;li&gt;I also like some very specific details of drawing in RoboFont, like the fact that &lt;a href=&quot;https://doc.robofont.com/documentation/topics/understanding-contours/#points&quot;&gt;on-curve and off-curve points&lt;/a&gt; are selected in different ways (so offcurve nodes stay attached to moving on-curve points, unless you specifically select the offcurves). By contrast, Glyphs treats on-curve and off-curve points more equally, which is occasionally helpful but often slightly annoying. This is hard to explain, and it might not make sense to anyone reading this, and that is okay.&lt;/li&gt;
+&lt;li&gt;If you want to learn about scripting in Python, RoboFont makes this more approachable than Glyphs, mainly due to a more intuitive file structure: each “master” drawing of a typeface is its own .ufo package, whereas a Glyphs file puts all masters into a single package. The flip side of this benefit, though, is that you basically &lt;em&gt;have to&lt;/em&gt; embrace code to be effective in RoboFont.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The best parts of Glyphs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;It’s just so fluid and fast to work in, and so many things that are semi-basic, like duplicating, renaming, and deleting glyphs, scaling the UPM, setting font info data across multiple Masters or Exports, etc... are simple UI operations – whereas many of these things require scripts to do at all in RoboFont, or else to do across multiple sources.&lt;/li&gt;
+&lt;li&gt;RoboFont also historically had some laggy drawing (this may have changed with the latest version, which I think is finally running more natively on Apple M chips, but I haven’t drawn in it much just recently.)&lt;/li&gt;
+&lt;li&gt;Glyphs is also very helpful in writing feature code, such as language localization, numeral styles, stylistic sets, and more.&lt;/li&gt;
+&lt;li&gt;I’ve found &lt;a href=&quot;https://kern-on.com/&quot;&gt;Kern-On&lt;/a&gt; very helpful for kerning work-in-progress fonts, which is most of my catalog, so far. However, I will probably take my fonts back through RoboFont &amp;amp; MetricsMachine before considering them “v1” / finished. Like anything involving “AI,” Kern-On results in a slightly amorphous output that is hard to fully understand and trust.&lt;/li&gt;
+&lt;li&gt;I slightly prefer &lt;a href=&quot;https://www.youtube.com/watch?v=MNdCHYEAUZM&quot;&gt;the way “scaling edit” works in Glyphs&lt;/a&gt;. It’s one step more powerful than the similar tool in RoboFont, and in Glyphs, it’s available via modifier key hold, whereas it’s a separate tool in RoboFont. (For what it’s worth, it seems like FontLab may have an even better “power nudge” tool, though I don’t have much personal experience with it.)&lt;/li&gt;
+&lt;li&gt;If you want to avoid scripting, Glyphs will allow you to get further with no code. Glyphs is still a great choice if you want to embrace scripting, but it may be more challenging for beginners.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;File formats: .ufo vs .glyphs&lt;/h3&gt;
+&lt;p&gt;A discussion of font editors should also consider file formats, as these are a big part of the experience. The best part of the .UFO file format (used in RoboFont) is how simple it is to edit via Python scripting, even with no desktop app required. You can write a Python script to make an edit to one or many UFOs, and run that script in a terminal, without ever opening RoboFont.&lt;/p&gt;
+&lt;p&gt;This kind of “remote” editing operation is also (somewhat) possible via glyphsLib. Still, the glyphsLib library is a bit confusing in that it only supports glyphs3 files in an experimental way, in a development branch. (This is somewhat annoying, as the glyphs3 format has existed for over 4 years. But, I can’t really blame anyone for this, as it is amazing that any of this software exists at all, and I know that everyone involved in glyphsLib is busy with other work that is probably more vital to their paying rent, etc.) Running glyphsLib on a glyphs3 file will break certain things. The saving grace is how easy it is to edit whole families in Glyphs with the UI, making scripting less of a requirement for most projects. However, if you are trying to fix something basic (like a copyright string) across multiple families, UFOs are much more convenient.&lt;/p&gt;
+&lt;p&gt;There is also a philosophical difference between UFO and Glyphs formats: the UFO is an open standard, whereas Glyphs is made and controlled by a private company. So, the UFO format can be read and edited by many apps, while the Glyphs format can only really be edited by Glyphs. As part of this, it is arguably more future-proof to work in UFO files, because your ability to use them doesn’t hinge on the continued success or business model of a single company. On the flip side, glyphsLib is mostly very good at converting Glyphs files to UFOs, so even if Glyphs were e.g. bought by Adobe, you could (in theory) convert your Glyphs files from 2024 to UFO files in 2030, using the right version of glyphsLib. If one of the formats &lt;em&gt;were&lt;/em&gt; to come under the control of a company like Adobe and locked down into something much more proprietary, locked behind a subscription, it would be a different story.&lt;/p&gt;
+&lt;p&gt;Finally, I appreciate how the UFO format is handled in Git, a tool I use for every project. A UFO is made of many separate files, so it’s easier to see what changed in a given Git commit. Now that Glyphs offers the .glyphspackage file format, however, it’s basically just as good (or maybe slightly better?) on this front.&lt;/p&gt;
+&lt;h3&gt;Silly, personal reasons&lt;/h3&gt;
+&lt;p&gt;I also have two pretty silly reasons for preferring Glyphs for drawing fonts:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;I like making YouTube videos to share work sessions, and Glyphs is probably more popular among newcomers to type design. I also believe it has a more intuitive design workflow for a casual observer, and therefore, it makes more sense in videos.&lt;/li&gt;
+&lt;li&gt;I really like &lt;a href=&quot;https://www.instagram.com/p/C4jI-9NRPDj/?img_index=1&quot;&gt;tiny keyboards&lt;/a&gt;. (Why? A proper explanation would take a separate blog post, but they’re portable, customizable, and quite simply... I just love how they look and feel to use.) Such keyboards tend to eschew the number row, making numbers available by holding a layer key. This is great for day-to-day computer operations, and it even allows you to fit a numpad on a layer, which I highly prefer to a typical keyboard. Regarding font editors, however: RoboFont’s essential tools are selected with number keys, and I haven’t ever found a way around this. So, it’s a two-key operation to switch tools, which is slightly annoying. I prefer tool selection via alpha keys.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Projects where I’ve gone back-and-forth&lt;/h3&gt;
+&lt;p&gt;In the past, I’ve had families that I started in RoboFont but then moved to Glyphs. I’ve also had families that are primarily made in RoboFont, but taken into Glyphs for a specific operation, then moved back into RoboFont. In the future, I will probably have families that started in Glyphs, but end up in RoboFont.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In &lt;a href=&quot;http://shantellsans.com/&quot;&gt;Shantell Sans&lt;/a&gt;, the design started in RoboFont, partly because I was getting better results from its Outliner plugin than the Glyphs equivalent. (I was drawing single strokes, then expanding these into filled shapes.) I later moved to Glyphs to take advantage of Kern-On. But, the build process actually exports back to UFOs, so it can manipulate these to create shifted glyph alternates, etc. This is partly explained in this lecture.&lt;/li&gt;
+&lt;li&gt;In &lt;a href=&quot;http://arrowtype.com/name-sans&quot;&gt;Name Sans&lt;/a&gt;, I designed almost the full family as an upright/Roman-only system first, but I knew I needed Italics eventually. Once I was confident in the full design, I &lt;a href=&quot;https://www.youtube.com/watch?v=vmNsWayJp9U&amp;amp;t=4s&quot;&gt;used a script to prep Italics&lt;/a&gt;, then edited these UFOs directly in Glyphs so I could clean up the skewed outlines as quickly and fluidly as possibly. With a huge batch of outline edits to be done, Glyphs was definitely more efficient due to its lag-free drawing. But, I ultimately kept the family as a UFO-based project, as I had already figured out all my technical stuff there.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;When you need to use one or the other&lt;/h3&gt;
+&lt;p&gt;Certain things can only be done in Glyphs, and certain things can only be done in UFOs.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Glyphs have various “smart” features like corner components that require Glyphs to interpret and build into output OTF/TTF fonts. My take is that these tools can be useful in an early design phase but shouldn’t relied on in a final font source because they are fragile between software versions and don’t allow full control over the actual shapes. However, different designers have different opinions on this.&lt;/li&gt;
+&lt;li&gt;There are some aspects of creating variable fonts / large families that work better in UFOs + Designspaces, where you have more precise control because you are closer to the final products. (Literally: when you build from Glyphs sources using FontMake, it first outputs to UFOs, then builds OTF/TTF fonts from there.) A specific feature that I don’t think works properly from Glyphs (neither via Glyphs build or FontMake build) is giving a glyph both Intermediate layers (e.g. to adjust shaping at an intermediate weight) and Alternate layers/glyphs (usually swapped to via an RVRN feature, or rules in a designspace). This &lt;a href=&quot;https://github.com/googlefonts/glyphsLib/issues/1050&quot;&gt;miiight be fixed&lt;/a&gt; in a branch of glyphsLib, though? I’m not quite sure at the moment. Other similarly technical ends can’t always be achieved entirely within Glyphs sources, as they are somewhat abstracted to make design more intuitive and fluid.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How to go between the two apps&lt;/h3&gt;
+&lt;p&gt;There are two basic ways to shift between apps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Install glyphsLib, then use glyphs2ufo and/or ufo2glyphs on the command line.&lt;/li&gt;
+&lt;li&gt;Just open one or more UFOs (or an entire Designspace doc) in Glyphs, or export to UFOs from Glyphs. (It doesn’t seem like you can save from Glyphs to a Designspace, in the app – you’d have to do this with glyphsLib, or set up the Designspace separately.)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Glyphs files tend to have extra data, which can be good and bad when exporting to/from UFOs. It’s handy to use Git when doing this kind of back-and-forth so you can see what is changing. It is sometimes helpful to also run “UFO normalization” before and after the conversion so you can maintain a similar formatting of the UFO data. For this, you can run &lt;a href=&quot;https://github.com/unified-font-object/ufoNormalizer&quot;&gt;ufonormalizer&lt;/a&gt; or simply open and save UFOs with ufoLib2.&lt;/p&gt;
+&lt;h2 id=&quot;signing-off&quot;&gt;Signing off &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#signing-off&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I have suddenly remembered why I don’t write blog posts very often: it takes a lot of time to write something that is even close to decent!&lt;/p&gt;
+&lt;p&gt;Hopefully, though, this information is helpful to folks out there trying to understand this surprisingly deep question. If I’ve just dropped too many technical things without full explanation, and you are left more confused that when you started... welcome to type design! (But also, feel free to &lt;a href=&quot;https://www.arrowtype.com/contact&quot;&gt;email me&lt;/a&gt; to ask for more info.) The ins and outs of “RoboFont vs Glyphs” is a question that touches on all aspects of type design and development, and as such, it’s something I continue to learn about all the time.&lt;/p&gt;
+&lt;p&gt;No matter what you’re making and which tools you use, all the best in your creative endeavors!&lt;/p&gt;
+&lt;h2 id=&quot;update-1%3A-layers&quot;&gt;Update 1: layers &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#update-1%3A-layers&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Soon after I published this, a friend reached out to mention how RoboFont and Glyphs handle layers differently. I can’t believe I forgot to mention this! A few notes on this:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The Glyphs &lt;em&gt;Background&lt;/em&gt; layer is a quick &lt;strong&gt;Command+B&lt;/strong&gt; keystroke away, and I use it constantly. RoboFont allows you to shift between layers with &lt;strong&gt;Option+Command+Up/Down&lt;/strong&gt;, but the layers have some limitations.&lt;/li&gt;
+&lt;li&gt;Glyphs allows you to put a component into a background layer: so, for instance, if you are drawing an &lt;code&gt;ohorn&lt;/code&gt; with a custom shape, you can place a live-updating &lt;code&gt;o&lt;/code&gt; component in the background for a visual confirmation that your main shape is similar.&lt;/li&gt;
+&lt;li&gt;Glyphs also makes &lt;a href=&quot;https://glyphsapp.com/learn/intermediate-layers&quot;&gt;Intermediate layers&lt;/a&gt; and &lt;a href=&quot;https://glyphsapp.com/learn/switching-shapes&quot;&gt;Alternate layers&lt;/a&gt; simpler to add and generally simpler to handle than RoboFont. (In UFOs, you can still use intermediate layers – within a UFO or in a separate UFO – and reference that layer from your Designspace.) This advantage in Glyphs somewhat ends if you try to use &lt;em&gt;both&lt;/em&gt; Intermediate and Alternate layers, as I mentioned above. Hopefully, though, this limitation will be resolved in time.&lt;/li&gt;
+&lt;li&gt;Glyphs &lt;em&gt;also&lt;/em&gt; assigns layers per glyph, and when you add a layer, it is date and time-stamped by default. This can be an easy way to quickly create a version history of glyph drawings as you iterate on an idea. This per-glyph model would also be possible in the UFO format, but RoboFont instead handles layers in a global sense, across a whole UFO, making them less useful for version history. (But there are better ways to handle versions and alternate glyph ideas. For versioning, save duplicate, date-stamped font files as you go, and/or use Git. To explore which shape of a glyph to use, make duplicate glyphs and test them in spacing strings, proofs, and marketing graphics.)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;update-2%3A-composing-accented-glyphs-%26-character-sets&quot;&gt;Update 2: composing accented glyphs &amp;amp; character sets &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#update-2%3A-composing-accented-glyphs-%26-character-sets&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Working back in Glyphs later in the day from posting this, I was reminded of another aspect that differs quite a bit between these two applications: building precomposed glyphs. These are glyphs with accents that designers precompose in a font, such as &lt;code&gt;aring&lt;/code&gt; (&lt;code&gt;å&lt;/code&gt;) or &lt;code&gt;Eacute&lt;/code&gt; (&lt;code&gt;É&lt;/code&gt;), and so on.&lt;br /&gt;
+In general, this is much easier and faster in Glyphs than RoboFont, because:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Composing accents uses “anchors” to specify where accents will attach to base glyphs. Glyphs gives a menu option for “Set Anchors” that will add in the main anchors needed for a wide range of language support, placing them at roughly the correct position. In RoboFont, you need to manually place these in each UFO source or use a script or extension to do so.&lt;/li&gt;
+&lt;li&gt;A bigger efficiency in Glyphs comes from automatically adjusting composed glyphs when you move anchors or accents in individual glyphs. In RoboFont, you have to recompose glyphs to apply such changes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Possible drawbacks of the Glyphs approach are:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;If the software does too much “magic” for you, it can be easy to become complacent and not notice if something has gone wrong. For example, you may create composed glyphs and get them to look how they should, but they will change if you adjust your anchor points in either the base or accents. It might disrupt your prior work if you don’t anticipate or notice this repositioning.&lt;/li&gt;
+&lt;li&gt;Glyphs has certain assumptions about names for combining accents and bases, and it will only compose glyphs intelligently if you give the bases &amp;amp; accents the exact names expected by Glyphs. For example, Glyphs will create the proper &lt;code&gt;Acircumflex.ss01&lt;/code&gt; if your file has &lt;em&gt;both&lt;/em&gt; &lt;code&gt;Acircumflex.ss01&lt;/code&gt; and &lt;code&gt;circumflexcomb.case&lt;/code&gt;, but if the former is called &lt;code&gt;Acircumflex.alt&lt;/code&gt; and/or the latter is named &lt;code&gt;circumflexcmb.case&lt;/code&gt; (without the “o” in “comb”), you will have to use a glyph recipe, like &lt;code&gt;Acircumflex.alt+circumflexcmb.case=Acircumflex.ss01&lt;/code&gt;. (This probably seems like a weird gripe, but other standards specifically use the accent name &lt;code&gt;circumflexcmb&lt;/code&gt;, without the “o”.)  In RoboFont, you pretty much always need to use similar recipes in its &lt;a href=&quot;https://doc.robofont.com/documentation/how-tos/building-accented-glyphs-with-glyph-construction/&quot;&gt;Glyph Construction extension&lt;/a&gt;, which is less automatic, but allows a more tailored workflow, without the application being too opinionated about how you do things.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;Character sets&lt;/h3&gt;
+&lt;p&gt;As a related subject to composing glyphs, the two applications differ in how they expect you to set up character sets.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;In Glyphs, &lt;a href=&quot;https://handbook.glyphsapp.com/glyph-set/&quot;&gt;building character sets&lt;/a&gt; happens in a few ways. Glyphs gives you a welcome screen for new fonts, and this offers to set up character sets for different scripts, like Latin, Cyrillic, or Arabic. It also gives a sidebar with categories for Glyphs, like “Latin &amp;gt; Basic,” “Latin &amp;gt; Central European,” “Punctuation &amp;gt; Parentheses,” “Figures &amp;gt; Tabular Figures,” and many others. Right-clicking on these allows you to add to that category of glyphs with appropriate naming and Unicode encoding. Building a character set is pretty straightforward if you accept the decisions made by the Glyphs team. To extend that, you can also add glyphs by names and lists of names, but Glyphs expects you to get the names “right” in order to get correct Unicode encoding and proper glyph composition support (as mentioned above).&lt;/li&gt;
+&lt;li&gt;In RoboFont, &lt;a href=&quot;https://doc.robofont.com/documentation/tutorials/defining-character-sets/#:~:text=In%20RoboFont%2C%20character%20sets%20can,separated%20list%20of%20glyph%20names.&quot;&gt;defining character sets&lt;/a&gt; isn’t too bad, but requires a bit of research and setup. RoboFont will set up glyphs with appropriate Unicodes, so long as you use the correct glyph names, according to the [GNUFL](&lt;a href=&quot;https://github.com/LettError/glyphNameFormatter&quot;&gt;https://github.com/LettError/glyphNameFormatter&lt;/a&gt; or &lt;a href=&quot;https://github.com/adobe-type-tools/agl-aglfn&quot;&gt;AGLFN&lt;/a&gt;). For this, I find it essential to use the &lt;a href=&quot;https://github.com/LettError/glyphBrowser&quot;&gt;Glyph Browser extension&lt;/a&gt;. This extension is a bit like the Glyphs sidebar but is more powerful in some ways (you can search for glyphs by name or by typing them in) and less handy in some ways (I somewhat prefer the Glyphs categories to the more standard but more general character set categories that are presented in Glyph Browser).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;signing-off%2C-again&quot;&gt;Signing off, again &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-vs-glyphs/#signing-off%2C-again&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Who am I writing this for, anyway? I’ve attempted to present this comparison for someone new to the field of type design. Still, I must admit that I’ve included so many technical details that it would probably be difficult for most newcomers to follow.&lt;/p&gt;
+&lt;p&gt;Even so, if you &lt;em&gt;have&lt;/em&gt; found this at all informative or entertaining, I’m glad! Come check out my &lt;a href=&quot;http://youtube.com/arrowtype&quot;&gt;YouTube&lt;/a&gt; or &lt;a href=&quot;https://typo.social/@arrowtype&quot;&gt;Mastodon&lt;/a&gt; for more type nerdery, and please say hello while you’re there!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Story of Name Sans</title>
+		<link href="https://blog.arrowtype.com/name-sans-v1/"/>
+		<updated>2023-10-10T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/name-sans-v1/</id>
+		<content type="html">&lt;p&gt;After several years of contemplation, exploration, work, and iterative releases, I have published a full Version 1 of Name Sans.&lt;/p&gt;
+&lt;p&gt;I wrote and published a process article on my main website. Read it here:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.arrowtype.com/articles/name-sans-process&quot;&gt;The Story of Name Sans&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Shell Scripting for Font Builds</title>
+		<link href="https://blog.arrowtype.com/shell-scripting-for-font-builds/"/>
+		<updated>2021-06-18T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/shell-scripting-for-font-builds/</id>
+		<content type="html">&lt;p&gt;Shell scripting is a method you  can use to set up font build workflows that are approachable, scalable, and repeatable. I presented a tutorial on shell scripting in a presentation at the 2021 Typographics TypeLab.&lt;/p&gt;
+&lt;p&gt;The tutorial exists in a project repo at: &lt;a href=&quot;https://github.com/arrowtype/typelab-2021&quot;&gt;github.com/arrowtype/typelab-2021&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;There is also &lt;a href=&quot;https://www.youtube.com/watch?v=yj_YznWx3SQ&quot;&gt;a recorded version of the presentation on YouTube&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Happy scripting!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>The Story of Name Sans, So Far</title>
+		<link href="https://blog.arrowtype.com/name-sans-v05/"/>
+		<updated>2021-05-26T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/name-sans-v05/</id>
+		<content type="html">&lt;p&gt;Update: this article was original written in 2021, for Name Sans v0.5. More recently, &lt;a href=&quot;https://www.arrowtype.com/name-sans&quot;&gt;Name Sans v1.0&lt;/a&gt; was been released, along with &lt;a href=&quot;https://www.arrowtype.com/articles/name-sans-process&quot;&gt;a newer article describing Name Sans and its design process&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.arrowtype.com/name-sans&quot;&gt;Name Sans&lt;/a&gt; is a modern interpretation of the mosaic name tablets of the NYC Subway. It is currently available with discounted pre-release pricing &lt;a href=&quot;https://www.futurefonts.xyz/arrowtype/name-sans&quot;&gt;via Future Fonts&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;From an outsider’s perspective, it might seem pointless to see a new release of “yet another geometric sans.” At a quick glance, it might look like Name Sans is basically just &lt;em&gt;[insert your favorite sans-serif font name here]&lt;/em&gt;. Admittedly, there is some truth to this. Name Sans doesn’t have characters you can’t already typeset in other, previously-available fonts – it’s ultimately just a slightly different way of approaching the same old Latin script.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fn1&quot; id=&quot;fnref1&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;But, just as it’s nice to have new music, new fashion, and new architecture in the world, it’s nice to have new fonts. Projects like Name Sans are about giving designers new raw materials&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fn2&quot; id=&quot;fnref2&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; to work with. Beyond that, new typefaces are about creative expression, pushing boundaries, engaging with history, and – at risk of sounding poetic – communicating something about the human experience. This article is here to point out some of the thinking behind Name Sans, what it can do that is different from other typefaces, and some of the details that make it unique.&lt;/p&gt;
+&lt;h2 id=&quot;what-is-name-sans%2C-anyway%3F&quot;&gt;What is Name Sans, anyway? &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#what-is-name-sans%2C-anyway%3F&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;My favorite fonts are usually released along with an introductory article. Name Sans is still an active work-in-progress, now in its fifth pre-release version. In a way, you can think of this as the “v0.5” blog post introducing Name Sans, its process, and its design – I plan to revise this post when I can finally release version &lt;code&gt;1.0&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;For me as a type designer, it isn’t always (if ever?) obvious what a project should be from the outset. Releasing Name Sans progressively through Future Fonts has helped me find what it really needs to be as a typeface. Certainly, my understanding of it has evolved since the earliest versions. Spending time with it myself – and especially seeing it in use by other designers – has helped push my thinking forward.&lt;/p&gt;
+&lt;p&gt;So what &lt;em&gt;is&lt;/em&gt; Name Sans, really?&lt;/p&gt;
+&lt;p&gt;Well, one answer is that it’s the font you’re reading right now – but it’s also much more than that. Another simple answer is that it’s a 36-style font family with variable axes for Weight and Optical Sizing. But it’s also more than &lt;strong&gt;that.&lt;/strong&gt;&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name-instances.svg&quot; alt=&quot;Font styles of Name Sans v0.5&quot; /&gt;
+  &lt;figcaption&gt;Styles of Name Sans v0.5&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;As the tag line says, Name Sans is &lt;em&gt;a modern interpretation of the mosaic name tablets of the NYC Subway.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Mosaic &lt;strong&gt;name tablets&lt;/strong&gt; are by far my favorite feature of the Subway. These pieces of lettering built from ceramic tiles declare station names for Subway riders, while smaller versions provide extra wayfinding help within stations. Making this source of inspiration into a typeface is a project I have been imagining and sketching since moving to NYC in 2014, then more actively developing as a font family since the end of 2019.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans_v05-mosaics.png&quot; alt=&quot;Various name tablets in the NYC Subway system&quot; /&gt;
+  &lt;figcaption&gt;
+  Name Sans seeks to capture my favorite aspects of the varied mosaic signage of the NYC Subway system.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;When I first had the idea for this project, I expected that I could dig up some kind of perfect blueprint for the mosaic signage from which to make a type revival. I have since seen a few tantalizing examples of historical documents that are &lt;em&gt;close&lt;/em&gt; to what I’d like – but direct architectural plans have so far eluded me. So, the drawings for Name Sans are not a direct copy of scans from a dusty old type specimen. Rather, they are the product of me experiencing and appreciating the Subway mosaics over time, taking countless photos, and sketching ideas while riding the train.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans_sketches.png&quot; alt=&quot;Various sketches of mosaic letters from the NYC Subway&quot; /&gt;
+  &lt;figcaption&gt;
+  As an NYC commuter, I almost always keep a sketchbook in my bag. When I can snag a seat, I try to draw letters. The rattling of the train is more apparent in some sketches than others, depending on my patience on any given day.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;At one point, several years ago, I mentioned to an experienced type designer that I was thinking of making a typeface that would be a revival of the Subway mosaics. “Impossible!” they said, “what would you even revive?” At first, I was taken aback. How dare they doubt me like that! I wanted to prove them wrong. With time, I have come to understand what they meant.&lt;/p&gt;
+&lt;p&gt;Name Sans isn’t a &lt;em&gt;revival&lt;/em&gt;, and it couldn’t be a revival.&lt;/p&gt;
+&lt;p&gt;Type revivals are recreations of specific fonts previously made with obsolescent technology, as when a digital font is made to recreate letters originally cast in metal for letterpress printing. There was no single, consistent “off-the-shelf” font used for the Subway mosaics. The system was built by several separate companies over many decades&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fn3&quot; id=&quot;fnref3&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;, with projects led by different architects over time. The subway mosaics are a loose system of architectural lettering – not a singular typeface that one could “revive.”&lt;/p&gt;
+&lt;p&gt;So, this project is perhaps as much historical fiction as it is historical research. I am creating a type family based on what I have observed in actual mosaics and adapting this into a typeface that is useful, flexible, and built for this decade. Partly, though, I am making the typeface that I imagine could have been there the whole time, if perhaps Heins &amp;amp; LaFarge&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fn4&quot; id=&quot;fnref4&quot;&gt;4&lt;/a&gt;&lt;/sup&gt; had commissioned a custom typeface for NYC’s first Subway from a type designer who time-traveled back a century.&lt;/p&gt;
+&lt;p&gt;In many ways, &lt;em&gt;not&lt;/em&gt; having a single point of reference has freed me to make this project what it needs to be: a typeface that respects the past but doesn’t get stuck in it. There are clearly repeated lettering styles for different train lines and different eras. But also, something I love about the Subway is that there is not a perfectly repeated system for the name tablets. If all of the wayfinding was purely set in Helvetica and stations had a completely uniform aesthetic, the Subway would be painfully boring. More practically, it would also simply be harder to know when you reached the right station. As a rider of the NYC Subway, you learn to identify your stop by the color of tiles and the big lettering on the station walls. If you always had to look closely for Helvetica on uniformly–gray walls, you would end up missing stops a lot more often.&lt;/p&gt;
+&lt;p&gt;Name Sans picks up on my favorite aspects of the Subway wayfinding system and brings them together into an extended Latin character set with a wide range of weights and optical sizes. If I had gotten stuck on finding just one thing to revive, I wouldn’t have had the flexibility to really explore what is useful in a geometric-grotesque sans – and what is newly possible with type technology today.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/equitable-building.jpg&quot; alt=&quot;Equitable Building Mosaic Signage from Wall Street Station&quot; /&gt;
+  &lt;figcaption&gt;
+    The “Equitable Building” mosaic at Wall St is one of my favorite signs in all of NYC. Note the circularity, unusual proportions, and the sharp spur of the &lt;code&gt;G&lt;/code&gt;. Even though I love specific mosaics, there are too many divergent styles to represent in a single typeface – so Name Sans brings in the best features from signs across the NYC Subway system.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Even if I &lt;em&gt;had&lt;/em&gt; found blueprints, this project would have required creativity and adaptation. For one thing, the mosaics only contain the basic English uppercase alphabet, plus numbers and a few extra symbols like arrows and ampersands. I was always going to have to invent the lowercase, extended Latin alphabet, accents, and symbol set.&lt;/p&gt;
+&lt;p&gt;Beyond that, the mosaics only have a narrow range of weights – roughly “Regular” to “SemiBold” – and only have a sign-specific range of sizes – large to huge, meant to be seen from a distance. A typeface must offer a broader typographic palette unless if it is only intended for very specific usage. This suggested the need for an extended weight range. Type must be made for particular scales and contexts to work well. For Name Sans, that meant designing to target the small-to-large settings common to modern print &amp;amp; digital needs – often in longer strings than single Subway station names. I wanted Name Sans to deliver the punch of the mosaics effectively across font sizes, which suggested the need for a range of Optical Sizes (more on this below).&lt;/p&gt;
+&lt;p&gt;Working from more than a single specimen has also revealed possibilities beyond size &amp;amp; weight ranges. A challenging aspect of the project has been deciding which forms of letters to borrow from the system, as there are often multiple possibilities. For example, round uppercase letters can be found both with circular forms and with flat-sided forms, depending which station and sign you reference. Rather than drawing only the most common style of an uppercase, I have made two – a default set with the circular forms, plus a stylistic set (&lt;code&gt;ss01&lt;/code&gt;) that takes on flat-sided, rectangular shaping. Another question was which &lt;code&gt;R&lt;/code&gt; to use – the more common, basic construction with a straight leg, or the uniquely mosaic approach to a grotesque &lt;code&gt;R&lt;/code&gt; with a monolinear leg “kick”? Well, it’s a modern typeface, so again, I could include both using Stylistic Sets. And then, it’s a modern typeface, so why not add a few other things fit that users might want, like a single-story &lt;code&gt;a&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-waterfall.svg&quot; alt=&quot;Weights of Name Sans Display&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;And thus, I have sought to build a typeface that captures the best energy and spirit of the Subway mosaics but which is genuinely useful to designers working in digital systems, wayfinding, and graphic design.&lt;/p&gt;
+&lt;p&gt;The following will go into more detail to describe the formal qualities that exist in the Name Sans design.&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;span&gt;By the way...&lt;/span&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;If any transit archivists or aficionados are reading this and know of specific blueprints or specifications that I might have missed, I’d be super appreciative to learn more! The online archives are great but (understandably) don’t contain images for every possible item. A 2019 exhibit did include a few beautiful watercolors and pencil sketches, but not as many as I had hoped for. I haven’t yet been able to dig further into physical archives due to COVID-19 protocols, but I would very much like to see more! You can reach me at &lt;code&gt;info@arrowtype.com&lt;/code&gt; if you want to chat.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;a-wide-range-of-weights-%26-optical-sizes&quot;&gt;A wide range of Weights &amp;amp; Optical Sizes &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#a-wide-range-of-weights-%26-optical-sizes&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Name Sans includes two axes of stylistic variation: Weight and Optical Size.&lt;/p&gt;
+&lt;h3&gt;Weight&lt;/h3&gt;
+&lt;p&gt;It’s relatively self-evident what it means for a typeface to offer a range of weights. If a font has just one weight, it will be limited in how it can be used and will almost always need to be supported with other fonts. But, if a typeface offers even just two or three weights, it dramatically opens up what you can use it for. These benefits continue to increase with further range and granularity.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-wght_a.svg&quot; alt=&quot;Weights of Name Sans&quot; /&gt;
+  &lt;figcaption&gt;
+    Name Sans has a weight range that is as wide as (reasonably) possible, offering both workhorse core weights and high-impact extremes in one easy-to-use system.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Many designers would reasonably contend that there is a point of diminishing returns. Once you have styles that are light enough and bold enough, along with a few between, you don’t really need more. There may also be a paradox of choice for users: if a typeface has too many options, it might become hard to pick the ones you want. These are valid concerns. From a creator’s perspective, too, it is essential to draw lines of scope so you can provide adequate focus to the work that falls within that scope.&lt;/p&gt;
+&lt;p&gt;For Name Sans, I &lt;em&gt;have,&lt;/em&gt; of course, been thoughtful about project scoping – but I have also made a concerted effort to push those lines beyond what a typical project may impose. In my experience as a designer, there are always times when I wish a typeface would go &lt;em&gt;just a little bit bolder&lt;/em&gt; or &lt;em&gt;just a little bit lighter&lt;/em&gt;. A goal of Name Sans is to provide the most utility and versatility to as many designers as possible. So, just as a designer may select a computer with plenty of “headroom” in its RAM and storage – even if they may not use those full limits most of the time – there is value if a typeface can do more than most people need, on average.&lt;/p&gt;
+&lt;!-- SVG to allow css variable --&gt;
+&lt;svg class=&quot;main-col&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; viewBox=&quot;0 0 1839 1761&quot;&gt;
+  &lt;g fill=&quot;none&quot; fill-rule=&quot;evenodd&quot; transform=&quot;translate(35.177 .155)&quot;&gt;
+    &lt;path fill=&quot;hsla(0deg, 0%, 50%, 50%)&quot; d=&quot;M537.676646,1752.66536 C773.612368,1752.66536 922.877825,1686.86016 1022.38813,1548.82974 L1035.22817,1548.82974 L1075.35329,1728.59029 L1768.71541,1728.59029 L1768.71541,831.392545 C1768.71541,272.850835 1470.1845,-6.82121026e-13 911.64279,-6.82121026e-13 C487.921493,-6.82121026e-13 186.18057,194.205594 56.1751719,515.206577 L706.202162,717.437196 C731.88224,650.02699 775.217373,611.506872 849.047599,611.506872 C927.692839,611.506872 974.237982,659.657019 974.237982,743.117275 L974.237982,754.352309 L617.926891,754.352309 C215.070658,754.352309 -7.95807864e-13,953.372918 -7.95807864e-13,1259.92886 C-7.95807864e-13,1563.27478 218.280668,1752.66536 537.676646,1752.66536 Z M861.887638,1240.6688 C797.687442,1240.6688 768.797353,1208.5687 768.797353,1158.81355 C768.797353,1110.6634 805.712466,1076.9583 861.887638,1076.9583 L974.237982,1076.9583 L974.237982,1115.47841 C974.237982,1200.54367 930.902849,1240.6688 861.887638,1240.6688 Z&quot; opacity=&quot;.26&quot;&gt;&lt;/path&gt;
+    &lt;path stroke=&quot;#9F9F9F&quot; stroke-width=&quot;2&quot; d=&quot;M899.993496,45.9401376 C1136.77279,45.9401376 1314.89071,110.454114 1434.49056,231.655746 C1555.73202,354.520973 1616.80798,535.602773 1618.01737,766.597265 L1618.0357,773.612368 L1618.0357,1727.59029 L1236.30682,1727.59029 L1205.81172,1514.12464 L1191.54526,1514.12464 C1089.02726,1681.09697 920.658411,1754.87537 691.342857,1754.87537 C519.119491,1754.87537 379.017056,1704.91248 281.726274,1616.76869 C183.539528,1527.81318 128.986133,1399.98208 128.986133,1245.48381 C128.986133,1089.16222 185.312866,961.203038 288.632577,872.643286 C389.716812,785.999655 535.745472,737.076743 717.911714,736.106949 L723.442955,736.09225 L1154.58427,736.09225 L1154.58427,690.152112 C1154.58427,614.000026 1130.83909,552.429781 1084.48309,510.262576 C1039.61807,469.451623 973.535397,446.796371 887.153456,446.796371 C740.982203,446.796371 637.162903,512.679198 558.670127,621.237838 L556.299293,624.540533 L227.293676,380.181992 C379.598248,177.046019 611.816289,45.9401376 899.993496,45.9401376 Z M1154.58427,1061.51325 L786.038147,1061.51325 L784.097692,1061.51767 C720.208548,1061.80936 670.76377,1076.52845 637.067249,1103.48567 C602.466347,1131.16639 584.412533,1171.7544 584.412533,1223.01374 C584.412533,1275.6828 602.325326,1316.95085 636.449567,1345.02079 C670.294695,1372.86114 720.142032,1387.72424 784.433142,1387.72424 C895.503196,1387.72424 988.038854,1355.89213 1052.80161,1300.13984 C1117.5649,1244.3871 1154.58427,1164.70929 1154.58427,1068.93327 L1154.58427,1068.93327 L1154.58427,1061.51325 Z&quot;&gt;&lt;/path&gt;
+    &lt;path stroke=&quot;#9F9F9F&quot; stroke-width=&quot;2&quot; d=&quot;M921.979168,88.7991389 C1132.62168,88.7991389 1295.46021,150.81943 1405.92995,266.691109 C1516.50136,382.66943 1574.58464,552.560861 1575.73525,768.047086 L1575.75268,774.59092 L1575.75268,1727.73521 L1358.37175,1727.73521 L1342.36262,1449.17631 L1332.8021,1449.17631 C1280.81478,1550.94678 1207.71793,1628.70637 1109.70624,1680.54726 C1014.96693,1730.65731 896.963648,1756.55165 752.282364,1756.55165 C579.900293,1756.55165 440.177005,1709.95962 343.4906,1626.25682 C246.597963,1542.37547 192.96273,1421.23266 192.96273,1272.47494 C192.96273,1121.03509 249.212979,998.520489 352.483444,914.026473 C454.136187,830.856047 601.303802,784.527654 785.1228,783.609403 L790.704282,783.595486 L1312.00109,783.595486 L1312.00109,737.769915 C1312.00109,610.526259 1275.99543,508.766022 1208.93112,438.941868 C1142.34439,369.614943 1045.11861,331.738865 921.979168,331.738865 C739.719541,331.738865 612.257421,410.021385 511.759691,549.599997 L508.72253,553.848396 L310.191308,404.552917 C450.877126,197.22827 660.119448,88.7991389 921.979168,88.7991389 Z M1312.00109,996.11786 L811.516154,996.11786 L808.076107,996.12525 C694.802512,996.612819 606.088765,1021.21534 545.351422,1066.026 C483.227813,1111.85942 450.310675,1178.82875 450.310675,1262.86946 C450.310675,1349.51675 483.167479,1418.12972 543.640327,1465.13361 C604.2266,1512.22567 692.586986,1537.62562 803.511588,1537.62562 C958.287005,1537.62562 1085.38011,1490.68618 1173.79367,1407.29295 C1262.23751,1323.87116 1312.00109,1203.95604 1312.00109,1057.95256 L1312.00109,1057.95256 L1312.00109,996.11786 Z&quot;&gt;&lt;/path&gt;
+    &lt;path fill=&quot;var(--namesans-accent)&quot; d=&quot;M815.372225,1760.69039 C1203.78341,1760.69039 1462.18921,1521.54466 1491.07929,1134.73847 L1491.07929,1728.59029 L1494.2893,1728.59029 L1494.2893,762.377333 C1494.2893,367.546125 1284.03366,134.820413 926.117564,134.820413 C686.971832,134.820413 495.976248,231.120707 372.39087,436.561336 L375.600879,438.166341 C499.186258,234.330717 688.576837,138.030422 926.117564,138.030422 C1282.42865,138.030422 1491.07929,369.15113 1491.07929,762.377333 L1491.07929,839.417569 L841.052304,839.417569 C459.061135,839.417569 240.780467,1003.12807 240.780467,1288.81894 C240.780467,1584.13985 457.45613,1760.69039 815.372225,1760.69039 Z M815.372225,1757.48038 C459.061135,1757.48038 243.990477,1580.92984 243.990477,1288.81894 C243.990477,1006.33808 460.66614,842.627579 841.052304,842.627579 L1491.07929,842.627579 L1491.07929,1056.09323 C1491.07929,1484.62954 1229.46349,1757.48038 815.372225,1757.48038 Z&quot;&gt;&lt;/path&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+&lt;p&gt;A technical explanation of my approach for Name Sans: this typeface uses the full possible &lt;code&gt;1–1000&lt;/code&gt; range for a variable Weight axis, as defined by the OpenType Spec.&lt;sup class=&quot;footnote-ref&quot;&gt;&lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fn5&quot; id=&quot;fnref5&quot;&gt;5&lt;/a&gt;&lt;/sup&gt; There are conventions for what font weight numbers mean, but their exact implementation comes down to the interpretation of individual type designers. &lt;code&gt;300&lt;/code&gt; is usually &lt;code&gt;Light&lt;/code&gt;, but how light is “Light”? &lt;code&gt;700&lt;/code&gt; is almost always titled &lt;code&gt;Bold&lt;/code&gt;, but how bold is “Bold”? What are the extremes of thinness (&lt;code&gt;1&lt;/code&gt;) and thickness (&lt;code&gt;1000&lt;/code&gt;)? For Name Sans, I have aimed for core weights (Light through Bold) to fairly closely match the thickness of comparable fonts. However, I have drawn the full range of &lt;code&gt;1–1000&lt;/code&gt; – Hairline through Ultra – to be as thin and thick as reasonably possible.&lt;/p&gt;
+&lt;p&gt;What is reasonably possible, then? To get specific, I am drawing this typeface with a coordinate grid of 2048 units between ascenders and descenders (the &lt;code&gt;UPM&lt;/code&gt; of the font). The &lt;strong&gt;Display Hairline&lt;/strong&gt; style is meant to be a representation of the very core of the characters. It is drawn with stems of just 2 units on this grid – barely enough to allow similar thicknesses in straight, diagonal, and curved strokes. Meanwhile, the &lt;strong&gt;Display Ultra&lt;/strong&gt; is drawn to be as thick as possible while still preserving my subjective understanding of the essence of the Name Sans design.&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; playsinline=&quot;&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+    &lt;source src=&quot;https://blog.arrowtype.com/name-sans-v05/namesans-countdown-vid.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;Weights &lt;code&gt;300&lt;/code&gt; to &lt;code&gt;1&lt;/code&gt; in Name Sans Display. The Hairline styles offer a near-invisible endpoint for disappearing &amp; appearing animations.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A warning: the Hairline is so thin, it disappears in some contexts. Sometimes, it is better to use a slightly-thicker style (in the variable font, you can use weights like &lt;code&gt;15&lt;/code&gt; or &lt;code&gt;27&lt;/code&gt;). Sometimes, it’s useful to add a bit of an outline stroke to these letters. It may seem odd to have a “dangerous” zone included with a font, but I think of it like a color palette. Designers are already used to choosing colors carefully so as to ensure a readable level of contrast. A super-thin font style requires similar thoughtfulness.&lt;/p&gt;
+&lt;p&gt;But, that disappearingly thin weight is a hidden feature: it allows Name Sans to animate in and out from this core. This can be especially useful in characters that maintain a common width between weights, like arrows and tabular numbers (activated with feature &lt;code&gt;tnum&lt;/code&gt;). If any wine label designers are out there, the Hairline characters would also look preeetty nice printed at a large size on a wine label. Just an idea...&lt;/p&gt;
+&lt;h3&gt;Optical Size&lt;/h3&gt;
+&lt;p&gt;To understand Name Sans, it is essential to first have an idea of what &lt;strong&gt;optical sizing&lt;/strong&gt; is. The optical sizes of a typeface are made to preserve its design intent at different sizes. In this way, optical sizes are fairly similar to font weights, which are usually made to preserve the design of a typeface at different relative levels of thickness or density.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-opsz_a.svg&quot; alt=&quot;Name Sans Optical Sizes&quot; /&gt;
+  &lt;figcaption&gt;
+    The x-height, contrast, and overall proportions are subtly adjusted along the Optical Size axis to look as good as possible at large sizes while also providing comfortable readability in Text.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Just as there is no single answer to how every typeface should be designed for different weights, there are many ways to design for different sizes. Generally, though, there are some common strategies:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Letter spacing usually needs to be more generous for smaller sizes, or letters will look uncomfortably close. Conversely, spacing usually needs to be tighter at larger sizes, or letters may appear to be drifting apart. In fonts with optical sizes, the designer using the font must manually apply set tracking ideal for a given size. In fonts with Optical Size styles, size-specific spacing is taken care of within the font itself (especially in variable fonts with an &lt;code&gt;opsz&lt;/code&gt; axis, like Name Sans Variable).&lt;/li&gt;
+&lt;li&gt;Somewhat similar to spacing, kerning can be more “aggressive” in larger sizes, but this will cause problems in text. In Name Sans, the height of lowercase letters is subtly adjusted for larger styles to allow nice, tight kerning in words like “Tokyo” and “Type”.&lt;/li&gt;
+&lt;li&gt;Notable visual aspects of a typeface are often emphasized at larger sizes and moderated at smaller sizes. In a high-contrast serif design, this might mean that thin strokes get thinner for larger sizes and thicker to remain visible at smaller sizes. Similarly, in Name Sans, the ends of the weight range are less extreme for smaller sizes – the Text Hairline &amp;amp; Ultra will remain legible at smaller point sizes than their Display counterparts. More specifics are detailed below.&lt;/li&gt;
+&lt;li&gt;Some details must be emphasized to hold up at smaller sizes. In a serif design, serifs typically need to be thickened to retain clarity clear in text. In Name Sans, the overall “sharpness” of the design is increased for small sizes, as is exemplified by notches in stems and flat portions of letters (more on this below, as well).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;You can start to understand how a typeface handles optical sizing by placing different optical-size styles at the same scale. In Name Sans, this highlights the change of spacing, kerning, proportions, and shaping.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-triborough_opsz.svg&quot; alt=&quot;Optical Sizing Comparison&quot; /&gt;
+  &lt;figcaption&gt;
+    Letter spacing &amp; kerning is optimized along the Optical Size axis for ideal visual impact and reading ease across sizes.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Of course, different optical sizes aren’t really meant to be compared at the same scale – or even really with the exact same content. It is generally more accurate to look at different optical sizes in their intended sizes. For Name Sans, Display is designed for 96pt, Standard is designed for 24pt, and Text is designed for 12pt. In practice, type is a little less exact than that – there are many factors beyond the control of the font size. For example, the distance of the viewer will change &lt;a href=&quot;https://sizecalc.com/&quot;&gt;the perceived font size&lt;/a&gt;, and the exact physical size of fonts isn’t completely standardized across operating systems &amp;amp; apps. So, at the end of the day, even though optical sizing can automatically help designers to achieve more nuanced typography, some amount of contextual judgment will often be important.&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-triborough_opsz_context.svg&quot; alt=&quot;Optical Sizing Comparison at different sizes&quot; /&gt;
+  &lt;figcaption&gt;
+    Optical Sizes – as their name suggests – are designed to deliver the same visual intent at different scales. Typically, Display sizes are optimized for short names &amp; phrases set at a large scale, medium sizes (like Name Sans Standard) are optimized for headlines, and Text sizes are optimized for running text.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Extremes get a lot of focus in the discussion of optical sizing because they help illustrate design features that might otherwise go unnoticed. However, what happens in the middle is just as important, if not more so. Name Sans &lt;strong&gt;Standard&lt;/strong&gt;, then, seeks to roughly correspond to the sizing, spacing, and proportions of common sans-serif typefaces. If you don’t want to think about optical sizes and just want to do typography as usual, this “Standard” option is designed to work well for you. But, I hope you will consider branching out when projects allow for it – your typography will benefit from the added nuance!&lt;/p&gt;
+&lt;div class=&quot;note&quot;&gt;&lt;span&gt;Usage Note&lt;/span&gt;&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;Smaller optical sizes usually have slightly wider line lengths than display sizes. This is because smaller sizes have additional letter spacing and have slightly larger lowercase letters. However, this is &lt;strong&gt;not&lt;/strong&gt; equivalent to a Width axis. If a given space is too small to fit with content in a Text style (e.g. a long address on a business card template), change the font size or the layout – not the optical size.&lt;/p&gt;
+&lt;/div&gt;
+&lt;h2 id=&quot;geometry%2C-but-with-nuance&quot;&gt;Geometry, but with nuance &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#geometry%2C-but-with-nuance&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A striking, prominent trait of the mosaics is that the circular letters are &lt;em&gt;circles&lt;/em&gt;. In type, a circle never really looks like a circle, but I’ve iterated a lot to get as close as possible to a circular basis for letters like &lt;code&gt;O&lt;/code&gt;, &lt;code&gt;C&lt;/code&gt;, &lt;code&gt;G&lt;/code&gt;, &lt;code&gt;Q&lt;/code&gt;, &lt;code&gt;o&lt;/code&gt;, &lt;code&gt;c&lt;/code&gt;, and &lt;code&gt;e&lt;/code&gt; – while also keep things looking circular in the context of type.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans_inspo-cortland.jpg&quot; alt=&quot;Mosaic name tablet at Cortlandt Street&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;“Keeping things circular” may sound like a straightforward task – almost too basic for discussion. Just draw some circles, right? Actually, it’s not that simple. In well-made type, seemingly circular letters are never actually just geometric circles. Generally, the letter &lt;code&gt;O&lt;/code&gt; has to be just a little less wide than tall, and its sides have to be a little thicker than its top and bottom – otherwise, it will look too wide when set in words.  Further complicating things, letters like &lt;code&gt;C&lt;/code&gt; and &lt;code&gt;G&lt;/code&gt; can’t just copy the curvature of the &lt;code&gt;O&lt;/code&gt;, or they will look comparatively wider. You can start to see these differences if you start rotating fonts and looking at them sideways. This is true even in the classics like Futura that designers may think of as “purely geometric.”&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/futura-vs-circles.svg&quot; alt=&quot;Futura Medium, compared to circles&quot; /&gt;
+  &lt;figcaption&gt;
+  You might think of Futura as the prototypical geometric sans, with perfectly circular shapes – but it is actually a good example of how even strictly geometric fonts must include subtle optical compensations to look geometric in practice.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Of course, geometric type is not meant to &lt;strong&gt;be&lt;/strong&gt; geometric – it’s meant to &lt;strong&gt;look&lt;/strong&gt; geometric, when in actual use. The way that is achieved will vary from project to project – and like any creative project, the specific solutions will depend on the creator.&lt;/p&gt;
+&lt;p&gt;If you try to draw a font without compensating for optical issues, it will look bad. Circles will look wide and diamond-shaped, horizontal strokes will appear too thick, and places where strokes join will look overly thick. Correcting for the issues caused by how our eyes perceive type is called optical compensation. It’s an area of type design that is not always intuitive but is essential to engage with when making type.&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+&lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/example-of-naive-geometry-square.svg&quot; alt=&quot;example of a naive approach to a geometric font&quot; /&gt;
+  &lt;figcaption&gt;
+  If you draw a font from only geometric shapes – with no optical compensations – it tends to look bad. The design of a geometric font is largely the exploration of how much optical compensation is needed to meet a particular goal.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I could show how you might adapt the above example into a better font with just a few optical corrections ... but this post isn’t really about that. The point is, once you know the problems to avoid, you can start to evaluate fonts by how they individually solve those problems. There are many good geometric sans-serif fonts in the world; Name Sans is my current entry into the field. Of course, I am not &lt;em&gt;just&lt;/em&gt; trying to make the most-geometrically-strict font with Name Sans. Rather, I have sought to use geometry where it works is attractive but not distracting –  while also making a font that is versatile, bringing in elements of “grotesque” fonts where they can improve goals like visual consistency and readability.&lt;/p&gt;
+&lt;p&gt;I doubt it is possible to precisely determine the design goals of the designers of the original Subway mosaics, but my speculation is that they had similar goals: make letters that were geometric, but also natural.&lt;/p&gt;
+&lt;p&gt;Some fonts prioritize strict geometric shaping, and that can work. But, such typefaces are accepting a trade-off. If a typeface upholds strict geometry over other goals like optical consistency, it will inevitably take on a decorative aesthetic.&lt;/p&gt;
+&lt;p&gt;One important decision in any geometric font is whether letters like &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, and &lt;code&gt;q&lt;/code&gt; are drawn with circular bowls. If they are, it can look attractive but also sacrifices versatility. It will always look a little too art-deco or disco to be used for serious communication. Even though I love typefaces like &lt;a href=&quot;https://en.wikipedia.org/wiki/ITC_Avant_Garde&quot;&gt;Avant Garde&lt;/a&gt;, this ultra-geometric style basically always communicates some blend of nostalgia and whimsy. This is fine, but it’s not useful for every project.&lt;/p&gt;
+&lt;p&gt;Therefore, in Name Sans, I have drawn letters like &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, and &lt;code&gt;q&lt;/code&gt; to match the visual average width of &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;o&lt;/code&gt; rather than to look especially circular. This, in turn, helps to establish a visual rhythm that doesn’t call too much attention to itself.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-second_av-display.svg&quot; alt=&quot;Comparative proportions of round shapes in Name Sans Display&quot; /&gt;
+  &lt;figcaption&gt;
+    In Name Sans Display, letters like &lt;code&gt;b&lt;/code&gt; and &lt;code&gt;d&lt;/code&gt; are drawn to match the visual average width of &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;o&lt;/code&gt;, rather than to look perfectly circular.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Such considerations are also important between different optical sizes. In the Display sizes, the &lt;code&gt;o&lt;/code&gt; can be very circular, but in Text, the &lt;code&gt;o&lt;/code&gt; must be made much more similar to the width of &lt;code&gt;n&lt;/code&gt; to avoid an excessively-wide appearance in running text.&lt;/p&gt;
+&lt;p&gt;It might be that our eyes are just used to reading certain fonts, and it may be an effect of our eyes rapidly moving horizontally when we read. Either way, anything close to an actual circle will look oblong in running text, so Name Sans accounts for this. Display styles emphasize geometry at a large scale, while Standard &amp;amp; Text styles attempt to look geometric-but-not-distractingly-so.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-second_av-text.svg&quot; alt=&quot;Comparative proportions of round shapes in Name Sans Text&quot; /&gt;
+  &lt;figcaption&gt;
+    In Name Sans Text, the round letters are much closer to the width of &lt;code&gt;n&lt;/code&gt;. If they were to keep the circularity of the Display styles, they would look like wide ellipses in running text.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;If you overlay the &lt;code&gt;o&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, and &lt;code&gt;b&lt;/code&gt;, you can see quite clearly that while &lt;code&gt;o&lt;/code&gt; is quite circular, the &lt;code&gt;n&lt;/code&gt; stays closer to more traditional proportions, and the &lt;code&gt;b&lt;/code&gt; falls in between.&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-bon-display.svg&quot; alt=&quot;Comparative proportions of n, d, o in Name Sans Display&quot; /&gt;
+  &lt;figcaption&gt;
+  Comparative proportions of &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, and &lt;code&gt;o&lt;/code&gt; in Name Sans Display
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Even though I want to capture the charm of the Subway mosaics, &lt;em&gt;charm&lt;/em&gt; is not only achieved through decoration. Instead, I seek to create something which balances geometry and nuance, in order to provide genuine utility for a wide range of applications. So, in Name Sans, the not-quite-circularity is just as critical as the circularity.&lt;/p&gt;
+&lt;h2 id=&quot;sharpness&quot;&gt;Sharpness &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#sharpness&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A subtle thing I love about the Subway mosaics: the vertices of diagonal letters usually don’t simply have a one-stroke width. Instead, they tend to be closer to about two-thirds stroke thickness. This gives vertices a sense of sharpness and visually suggests that diagonal letters are made in a single motion, rather than from separate strokes.&lt;/p&gt;
+&lt;p&gt;Most sans-serifs take one extreme or the other on their treatment of vertices. Broadly speaking, they either take the Futura route with pencil-sharp points or the Helvetica route of prioritizing evenness of strokes, proportions, and color without really considering vertices. I like that the mosaics take a practical, in-between approach: they have vertices that are slightly sharp and a little bit blunt. Naturally, I have sought to preserve this in Name Sans.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Mosaic name tablet for Ft. Hamilton Parkway&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/hamilton.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+    The sharpness of diagonal letters varies between eras of Subway mosaics, but the “endcaps” of vertices tend to be around two-thirds of the main stroke thickness.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;H&amp;M Tunnels to New Jersey&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/hm-tunnels.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+    Even smaller-scale mosaic signs were made with care. Most of these include partially sharp vertices on diagonal letters that closely match the look of their larger-scale relatives.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Name Sans diagonals&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-AMNWV.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    The bluntly sharp vertices from the Subway mosaics are carried into Name Sans.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Sharpened vertices come from a slightly different logical basis than many sans-serifs. Rather than suggesting diagonal letters are made from separate diagonal strokes and attempting to perfectly balance the volume of interior spaces – as a signpainter might create them – these paths are suggestive of the way a person with a pencil might write such characters in a single path. They prize repeated interior volumes a little less and show the letters as “single units” a little more.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Paths for Name Sans diagonals&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-AMNWV-paths.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    The sharp vertices give the impression of letters that are “written” in a single stroke, rather than constructed from multiple lines.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;I have extended this quality of sharpness to the meeting points of lowercase letters like &lt;code&gt;a&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;n&lt;/code&gt;, &lt;code&gt;m&lt;/code&gt;, &lt;code&gt;b&lt;/code&gt;, &lt;code&gt;d&lt;/code&gt;, &lt;code&gt;p&lt;/code&gt;, and &lt;code&gt;q&lt;/code&gt;. Rather than trying to suggest a single, monolinear vertical stem on these letters, I have borrowed the idea of sharpness to give a little more whitespace to these corners while also avoiding the need to add to much contrast to the strokes connecting bowls. Would the original architects have done it this way? It’s hard to say – possibly not. But, this approach allows the typeface to work together in a way that maintains a sense of sharpness while also remaining a cohesive sense of each letter being a self-contained unit that works smoothly with its neighbors.&lt;/p&gt;
+&lt;p&gt;Like every aspect of Name Sans, this approach to sharpness is adapted across optical sizes to be ideal at large, medium, and small sizes. As the &lt;code&gt;opsz&lt;/code&gt; decreases, the stem sharpness is dialed up to preserve this visual feature.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Name Sans, sharpened stems&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-sharp_stems_opsz.svg&quot; /&gt;
+  &lt;figcaption&gt;The lowercase letters borrow the sharp spur from &lt;code&gt;G&lt;/code&gt; to carry a sense of sharpness across the typeface. Like most features of the family, this is adjusted between Optical Sizes.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;It’s difficult to put into academic terms, but this slight sharpening of stems also gives me a certain &lt;strong&gt;feeling&lt;/strong&gt; of the sharp edges and slight imperfections of the ceramic tiles used in mosaics – even when (or especially when) it’s used for running text.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;Name Sans, sharpness at various optical sizes&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-sharpness_opsz.svg&quot; /&gt;
+&lt;figcaption&gt;The construction of Name Sans delivers a visual texture that captures the unique mixture of sharpness and warmth of mosaic tile signage.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;optical-compensations-both-exaggerated-and-(almost)-ignored&quot;&gt;Optical compensations both exaggerated and (almost) ignored &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#optical-compensations-both-exaggerated-and-(almost)-ignored&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There is so much that could be included when describing the personality of the Subway mosaics – and many divergent examples that could be highlighted. I suspect that any given type designer might pick up on something different.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;Mosaic name tablet at Bowery&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/bowery.jpg&quot; /&gt;
+&lt;figcaption&gt;Mosaic name tablet 2nd Ave – note the vertically-symmetrical &lt;code&gt;B&lt;/code&gt;, circular &lt;code&gt;O&lt;/code&gt;, short-armed &lt;code&gt;E&lt;/code&gt;, and prominent “kick” on the leg of the &lt;code&gt;R&lt;/code&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;Mosaic name tablet at 96th St&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/96th_st.jpg&quot; /&gt;
+&lt;figcaption&gt;Mosaic name tablet at 96th St – note the circular, symmetrical counters in &lt;code&gt;9&lt;/code&gt; and &lt;code&gt;6&lt;/code&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;For me, though, a core aspect of the personality in the mosaic lettering is the way the optical compensations are handled – beyond just how circles look.&lt;/p&gt;
+&lt;p&gt;In type, optical compensations tend to follow predictable patterns (at least once you know what to look for). Horizontal strokes are a little thinner than vertical strokes. Joining strokes are narrowed to avoid looking too thick. The bottom “halves” of certain letters are a little bigger than the tops. As mentioned above, “circles” are never really circles. There are these and many, many more techniques that you discover while drawing type.&lt;/p&gt;
+&lt;p&gt;The mosaic letters often either completely exaggerate or completely disregard conventional rules. The tiles don’t tend to modulate thickness between vertical and horizontal strokes because they are (more or less) square. But also, visually symmetry is handled in unusual ways. For example, the &lt;code&gt;S&lt;/code&gt; tends to exaggerate its form by being much wider on the bottom than at the top, while the &lt;code&gt;B&lt;/code&gt; sometimes contrasts this with two bowls that completely match in size. The &lt;code&gt;E&lt;/code&gt; has a middle bar that is super-short, while the &lt;code&gt;5&lt;/code&gt; forgoes a typical slanted top-left.&lt;/p&gt;
+&lt;p&gt;These quirks are some of what make the mosaics so endearing to me. In the context of mosaics, the lettering can get away with a lot of liberties that might look bad elsewhere.&lt;/p&gt;
+&lt;p&gt;In Name Sans, I’ve had to moderate some of the extreme quirks of the mosaics to make sense in a digital typeface. But, especially in the Display styles, I’ve preserved a lot of the unconventional traits. I’ve kept vertical and horizontal strokes as nearly-monolinear as they can be without looking “reversed.” I’ve kept a taper in the proportions of &lt;code&gt;S&lt;/code&gt;. I’ve kept the &lt;code&gt;B&lt;/code&gt; almost vertically-symmetrical. I’ve kept a short mid bar on the &lt;code&gt;E&lt;/code&gt;. I’ve kept an upright &lt;code&gt;5&lt;/code&gt;. I’ve kept certain whitespaces, like the counter of the &lt;code&gt;n&lt;/code&gt;, perfectly symmetrical – except in the lightest styles, where this starts to look asymmetrical. For every visual quirk in Name Sans, there are mosaic letters that led me to make that decision.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Name Sans optical tricks&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-optical_quirks.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    Name Sans plays with symmetry and asymmetry in proportions and counter spaces. Larger sizes emphasize visual quirks in proportion, symmetry, and rigidity of the Subway mosaics. Smaller sizes adapt many of these mannerisms into more typical shaping.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The Subway mosaics can get away flaunting convention because they are large and seldom include very much content. In making Name Sans, I have found that the larger optical sizes can come close to matching that uncompromising approach.&lt;/p&gt;
+&lt;p&gt;Meanwhile, many of the optical conventions bucked by Name Sans Display are normalized a little bit in smaller optical sizes: horizontal strokes get a bit thinner, the &lt;code&gt;S&lt;/code&gt; and &lt;code&gt;B&lt;/code&gt; become a bit more traditionally balanced, the &lt;code&gt;5&lt;/code&gt; gets a bit of a slant, and so on. This makes Text styles a little more familiar to read, while still keeping things lively.&lt;/p&gt;
+&lt;h2 id=&quot;a-blend-of-rigidity-%26-fluidity&quot;&gt;A blend of rigidity &amp;amp; fluidity &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#a-blend-of-rigidity-%26-fluidity&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Often, the most striking feature of the Subway mosaics is how they seem to defy the physical limitations you might expect of rectangular tiles. The way that letters will gracefully, fluidly curve shows that the mosaic letterers were occasionally just showing off. This is even more striking in the serif styles of lettering and in other signage sprinkled throughout the system, but that is a topic for another project.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;NYC Subway mosaic sign for Church of the Redeemer&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/churchoftheredeemer.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+  A smaller directional sign at an exit from the Barclays Center station, for a church that unfortunately was &lt;a href=&quot;https://forgotten-ny.com/2016/06/rip-church-redeemer-downtown-brooklyn/&quot;&gt;demolished in 2016&lt;/a&gt;. This sign isn’t really a part of my current project, but it is a pretty awesome example of what a skilled mosaic artist can do with letters and tiles.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;But also, there are plenty of moments where the grid of tiles is embraced. The rectangularity of tiles influences the letters they form. As you can imagine, the dimensions of tiles often dictate the thickness of letters and the placement of cross-strokes. An even more-obvious obvious example of following the grid is found in flat-sided round letters. In a broader sense, though, the exclusive use of uppercase letters is also an example of the grid of tiles influencing the forms designed. Uppercase letters simply don’t require as many complex curves and details as lowercase letters.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Mosaic name tablet at Spring street&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/spring_st.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+  Bottom-heavy &lt;code&gt;S&lt;/code&gt; shaping and a leg-kicking, grotesque &lt;code&gt;R&lt;/code&gt; at Spring St.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Mosaic name tablet at Fulton St&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/fulton-st.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+  A compact, flat-sided &lt;code&gt;O&lt;/code&gt; matched to otherwise (mostly) normal characters at Fulton St.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Without direct examples, I have had to invent a lowercase for Name Sans. In part, I have done so by looking for examples of similar styles of letters in sources from a roughly similar time as early Subway stations. One particular source of inspiration is the 1912 catalog of the American Type Founders. This includes several “gothic” (AKA grotesque) typefaces which, although clearly not the model used for the Subway mosaics, do share some similar ideas. Aside from similar overall letterforms, strict geometry, and low-contrast strokes, some of these gothics include flat portions of letters. These flat portions are placed where curves would normally be “shallow” or used as optical corrections, like the top of the &lt;code&gt;f&lt;/code&gt; and &lt;code&gt;r&lt;/code&gt; and bottom of the &lt;code&gt;t&lt;/code&gt; and &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;ATF Inland Gothic&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/inland_gothic.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+  Inland Gothic No. 8, from the American Type Founders 1912 Specimen Book of Type Styles. Includes flattened portions of &lt;code&gt;g&lt;/code&gt;, &lt;code&gt;t&lt;/code&gt;, &lt;code&gt;r&lt;/code&gt;, &lt;code&gt;j&lt;/code&gt;, and &lt;code&gt;y&lt;/code&gt;.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;ATF Times Gothic&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/times_gothic.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+  Times Gothic, from the American Type Founders 1912 Specimen Book of Type Styles. Includes smooth counter connections and pairs circular round characters with others with are more compact.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;These flat portions or lowercase gothic letters remind me of the flat-sided letters used in some of the Subway mosaics. Seeing them makes me think of how one might realisticaly approach shallow curves in tile mosaics. In Name Sans, I have embraced flat portions of letters, juxtaposing these against other moments of fluidity, geometry, and sharpness. I see this as following the example of the original mosaic lettering. Am I also influenced by ideas from the 100+ years since the first Subway mosaics? This is inevitable in any historical fiction. But, I also suspect that what I’m designing might be fairly unsurprising to a mosaic artist from a century ago.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;Flat portions give Name Sans a mechanical appearance&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-flats.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    &lt;p&gt;
+      Flat portions of Name Sans echo the rigid shaping of Inland Gothic No. 8, while also echoing the grid-oriented physical construction of Subway mosaics.
+    &lt;/p&gt;
+    &lt;p&gt;
+      Text styles moderate certain flat segments – like the bottom of the lowercase &lt;code&gt;g&lt;/code&gt; – where a bit of added normality improves readability in long-form text.
+    &lt;/p&gt;
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;To an extent, I must admit, the decision to incorporate flat segments was also influenced by certain instances of vinyl Helvetica station signage. I find it endearing that the &lt;code&gt;S&lt;/code&gt; has a flat segment in its spine, and that the &lt;code&gt;t&lt;/code&gt; sometimes ends in a horizontal tail, rather than its more-typical little upturn. I can’t deny that Name Sans has modern influences – another reason it is an interpretation rather than a revival.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Name Sans Stylistic Set 1, Flat-sided Caps&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-ss01.svg&quot; /&gt;
+  &lt;figcaption&gt;
+  Stylistic Set 1 references the rigidity found in mosaics lettering with flat-sided caps.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;%E2%80%9Cobviousness%E2%80%9D-and-evolution&quot;&gt;“Obviousness” and evolution &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#%E2%80%9Cobviousness%E2%80%9D-and-evolution&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;What is “simplicity”? It’s a much-debated question, but – at least when it comes to type – is somewhere between impossible and counterproductive. Is “simplicity” an absolute minimum of shaping detail? Partially yes – but if taken too far, that definition might lead to letterforms without necessary optical compensations, which looks terrible in practice. Is “simplicity” repeating what we are already used to seeing and reading? Partially yes – but if taken too far, that definition would conclude that we already have exactly the type we need and would forgo the possibility of ever making things better than what we already have.&lt;/p&gt;
+&lt;p&gt;What is “obviousness”? That is a more straightforward question. It assumes an individual perspective, unlike notions of simplicity, which often seek to impose a universal, dogmatic view. What is obvious to one person is not necessarily obvious to another. More importantly, what is obvious is dependent on a given project &amp;amp; context. In designing Name Sans, I have tried to make decisions according to what the obvious, elemental forms of letters are – while also keeping in mind my experience and understanding of the Subway mosaics.&lt;/p&gt;
+&lt;p&gt;A primary example: the terminal angles and aperture tightness of sans-serif letters have a big impact on the tone of a typeface. What is the most obvious way to handle this aspect of a design? What would be obvious within the mosaics?&lt;/p&gt;
+&lt;p&gt;In early versions of Name Sans, the apertures of letters like &lt;code&gt;C&lt;/code&gt;, &lt;code&gt;S&lt;/code&gt;, and &lt;code&gt;a&lt;/code&gt; were very “closed” in Display styles, and much more “open” in Text styles. The logic was that, with tighter spacing in the Display styles, tighter apertures kept letters more self-contained. But, as I contended with coming up with an explanation rooted in actual examples from Subway mosaics, I had to admit that this solution was too much of an invention of my own. I was too closely following type trends of the last few years – these tight apertures were hardly something that would be obvious to the folks making signs many decades ago.&lt;/p&gt;
+&lt;p&gt;So, I adjusted my terminals to be at a more obvious placement and angle. I prioritized what would make strokes appear to end with square terminals at a roughly 45° placement – using my eyeballs rather than an actual measurement. This small adjustment made the characters in Name Sans much more similar to the overall appearance of Subway mosaics.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-v03_v05-display.svg&quot; alt=&quot;Name Sans Display, v0.3 vs v0.5&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;In earlier versions of Name Sans, opening shapes of many characters were tight, in response to other popular &amp;amp; historical grotesque typefaces. They have since been widened to more closely reflect observed lettering of the NYC mosaics.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;There are a few exceptions to the open apertures. The Black &amp;amp; Ultra weights, which are pretty unabashedly of my own invention, exaggerate the system into purely display territory. Here, the apertures do close off to avoid overly large whitespaces in text. Likewise, some tabular figures are fairly wide across all weights, so numbers like &lt;code&gt;2&lt;/code&gt; and &lt;code&gt;3&lt;/code&gt; have more-horizontal terminals in their tabular versions.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-v03_v05-display_ultra.svg&quot; alt=&quot;Name Sans Ultra, v0.3 vs v0.5&quot; /&gt;&lt;br /&gt;
+&lt;em&gt;Apertures were opened up – but only a bit – in Ultra weights. Counters were adjusted from circular to elliptical shaping to present of more-serious tone.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;An example, though with slightly different logic, is the way lowercase are constructed. These have joints that have smooth rather than sharp connections. Because the lowercase had to be invented from a relatively-sparse set of examples, one of the bigger decisions of the project was whether to connect bowls to stems with a smooth connection, as in “neo-grotesque” fonts like Helvetica, or whether to connect these with sharp connections, more in line with more “humanist” gothic fonts like Franklin Gothic.&lt;/p&gt;
+&lt;p&gt;Uppercase letters don’t have that many opportunities to show this decision. The &lt;code&gt;G&lt;/code&gt; does have such a joint in some forms, but on the whole there are few connections that relate to the more “handwritten” logical basis for the Latin lowercase. However, numbers offer a few more opportunities for insight into what might be natural for the typeface.&lt;/p&gt;
+&lt;p&gt;The problem is, there are numbers in Subway mosaics that suggest both strategies. 8th Street uses a number 8 that has a humanist construction – a “single path” in a rotated ∞ shape. Meanwhile, 96th Street has numbers with delightfully-circular counters – more of a grotesque approach. So, while you might expect the mosaic artists to only create shapes that were convenient to lay in tile (presumably, humanist forms without smooth joints), they show time and again that they were interested more in aesthetics than in convenience.&lt;/p&gt;
+&lt;p&gt;Because these numbers existed as direct examples, I have chosen to follow both potential routes – Name Sans includes a &lt;code&gt;6&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt; with circular counters, but bucks the typical geometric-grotesque approach, using a typically humanist form for &lt;code&gt;8&lt;/code&gt;.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Mosaic sign at 8th Street&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/to-8th.jpg&quot; /&gt;
+  &lt;figcaption&gt;
+    While many numbers and letters in NYC Subway mosaics fall under shapes that would be categorized as “grotesque,” there are also examples like this &lt;code&gt;8&lt;/code&gt; which follow more “humanist” tendencies.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;Numbers from Name Sans v0.5&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-numbers.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    In a nod to the subtle variety of lettering styles in NYC mosaics, the &lt;code&gt;6&lt;/code&gt; and &lt;code&gt;9&lt;/code&gt; of Name Sans have a “grotesque” structure with smooth counters, while the &lt;code&gt;8&lt;/code&gt; has a more typically “humanist” construction, as if written in one smoothly-curving path.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;But again, the lowercase did not have precedents, and therefore, I simply had to choose what looked more obvious in text. I will freely admit that, because I spend hours of every day reading fonts like Helvetica and &lt;a href=&quot;https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/typography/&quot;&gt;Apple SF&lt;/a&gt;, my eyes are biased. It could be that I chose to follow these examples because I found them visually familiar and knew others would as well.&lt;/p&gt;
+&lt;h3&gt;Excuse me while I get a little bit theoretical&lt;/h3&gt;
+&lt;p&gt;I do have a theory of &lt;em&gt;why&lt;/em&gt; smooth-joined lowercase forms have “won out” in so much of today’s typography: with smooth connections, letters feel like &lt;em&gt;self-contained units&lt;/em&gt;. When it has a smooth connection between its steam and its bowl, a character like &lt;code&gt;n&lt;/code&gt; is a &lt;strong&gt;single shape&lt;/strong&gt; in and of itself, even though it has a complex shape. If, however, an &lt;code&gt;n&lt;/code&gt; has a sharp connection, it presents itself as &lt;strong&gt;two shapes&lt;/strong&gt; connected.&lt;/p&gt;
+&lt;p&gt;It’s not that I think smooth connections make letters “self-contained” at the &lt;em&gt;expense&lt;/em&gt; of forming cohesive wordshapes for reading. I still hold the ideal that “A typeface is a beautiful collection of letters, not a collection of beautiful letters.” (Thanks, &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/ted.com/speakers/matthew_carter&quot;&gt;Matthew Carter&lt;/a&gt;!) I am also not disputing the value of a humanist construction for letters. Rather, this is my understanding of why smooth connections help give a font a stable, sturdy presence, while sharp connections tend to present more of an active, forward-moving tone. Both approaches have merits, and both strategies (if executed well) can lead to highly-readable type.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Name Sans Text, v0.3 vs v0.5&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-v03_v05-text.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    Earlier versions of Name Sans Text included sharp joints on many characters. These were ultimately smoothed out to better match the aesthetics of Name Sans Display at smaller sizes and to maintain high-quality outlines in intermediate styles.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;The idea of considering letter construction as rooted in physical tools isn’t my own. In reality, the theory is really just my extrapolation of Gerrit Noordzij’s theory of The Stroke. In The Stroke, Noordzij argues that most type can be thought of as originating in the strokes of a writing tool. Noordzij breaks this down into categories which include &lt;em&gt;expansion&lt;/em&gt; (in which the stroke’s width modulates according to pressure, as exemplified by a pointed-nib pen) and &lt;em&gt;translation&lt;/em&gt; (in which the stroke’s width modulates according to a pen’s orientation, as exemplified by writing with a flat-nibbed pen). In expansion writing – the structural basis for typefaces from Didot to Helvetica – the pen makes the core of most letters which a single stroke, traveling down, up, over, and down, allowing for continuous strokes with smooth joins. In translation writing – the structural basis for typefaces from Palatino to Verdana – the pen only travels in a downward or sideways direction, lending to separate strokes with sharp joins. (&lt;em&gt;Rotation&lt;/em&gt; is another category mentioned. But, as with any model, Stroke Theory is a simplification. The reality of writing is much more complex, and fascinating concepts like single-stroke signpainting and brush calligraphy –  which mix expansion, translation, and rotation – are mostly left out. Still, it provides one useful perspective by which to consider the design of letters.)&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-model.svg&quot; alt=&quot;Expansion vs Translation in versions of Name Sans Text&quot; /&gt;
+  &lt;figcaption&gt;
+  Translation vs Expansion models of type, as shown by Name Sans Text in versions 0.3 vs 0.5
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;A much more basic explanation is possible, too: sharp connections add extra angles to letters, which add up to more visual complexity on the zoomed-out level of words and text. In the case of Name Sans, it feels best to avoid this type of visual complexity.&lt;/p&gt;
+&lt;p&gt;(Just in case anyone is reading this and happens to be considering &lt;a href=&quot;https://www.microsoft.com/en-us/microsoft-365/blog/2021/04/28/beyond-calibri-finding-microsofts-next-default-font/&quot;&gt;font defaults for document-creation software&lt;/a&gt;: In the case of a font intended for books or multi-page documents, I would instead lean towards a humanist model. Perhaps this is also because I am used to &lt;em&gt;that&lt;/em&gt;, but perhaps also because its dynamic presence helps my eyes maintain forward momentum in text when there is truly a lot of it.)&lt;/p&gt;
+&lt;p&gt;All that is to say: Name Sans might have a smoothly-joined lowercase because this style is perpetually popular and I am crassly chasing after money (I am running a business to sell a product to buyers, after all). But, Name Sans also has a smoothly-joined lowercase because it relates back to the idea that each letter should be a single, self-contained unit, so that the typeface as a whole can have a stable, direct voice. Either way, this is the obvious choice – at least for this project.&lt;/p&gt;
+&lt;h2 id=&quot;a-varied-but-harmonious-set-of-possibilities&quot;&gt;A varied but harmonious set of possibilities &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#a-varied-but-harmonious-set-of-possibilities&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The thing that made this project “impossible” – the diversity of styles and forms in the Subway mosaics – is something I have worked to bring into the project through its range of styles, its nature as a variable font, and its OpenType features.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Stylistic Sets&lt;/em&gt; are an option that a font can include to allow users to activate various stylistic variants of characters, like (depending on the typeface) a single-story &lt;code&gt;a&lt;/code&gt; or serif &lt;code&gt;I&lt;/code&gt;. Stylistic sets can be something of a sore subject to type designers, because these extra features can make a project (sometimes significantly) harder to complete – and then often go totally unknown to the actual users of a font. (This is partly due to their often-terrible UI in design software.)&lt;/p&gt;
+&lt;p&gt;Some type designers will even suggest that stylistic sets indicate a lack of decisiveness on the part of a creator, almost to the point of it being a moral failing to include too many of these options. “Pick the best letterform for each character and stick with it,” they advise, “that’s your job as a type designer.”&lt;/p&gt;
+&lt;p&gt;There is certainly some merit to pushing back on overly-enthusiastic inclusion of stylistic sets and features for the sake of features. But, sometimes, it’s nice to have a tool that can be adapted to the needs of different jobs.&lt;/p&gt;
+&lt;p&gt;In the case of Name Sans, I would see it as a major missed opportunity to disregard the many, many stations that have rectangular caps for their mosaic signage. So, rectangular caps can be activated with Stylistic Set 1.&lt;/p&gt;
+&lt;p&gt;I would also see it as a missed opportunity to not bring in my favorite leg-kicking &lt;code&gt;R&lt;/code&gt; from stations like Spring Street and Bowery. But, I have had to face the fact that an R with a curly leg doesn’t always work, and probably doesn’t work most of the time. It’s often just &lt;em&gt;too interesting&lt;/em&gt;, to a fault. So, the default &lt;code&gt;R&lt;/code&gt; of Name Sans has a simple shape with a straight leg, while the cooler “grotesque” form can be activated with Stylistic Set 2.&lt;/p&gt;
+&lt;p&gt;On top of all that, there are several stylistic sets that are just nice to have in any geometric sans. There is a single-story &lt;code&gt;a&lt;/code&gt; and a double-story &lt;code&gt;g&lt;/code&gt;, plus simplified versions of &lt;code&gt;t&lt;/code&gt;, &lt;code&gt;j&lt;/code&gt;, and &lt;code&gt;y&lt;/code&gt;.&lt;/p&gt;
+&lt;figure class=&quot;main-col&quot;&gt;
+  &lt;video autoplay=&quot;&quot; loop=&quot;&quot; playsinline=&quot;&quot; muted=&quot;&quot; controls=&quot;&quot;&gt;
+    &lt;source src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-tester.webm&quot; type=&quot;video/webm&quot; /&gt;
+    &lt;source src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-tester.mp4&quot; type=&quot;video/mp4&quot; /&gt;
+  &lt;/video&gt;
+  &lt;figcaption&gt;A type tester is available at &lt;a href=&quot;https://name.arrowtype.com/&quot;&gt;name.arrowtype.com&lt;/a&gt; to help preview some of the typographic features and stylistic sets of the family.&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h3&gt;Size-specific letterforms&lt;/h3&gt;
+&lt;p&gt;In earlier versions of Name Sans, the Optical Size axis automatically switched between forms of characters &lt;code&gt;R&lt;/code&gt;, &lt;code&gt;I&lt;/code&gt;, &lt;code&gt;g&lt;/code&gt;, and &lt;code&gt;l&lt;/code&gt;, opting for the forms that worked best in most Display vs Text scenarios. This deliberate inconsistency was partly a nod to old grotesque typefaces that included very different letterforms in different “cuts” (literally, different styles of wood or metal cut for different widths and sizes).&lt;/p&gt;
+&lt;p&gt;In previous versions of Name Sans, there were stylistic sets to turn off this size-specific swapping behavior. In v0.5, however, I have opted to keep a single set of defaults across all sizes – with stylistic sets to turn &lt;em&gt;on&lt;/em&gt; the automatic swaps.&lt;/p&gt;
+&lt;p&gt;Why the change? For one, having stylistic sets to turn off behavior got very confusing to coordinate between variable and static fonts – even for me, as the font maker. But also, I had to be honest with myself: if I were a graphic designer using an unfamiliar font, I would probably be confused (and maybe a bit annoyed) if it had a few letters that radically changed shapes at different sizes.&lt;/p&gt;
+&lt;p&gt;At the same time, as a type-minded designer, I really &lt;em&gt;like&lt;/em&gt; having a font that changes shape for different sizes. It’s &lt;em&gt;useful&lt;/em&gt; if small or running text has a more-recognizable &lt;code&gt;g&lt;/code&gt;. It’s pretty cool if a headline has a wonky &lt;code&gt;R&lt;/code&gt;. So, for folks who want to use Name Sans in this kind of “expert” mode, Stylistic Sets 19 &amp;amp; 20 will turn on these size-specific substitutions.&lt;/p&gt;
+&lt;figure&gt;
+  &lt;img alt=&quot;Optional size-specific forms&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-text_display_options.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    Optional size-specific forms are available in Stylistic Sets 19 &amp; 20 – and automatically activated by Optical Size in Name Sans Variable.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;extra-quirks-worth-mentioning&quot;&gt;Extra quirks worth mentioning &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#extra-quirks-worth-mentioning&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In the mosaics, the &lt;code&gt;Z&lt;/code&gt; (when it does appear) tends to have a little angle at the bottom right, even though this calligraphic touch isn’t found in any other uppercase letter. I’ve kept this in Name Sans. To carry this trait into the system just a little further, I’ve matched this adapted this angle for the top of the &lt;code&gt;t&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;In Stylistic Set 1, Rectangular Caps, the &lt;code&gt;U&lt;/code&gt; has a bottom which is more square than the bottoms of letters like &lt;code&gt;O&lt;/code&gt; that you’d think might match. Again, this comes from mosaic examples.&lt;/p&gt;
+&lt;p&gt;In the bolder Display styles, the y has a smooth connection between from its left side down to the descender. This is straight off of Helvetica – even though it’s a bit tricky to incorporate into the family because it must swap to a sharp connection in lighter weights, it looks too nice to leave out.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img alt=&quot;A few extra quirks&quot; src=&quot;https://blog.arrowtype.com/name-sans-v05/name_sans-extra.svg&quot; /&gt;
+  &lt;figcaption&gt;
+    Name Sans sneaks in a few extra quirks from the Subway mosaics, like a calligraphic exit stroke on the &lt;code&gt;Z&lt;/code&gt; (echoed by the &lt;code&gt;t&lt;/code&gt;) and a flat-bottomed &lt;code&gt;U&lt;/code&gt; in Stylistic Set 1. An alternate &lt;code&gt;ß&lt;/code&gt;, in an “tailed-z” form borrowed from Berlin street signs, is also available in Stylistic Set 10.
+  &lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;p&gt;Simply put, Name Sans is not an accidental design. Every visual aspect of it ties back to mosaics (or occasionally newer) signage in the Subway. I am still learning, and there are still a few decisions that I am turning over in my head and in my sketches, but I am becoming more certain that I have found the right way to balance the many influences of Name Sans into a varied but cohesive type family.&lt;/p&gt;
+&lt;h2 id=&quot;there%E2%80%99s-so-much-more%2C-but...&quot;&gt;There’s so much more, but... &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/name-sans-v05/#there%E2%80%99s-so-much-more%2C-but...&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Like Name Sans itself, this blog post is only a partially-complete draft. There is so much more I could say about the typeface, the ideas I have tried and abandoned, and the things it can do. Some of these are better outlined in the PDF Specimen and in the slides on Future Fons. But also, I am still in the midst of discovering what Name Sans is! To me, that’s the fun of it.&lt;/p&gt;
+&lt;p&gt;There are a lot of things I know at this point: I am working on Italics along with a few more typographic features, and I will continue to refine shaping, spacing, and kerning across the project.&lt;/p&gt;
+&lt;p&gt;(Spoiler alert: the italics will be pretty boring. They &lt;em&gt;may&lt;/em&gt; have a single-story &lt;code&gt;a&lt;/code&gt; on by default, but will otherwise be a sloped (and optically corrected) version of the uprights. I am working to keep these as geometric as possible, so they can work seamlessly with the intent of the family as a whole.)&lt;/p&gt;
+&lt;p&gt;I plan to finish and fully release a &lt;code&gt;1.0&lt;/code&gt; in the coming months. When I do, I plan to also release a refined version of this essay.&lt;/p&gt;
+&lt;p&gt;So, if you managed to actually read (or even skim!) this post and have any questions for me, please let me know.&lt;/p&gt;
+&lt;p&gt;If you’ve already picked up a license for Name Sans, I really appreciate you coming along for the journey! If you haven’t, it’s still at a greatly reduced price while it’s in pre-release (if you do the math, it’s currently about $4.03 per style). By &lt;a href=&quot;https://www.futurefonts.xyz/arrowtype/name-sans&quot;&gt;purchasing a license through Future Fonts&lt;/a&gt;, you will be securing future updates for free, for life. If you do pick up a license, I hope you reach out to me if you put Name Sans to use! I love to see when people get value out of my type – it makes this whole, slightly ridiculous effort feel worthwhile.&lt;/p&gt;
+&lt;p&gt;Oh – and finally, please subscribe to my newsletter if you’d like to be alerted when Name Sans 1.0 is released. There just might be another 8,000-word treatise on geometry and historical fiction along with it.&lt;/p&gt;
+&lt;h2 class=&quot;mt-3&quot;&gt;Footnotes&lt;/h2&gt;
+&lt;section class=&quot;footnotes&quot;&gt;
+&lt;ol class=&quot;footnotes-list&quot;&gt;
+&lt;li id=&quot;fn1&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/Latin_script&quot;&gt;Latin Script&lt;/a&gt; is the writing system familiar to anyone who writes English, Spanish, German, French, or any other language using a similar A–Z alphabet. And actually, Name Sans does go beyond the character set of many fonts, with a total of 728 glyphs which support over 200 languages used through Europe and the Americans, plus Vietnamese. &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fnref1&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn2&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The idea of typefaces as “raw materials” is borrowed from Klim Type Foundry’s article &lt;a href=&quot;https://klim.co.nz/blog/a-typeface-is-not-a-tool/&quot;&gt;A typeface is not a tool&lt;/a&gt;. Of course, a typeface is &lt;em&gt;both&lt;/em&gt; a raw material and a tool, but that debate is for another day. &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fnref2&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn3&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/New_York_City_Subway#History&quot;&gt;Wikipedia: NYC Subway History&lt;/a&gt; &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fnref3&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn4&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Heins_%26_LaFarge&quot;&gt;Wikipedia: Heins &amp;amp; LaFarge&lt;/a&gt; &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fnref4&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&quot;fn5&quot; class=&quot;footnote-item&quot;&gt;&lt;p&gt;The &lt;a href=&quot;https://docs.microsoft.com/en-us/typography/opentype/spec/&quot;&gt;OpenType Specification&lt;/a&gt; is the technical spec which defines the underlying structure of modern digital fonts. &lt;a href=&quot;https://blog.arrowtype.com/name-sans-v05/#fnref5&quot; class=&quot;footnote-backref&quot;&gt;↩︎&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Hosting licensed fonts on AWS S3 for open-source websites</title>
+		<link href="https://blog.arrowtype.com/host-webfont-on-aws/"/>
+		<updated>2021-01-27T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/host-webfont-on-aws/</id>
+		<content type="html">&lt;p&gt;In some situations, you may need to use a font on the web, but may not be able to host it alongside your web code. In this case, you can host the font on AWS and call it in as a URL in your &lt;code&gt;@font-face&lt;/code&gt; CSS!&lt;/p&gt;
+&lt;p&gt;For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. &lt;strong&gt;If your font license allows it&lt;/strong&gt;, this can be a nice solution to an otherwise tricky problem. Note: licensing will vary between typefaces and type foundries – read your license or email the type foundry if you aren’t sure!&lt;/p&gt;
+&lt;p&gt;With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively easy &amp;amp; very inexpensive – unless you are making a hugely-popular website, perhaps. You can (and should) configure it to only work on specific web domains, so you don’t break your licensing or end up paying for other people to use your font hosting! Here’s how.&lt;/p&gt;
+&lt;h2 id=&quot;make-your-s3-bucket&quot;&gt;Make your S3 Bucket &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#make-your-s3-bucket&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Register for AWS, then Sign into the Management Console, search for &lt;code&gt;buckets&lt;/code&gt; and click on &lt;strong&gt;Buckets S3 feature&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Click &lt;strong&gt;Create Bucket&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Give the bucket a name (e.g. &lt;code&gt;arrowtype&lt;/code&gt;) and select a region that you think is closest to you / most of your users&lt;/li&gt;
+&lt;li&gt;Uncheck &lt;strong&gt;Block all public access&lt;/strong&gt; and check the box for “I acknowledge that the current settings might result in this bucket and the objects within becoming public.”&lt;/li&gt;
+&lt;li&gt;Maybe enable versioning&lt;/li&gt;
+&lt;li&gt;Scroll to the bottom and click &lt;strong&gt;Create bucket&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;upload-your-font&quot;&gt;Upload your font &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#upload-your-font&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go into your new bucket, and click &lt;strong&gt;Upload&lt;/strong&gt; then &lt;strong&gt;Add files&lt;/strong&gt;, then select and upload your woff2 font file.&lt;/li&gt;
+&lt;li&gt;Click on the file within the bucket, then find &lt;strong&gt;Object actions &amp;gt; Make Public&lt;/strong&gt;, so you can access this from your CSS later (don’t worry; the next step will prevent other sites from using it)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;edit-cors-on-the-bucket&quot;&gt;Edit CORS on the bucket &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#edit-cors-on-the-bucket&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Navigate back to the top level of your bucket&lt;/li&gt;
+&lt;li&gt;Click the “Permissions” tab.&lt;/li&gt;
+&lt;li&gt;Scroll to the “Cross-origin resource sharing (CORS)” section, then click &lt;strong&gt;Edit&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Set CORS permissions to allow your specified URL(s) to access the objects in the bucket, similar to the JSON shown below.
+&lt;ul&gt;
+&lt;li&gt;You can use a wildcard (&lt;code&gt;*&lt;/code&gt;) to allow subdomains, like &lt;code&gt;https://*.arrowtype.com&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;I also include &lt;code&gt;http://localhost:8080&lt;/code&gt;, the URL which my local-development builds get served to. Replace this with the localhost port number(s) you need to support.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- TODO: figure out how to get font cacheing working: Add a `MaxAgeSeconds` property to control how long the font will stay in the browser cache for visitors. This will improve site performance for them, and should reduce you (already pretty low) S3 usage even further. I am using `604800` seconds, which is equal to 7 days. If you don’t plan to update the font often, you could increase that number further (say, to 30 days, which is `2592000` seconds). --&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;AllowedHeaders&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br /&gt;            &lt;span class=&quot;token string&quot;&gt;&quot;*&quot;&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;AllowedMethods&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br /&gt;            &lt;span class=&quot;token string&quot;&gt;&quot;GET&quot;&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;AllowedOrigins&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;br /&gt;            &lt;span class=&quot;token string&quot;&gt;&quot;https://*.arrowtype.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;            &lt;span class=&quot;token string&quot;&gt;&quot;https://arrowtype.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;            &lt;span class=&quot;token string&quot;&gt;&quot;http://localhost:8080&quot;&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;br /&gt;        &lt;span class=&quot;token property&quot;&gt;&quot;ExposeHeaders&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;br /&gt;    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;get-your-font-object%E2%80%99s-url&quot;&gt;Get your font object’s URL &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#get-your-font-object%E2%80%99s-url&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Go back into the bucket’s “Objects” tab, and click on the file name of your font.&lt;/li&gt;
+&lt;li&gt;Find and copy the “Object URL,” which will look something like &lt;code&gt;https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2&lt;/code&gt;.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Note: because of the CORS configuration for this URL, you can’t use it on other websites, though you could use it in local development if you really wanted to ... but honestly, please just &lt;a href=&quot;https://name.arrowtype.com/&quot;&gt;buy your own license&lt;/a&gt; if you want to use it – while it’s still in early access, it’s available at a steep discount! Or, use another font – there are many great type options in the world, both free and paid!&lt;/p&gt;
+&lt;h2 id=&quot;set-your-css-so-local-fonts-don%E2%80%99t-interfere-with-your-development&quot;&gt;Set your CSS so local fonts don’t interfere with your development &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#set-your-css-so-local-fonts-don%E2%80%99t-interfere-with-your-development&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In your CSS, you can use a font’s basic family name in order to just use a local copy of that font. This can make fonts appear more quickly for users, if those users already have that font on their system. However, especially with newer fonts, this may cause problems. How do you know that your users will have the latest version of a font? Often, the OS will serve an unintended font style, even if it does have the latest version.&lt;/p&gt;
+&lt;p&gt;So, I often make sure to use a name that specifically &lt;em&gt;won’t&lt;/em&gt; call a local file. I do this either by removing spaces or adding a suffix like ”VF“.&lt;/p&gt;
+&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token atrule&quot;&gt;&lt;span class=&quot;token rule&quot;&gt;@font-face&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;NameSansVF&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;font-weight&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; 1 1000&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token property&quot;&gt;src&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token url&quot;&gt;&lt;span class=&quot;token function&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string url&quot;&gt;&quot;https://arrowtype.s3-us-west-2.amazonaws.com/name_sans-variable.woff2&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token selector&quot;&gt;html&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt; &lt;span class=&quot;token property&quot;&gt;font-family&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;NameSansVF&#39;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; sans-serif&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Your font should now work locally and also in deployment. Of course, the only way to know is to deploy the site and test it on a few different devices!&lt;/p&gt;
+&lt;p&gt;Additionally, the font is (relatively) safe from being directly used on any site that just copies your CSS. You can verify this out by &lt;a href=&quot;https://codepen.io/thundernixon/pen/LYbPGGd?editors=1100&quot;&gt;trying it on CodePen&lt;/a&gt;, where it shouldn’t work (unless you allow CodePen URLs in your CORS settings).&lt;/p&gt;
+&lt;h2 id=&quot;to-update-the-font&quot;&gt;To update the font &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#to-update-the-font&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you need to update the font version on S3 in the future, you can simply repeat the process of uploading a file.&lt;/p&gt;
+&lt;p&gt;Just remember to also follow the &lt;strong&gt;Make Public&lt;/strong&gt; steps, or things will break!&lt;/p&gt;
+&lt;h2 id=&quot;but-what-if-fonts-were-already-in-a-public-git-repo%3F&quot;&gt;But what if fonts were already in a public Git repo? &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#but-what-if-fonts-were-already-in-a-public-git-repo%3F&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This is a &lt;a href=&quot;https://pixelambacht.nl/2017/github-font-piracy/&quot;&gt;pretty big problem&lt;/a&gt;, but luckily, it’s not too hard to fix.&lt;/p&gt;
+&lt;p&gt;You can use a tool called BFG to remove them – even &lt;a href=&quot;https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository&quot;&gt;GitHub recommends this tool&lt;/a&gt;.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Make a backup copy of your project before using the BFG, in case you mess something up!&lt;/li&gt;
+&lt;li&gt;Download the latest release from &lt;a href=&quot;https://rtyley.github.io/bfg-repo-cleaner/&quot;&gt;the BFG website&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Open a terminal, navigate to your project’s root, point to the downloaded BFG file, and use the &lt;code&gt;--delete-files&lt;/code&gt; option to delete the font filename you’d like to keep private:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;pre class=&quot;language-bash&quot;&gt;&lt;code class=&quot;language-bash&quot;&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; ~/code/blog-11ty &lt;span class=&quot;token comment&quot;&gt;# change to the root of your web project&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token function&quot;&gt;java&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-jar&lt;/span&gt; ~/Downloads/bfg-1.13.2.jar --delete-files name_sans-variable.woff2&lt;/code&gt;&lt;/pre&gt;
+&lt;ol start=&quot;4&quot;&gt;
+&lt;li&gt;Use &lt;code&gt;git push --force&lt;/code&gt; to force push the edited Git history to your repo.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;happy-webfonting!&quot;&gt;Happy webfonting! &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/host-webfont-on-aws/#happy-webfonting!&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;This specific workflow is fairly new to me. Did I forget to describe a step? Did I say anything inaccurate? Feel free to let me know! I’m &lt;a href=&quot;https://twitter.com/ArrowType&quot;&gt;on Twitter&lt;/a&gt;, and this blog has open &lt;a href=&quot;https://github.com/arrowtype/blog/issues&quot;&gt;Issues on GitHub&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Getting the most out of RoboFont</title>
+		<link href="https://blog.arrowtype.com/robofont-tips/"/>
+		<updated>2020-12-11T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/robofont-tips/</id>
+		<content type="html">&lt;p&gt;Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is the font editor RoboFont, along with its ecosystem.&lt;/p&gt;
+&lt;p&gt;I covered some of the reasons I like RoboFont in my earlier post, &lt;a href=&quot;https://blog.arrowtype.com/getting-started&quot;&gt;Getting Started in Type&lt;/a&gt;. This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!&lt;/p&gt;
+&lt;h2 id=&quot;first-things-first&quot;&gt;First things first &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#first-things-first&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Like most powerful software, RoboFont has a lot of functionality, and you will save time by doing a bit of reading before diving in. It is extremely useful to get familiar with the &lt;a href=&quot;https://robofont.com/documentation/&quot;&gt;RoboFont Docs&lt;/a&gt; (even if you just skim parts of it at first). If you are new to RoboFont or just wondering what it’s all about, start with the &lt;a href=&quot;https://robofont.com/documentation/introduction/&quot;&gt;RoboFont Introduction&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;As a new user, you will probably want to define the default character set for new fonts. &lt;a href=&quot;https://robofont.com/documentation/how-tos/defining-character-sets/&quot;&gt;Here’s how&lt;/a&gt;. Glyph Browser, an extension mentioned below, further extends this part of the process.&lt;/p&gt;
+&lt;h2 id=&quot;my-favorite-robofont-extensions&quot;&gt;My favorite RoboFont extensions &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#my-favorite-robofont-extensions&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Extensions are a big part of the RoboFont experience. Most RoboFont extensions can be found on &lt;a href=&quot;https://robofontmechanic.com/&quot;&gt;Mechanic&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;You can get more-detailed documentation about RoboFont extensions at &lt;a href=&quot;https://robofont.com/documentation/extensions/&quot;&gt;robofont.com/documentation/extensions/&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;However, it can be overwhelming to know which extensions are available, and which ones you actually want to use. After working for about three years almost daily in RoboFont, here are the RoboFont extensions that I find most useful.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://robofontmechanic.com/&quot;&gt;Mechanic&lt;/a&gt;, by Frederik Berlaen and Antonio Cavedoni&lt;/h3&gt;
+&lt;p&gt;Mechanic is an easy way to manage (most) RoboFont extensions. It’s pretty essential, as it allows you to easily find and install most of the other extensions listed here. Extensions mentioned below but not available via Mechanic are linked to, but the ones not linked to are simplest to find &amp;amp; install via Mechanic.&lt;/p&gt;
+&lt;h3&gt;Add Overlap, by Alexandre Saumier Demers&lt;/h3&gt;
+&lt;p&gt;Adds corner overlaps to selected points. I like &lt;a href=&quot;https://github.com/okay-type/AddOverlap&quot;&gt;Okay Type’s fork of this&lt;/a&gt;, which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.&lt;/p&gt;
+&lt;h3&gt;Add Segment Guideline, by Jan Šindler&lt;/h3&gt;
+&lt;p&gt;This is a very simple but useful way to add a guideline to a selected segment. I’ve set it to the shortcut &lt;strong&gt;Command /&lt;/strong&gt;, and I use it constantly – especially when drawing glyphs with diagonal strokes.&lt;/p&gt;
+&lt;h3&gt;Batch, by Frederik Berlaen&lt;/h3&gt;
+&lt;p&gt;This is a simple UI to help you build fonts from RoboFont. I do almost all of my font builds with &lt;a href=&quot;https://github.com/googlefonts/fontmake&quot;&gt;FontMake&lt;/a&gt;, but this is a whole extra skill to learn, and probably not necessary for every font project.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/roboDocs/CornerTools&quot;&gt;CornerTools&lt;/a&gt;, by Loïc Sander&lt;/h3&gt;
+&lt;p&gt;Want to add a bunch of rounded corners or inktraps to a font? This is a fast way to do it! This is a super nice tool to modify corners. Read the project readme for instructions.&lt;/p&gt;
+&lt;h3&gt;DesignSpace Edit, by Erik van Blokland&lt;/h3&gt;
+&lt;p&gt;This will help set up and edit correctly-formatted DesignSpace documents that you can build with Batch or FontMake, for font projects involving interpolation to create static instances and/or variable fonts. I often start here to make a new DesignSpace, then use a code editor to make edits more efficiently.&lt;/p&gt;
+&lt;h3&gt;EditThatNextMaster, by Erik van Blokland&lt;/h3&gt;
+&lt;p&gt;A common early complaint about RoboFont is that it’s a bit tricky to move between sources for a multiple-master font project. This solves that by assigning a hotkey to move between views of open UFOs.&lt;/p&gt;
+&lt;h3&gt;Eyeliner, by Ryan Bugden&lt;/h3&gt;
+&lt;p&gt;Simple but essential: this makes it easy to see when a point is on a guide or metric line.&lt;/p&gt;
+&lt;h3&gt;Glyph Browser, by Erik van Blokland&lt;/h3&gt;
+&lt;p&gt;This is an essential tool to make it easy to add specific glyphs with correct unicodes &amp;amp; naming. It allows you to either search by typing a glyph name (e.g. &lt;code&gt;paragraph&lt;/code&gt; or by character (e.g. &lt;code&gt;¶&lt;/code&gt;).&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/RafalBuchner/glyphMirror&quot;&gt;GlyphMirror&lt;/a&gt;, by Rafał Buchner&lt;/h3&gt;
+&lt;p&gt;This draws mirrored versions of your drawing in a background visual, and these can be flipped in different ways and moved around. This makes it fast and easy to achieve and check symmetry, when you want it.&lt;/p&gt;
+&lt;h3&gt;Properties, by Jérémie Hornus&lt;/h3&gt;
+&lt;p&gt;This displays distances between selected points, lengths of selected segments, and more.&lt;/p&gt;
+&lt;h3&gt;Overlay UFOs, by David Jonathan Ross&lt;/h3&gt;
+&lt;p&gt;This displays glyphs from the same or other open UFOs while you draw. Helpful to draw and check related shapes within a single font (e.g. &lt;code&gt;n&lt;/code&gt; and &lt;code&gt;h&lt;/code&gt;), to check related shapes between different sources of a big project, and to have a guide for shaping in less-familiar characters.&lt;/p&gt;
+&lt;h3&gt;Outliner, by Frederik Berlaen&lt;/h3&gt;
+&lt;p&gt;THis is helpful if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/typesupply/popuptools&quot;&gt;Popup Tools&lt;/a&gt;, by Tal Leming&lt;/h3&gt;
+&lt;p&gt;This is a little pop-up panel that allows the alignment &amp;amp; distribution of selected nodes &amp;amp; contours. It’s something I’ve wanted maaaany times, especially as someone who has spent a lot of time in design tools like Figma, Sketch, &amp;amp; Illustrator, where I used these functions constantly. But, I got so used to drawing without it, I am not yet sure whether it will be something I use a lot.&lt;/p&gt;
+&lt;h3&gt;Ramsay St, by Frederik Berlaen&lt;/h3&gt;
+&lt;p&gt;This will show related glyphs in the glyph view, on either side of the glyph you’re currently drawing. I used it a lot at first, but I hardly ever use it now – I’ve moved to using the Space Center quite a bit more for this purpose.&lt;/p&gt;
+&lt;h3&gt;ScalingEditTool, by Timo Klaavo&lt;/h3&gt;
+&lt;p&gt;This is a super-necessary tool to move points in a way that is less disruptive to attached curves. You kind of have to try it to understand it, but when I draw, I constantly go between the default Edit Tool and the Scaling Edit Tool. (In fact, the ease of shifting between tools with number keys is one reason I enjoy drawing in RoboFont! It’s weird at first, but much more ergonomic once you get used to it.)&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/roboDocs/ScaleFast&quot;&gt;ScaleFast&lt;/a&gt;, by Loïc Sander&lt;/h3&gt;
+&lt;p&gt;This one is extremely awesome for scaling glyphs to speed up the process of making things like superiors &amp;amp; inferiors, small caps, legal symbols, and more.&lt;/p&gt;
+&lt;h3&gt;Shape Tool, by Frederik Berlaen&lt;/h3&gt;
+&lt;p&gt;It’s sort of hilarious that this isn’t built into RoboFont, but it also says something about the thinking behind RoboFont as a tool. This extension lets you draw circles/ellipses &amp;amp; squares/rectangles. It’s not built into RoboFont because you might want to tweak the circle-drawing algorhythm yourself, e.g. to draw the slightly-boxy “circles” necessary to make a geometric font that actually &lt;em&gt;looks&lt;/em&gt; circular (I haven’t done this, but I probably should try it sometime).&lt;/p&gt;
+&lt;h3&gt;&lt;a href=&quot;https://github.com/typesupply/spacestation&quot;&gt;Space Station&lt;/a&gt;, by Tal Leming&lt;/h3&gt;
+&lt;p&gt;I only just discovered this one, but it’s a godsend. It enables you to allow a systematic approach to spacing. A really useful aspect of it is that it allows you to import/export simple configuration files, which have a simple syntax which makes it easy to say which glyphs should match the sidebearings and/or widths of which other glyphs. Instead of approaching the problem in a way that is too automated, it encourages you to think systematically about spacing, and is easy to use either purely as a reference/quality-control tool, or as a way to quickly cascade spacing adjustments through a whole font.&lt;/p&gt;
+&lt;h3&gt;Speed Punk, by Yanone&lt;/h3&gt;
+&lt;p&gt;This is one way to consider the smoothness of curves.&lt;/p&gt;
+&lt;h3&gt;Theme Manager, by Connor Davenport and Andy Clymer&lt;/h3&gt;
+&lt;p&gt;This makes it easy to control your drawing theme. I use it to switch between light &amp;amp; dark drawing modes (more info below), to keep my eyes happy at night.&lt;/p&gt;
+&lt;h3&gt;word-o-mat, by Nina Stössinger&lt;/h3&gt;
+&lt;p&gt;This allows you to create strings with desired characters in the Space Center, in order to judge your glyphs in context. Really, really handy.&lt;/p&gt;
+&lt;h2 id=&quot;paid-extensions&quot;&gt;Paid extensions &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#paid-extensions&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;A few very good extensions are complex software in their own right, and these must be purhcased separately. This allows the developers to provide support and to maintain these products, and because these are pretty critical pieces of my workflow, I find that to be a very good deal.&lt;/p&gt;
+&lt;h3&gt;MetricsMachine&lt;/h3&gt;
+&lt;p&gt;Extremely worthwhile, to help with kerning. If you get this, MM2SpaceCenter is a nice (free) add-on extension to give more context in the Space Center as you work on kerning.&lt;/p&gt;
+&lt;h3&gt;Prepolator&lt;/h3&gt;
+&lt;p&gt;Very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process &lt;em&gt;a lot&lt;/em&gt; more. It is amazingly helpful for an otherwise annoying task.&lt;/p&gt;
+&lt;h3&gt;Skateboard&lt;/h3&gt;
+&lt;p&gt;Extremely helpful for planning &amp;amp; designing variable fonts.&lt;/p&gt;
+&lt;h2 id=&quot;additional-macos-apps-that-are-especially-useful-with-robofont&quot;&gt;Additional macOS apps that are especially useful with RoboFont &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#additional-macos-apps-that-are-especially-useful-with-robofont&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;VS Code&lt;/a&gt; is an excellent code editor, file explorer, Git client, and terminal, all built into one elegant package. I nearly always have a project open in a VS Code workspace while I’m working in RoboFont. This is entirely optional, but if you’re doing a mix of scripting, font building, and Git versioning, it is so handy to one place to many all these technical bits.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://pasteapp.io/&quot;&gt;Paste&lt;/a&gt; gives you access to your Clipboard History, which is helpful in &lt;em&gt;many&lt;/em&gt; situations (email, code, interface design, etc etc), but also handy in RoboFont. You can copy a couple of contours, then (if you remember the order you copied things in) paste them as needed. Hard to explain, but very handy.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://mizage.com/divvy/&quot;&gt;Divvy&lt;/a&gt; allows you to easily set the sizing of windows without dragging things around manually. This is helpful in lots of scenarios beyond type design, but especially nice in a multi-window app like RoboFont. Set up some global shortcuts to make this even quicker! There are other &amp;quot;window manager&amp;quot; apps for Mac, but this one offers my preferred balance of simplicity and power.&lt;/p&gt;
+&lt;h2 id=&quot;dark-mode-in-robofont&quot;&gt;Dark Mode in RoboFont &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#dark-mode-in-robofont&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Sometimes, it’s nice to work in the evening without blasting your eyes with a ton of bright light. Luckily, RoboFont settings allow you to get a pretty serviceable dark mode in two steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;You can use &lt;a href=&quot;https://gist.github.com/arrowtype/268bb9db71231ca4fc39143760e94947&quot;&gt;this script&lt;/a&gt; as a “Start Up Script” (see script for instructions) to automatically set a light/dark mode each time you start RoboFont, based on your macOS preferences. If you change the macOS preference and want to update light/dark mode, you can also run the script without restarting RoboFont.&lt;/li&gt;
+&lt;li&gt;If you also want a dark mode for the Glyph View (if you want dark mode, you will want this too), you can also install the Theme Editor extension, then use my &lt;a href=&quot;https://gist.github.com/arrowtype/f450d2c7cfbcea61ab7ad6c43af14932&quot;&gt;“Dark Connor” theme&lt;/a&gt; or make your own.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;three-drawing-tips&quot;&gt;Three drawing tips &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#three-drawing-tips&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;So much can be (and is) written about drawing type, but here are two things that aren’t as obvious:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Most of the time, it is helpful to work with the Glyph View and the Space Center side-by-side. Use Divvy (mentioned above) to set up 50% of your screen with a glyph, and the other 50% with the Space Center, then adjust the glyph while keeping an eye on the glyph in the context of spacing strings, at different scales, and/or more! I didn’t do this for a long time, but then I picked up the tip from James Edmonson (OHno Type Co) on Instagram, and it changed my life.&lt;/li&gt;
+&lt;li&gt;Get familiar with using the Transform (T) tool, along with the modifier keys. This can be very unintuitive at fist, but becomes pretty powerful over time. I will try to make a video or say more about this at some point, because it can be easy to miss but seriously helpful.&lt;/li&gt;
+&lt;li&gt;A really handy feature of RoboFont (especially for early-stage drawing &amp;amp; exploration) is the &lt;a href=&quot;https://robofont.com/documentation/how-tos/using-test-install/&quot;&gt;Test Install&lt;/a&gt;, which allows you to quickly install the font you are working on, then immediately use it in other apps to test it out, make proofs, etc. Sometimes, this won’t work if you have special feature syntax in the “Features” tab. I often use minimal to no features here, then add them in a separate build process. But, this varies a lot from project to project.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;ask-for-help!&quot;&gt;Ask for help! &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#ask-for-help!&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;If you get stuck on a problem, chances are, someone will be happy to help you out. Sometimes, just the act of clearly writing out your problem will help you solve it on your own! This applies to basically all aspects of computers and software, but is particularly true in learning &amp;amp; using RoboFont and its associated tools.&lt;/p&gt;
+&lt;p&gt;Generally, if you run into an unexpected issue, open the Output Window (Python &amp;gt; Output Window, or Option+Command+o) and check for error messages.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://forum.robofont.com/&quot;&gt;The RoboFont Forum&lt;/a&gt; has lots of existing questions &amp;amp; answers, and new questions are welcomed, and generally answered pretty quickly!&lt;/li&gt;
+&lt;li&gt;Google your errors (if you have an error message, try pasting in the relevant part – usually the last line or two)&lt;/li&gt;
+&lt;li&gt;Use GitHub Issues (this can be a little more advanced; try to find the relevant repo for a particular tool, if you have an issue with it)&lt;/li&gt;
+&lt;li&gt;Twitter has it’s problems, but you can also learn a lot from the people there. You can mention me, &lt;a href=&quot;https://twitter.com/ArrowType&quot;&gt;@ArrowType&lt;/a&gt;, and I will either try to chip in or mention someone who might know more.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://medium.com/typecritcrew/type-crit-crew-fdd180b881c&quot;&gt;Type Crit Crew&lt;/a&gt; is a collective of type designers (myself included) who have made free office hours bookable by folks who are seeking type critique or advice. Getting critique and talking with experts can be a bit daunting, but folks here are super kind, and you can learn so much in this way!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;happy-robofonting!&quot;&gt;Happy RoboFonting! &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/robofont-tips/#happy-robofonting!&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;There is &lt;em&gt;a lot&lt;/em&gt; more that could be said about RoboFont, but hopefully this post is able to help you learn a few useful things you didn’t already know. Enjoy!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Exploring Higher-Order Interpolation</title>
+		<link href="https://blog.arrowtype.com/exploring-HOI/"/>
+		<updated>2020-11-08T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/exploring-HOI/</id>
+		<content type="html">&lt;p&gt;Ever since Underware Type started exploring what they call &lt;a href=&quot;https://underware.nl/case-studies/hoi/&quot;&gt;HOI (Higher-Order Interpolation)&lt;/a&gt;, I’ve been amazed by the creative possibilities of this approach to interpolation, and I’ve wanted to try it myself.&lt;/p&gt;
+&lt;p&gt;For a long time, I didn’t get it. Then, I started to understand it, but felt like actually making it work would be nearly impossible (or super inefficient, at best). But, I’ve taken another look and got a functional test working, so I’ve documented &amp;amp; shared my findings. I &lt;em&gt;still&lt;/em&gt; feel like it would be nearly impossible to use in designing full typefaces. So I am doubly impressed that Underware has made it work, and hope that Underware will succeed in licensing their internal tools to allow others to put HOI into practice as well.&lt;/p&gt;
+&lt;p&gt;→ Full post at &lt;a href=&quot;https://github.com/arrowtype/NLI-test/&quot;&gt;github.com/arrowtype/NLI-test&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;→ Web demo of &lt;a href=&quot;https://arrowtype.github.io/NLI-test/&quot;&gt;NLI in variable TTFs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/exploring-HOI/web-demo.gif&quot; alt=&quot;NLI&quot; /&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Setting up FontForge on a Chromebook with ChromeOS and Linux</title>
+		<link href="https://blog.arrowtype.com/font-design-on-a-chromebook/"/>
+		<updated>2020-11-01T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/font-design-on-a-chromebook/</id>
+		<content type="html">&lt;p&gt;You might think you have to spend a lot of money on a powerful Mac computer &amp;amp; software like Glyphs or RoboFont to get started in type design. While these things are very nice, it’s not a requirement. Instead, you can get a Chromebook for about $150 to $250, then use open-source software like FontForge.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/font-design-on-a-chromebook/fontforge-chrome_os.png&quot; alt=&quot;A screenshot of FontForge running on ChromeOS&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;set-up-linux-(beta)&quot;&gt;Set up Linux (beta) &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/font-design-on-a-chromebook/#set-up-linux-(beta)&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Not all Chromebooks will be able to run Linux out of the box, so check out the &lt;a href=&quot;https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux&quot;&gt;supported devices&lt;/a&gt; before buying a Chromebook, if this is a thing you are seriously considering doing.&lt;/p&gt;
+&lt;p&gt;To quote the official &lt;a href=&quot;https://support.google.com/chromebook/answer/9145439?hl=en&quot;&gt;ChromeOS Linux instructions&lt;/a&gt;, here’s how to install Linux on a Chromebook:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;At the bottom right, select the time.&lt;/li&gt;
+&lt;li&gt;Select &lt;strong&gt;Settings&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Under &amp;quot;Linux (Beta),&amp;quot; select &lt;strong&gt;Turn On&lt;/strong&gt;.&lt;/li&gt;
+&lt;li&gt;Follow the steps on the screen. Setup can take 10 minutes or more.&lt;/li&gt;
+&lt;li&gt;A terminal window opens. You have a Debian 10 (Buster) environment. You can run Linux commands, install more tools using the APT package manager, and customize your shell.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;install-flatpak&quot;&gt;Install Flatpak &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/font-design-on-a-chromebook/#install-flatpak&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Note: to copy on a Chromebook, use Control+C. To paste in the terminal, you must use Control+V, &lt;em&gt;then&lt;/em&gt; right-click on the terminal.&lt;/p&gt;
+&lt;p&gt;First, follow the instructions to &lt;a href=&quot;https://flatpak.org/setup/Chrome%20OS/&quot;&gt;install Flatpak on ChromeOS&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Note: for step 4 of the instructions above, you will probably have to add &lt;code&gt;sudo&lt;/code&gt; to make it work:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;install-fontforge&quot;&gt;Install FontForge &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/font-design-on-a-chromebook/#install-fontforge&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Then, install &lt;a href=&quot;https://flathub.org/apps/details/org.fontforge.FontForge&quot;&gt;FontForge&lt;/a&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;sudo flatpak install flathub org.fontforge.FontForge
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Note: If you run without the &lt;code&gt;sudo&lt;/code&gt;, you might get an error like this:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;stephen@penguin:~$ flatpak run org.fontforge.FontForge
+error: app/org.fontforge.FontForge/x86_64/master not installed
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&quot;off-to-the-races!&quot;&gt;Off to the races! &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/font-design-on-a-chromebook/#off-to-the-races!&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;For tips &amp;amp; resources on getting started in type design generally, check out my blog post &lt;a href=&quot;https://blog.arrowtype.com/getting-started/&quot;&gt;&lt;strong&gt;Getting started in Type Design (and possible next steps)&lt;/strong&gt;&lt;/a&gt;. This advice does skew towards Mac &amp;amp; RoboFont, but it also includes some useful information about type design &amp;amp; development in general.&lt;/p&gt;
+&lt;p&gt;For guidance specific to using FontForge, check out &lt;a href=&quot;https://fontforge.org/docs/tutorial.html&quot;&gt;fontforge.org/docs/tutorial.html&lt;/a&gt; and &lt;a href=&quot;http://designwithfontforge.com/en-US/index.html&quot;&gt;Designing with FontForge&lt;/a&gt;.&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Making better zips</title>
+		<link href="https://blog.arrowtype.com/better-zips/"/>
+		<updated>2020-08-25T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/better-zips/</id>
+		<content type="html">&lt;p&gt;Making zip files from folders is a very common and very handy thing to do – so often, sending someone one file beats sending a whole collection of files! But, if you’re only ever making zips on a Mac, you may not realize that you’re also zipping up a few metadata files, and that these might confuse (or at least annoy) folks on other operating systems.&lt;/p&gt;
+&lt;h2 id=&quot;the-problem&quot;&gt;The Problem &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/better-zips/#the-problem&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I only learned this recently: if you are on a Mac and make a zip of a folder in a regular way (e.g. by right-clicking a folder, then selecting ‘compress’, or with a basic usage of the &lt;code&gt;zip&lt;/code&gt; command-line utility), it includes obnoxious, unnecessary files for folks that decompress those zips on Windows computers.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;The top level will have an empty &lt;code&gt;_MACOSX&lt;/code&gt; folder&lt;/li&gt;
+&lt;li&gt;Every other level will have a &lt;code&gt;.DS_Store&lt;/code&gt; file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/better-zips/2020-08-25-17-16-16.png&quot; alt=&quot;top level with empty &#39;MACOSX&#39; folder&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/better-zips/2020-08-25-17-16-31.png&quot; alt=&quot;Main folder with &#39;.DS_Store&#39; file&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;The &lt;code&gt;_MACOSX&lt;/code&gt; folder is often empty, and multiple sources point to it being a &lt;a href=&quot;https://en.wikipedia.org/wiki/Resource_fork&quot;&gt;resource fork&lt;/a&gt;, without really saying why it ends up in zips. (If someone knowledgable would like to explain this to me, feel free!) For the purposes of this post, it is also unnecessary to say what it is or why it ends up in zips, other than that it does, but that it doesn’t need to be there.&lt;/p&gt;
+&lt;p&gt;The &lt;a href=&quot;https://en.wikipedia.org/wiki/.DS_Store&quot;&gt;.DS_Store&lt;/a&gt; saves your preferences for file viewing in Finder, such as the placement of files in the “icon” view or the sorting in the “list” view. However, these generally aren’t very helpful in zipped folders, and if you send these zips to Windows users, they are especially unhelpful.&lt;/p&gt;
+&lt;h2 id=&quot;a-command-line-solution&quot;&gt;A command-line solution &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/better-zips/#a-command-line-solution&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To avoid this, you can compress a folder on the command line. Use &lt;code&gt;cd&lt;/code&gt; to navigate to its parent directory, then use this command (replacing arrowtype-name_sans-v03 with the appropriate folder name):&lt;/p&gt;
+&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token function&quot;&gt;zip&lt;/span&gt; arrowtype-name_sans-v03.zip &lt;span class=&quot;token parameter variable&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;arrowtype-name_sans-v03&#39;&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-x&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;*/.DS_Store&#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;This command is somewhat unintuitive and may not work as expected if you change or leave out the single quotes. The best way to be sure it worked as you expect is to try opening it in Windows (whether on an actual PC or via a virtual machine using software like VMWare or Parallels).&lt;/p&gt;
+&lt;p&gt;One good way to avoid remembering this or worrying about syntax is by automating it with a shell function in your shell profile.&lt;/p&gt;
+&lt;h3&gt;Automating it with a function&lt;/h3&gt;
+&lt;p&gt;The function below will make a clean zip if you call if with a path, like &lt;code&gt;zipit path/to/folder&lt;/code&gt;.&lt;/p&gt;
+&lt;pre class=&quot;language-sh&quot;&gt;&lt;code class=&quot;language-sh&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function-name function&quot;&gt;zipit&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token assign-left variable&quot;&gt;currentDir&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token builtin class-name&quot;&gt;pwd&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;                             &lt;span class=&quot;token comment&quot;&gt;# get current dir so you can return later&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;dirname&lt;/span&gt; $1&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;                              &lt;span class=&quot;token comment&quot;&gt;# change to target’s dir (works better for zip)&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token assign-left variable&quot;&gt;target&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;&lt;span class=&quot;token variable&quot;&gt;$(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;basename&lt;/span&gt; $1&lt;span class=&quot;token variable&quot;&gt;)&lt;/span&gt;&lt;/span&gt;                         &lt;span class=&quot;token comment&quot;&gt;# get target’s name&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token function&quot;&gt;zip&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-r&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$target&lt;/span&gt;.zip &lt;span class=&quot;token variable&quot;&gt;$target&lt;/span&gt; &lt;span class=&quot;token parameter variable&quot;&gt;-x&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&#39;*/.DS_Store&#39;&lt;/span&gt;   &lt;span class=&quot;token comment&quot;&gt;# make a zip of the target, excluding macOS metadata&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token builtin class-name&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;zip made of &quot;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$1&lt;/span&gt;                        &lt;span class=&quot;token comment&quot;&gt;# announce completion&lt;/span&gt;&lt;br /&gt;  &lt;span class=&quot;token builtin class-name&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$currentDir&lt;/span&gt;                                &lt;span class=&quot;token comment&quot;&gt;# return to where you were&lt;/span&gt;&lt;br /&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;It may seem a little bit complicated, but due to the way &lt;code&gt;zip&lt;/code&gt; works, it is best to change to a target’s folder before zipping it.&lt;/p&gt;
+&lt;p&gt;Of course, it is worth making sure the terminal has this function in memory for it to work, so you should store this in your &lt;code&gt;.bash_profile&lt;/code&gt; file (or &lt;code&gt;.bashrc&lt;/code&gt;, &lt;a href=&quot;https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/&quot;&gt;depending on your approach&lt;/a&gt;). Then, you can call it from any terminal session.&lt;/p&gt;
+&lt;h2 id=&quot;the-result&quot;&gt;The Result &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/better-zips/#the-result&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;When you exclude the &lt;code&gt;.DS_Store&lt;/code&gt; files, it avoids both problems, and the result is much cleaner:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://blog.arrowtype.com/better-zips/2020-08-25-17-17-17.png&quot; alt=&quot;Folder without the &#39;.DS_Store&#39; file&quot; /&gt;&lt;/p&gt;
+&lt;h2 id=&quot;an-easier-solution&quot;&gt;An easier solution &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/better-zips/#an-easier-solution&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;I mentioned this article in a &lt;a href=&quot;https://twitter.com/ArrowType/status/1298375103152107520&quot;&gt;Twitter thread&lt;/a&gt;, and several people mentioned the approaches they take to this problem.&lt;/p&gt;
+&lt;p&gt;A notable easy solution is &lt;a href=&quot;https://apps.apple.com/us/app/keka/id470158793?mt=12&quot;&gt;Keka&lt;/a&gt;, which is a native Mac app which can make clean zips, password-protected zips, and more. So, if you have $2.99 and you want a solution available via right-click or drag-and-drop, this is probably worth it.&lt;/p&gt;
+&lt;p&gt;Of course, if you are already using a shell script to set up a build, the function may be the simplest &amp;amp; most efficient way to do this. Or, if you are using a Python-based build flow, that also &lt;a href=&quot;https://twitter.com/mass_driver_tm/status/1298377561869819905?s=20&quot;&gt;got a reply&lt;/a&gt; in the thread.&lt;/p&gt;
+&lt;p&gt;Happy zipping!&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Getting the Most Out of Variable Fonts on Google Fonts</title>
+		<link href="https://blog.arrowtype.com/gf-vf-css-tricks/"/>
+		<updated>2020-08-01T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/gf-vf-css-tricks/</id>
+		<content type="html">&lt;p&gt;I’ve been following &lt;strong&gt;CSS-Tricks&lt;/strong&gt; for many years, so I am very excited to have finally written an article for publication on the site.&lt;/p&gt;
+&lt;p&gt;TL;DR: You can do a lot more with Google Fonts URLs than you might think, especially if you’re calling in a variable font like Recursive. This article explains what is possible and shows how to craft custom Google Fonts API calls (which is a lot less scary than it sounds).&lt;/p&gt;
+&lt;a class=&quot;main-col&quot; href=&quot;https://css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/&quot;&gt;
+  &lt;img src=&quot;https://blog.arrowtype.com/gf-vf-css-tricks/css-tricks-screenshot.png&quot; alt=&quot;Screenshot of my article on CSS-Tricks&quot; /&gt;
+&lt;/a&gt;
+&lt;p&gt;&lt;a href=&quot;https://css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/&quot;&gt;css-tricks.com/getting-the-most-out-of-variable-fonts-on-google-fonts/&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>An Intro to FontTools</title>
+		<link href="https://blog.arrowtype.com/intro-to-fonttools/"/>
+		<updated>2020-06-16T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/intro-to-fonttools/</id>
+		<content type="html">&lt;p&gt;This tutorial was made for a presentation at the 2020 Typographics TypeLab.&lt;/p&gt;
+&lt;p&gt;It exists in its own repo at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/arrowtype/fonttools-intro&quot;&gt;github.com/arrowtype/fonttools-intro&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Using DrawBot in VS Code</title>
+		<link href="https://blog.arrowtype.com/drawbot-vscode/"/>
+		<updated>2020-06-15T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/drawbot-vscode/</id>
+		<content type="html">&lt;p&gt;This tutorial was made for a presentation at the 2020 Typographics TypeLab.&lt;/p&gt;
+&lt;p&gt;It exists in its own repo at:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/arrowtype/drawbot-vscode&quot;&gt;github.com/arrowtype/drawbot-vscode&lt;/a&gt;&lt;/p&gt;
+</content>
+	</entry>
+	
+	<entry>
+		<title>Creative Explorations in Variable Fonts – A Type@Cooper Lubalin Lecture</title>
+		<link href="https://blog.arrowtype.com/lubalin-lecture/"/>
+		<updated>2020-05-12T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/lubalin-lecture/</id>
+		<content type="html">&lt;p&gt;The &lt;a href=&quot;https://vimeo.com/coopertype&quot;&gt;Lubalin Lecture Series&lt;/a&gt; from &lt;a href=&quot;https://www.coopertype.org/&quot;&gt;Type@Cooper&lt;/a&gt; has been one of my favorite parts of NYC ever since I first moved here in 2014. They include thoughtful lectures from many of my favorite designers, technologists, and historians in type design. They are free to attend, professionally recorded, and posted online for anyone to watch for free.&lt;/p&gt;
+&lt;p&gt;I was really honored, then, when I had the chance to deliver a Lubalin Lecture of my own. One challenge: it was originally scheduled for early 2020 (not the best time for in-person gatherings), then moved to May 2020 as the very first online-only Lubalin Lecture.&lt;/p&gt;
+&lt;p&gt;I spoke about the current state and future possibilities of variable fonts, my background as a designer, my current projects, and the design &amp;amp; development process behind &lt;a href=&quot;https://github.com/arrowtype/recursive&quot;&gt;Recursive&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In my lecture, you can probably hear a bit of uncertainty about the state of the world, the state of myself, and of the process of recording such a video for a future, remote audience. All the same, I’m proud that I could record &amp;amp; share some of what I had learned up to that point, and I hope it helps others to hear the experience of someone who is still at the (relatively) early stages of learning in type design.&lt;/p&gt;
+&lt;p&gt;Best of all, I’ve really enjoyed seeing how the lecture series has evolved since my own. A couple of favorites:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://vimeo.com/516485231&quot;&gt;Dusting latin type history #1 On the origin of bold and fat faces with Sébastien Morlighem&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://vimeo.com/423177901&quot;&gt;How I Became a Type Designer in Only 30 Years with Mark Simonson&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;here%E2%80%99s-the-lecture&quot;&gt;Here’s the lecture &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/lubalin-lecture/#here%E2%80%99s-the-lecture&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/417814920&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen; picture-in-picture&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;
+&lt;p&gt;&lt;a href=&quot;https://vimeo.com/417814920&quot;&gt;Creative Explorations in Variable Fonts with Stephen Nixon&lt;/a&gt; from &lt;a href=&quot;https://vimeo.com/coopertype&quot;&gt;Type@Cooper&lt;/a&gt; on &lt;a href=&quot;https://vimeo.com/&quot;&gt;Vimeo&lt;/a&gt;.&lt;/p&gt;</content>
+	</entry>
+	
+	<entry>
+		<title>Getting started in Type Design (and possible next steps)</title>
+		<link href="https://blog.arrowtype.com/getting-started/"/>
+		<updated>2020-05-01T00:00:00Z</updated>
+		<id>https://blog.arrowtype.com/getting-started/</id>
+		<content type="html">&lt;p&gt;So, you’re interested in type design, but you are still figuring out how &amp;amp; where to start or get to the next step. This post is a non-exhaustive attempt to share an overview of how you might learn some basics, how you can get started with font editing software, and where you might consider growing your skills after that.&lt;/p&gt;
+&lt;p&gt;This post reflects my bias and (some of) my personal experience, and it completely skips important topics like formal education, calligraphy, sketching, bezier drawing tips, and more. But, I have a lot of thoughts to share on beginner (and intermediate) resources, so this post will serve as an evolving collection of those thoughts.&lt;/p&gt;
+&lt;h2 id=&quot;general-learning&quot;&gt;General learning &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#general-learning&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;h3&gt;Useful Internet resources&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;The format of this post is somewhat informed by James Edmonson’s (Ohno Type) blog post &lt;a href=&quot;https://ohnotype.co/blog/getting-started&quot;&gt;Getting Started in Type Design&lt;/a&gt;. It includes some useful topics I haven’t included in this post. Also, The next two resources in this list are borrowed directly from it.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://ohnotype.co/blog/spacing&quot;&gt;Spacing&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://ohnotype.co/blog/proof-it&quot;&gt;Proofing&lt;/a&gt;, also by OHno Type, are two excellent, practical posts for subjects beyond drawing that are super significant to good type design.&lt;/li&gt;
+&lt;li&gt;More recently, The Ohno Blog added the excellent &lt;a href=&quot;https://ohnotype.co/blog/ohno-type-school-a&quot;&gt;Ohno Type School&lt;/a&gt; series. I don’t fully agree with 100% of the opinions offered within it, but Ohno is brilliant, and this series is crammed full of entertaining jokes and useful insights.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.typeworkshop.com/index.php?id1=type-basics&quot;&gt;Type Basics, by Underware&lt;/a&gt;. This doesn’t have a flashy layout, but it is a series of extremely helpful drawings with important lessons for type design.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://frerejones.com/blog?tag=Education%20Mechanics&quot;&gt;Type Mechanics, by Tobias Frere-Jones&lt;/a&gt;. More useful explanations of some visual things that are important to know, but not always obvious.&lt;/li&gt;
+&lt;li&gt;I have collected a few useful spacing tests at &lt;a href=&quot;https://github.com/arrowtype/spacing&quot;&gt;https://github.com/arrowtype/spacing&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;There is a ton of practical advice for technical aspects of type design available in the documentation &amp;amp; tutorials provided by various font editing apps. More on this below.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Useful books&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;For the very basics of letter-shaping, the first book I read in type design was really helpful: &lt;a href=&quot;https://yalebooks.yale.edu/book/9780300111507/designing-type&quot;&gt;Designing Type, by Karen Cheng&lt;/a&gt;. It goes through each letter, showing their general forms via measurements of different pieces of glyphs from classic typefaces. This measurement-based is not necessarily useful if you have been designing type for a while – type design is more about testing what you make and trusting your own eyes than it is about following formulas from the work of others. Even so, this book helped me gain an overall awareness of what is “general practice” that I found really helpful as a beginner. And sometimes, even today, when I don’t know a convention offhand (e.g. a question like &amp;quot;How big, exactly, should the quote marks be for a display serif?&amp;quot;), I will take a look at a few relevant fonts to understand precedent.&lt;/li&gt;
+&lt;li&gt;For more practical information around how to actually draw, space, and kern a typeface, take a look at &lt;a href=&quot;https://www.type-together.com/how-to-create-typefaces.-from-sketch-to-screen&quot;&gt;How to Create Typefaces, from Sketch to Screen&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;For deeper (but still approacheable) reflections on theory, &lt;a href=&quot;https://www.amazon.com/Theory-Type-Design-Gerard-Unger/dp/9462084408&quot;&gt;The Theory of Type Design, by Gerard Unger&lt;/a&gt; is a great book with a beautiful set of visual examples and references.&lt;/li&gt;
+&lt;li&gt;For one useful theory of approaching type design in a systematic way, &lt;a href=&quot;https://www.typotheque.com/books/the_stroke&quot;&gt;The Stroke, by Gerrit Noordzij&lt;/a&gt; is a classic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;my-favorite-font-editors%3A-glyphs-%26-robofont&quot;&gt;My favorite font editors: Glyphs &amp;amp; RoboFont &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#my-favorite-font-editors%3A-glyphs-%26-robofont&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Making type is involves many things. Digital drawing is only one of the areas to master, but it is a core aspect. When I started out as a student in graphic design, I remember thinking, “Wait, Adobe doesn’t just make a type editor??” I was daunted by what seemed like a confusing world of indie apps, and not sure what to use and how to get started. Here is what I would tell someone in that position, today.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://glyphsapp.com/&quot;&gt;Glyphs&lt;/a&gt; &amp;amp; &lt;a href=&quot;https://robofont.com/&quot;&gt;RoboFont&lt;/a&gt; are the two most-commonly used editors in professional type design, and also the two editors I have the most familiarity with. This post isn’t really a comparison of the two; I 100% recommend either of them.&lt;/p&gt;
+&lt;p&gt;Generally, Glyphs is more approacheable and feels more “Mac-like” as an app: it is quite approachable and does some helpful things for you. RoboFont is a bit more intimidating to get started with, but provides more flexibility because it is less “opinionated” about what tools you need.&lt;/p&gt;
+&lt;p&gt;I got started in Glyphs, and I now use RoboFont more. I use RoboFont largely because I like the way it encourages me to think about my workflow and consider what a given type family should be like. RoboFont is somewhat nicer for scripting (partly because it uses Python3), and its format is nicer for Git versioning. I also really like its approach to spacing.&lt;/p&gt;
+&lt;p&gt;To be honest, my initial motivation to use RoboFont was that most of my heroes in type use it. A couple years in, however, I have become more fluent in drawing with it, and I like it for many reasons – &lt;a href=&quot;https://blog.arrowtype.com/robofont-tips&quot;&gt;here’s more on my favorite extensions &amp;amp; tools to use with RoboFont&lt;/a&gt;. But, there are also many professionals who use Glyphs to make amazing type. Some studios even use both, though this takes some scripting to handle well.&lt;/p&gt;
+&lt;p&gt;I have a lot of love for both apps!&lt;/p&gt;
+&lt;h2 id=&quot;alternative-editors&quot;&gt;Alternative editors &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#alternative-editors&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://glyphsapp.com/glyphs-mini&quot;&gt;Glyphs Mini&lt;/a&gt; has many of the features of Glyphs, with the main exception that it only allows 1 master per font (meaning that if you want to make multi-style typefaces, you will want to upgrade. If you are just drawing a single font, doing lettering, or making a logotype, this is about 5x better for drawing letters than Adobe Illustrator&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.fontlab.com/font-editor/fontlab/&quot;&gt;FontLab 7&lt;/a&gt; has some amazing features and I’m sure people are doing good work on it, though I don’t have much personal familiarity with it. Unlike RoboFont &amp;amp; Glyphs, it is available on Mac &lt;em&gt;and&lt;/em&gt; Windows, so if you’re on a Windows machine, this might be the app for you.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fontforge.org/en-US/&quot;&gt;FontForge&lt;/a&gt; is an open-source font editor which is cross platform and freely available for Mac, Windows, and Linux. I also don’t have much familiarity with this one, but if you are just looking to explore type design without a big initial investment, this might be the perfect solution.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;getting-started-in-glyphs&quot;&gt;Getting started in Glyphs &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#getting-started-in-glyphs&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Glyphs does an amazing job in tutorials &amp;amp; support. Check out &lt;a href=&quot;https://glyphsapp.com/tutorials&quot;&gt;https://glyphsapp.com/tutorials&lt;/a&gt; for advice on getting started. The &lt;a href=&quot;https://forum.glyphsapp.com/&quot;&gt;Glyphs Forum&lt;/a&gt; provides excellent support, often faster than seems reasonably possible. There are great extensions for Glyphs, but I don’t really know much about these – see &lt;a href=&quot;https://glyphsapp.com/extend&quot;&gt;https://glyphsapp.com/extend&lt;/a&gt; for some good suggestions.&lt;/p&gt;
+&lt;h2 id=&quot;getting-started-in-robofont&quot;&gt;Getting started in RoboFont &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#getting-started-in-robofont&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Due to its unopinionated nature, RoboFont can an intimidating program to get started in,. If you are just getting started (or if you’re just curious to see what I like), here’s some basic advice that may help get you off the ground.&lt;/p&gt;
+&lt;p&gt;The docs are pretty good at &lt;a href=&quot;https://robofont.com/documentation/introduction/&quot;&gt;https://robofont.com/documentation/introduction/&lt;/a&gt;. Read through these, and keep clicking to the next page. Don’t get distracted by all the links in each page on the first read through – consider clicking them on subsequent reads.&lt;/p&gt;
+&lt;p&gt;If you have questions, the RoboFont Forum is very helpful: &lt;a href=&quot;https://forum.robofont.com/&quot;&gt;https://forum.robofont.com/&lt;/a&gt;. They usually answer questions within a day (many questions, of course, are already answered if you search for them).&lt;/p&gt;
+&lt;h3&gt;RoboFont Extensions&lt;/h3&gt;
+&lt;p&gt;In an earlier version of this post, I had tips here on some of my favorite RoboFont extensions. However, I have since added more extensions and detail in a separate post on &lt;a href=&quot;https://blog.arrowtype.com/2020-12-11--robofont-tips&quot;&gt;RoboFont Tips&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;other-useful-tools%3A&quot;&gt;Other useful tools: &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#other-useful-tools%3A&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.alphabet-type.com/tools/charset-builder/&quot;&gt;Alphabet Type’s CharSet Builder&lt;/a&gt; is a really handy tool to create character sets (an important early hurdle in RoboFont)&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fontgoggles.org/&quot;&gt;FontGoggles&lt;/a&gt; is a really good tool to quickly view fonts, useful to quickly test font builds. It can also be useful as a way to quickly compare how various fonts handle the design of certain characters, etc.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://chrome.google.com/webstore/detail/type-x/bfnfnnicdjkkialkldogjjmmfeiopbin&quot;&gt;Type-X&lt;/a&gt; is a tool I designed and built in collaboration with Roel Nieskens. It allows you to quickly &amp;amp; easily test any font on your system on (almost) any website. This can help you to judge your work in different web contexts (and can be a fun motivator to improve what you’re working on).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;technical-areas&quot;&gt;Technical areas &lt;a class=&quot;direct-link&quot; href=&quot;https://blog.arrowtype.com/getting-started/#technical-areas&quot;&gt;🔗&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Version control:&lt;/strong&gt; Git is pretty challenging to get started with, but extremely useful for all areas of technical design &amp;amp; code.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://abookapart.com/products/git-for-humans&quot;&gt;Git for Humans&lt;/a&gt; is a a great introduction to using Git.&lt;/li&gt;
+&lt;li&gt;GitHub is the most popular Git website, and they also have a nice &lt;a href=&quot;https://guides.github.com/introduction/git-handbook/&quot;&gt;getting-started guide&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Scripting:&lt;/strong&gt; scripting makes it possible to work efficiently with complex fonts, and not have to rely on someone else building everything for you.
+&lt;ul&gt;
+&lt;li&gt;RoboFont has a good &lt;a href=&quot;https://robofont.com/documentation/building-tools/&quot;&gt;guide to getting started&lt;/a&gt;, including a great guide to starting with Python, the most common scripting language used for font design &amp;amp; development (and many other things, like software development, data analysis, and more).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://www.drawbot.com/&quot;&gt;DrawBot&lt;/a&gt; makes it possible to create graphic designs &amp;amp; animations with Python. Not only is this a fun way to learn Python, but it can be a genuinely useful tool to generate proofs, books, or animations that (sometimes) would be impossible to create with more-general design tools&lt;/li&gt;
+&lt;li&gt;On the Glyphs side, they provide a very handy 4-part &lt;a href=&quot;https://glyphsapp.com/tutorials/scripting-glyphs-part-1&quot;&gt;Scripting Glyphs&lt;/a&gt; tutorial.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mastering:&lt;/strong&gt; A topic as big as type design itself. Here are a few places you might get started.
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://opentypecookbook.com/&quot;&gt;OpenType Cookbook&lt;/a&gt; is a friendly introduction to scripting OpenType features. It is very approacheable, and helps answer questions like “How can I add automatically-swapping alternates to a font?” and “How can I make ligatures work how I want?”&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://docs.microsoft.com/en-us/typography/opentype/spec/&quot;&gt;The OpenType Spec&lt;/a&gt; answers basically every question about what is possible in fonts, such as “What are the possible &lt;a href=&quot;https://docs.microsoft.com/en-us/typography/opentype/spec/featuretags&quot;&gt;OpenType feature tags&lt;/a&gt; and what do they mean?” and “What are the &lt;a href=&quot;https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg&quot;&gt;valid values for font variation axes&lt;/a&gt;?”&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/googlefonts/fontmake/&quot;&gt;FontMake&lt;/a&gt; is a great way to get started into building fonts in a way that gives you more control than tools like Batch can (you can even use shell scripting as a quick way to create handy workflows to build &amp;amp; sort fonts).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fonttools.readthedocs.io/en/latest/&quot;&gt;FontTools&lt;/a&gt; provides a bunch of Python-based tools to help handle font files – of note, TTX makes it easy to inspect built OTF/TTF font files, TTFont can make it efficient to edit font data, and&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+	</entry>
+</feed>

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How to make a font in Glyphs, starting from Illustrator</title>
+    <meta name="description" content="Tips for making your first font in Glyphs 3, if you’ve already started drawing in Adobe Illustrator">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.modified.css">
+    <link rel="alternate" href="/rss.xml" type="application/atom+xml" title="The ArrowType Blog">
+    <link rel="alternate" href="/rss.json" type="application/json" title="The ArrowType Blog">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7029ff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="How to make a font in Glyphs, starting from Illustrator">
+    <meta property="og:description" content="Tips for making your first font in Glyphs 3, if you’ve already started drawing in Adobe Illustrator">
+    <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
+    <meta property="og:url" content="https://blog.arrowtype.com/illustrator-to-glyphs/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <meta property="og:site_name" content="The ArrowType Blog">
+    <meta name="twitter:image:alt" content="Social thumbnail for The ArrowType Blog.">
+  </head>
+  <body>
+    <header>
+      <div class="wide-col">
+        <h1 class="home"><a href="/">The ArrowType Blog</a></h1>
+        <a href="/info">Info</a>
+      </div>
+    </header>
+
+    <main class="tmpl-post">
+      
+        
+<span class="postlist-date title-date">Published <time  datetime="2025-02-14">February 14, 2025 </time></span>
+
+<h1>How to make a font in Glyphs, starting from Illustrator</h1>
+<div class="content">
+  <p>A fairly common question is: “I’ve drawn a font in Adobe Illustrator. How do I make it into a font?”</p>
+<p>Back when I made my own first font (about 13 years ago, already!), I remember being surprised that Adobe didn’t just offer a font-making application as part of the Adobe Creative Cloud. They make fonts and they make creative tools, right? Well, more accurately, Adobe makes <em>money.</em> Type design is too niche a market for them to focus on providing full software for it. (To be fair, Adobe has made great contributions to the underlying tech of fonts, and Adobe Fonts is pretty well-regarded in the type community!)</p>
+<p>The upshot is: font editing apps are made by a few very small, very cool companies. As you can see from my other blog posts, I am partial to RoboFont and Glyphs.</p>
+<p>If you are just starting out, I suggest giving Glyphs a try! If you have <em>already</em> started drawing a font in Illustrator, this article may be helpful to you.</p>
+<p>Two things to note up-front:</p>
+<ol>
+<li>If you’ve already drawn a character set in Illustrator, you <em>can</em> alternatively use a product called <a href="https://www.fontself.com/">FontSelf</a>, which will allow you to make a font right from Illustrator. I haven’t tried FontSelf, so I can’t comment on how fully featured it may or may not be. If you’re looking for the fastest solution, though, this might be it!</li>
+<li>If you haven’t yet drawn a bunch of glyphs in Illustrator, I <em>highly</em> recommend learning to draw directly in Glyphs, instead. The <a href="https://glyphsapp.com/learn/video-drawing-paths">drawing tools in Glyphs</a> are about a million times better than those of Illustrator, when it comes to creating letters. Glyphs gives you much more control and (with a bit of practice)is much more efficient and less frustrating for drawing letters.</li>
+</ol>
+<p>In either case, <a href="https://ohnotype.co/blog/spacing"><em>spacing</em></a> is arguably the most important part of making a font. So, if you’re making a font, it’s a great idea to start working within a proper font editor as early as you can.</p>
+<h2 id="how-to-start-your-font-in-glyphs">How to start your font in Glyphs <a class="direct-link" href="#how-to-start-your-font-in-glyphs">🔗</a></h2>
+<p>First, make a new font in Glyphs. Go to “File &gt; New from Glyph Sets…” then select “Latin” as the option for a script. Toggle on “Yes” to prepare glyphs for, and start with Basic. You can easily add more glyphs later.</p>
+<p><img src="20250214124539.png" alt="Glyph Set setup window"></p>
+<p>Next, decide on your font’s cap-height. Glyphs gives <code>700</code> as a default, and it’s a reasonable default.</p>
+<p>In Glyphs, go to “File &gt; Font Info” (<strong>Command+i</strong>, or click the ‘i’ icon). Then, go to the Masters tab, and check the cap-height.</p>
+<blockquote>
+<p><img src="glyphs-font-info.png" alt="GlyphsApp Font Info"></p>
+</blockquote>
+<h3>A bit more detail on font metrics</h3>
+<p>The cap-height uses units that are part of the <em>Units per Em</em>, or “UPM” of the font. The UPM is the measure of the coordinate grid you will be drawing your font within. You can think of it like graph paper. How precise do you want your grid to be? You can go beyond the bounds of the UPM. A UPM of <code>1000</code> is a good default.</p>
+<p>If you want, you can also find the cap-height of a most fonts by opening them up in Glyphs. Some fonts have a UPM that is different from 1000, which will change the relative cap-height. 1000 is generally good to stick with, though. If a font you are looking at has a UPM of 2048 and a cap-height of 1432, you can find its cap-height out of 1000 UPM by calculating <code>capheight / upm * 1000</code>, or <code>1432 ÷ 20248 × 1000 = 699.21875</code> (about 700).</p>
+<p>(Also worth noting: the licensing of many fonts will prohibit you from inspecting them like this. So, uh... don’t post about your elite font hacking to social media.)</p>
+<p>For what it’s worth, Helvetica Neue has a UPM of 1000, a cap-height of 714, and x-height of 517, so it’s pretty typical to be somewhat close to that. Don’t ask me how I know this. ;)</p>
+<p>Script fonts tend to have taller cap-height and lower x-height, but it all depends on the design of a given font. Also, you can scale the font later if needed.</p>
+<h2 id="copying-glyphs-from-illustrator-into-glyphs">Copying glyphs from Illustrator into Glyphs <a class="direct-link" href="#copying-glyphs-from-illustrator-into-glyphs">🔗</a></h2>
+<p>In Illustrator, scale all your drawings so that the overall font matches the cap-height you have chosen. Make sure to scale everything to that size, including round glyphs that may have “overshoot” and lowercase glyphs that won’t go up to the same full height. Scaling glyphs perfectly in Illustrator is a bit of a pain, but the closer you get to perfect here, the easier the next step will be.</p>
+<blockquote>
+<p><img src="scaling-in-illustrator.png" alt="Scaling letters in Illustrator"></p>
+</blockquote>
+<p>One at a time, copy the glyph outline from Illustrator (just select the whole letter, then use <strong>Command+C</strong>), and paste it into GlyphsApp: open up that glyph’s Edit View, then double-click into it, and use <strong>Command+V</strong>. Select “Correct Bounds” if given the option.</p>
+<blockquote>
+<p><img src="pasting-into-glyph.png" alt="Pasting shapes into Glyphs"></p>
+</blockquote>
+<p>With the standard arrow tool (Shortcut: <strong>V</strong>), drag a box around that outline to select it, or use <strong>Command+A</strong> to select all outlines in the current glyph. Slide that outline into place, and adjust the side bearings in the Glyph Info box below (you can turn this on with themenu item “View &gt; Show Info”).</p>
+<blockquote>
+<p><img src="moving-glyph-into-place.png" alt="Moving a glyph into place"></p>
+</blockquote>
+<p>If you need to scale glyph outlines further, you can use the bounding box handles (“View &gt; Show Bounding Box”), or move points.</p>
+<p>If the glyph doesn’t look how you expect it to – maybe the interior counter space isn’t showing up as negative space – try using “Path &gt; Correct Path Direction” (<strong>Shift+Command+R</strong>) while you’re editing the glyph.</p>
+<p>If you have flat edges at the top/bottom of letters, it’s worth lining these up exactly on the metrics. Glyphs will show a little diamond shape when a node sits perfectly on a metric line.</p>
+<p>When you paste in other letters, you will want to scale your other metrics to fit the x-height, ascenders, and descenders. Helpful to know: you can literally open the Font Info window next to an open lowercase glyph and watch the metric moving as you adjust the number.</p>
+<blockquote>
+<p><img src="scaling-x-height.png" alt="Adjusting font metrics"></p>
+</blockquote>
+<h2 id="what%E2%80%99s-next%3F">What’s next? <a class="direct-link" href="#what%E2%80%99s-next%3F">🔗</a></h2>
+<p>Next up (even before you’ve added more than the first few glyphs!) is to learn how to <a href="https://glyphsapp.com/learn/spacing">adjust spacing</a> so your glyphs have decent and consistent sidebearings. Pro tip: learn and use the keyboard shortcuts for this!</p>
+<p>As you get further along, you can <a href="https://glyphsapp.com/learn/adding-glyphs-to-your-font">add more characters to your font from the sidebar</a>.</p>
+<p>Also, if you have new glyphs to draw, it’s worth drawing them directly in Glyphs, rather than going through Illustrator. Here’s <a href="https://glyphsapp.com/learn/video-drawing-paths">a handy video on how to draw paths in Glyphs</a>. This video also offers a bunch of perfect examples of why it’s so powerful to draw letters in a dedicated font editor!</p>
+<p>If you want to engage in more passive learning, you can also <a href="https://www.youtube.com/arrowtype">check out my YouTube channel</a>.</p>
+<p>Happy drawing!</p>
+
+</div>
+
+<ul id="pagination">
+    <li class="older">
+      <a href="/robofont-vs-glyphs/">
+      <span class="small-text">← Older Post ⤙</span><br>
+        RoboFont vs Glyphs, and why I use both
+      </a>
+    </li>
+  
+</ul>
+
+<aside id="mc_signup">
+    <h2>Subscribe</h2>
+    <p>Get notified of new ArrowType font releases and major updates. Updates will be infrequent and may sometimes mention recent blog posts.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://arrowtype.us3.list-manage.com/subscribe/post?u=5aef19f2eea3aab62369ad95f&amp;id=2ca8bff7c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+    </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5aef19f2eea3aab62369ad95f_2ca8bff7c6" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+</aside>
+
+
+
+
+      
+    </main>
+
+    <footer>
+      <div>
+        <span class"small-text">
+          By <a href="https://arrowtype.com">ArrowType</a>
+        </span>
+        
+        <div>
+        <a href="https://github.com/arrowtype/blog">Source Repo</a>
+        <p>
+          <a href="https://blog.arrowtype.com/rss.xml">RSS Feed</a>
+        </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /illustrator-to-glyphs/ -->
+  </body>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</html>

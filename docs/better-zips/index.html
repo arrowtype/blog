@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Making better zips</title>
+    <meta name="description" content="How to make better zip files for Windows by excluding unnecessary .DS_Store &amp; MACOSX files">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.modified.css">
+    <link rel="alternate" href="/rss.xml" type="application/atom+xml" title="The ArrowType Blog">
+    <link rel="alternate" href="/rss.json" type="application/json" title="The ArrowType Blog">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7029ff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Making better zips">
+    <meta property="og:description" content="How to make better zip files for Windows by excluding unnecessary .DS_Store &amp; MACOSX files">
+    <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
+    <meta property="og:url" content="https://blog.arrowtype.com/better-zips/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <meta property="og:site_name" content="The ArrowType Blog">
+    <meta name="twitter:image:alt" content="Social thumbnail for The ArrowType Blog.">
+  </head>
+  <body>
+    <header>
+      <div class="wide-col">
+        <h1 class="home"><a href="/">The ArrowType Blog</a></h1>
+        <a href="/info">Info</a>
+      </div>
+    </header>
+
+    <main class="tmpl-post">
+      
+        
+<span class="postlist-date title-date">Published <time  datetime="2020-08-25">August 25, 2020 </time></span>
+
+<h1>Making better zips</h1>
+<div class="content">
+  <p>Making zip files from folders is a very common and very handy thing to do – so often, sending someone one file beats sending a whole collection of files! But, if you’re only ever making zips on a Mac, you may not realize that you’re also zipping up a few metadata files, and that these might confuse (or at least annoy) folks on other operating systems.</p>
+<h2 id="the-problem">The Problem <a class="direct-link" href="#the-problem">🔗</a></h2>
+<p>I only learned this recently: if you are on a Mac and make a zip of a folder in a regular way (e.g. by right-clicking a folder, then selecting ‘compress’, or with a basic usage of the <code>zip</code> command-line utility), it includes obnoxious, unnecessary files for folks that decompress those zips on Windows computers.</p>
+<ol>
+<li>The top level will have an empty <code>_MACOSX</code> folder</li>
+<li>Every other level will have a <code>.DS_Store</code> file</li>
+</ol>
+<p><img src="./2020-08-25-17-16-16.png" alt="top level with empty 'MACOSX' folder"></p>
+<p><img src="./2020-08-25-17-16-31.png" alt="Main folder with '.DS_Store' file"></p>
+<p>The <code>_MACOSX</code> folder is often empty, and multiple sources point to it being a <a href="https://en.wikipedia.org/wiki/Resource_fork">resource fork</a>, without really saying why it ends up in zips. (If someone knowledgable would like to explain this to me, feel free!) For the purposes of this post, it is also unnecessary to say what it is or why it ends up in zips, other than that it does, but that it doesn’t need to be there.</p>
+<p>The <a href="https://en.wikipedia.org/wiki/.DS_Store">.DS_Store</a> saves your preferences for file viewing in Finder, such as the placement of files in the “icon” view or the sorting in the “list” view. However, these generally aren’t very helpful in zipped folders, and if you send these zips to Windows users, they are especially unhelpful.</p>
+<h2 id="a-command-line-solution">A command-line solution <a class="direct-link" href="#a-command-line-solution">🔗</a></h2>
+<p>To avoid this, you can compress a folder on the command line. Use <code>cd</code> to navigate to its parent directory, then use this command (replacing arrowtype-name_sans-v03 with the appropriate folder name):</p>
+<pre class="language-sh"><code class="language-sh"><span class="token function">zip</span> arrowtype-name_sans-v03.zip <span class="token parameter variable">-r</span> <span class="token string">'arrowtype-name_sans-v03'</span> <span class="token parameter variable">-x</span> <span class="token string">'*/.DS_Store'</span></code></pre>
+<p>This command is somewhat unintuitive and may not work as expected if you change or leave out the single quotes. The best way to be sure it worked as you expect is to try opening it in Windows (whether on an actual PC or via a virtual machine using software like VMWare or Parallels).</p>
+<p>One good way to avoid remembering this or worrying about syntax is by automating it with a shell function in your shell profile.</p>
+<h3>Automating it with a function</h3>
+<p>The function below will make a clean zip if you call if with a path, like <code>zipit path/to/folder</code>.</p>
+<pre class="language-sh"><code class="language-sh"><span class="token keyword">function</span> <span class="token function-name function">zipit</span> <span class="token punctuation">{</span><br>  <span class="token assign-left variable">currentDir</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token builtin class-name">pwd</span><span class="token variable">)</span></span>                             <span class="token comment"># get current dir so you can return later</span><br>  <span class="token builtin class-name">cd</span> <span class="token variable"><span class="token variable">$(</span><span class="token function">dirname</span> $1<span class="token variable">)</span></span>                              <span class="token comment"># change to target’s dir (works better for zip)</span><br>  <span class="token assign-left variable">target</span><span class="token operator">=</span><span class="token variable"><span class="token variable">$(</span><span class="token function">basename</span> $1<span class="token variable">)</span></span>                         <span class="token comment"># get target’s name</span><br>  <span class="token function">zip</span> <span class="token parameter variable">-r</span> <span class="token variable">$target</span>.zip <span class="token variable">$target</span> <span class="token parameter variable">-x</span> <span class="token string">'*/.DS_Store'</span>   <span class="token comment"># make a zip of the target, excluding macOS metadata</span><br>  <span class="token builtin class-name">echo</span> <span class="token string">"zip made of "</span> <span class="token variable">$1</span>                        <span class="token comment"># announce completion</span><br>  <span class="token builtin class-name">cd</span> <span class="token variable">$currentDir</span>                                <span class="token comment"># return to where you were</span><br><span class="token punctuation">}</span></code></pre>
+<p>It may seem a little bit complicated, but due to the way <code>zip</code> works, it is best to change to a target’s folder before zipping it.</p>
+<p>Of course, it is worth making sure the terminal has this function in memory for it to work, so you should store this in your <code>.bash_profile</code> file (or <code>.bashrc</code>, <a href="https://scriptingosx.com/2017/04/about-bash_profile-and-bashrc-on-macos/">depending on your approach</a>). Then, you can call it from any terminal session.</p>
+<h2 id="the-result">The Result <a class="direct-link" href="#the-result">🔗</a></h2>
+<p>When you exclude the <code>.DS_Store</code> files, it avoids both problems, and the result is much cleaner:</p>
+<p><img src="./2020-08-25-17-17-17.png" alt="Folder without the '.DS_Store' file"></p>
+<h2 id="an-easier-solution">An easier solution <a class="direct-link" href="#an-easier-solution">🔗</a></h2>
+<p>I mentioned this article in a <a href="https://twitter.com/ArrowType/status/1298375103152107520">Twitter thread</a>, and several people mentioned the approaches they take to this problem.</p>
+<p>A notable easy solution is <a href="https://apps.apple.com/us/app/keka/id470158793?mt=12">Keka</a>, which is a native Mac app which can make clean zips, password-protected zips, and more. So, if you have $2.99 and you want a solution available via right-click or drag-and-drop, this is probably worth it.</p>
+<p>Of course, if you are already using a shell script to set up a build, the function may be the simplest &amp; most efficient way to do this. Or, if you are using a Python-based build flow, that also <a href="https://twitter.com/mass_driver_tm/status/1298377561869819905?s=20">got a reply</a> in the thread.</p>
+<p>Happy zipping!</p>
+
+</div>
+
+<ul id="pagination">
+    <li class="older">
+      <a href="/gf-vf-css-tricks/">
+      <span class="small-text">← Older Post ⤙</span><br>
+        Getting the Most Out of Variable Fonts on Google Fonts
+      </a>
+    </li>
+  
+    <li class="newer">
+      <a href="/font-design-on-a-chromebook/">
+      <span class="small-text">⤚ Newer Post →</span><br>
+          Setting up FontForge on a Chromebook with ChromeOS and Linux
+      </a>
+    </li>
+  
+</ul>
+
+<aside id="mc_signup">
+    <h2>Subscribe</h2>
+    <p>Get notified of new ArrowType font releases and major updates. Updates will be infrequent and may sometimes mention recent blog posts.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://arrowtype.us3.list-manage.com/subscribe/post?u=5aef19f2eea3aab62369ad95f&amp;id=2ca8bff7c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+    </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5aef19f2eea3aab62369ad95f_2ca8bff7c6" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+</aside>
+
+
+
+
+      
+    </main>
+
+    <footer>
+      <div>
+        <span class"small-text">
+          By <a href="https://arrowtype.com">ArrowType</a>
+        </span>
+        
+        <div>
+        <a href="https://github.com/arrowtype/blog">Source Repo</a>
+        <p>
+          <a href="https://blog.arrowtype.com/rss.xml">RSS Feed</a>
+        </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /better-zips/ -->
+  </body>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</html>

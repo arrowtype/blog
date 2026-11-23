@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting the most out of RoboFont</title>
+    <meta name="description" content="Extensions &amp; Tips for RoboFont">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.modified.css">
+    <link rel="alternate" href="/rss.xml" type="application/atom+xml" title="The ArrowType Blog">
+    <link rel="alternate" href="/rss.json" type="application/json" title="The ArrowType Blog">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7029ff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Getting the most out of RoboFont">
+    <meta property="og:description" content="Extensions &amp; Tips for RoboFont">
+    <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
+    <meta property="og:url" content="https://blog.arrowtype.com/robofont-tips/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <meta property="og:site_name" content="The ArrowType Blog">
+    <meta name="twitter:image:alt" content="Social thumbnail for The ArrowType Blog.">
+  </head>
+  <body>
+    <header>
+      <div class="wide-col">
+        <h1 class="home"><a href="/">The ArrowType Blog</a></h1>
+        <a href="/info">Info</a>
+      </div>
+    </header>
+
+    <main class="tmpl-post">
+      
+        
+<span class="postlist-date title-date">Published <time  datetime="2020-12-11">December 11, 2020 </time> — Updated <time  datetime="2020-12-11">April 17, 2021 </time></span>
+
+<h1>Getting the most out of RoboFont</h1>
+<div class="content">
+  <p>Type designers are lucky to have a variety of extremely-capable tools for creating new fonts. My favorite of these is the font editor RoboFont, along with its ecosystem.</p>
+<p>I covered some of the reasons I like RoboFont in my earlier post, <a href="../getting-started">Getting Started in Type</a>. This post actually started as a section of that article, but I have since realized that I would like to add more extensions and more details. If you haven’t already read that article, there are lots of helpful tips there, so consider giving it a look, too!</p>
+<h2 id="first-things-first">First things first <a class="direct-link" href="#first-things-first">🔗</a></h2>
+<p>Like most powerful software, RoboFont has a lot of functionality, and you will save time by doing a bit of reading before diving in. It is extremely useful to get familiar with the <a href="https://robofont.com/documentation/">RoboFont Docs</a> (even if you just skim parts of it at first). If you are new to RoboFont or just wondering what it’s all about, start with the <a href="https://robofont.com/documentation/introduction/">RoboFont Introduction</a>.</p>
+<p>As a new user, you will probably want to define the default character set for new fonts. <a href="https://robofont.com/documentation/how-tos/defining-character-sets/">Here’s how</a>. Glyph Browser, an extension mentioned below, further extends this part of the process.</p>
+<h2 id="my-favorite-robofont-extensions">My favorite RoboFont extensions <a class="direct-link" href="#my-favorite-robofont-extensions">🔗</a></h2>
+<p>Extensions are a big part of the RoboFont experience. Most RoboFont extensions can be found on <a href="https://robofontmechanic.com/">Mechanic</a>.</p>
+<p>You can get more-detailed documentation about RoboFont extensions at <a href="https://robofont.com/documentation/extensions/">robofont.com/documentation/extensions/</a>.</p>
+<p>However, it can be overwhelming to know which extensions are available, and which ones you actually want to use. After working for about three years almost daily in RoboFont, here are the RoboFont extensions that I find most useful.</p>
+<h3><a href="https://robofontmechanic.com/">Mechanic</a>, by Frederik Berlaen and Antonio Cavedoni</h3>
+<p>Mechanic is an easy way to manage (most) RoboFont extensions. It’s pretty essential, as it allows you to easily find and install most of the other extensions listed here. Extensions mentioned below but not available via Mechanic are linked to, but the ones not linked to are simplest to find &amp; install via Mechanic.</p>
+<h3>Add Overlap, by Alexandre Saumier Demers</h3>
+<p>Adds corner overlaps to selected points. I like <a href="https://github.com/okay-type/AddOverlap">Okay Type’s fork of this</a>, which adds a little UI at the bottom-right corner of Glyph Windows which allows positive, negative, or zero overlap to corner points.</p>
+<h3>Add Segment Guideline, by Jan Šindler</h3>
+<p>This is a very simple but useful way to add a guideline to a selected segment. I’ve set it to the shortcut <strong>Command /</strong>, and I use it constantly – especially when drawing glyphs with diagonal strokes.</p>
+<h3>Batch, by Frederik Berlaen</h3>
+<p>This is a simple UI to help you build fonts from RoboFont. I do almost all of my font builds with <a href="https://github.com/googlefonts/fontmake">FontMake</a>, but this is a whole extra skill to learn, and probably not necessary for every font project.</p>
+<h3><a href="https://github.com/roboDocs/CornerTools">CornerTools</a>, by Loïc Sander</h3>
+<p>Want to add a bunch of rounded corners or inktraps to a font? This is a fast way to do it! This is a super nice tool to modify corners. Read the project readme for instructions.</p>
+<h3>DesignSpace Edit, by Erik van Blokland</h3>
+<p>This will help set up and edit correctly-formatted DesignSpace documents that you can build with Batch or FontMake, for font projects involving interpolation to create static instances and/or variable fonts. I often start here to make a new DesignSpace, then use a code editor to make edits more efficiently.</p>
+<h3>EditThatNextMaster, by Erik van Blokland</h3>
+<p>A common early complaint about RoboFont is that it’s a bit tricky to move between sources for a multiple-master font project. This solves that by assigning a hotkey to move between views of open UFOs.</p>
+<h3>Eyeliner, by Ryan Bugden</h3>
+<p>Simple but essential: this makes it easy to see when a point is on a guide or metric line.</p>
+<h3>Glyph Browser, by Erik van Blokland</h3>
+<p>This is an essential tool to make it easy to add specific glyphs with correct unicodes &amp; naming. It allows you to either search by typing a glyph name (e.g. <code>paragraph</code> or by character (e.g. <code>¶</code>).</p>
+<h3><a href="https://github.com/RafalBuchner/glyphMirror">GlyphMirror</a>, by Rafał Buchner</h3>
+<p>This draws mirrored versions of your drawing in a background visual, and these can be flipped in different ways and moved around. This makes it fast and easy to achieve and check symmetry, when you want it.</p>
+<h3>Properties, by Jérémie Hornus</h3>
+<p>This displays distances between selected points, lengths of selected segments, and more.</p>
+<h3>Overlay UFOs, by David Jonathan Ross</h3>
+<p>This displays glyphs from the same or other open UFOs while you draw. Helpful to draw and check related shapes within a single font (e.g. <code>n</code> and <code>h</code>), to check related shapes between different sources of a big project, and to have a guide for shaping in less-familiar characters.</p>
+<h3>Outliner, by Frederik Berlaen</h3>
+<p>THis is helpful if you want to draw a single line, then expand it, e.g. as a quick way to start a Comic Sans-style font.</p>
+<h3><a href="https://github.com/typesupply/popuptools">Popup Tools</a>, by Tal Leming</h3>
+<p>This is a little pop-up panel that allows the alignment &amp; distribution of selected nodes &amp; contours. It’s something I’ve wanted maaaany times, especially as someone who has spent a lot of time in design tools like Figma, Sketch, &amp; Illustrator, where I used these functions constantly. But, I got so used to drawing without it, I am not yet sure whether it will be something I use a lot.</p>
+<h3>Ramsay St, by Frederik Berlaen</h3>
+<p>This will show related glyphs in the glyph view, on either side of the glyph you’re currently drawing. I used it a lot at first, but I hardly ever use it now – I’ve moved to using the Space Center quite a bit more for this purpose.</p>
+<h3>ScalingEditTool, by Timo Klaavo</h3>
+<p>This is a super-necessary tool to move points in a way that is less disruptive to attached curves. You kind of have to try it to understand it, but when I draw, I constantly go between the default Edit Tool and the Scaling Edit Tool. (In fact, the ease of shifting between tools with number keys is one reason I enjoy drawing in RoboFont! It’s weird at first, but much more ergonomic once you get used to it.)</p>
+<h3><a href="https://github.com/roboDocs/ScaleFast">ScaleFast</a>, by Loïc Sander</h3>
+<p>This one is extremely awesome for scaling glyphs to speed up the process of making things like superiors &amp; inferiors, small caps, legal symbols, and more.</p>
+<h3>Shape Tool, by Frederik Berlaen</h3>
+<p>It’s sort of hilarious that this isn’t built into RoboFont, but it also says something about the thinking behind RoboFont as a tool. This extension lets you draw circles/ellipses &amp; squares/rectangles. It’s not built into RoboFont because you might want to tweak the circle-drawing algorhythm yourself, e.g. to draw the slightly-boxy “circles” necessary to make a geometric font that actually <em>looks</em> circular (I haven’t done this, but I probably should try it sometime).</p>
+<h3><a href="https://github.com/typesupply/spacestation">Space Station</a>, by Tal Leming</h3>
+<p>I only just discovered this one, but it’s a godsend. It enables you to allow a systematic approach to spacing. A really useful aspect of it is that it allows you to import/export simple configuration files, which have a simple syntax which makes it easy to say which glyphs should match the sidebearings and/or widths of which other glyphs. Instead of approaching the problem in a way that is too automated, it encourages you to think systematically about spacing, and is easy to use either purely as a reference/quality-control tool, or as a way to quickly cascade spacing adjustments through a whole font.</p>
+<h3>Speed Punk, by Yanone</h3>
+<p>This is one way to consider the smoothness of curves.</p>
+<h3>Theme Manager, by Connor Davenport and Andy Clymer</h3>
+<p>This makes it easy to control your drawing theme. I use it to switch between light &amp; dark drawing modes (more info below), to keep my eyes happy at night.</p>
+<h3>word-o-mat, by Nina Stössinger</h3>
+<p>This allows you to create strings with desired characters in the Space Center, in order to judge your glyphs in context. Really, really handy.</p>
+<h2 id="paid-extensions">Paid extensions <a class="direct-link" href="#paid-extensions">🔗</a></h2>
+<p>A few very good extensions are complex software in their own right, and these must be purhcased separately. This allows the developers to provide support and to maintain these products, and because these are pretty critical pieces of my workflow, I find that to be a very good deal.</p>
+<h3>MetricsMachine</h3>
+<p>Extremely worthwhile, to help with kerning. If you get this, MM2SpaceCenter is a nice (free) add-on extension to give more context in the Space Center as you work on kerning.</p>
+<h3>Prepolator</h3>
+<p>Very worthwhile if you are working on fonts which you plan to interpolate. A new version of this is currently in the works, and it automates the process <em>a lot</em> more. It is amazingly helpful for an otherwise annoying task.</p>
+<h3>Skateboard</h3>
+<p>Extremely helpful for planning &amp; designing variable fonts.</p>
+<h2 id="additional-macos-apps-that-are-especially-useful-with-robofont">Additional macOS apps that are especially useful with RoboFont <a class="direct-link" href="#additional-macos-apps-that-are-especially-useful-with-robofont">🔗</a></h2>
+<p><a href="https://code.visualstudio.com/">VS Code</a> is an excellent code editor, file explorer, Git client, and terminal, all built into one elegant package. I nearly always have a project open in a VS Code workspace while I’m working in RoboFont. This is entirely optional, but if you’re doing a mix of scripting, font building, and Git versioning, it is so handy to one place to many all these technical bits.</p>
+<p><a href="https://pasteapp.io/">Paste</a> gives you access to your Clipboard History, which is helpful in <em>many</em> situations (email, code, interface design, etc etc), but also handy in RoboFont. You can copy a couple of contours, then (if you remember the order you copied things in) paste them as needed. Hard to explain, but very handy.</p>
+<p><a href="https://mizage.com/divvy/">Divvy</a> allows you to easily set the sizing of windows without dragging things around manually. This is helpful in lots of scenarios beyond type design, but especially nice in a multi-window app like RoboFont. Set up some global shortcuts to make this even quicker! There are other &quot;window manager&quot; apps for Mac, but this one offers my preferred balance of simplicity and power.</p>
+<h2 id="dark-mode-in-robofont">Dark Mode in RoboFont <a class="direct-link" href="#dark-mode-in-robofont">🔗</a></h2>
+<p>Sometimes, it’s nice to work in the evening without blasting your eyes with a ton of bright light. Luckily, RoboFont settings allow you to get a pretty serviceable dark mode in two steps:</p>
+<ol>
+<li>You can use <a href="https://gist.github.com/arrowtype/268bb9db71231ca4fc39143760e94947">this script</a> as a “Start Up Script” (see script for instructions) to automatically set a light/dark mode each time you start RoboFont, based on your macOS preferences. If you change the macOS preference and want to update light/dark mode, you can also run the script without restarting RoboFont.</li>
+<li>If you also want a dark mode for the Glyph View (if you want dark mode, you will want this too), you can also install the Theme Editor extension, then use my <a href="https://gist.github.com/arrowtype/f450d2c7cfbcea61ab7ad6c43af14932">“Dark Connor” theme</a> or make your own.</li>
+</ol>
+<h2 id="three-drawing-tips">Three drawing tips <a class="direct-link" href="#three-drawing-tips">🔗</a></h2>
+<p>So much can be (and is) written about drawing type, but here are two things that aren’t as obvious:</p>
+<ol>
+<li>Most of the time, it is helpful to work with the Glyph View and the Space Center side-by-side. Use Divvy (mentioned above) to set up 50% of your screen with a glyph, and the other 50% with the Space Center, then adjust the glyph while keeping an eye on the glyph in the context of spacing strings, at different scales, and/or more! I didn’t do this for a long time, but then I picked up the tip from James Edmonson (OHno Type Co) on Instagram, and it changed my life.</li>
+<li>Get familiar with using the Transform (T) tool, along with the modifier keys. This can be very unintuitive at fist, but becomes pretty powerful over time. I will try to make a video or say more about this at some point, because it can be easy to miss but seriously helpful.</li>
+<li>A really handy feature of RoboFont (especially for early-stage drawing &amp; exploration) is the <a href="https://robofont.com/documentation/how-tos/using-test-install/">Test Install</a>, which allows you to quickly install the font you are working on, then immediately use it in other apps to test it out, make proofs, etc. Sometimes, this won’t work if you have special feature syntax in the “Features” tab. I often use minimal to no features here, then add them in a separate build process. But, this varies a lot from project to project.</li>
+</ol>
+<h2 id="ask-for-help!">Ask for help! <a class="direct-link" href="#ask-for-help!">🔗</a></h2>
+<p>If you get stuck on a problem, chances are, someone will be happy to help you out. Sometimes, just the act of clearly writing out your problem will help you solve it on your own! This applies to basically all aspects of computers and software, but is particularly true in learning &amp; using RoboFont and its associated tools.</p>
+<p>Generally, if you run into an unexpected issue, open the Output Window (Python &gt; Output Window, or Option+Command+o) and check for error messages.</p>
+<ul>
+<li><a href="http://forum.robofont.com/">The RoboFont Forum</a> has lots of existing questions &amp; answers, and new questions are welcomed, and generally answered pretty quickly!</li>
+<li>Google your errors (if you have an error message, try pasting in the relevant part – usually the last line or two)</li>
+<li>Use GitHub Issues (this can be a little more advanced; try to find the relevant repo for a particular tool, if you have an issue with it)</li>
+<li>Twitter has it’s problems, but you can also learn a lot from the people there. You can mention me, <a href="https://twitter.com/ArrowType">@ArrowType</a>, and I will either try to chip in or mention someone who might know more.</li>
+<li><a href="https://medium.com/typecritcrew/type-crit-crew-fdd180b881c">Type Crit Crew</a> is a collective of type designers (myself included) who have made free office hours bookable by folks who are seeking type critique or advice. Getting critique and talking with experts can be a bit daunting, but folks here are super kind, and you can learn so much in this way!</li>
+</ul>
+<h2 id="happy-robofonting!">Happy RoboFonting! <a class="direct-link" href="#happy-robofonting!">🔗</a></h2>
+<p>There is <em>a lot</em> more that could be said about RoboFont, but hopefully this post is able to help you learn a few useful things you didn’t already know. Enjoy!</p>
+
+</div>
+
+<ul id="pagination">
+    <li class="older">
+      <a href="/exploring-HOI/">
+      <span class="small-text">← Older Post ⤙</span><br>
+        Exploring Higher-Order Interpolation
+      </a>
+    </li>
+  
+    <li class="newer">
+      <a href="/host-webfont-on-aws/">
+      <span class="small-text">⤚ Newer Post →</span><br>
+          Hosting licensed fonts on AWS S3 for open-source websites
+      </a>
+    </li>
+  
+</ul>
+
+<aside id="mc_signup">
+    <h2>Subscribe</h2>
+    <p>Get notified of new ArrowType font releases and major updates. Updates will be infrequent and may sometimes mention recent blog posts.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://arrowtype.us3.list-manage.com/subscribe/post?u=5aef19f2eea3aab62369ad95f&amp;id=2ca8bff7c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+    </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5aef19f2eea3aab62369ad95f_2ca8bff7c6" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+</aside>
+
+
+
+
+      
+    </main>
+
+    <footer>
+      <div>
+        <span class"small-text">
+          By <a href="https://arrowtype.com">ArrowType</a>
+        </span>
+        
+        <div>
+        <a href="https://github.com/arrowtype/blog">Source Repo</a>
+        <p>
+          <a href="https://blog.arrowtype.com/rss.xml">RSS Feed</a>
+        </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /robofont-tips/ -->
+  </body>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</html>

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hosting licensed fonts on AWS S3 for open-source websites</title>
+    <meta name="description" content="How to use Amazon Web Services to host a font">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.modified.css">
+    <link rel="alternate" href="/rss.xml" type="application/atom+xml" title="The ArrowType Blog">
+    <link rel="alternate" href="/rss.json" type="application/json" title="The ArrowType Blog">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7029ff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Hosting licensed fonts on AWS S3 for open-source websites">
+    <meta property="og:description" content="How to use Amazon Web Services to host a font">
+    <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
+    <meta property="og:url" content="https://blog.arrowtype.com/host-webfont-on-aws/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <meta property="og:site_name" content="The ArrowType Blog">
+    <meta name="twitter:image:alt" content="Social thumbnail for The ArrowType Blog.">
+  </head>
+  <body>
+    <header>
+      <div class="wide-col">
+        <h1 class="home"><a href="/">The ArrowType Blog</a></h1>
+        <a href="/info">Info</a>
+      </div>
+    </header>
+
+    <main class="tmpl-post">
+      
+        
+<span class="postlist-date title-date">Published <time  datetime="2021-01-27">January 27, 2021 </time></span>
+
+<h1>Hosting licensed fonts on AWS S3 for open-source websites</h1>
+<div class="content">
+  <p>In some situations, you may need to use a font on the web, but may not be able to host it alongside your web code. In this case, you can host the font on AWS and call it in as a URL in your <code>@font-face</code> CSS!</p>
+<p>For example, you may wish to use a web-licensed font with a project that is openly-hosted on GitHub or with a project made on a service like CodePen or JSfiddle. <strong>If your font license allows it</strong>, this can be a nice solution to an otherwise tricky problem. Note: licensing will vary between typefaces and type foundries – read your license or email the type foundry if you aren’t sure!</p>
+<p>With the S3 Buckets feature of Amazon Web Services (AWS), this is relatively easy &amp; very inexpensive – unless you are making a hugely-popular website, perhaps. You can (and should) configure it to only work on specific web domains, so you don’t break your licensing or end up paying for other people to use your font hosting! Here’s how.</p>
+<h2 id="make-your-s3-bucket">Make your S3 Bucket <a class="direct-link" href="#make-your-s3-bucket">🔗</a></h2>
+<ol>
+<li>Register for AWS, then Sign into the Management Console, search for <code>buckets</code> and click on <strong>Buckets S3 feature</strong></li>
+<li>Click <strong>Create Bucket</strong></li>
+<li>Give the bucket a name (e.g. <code>arrowtype</code>) and select a region that you think is closest to you / most of your users</li>
+<li>Uncheck <strong>Block all public access</strong> and check the box for “I acknowledge that the current settings might result in this bucket and the objects within becoming public.”</li>
+<li>Maybe enable versioning</li>
+<li>Scroll to the bottom and click <strong>Create bucket</strong></li>
+</ol>
+<h2 id="upload-your-font">Upload your font <a class="direct-link" href="#upload-your-font">🔗</a></h2>
+<ol>
+<li>Go into your new bucket, and click <strong>Upload</strong> then <strong>Add files</strong>, then select and upload your woff2 font file.</li>
+<li>Click on the file within the bucket, then find <strong>Object actions &gt; Make Public</strong>, so you can access this from your CSS later (don’t worry; the next step will prevent other sites from using it)</li>
+</ol>
+<h2 id="edit-cors-on-the-bucket">Edit CORS on the bucket <a class="direct-link" href="#edit-cors-on-the-bucket">🔗</a></h2>
+<ol>
+<li>Navigate back to the top level of your bucket</li>
+<li>Click the “Permissions” tab.</li>
+<li>Scroll to the “Cross-origin resource sharing (CORS)” section, then click <strong>Edit</strong>.</li>
+<li>Set CORS permissions to allow your specified URL(s) to access the objects in the bucket, similar to the JSON shown below.
+<ul>
+<li>You can use a wildcard (<code>*</code>) to allow subdomains, like <code>https://*.arrowtype.com</code>.</li>
+<li>I also include <code>http://localhost:8080</code>, the URL which my local-development builds get served to. Replace this with the localhost port number(s) you need to support.</li>
+</ul>
+<!-- TODO: figure out how to get font cacheing working: Add a `MaxAgeSeconds` property to control how long the font will stay in the browser cache for visitors. This will improve site performance for them, and should reduce you (already pretty low) S3 usage even further. I am using `604800` seconds, which is equal to 7 days. If you don’t plan to update the font often, you could increase that number further (say, to 30 days, which is `2592000` seconds). -->
+</li>
+</ol>
+<pre class="language-json"><code class="language-json"><span class="token punctuation">[</span><br>    <span class="token punctuation">{</span><br>        <span class="token property">"AllowedHeaders"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token string">"*"</span><br>        <span class="token punctuation">]</span><span class="token punctuation">,</span><br>        <span class="token property">"AllowedMethods"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token string">"GET"</span><br>        <span class="token punctuation">]</span><span class="token punctuation">,</span><br>        <span class="token property">"AllowedOrigins"</span><span class="token operator">:</span> <span class="token punctuation">[</span><br>            <span class="token string">"https://*.arrowtype.com"</span><span class="token punctuation">,</span><br>            <span class="token string">"https://arrowtype.com"</span><span class="token punctuation">,</span><br>            <span class="token string">"http://localhost:8080"</span><br>        <span class="token punctuation">]</span><span class="token punctuation">,</span><br>        <span class="token property">"ExposeHeaders"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">]</span></code></pre>
+<h2 id="get-your-font-object%E2%80%99s-url">Get your font object’s URL <a class="direct-link" href="#get-your-font-object%E2%80%99s-url">🔗</a></h2>
+<ol>
+<li>Go back into the bucket’s “Objects” tab, and click on the file name of your font.</li>
+<li>Find and copy the “Object URL,” which will look something like <code>https://arrowtype2.s3.amazonaws.com/name_sans-variable.woff2</code>.</li>
+</ol>
+<p>Note: because of the CORS configuration for this URL, you can’t use it on other websites, though you could use it in local development if you really wanted to ... but honestly, please just <a href="https://name.arrowtype.com">buy your own license</a> if you want to use it – while it’s still in early access, it’s available at a steep discount! Or, use another font – there are many great type options in the world, both free and paid!</p>
+<h2 id="set-your-css-so-local-fonts-don%E2%80%99t-interfere-with-your-development">Set your CSS so local fonts don’t interfere with your development <a class="direct-link" href="#set-your-css-so-local-fonts-don%E2%80%99t-interfere-with-your-development">🔗</a></h2>
+<p>In your CSS, you can use a font’s basic family name in order to just use a local copy of that font. This can make fonts appear more quickly for users, if those users already have that font on their system. However, especially with newer fonts, this may cause problems. How do you know that your users will have the latest version of a font? Often, the OS will serve an unintended font style, even if it does have the latest version.</p>
+<p>So, I often make sure to use a name that specifically <em>won’t</em> call a local file. I do this either by removing spaces or adding a suffix like ”VF“.</p>
+<pre class="language-css"><code class="language-css"><span class="token atrule"><span class="token rule">@font-face</span></span> <span class="token punctuation">{</span><br>  <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'NameSansVF'</span><span class="token punctuation">;</span><br>  <span class="token property">font-weight</span><span class="token punctuation">:</span> 1 1000<span class="token punctuation">;</span><br>  <span class="token property">src</span><span class="token punctuation">:</span> <span class="token url"><span class="token function">url</span><span class="token punctuation">(</span><span class="token string url">"https://arrowtype.s3-us-west-2.amazonaws.com/name_sans-variable.woff2"</span><span class="token punctuation">)</span></span><span class="token punctuation">;</span><br><span class="token punctuation">}</span><br><span class="token selector">html</span> <span class="token punctuation">{</span><br> <span class="token property">font-family</span><span class="token punctuation">:</span> <span class="token string">'NameSansVF'</span><span class="token punctuation">,</span> sans-serif<span class="token punctuation">;</span><br><span class="token punctuation">}</span></code></pre>
+<p>Your font should now work locally and also in deployment. Of course, the only way to know is to deploy the site and test it on a few different devices!</p>
+<p>Additionally, the font is (relatively) safe from being directly used on any site that just copies your CSS. You can verify this out by <a href="https://codepen.io/thundernixon/pen/LYbPGGd?editors=1100">trying it on CodePen</a>, where it shouldn’t work (unless you allow CodePen URLs in your CORS settings).</p>
+<h2 id="to-update-the-font">To update the font <a class="direct-link" href="#to-update-the-font">🔗</a></h2>
+<p>If you need to update the font version on S3 in the future, you can simply repeat the process of uploading a file.</p>
+<p>Just remember to also follow the <strong>Make Public</strong> steps, or things will break!</p>
+<h2 id="but-what-if-fonts-were-already-in-a-public-git-repo%3F">But what if fonts were already in a public Git repo? <a class="direct-link" href="#but-what-if-fonts-were-already-in-a-public-git-repo%3F">🔗</a></h2>
+<p>This is a <a href="https://pixelambacht.nl/2017/github-font-piracy/">pretty big problem</a>, but luckily, it’s not too hard to fix.</p>
+<p>You can use a tool called BFG to remove them – even <a href="https://docs.github.com/en/github/authenticating-to-github/removing-sensitive-data-from-a-repository">GitHub recommends this tool</a>.</p>
+<ol>
+<li>Make a backup copy of your project before using the BFG, in case you mess something up!</li>
+<li>Download the latest release from <a href="https://rtyley.github.io/bfg-repo-cleaner/">the BFG website</a>.</li>
+<li>Open a terminal, navigate to your project’s root, point to the downloaded BFG file, and use the <code>--delete-files</code> option to delete the font filename you’d like to keep private:</li>
+</ol>
+<pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">cd</span> ~/code/blog-11ty <span class="token comment"># change to the root of your web project</span><br><span class="token function">java</span> <span class="token parameter variable">-jar</span> ~/Downloads/bfg-1.13.2.jar --delete-files name_sans-variable.woff2</code></pre>
+<ol start="4">
+<li>Use <code>git push --force</code> to force push the edited Git history to your repo.</li>
+</ol>
+<h2 id="happy-webfonting!">Happy webfonting! <a class="direct-link" href="#happy-webfonting!">🔗</a></h2>
+<p>This specific workflow is fairly new to me. Did I forget to describe a step? Did I say anything inaccurate? Feel free to let me know! I’m <a href="https://twitter.com/ArrowType">on Twitter</a>, and this blog has open <a href="https://github.com/arrowtype/blog/issues">Issues on GitHub</a>.</p>
+
+</div>
+
+<ul id="pagination">
+    <li class="older">
+      <a href="/robofont-tips/">
+      <span class="small-text">← Older Post ⤙</span><br>
+        Getting the most out of RoboFont
+      </a>
+    </li>
+  
+    <li class="newer">
+      <a href="/name-sans-v05/">
+      <span class="small-text">⤚ Newer Post →</span><br>
+          The Story of Name Sans, So Far
+      </a>
+    </li>
+  
+</ul>
+
+<aside id="mc_signup">
+    <h2>Subscribe</h2>
+    <p>Get notified of new ArrowType font releases and major updates. Updates will be infrequent and may sometimes mention recent blog posts.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://arrowtype.us3.list-manage.com/subscribe/post?u=5aef19f2eea3aab62369ad95f&amp;id=2ca8bff7c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+    </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5aef19f2eea3aab62369ad95f_2ca8bff7c6" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+</aside>
+
+
+
+
+      
+    </main>
+
+    <footer>
+      <div>
+        <span class"small-text">
+          By <a href="https://arrowtype.com">ArrowType</a>
+        </span>
+        
+        <div>
+        <a href="https://github.com/arrowtype/blog">Source Repo</a>
+        <p>
+          <a href="https://blog.arrowtype.com/rss.xml">RSS Feed</a>
+        </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /host-webfont-on-aws/ -->
+  </body>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</html>

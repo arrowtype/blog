@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setting up FontForge on a Chromebook with ChromeOS and Linux</title>
+    <meta name="description" content="How to design type on a Chromebook">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism-base16-monokai.dark.modified.css">
+    <link rel="alternate" href="/rss.xml" type="application/atom+xml" title="The ArrowType Blog">
+    <link rel="alternate" href="/rss.json" type="application/json" title="The ArrowType Blog">
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#7029ff">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    
+    <meta property="og:title" content="Setting up FontForge on a Chromebook with ChromeOS and Linux">
+    <meta property="og:description" content="How to design type on a Chromebook">
+    <meta property="og:image" content="https://blog.arrowtype.com/arrowtype-blog-social.png">
+    <meta property="og:url" content="https://blog.arrowtype.com/font-design-on-a-chromebook/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    
+    <meta property="og:site_name" content="The ArrowType Blog">
+    <meta name="twitter:image:alt" content="Social thumbnail for The ArrowType Blog.">
+  </head>
+  <body>
+    <header>
+      <div class="wide-col">
+        <h1 class="home"><a href="/">The ArrowType Blog</a></h1>
+        <a href="/info">Info</a>
+      </div>
+    </header>
+
+    <main class="tmpl-post">
+      
+        
+<span class="postlist-date title-date">Published <time  datetime="2020-11-01">November 1, 2020 </time></span>
+
+<h1>Setting up FontForge on a Chromebook with ChromeOS and Linux</h1>
+<div class="content">
+  <p>You might think you have to spend a lot of money on a powerful Mac computer &amp; software like Glyphs or RoboFont to get started in type design. While these things are very nice, it’s not a requirement. Instead, you can get a Chromebook for about $150 to $250, then use open-source software like FontForge.</p>
+<p><img src="./fontforge-chrome_os.png" alt="A screenshot of FontForge running on ChromeOS"></p>
+<h2 id="set-up-linux-(beta)">Set up Linux (beta) <a class="direct-link" href="#set-up-linux-(beta)">🔗</a></h2>
+<p>Not all Chromebooks will be able to run Linux out of the box, so check out the <a href="https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-linux">supported devices</a> before buying a Chromebook, if this is a thing you are seriously considering doing.</p>
+<p>To quote the official <a href="https://support.google.com/chromebook/answer/9145439?hl=en">ChromeOS Linux instructions</a>, here’s how to install Linux on a Chromebook:</p>
+<ol>
+<li>At the bottom right, select the time.</li>
+<li>Select <strong>Settings</strong>.</li>
+<li>Under &quot;Linux (Beta),&quot; select <strong>Turn On</strong>.</li>
+<li>Follow the steps on the screen. Setup can take 10 minutes or more.</li>
+<li>A terminal window opens. You have a Debian 10 (Buster) environment. You can run Linux commands, install more tools using the APT package manager, and customize your shell.</li>
+</ol>
+<h2 id="install-flatpak">Install Flatpak <a class="direct-link" href="#install-flatpak">🔗</a></h2>
+<p>Note: to copy on a Chromebook, use Control+C. To paste in the terminal, you must use Control+V, <em>then</em> right-click on the terminal.</p>
+<p>First, follow the instructions to <a href="https://flatpak.org/setup/Chrome%20OS/">install Flatpak on ChromeOS</a>.</p>
+<p>Note: for step 4 of the instructions above, you will probably have to add <code>sudo</code> to make it work:</p>
+<pre><code>sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+</code></pre>
+<h2 id="install-fontforge">Install FontForge <a class="direct-link" href="#install-fontforge">🔗</a></h2>
+<p>Then, install <a href="https://flathub.org/apps/details/org.fontforge.FontForge">FontForge</a>:</p>
+<pre><code>sudo flatpak install flathub org.fontforge.FontForge
+</code></pre>
+<p>Note: If you run without the <code>sudo</code>, you might get an error like this:</p>
+<pre><code>stephen@penguin:~$ flatpak run org.fontforge.FontForge
+error: app/org.fontforge.FontForge/x86_64/master not installed
+</code></pre>
+<h2 id="off-to-the-races!">Off to the races! <a class="direct-link" href="#off-to-the-races!">🔗</a></h2>
+<p>For tips &amp; resources on getting started in type design generally, check out my blog post <a href="https://blog.arrowtype.com/getting-started/"><strong>Getting started in Type Design (and possible next steps)</strong></a>. This advice does skew towards Mac &amp; RoboFont, but it also includes some useful information about type design &amp; development in general.</p>
+<p>For guidance specific to using FontForge, check out <a href="https://fontforge.org/docs/tutorial.html">fontforge.org/docs/tutorial.html</a> and <a href="http://designwithfontforge.com/en-US/index.html">Designing with FontForge</a>.</p>
+
+</div>
+
+<ul id="pagination">
+    <li class="older">
+      <a href="/better-zips/">
+      <span class="small-text">← Older Post ⤙</span><br>
+        Making better zips
+      </a>
+    </li>
+  
+    <li class="newer">
+      <a href="/exploring-HOI/">
+      <span class="small-text">⤚ Newer Post →</span><br>
+          Exploring Higher-Order Interpolation
+      </a>
+    </li>
+  
+</ul>
+
+<aside id="mc_signup">
+    <h2>Subscribe</h2>
+    <p>Get notified of new ArrowType font releases and major updates. Updates will be infrequent and may sometimes mention recent blog posts.</p>
+
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+    <form action="https://arrowtype.us3.list-manage.com/subscribe/post?u=5aef19f2eea3aab62369ad95f&amp;id=2ca8bff7c6" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+        
+    <div class="mc-field-group">
+        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email">
+    </div>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_5aef19f2eea3aab62369ad95f_2ca8bff7c6" tabindex="-1" value=""></div>
+        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+        <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+    </form>
+    </div>
+    <!--End mc_embed_signup-->
+</aside>
+
+
+
+
+      
+    </main>
+
+    <footer>
+      <div>
+        <span class"small-text">
+          By <a href="https://arrowtype.com">ArrowType</a>
+        </span>
+        
+        <div>
+        <a href="https://github.com/arrowtype/blog">Source Repo</a>
+        <p>
+          <a href="https://blog.arrowtype.com/rss.xml">RSS Feed</a>
+        </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Current page: /font-design-on-a-chromebook/ -->
+  </body>
+  <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+</html>
